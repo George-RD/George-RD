@@ -1,6 +1,8 @@
 ## Hi there, I'm George 👋
 
-<p align="center">[![GitHub Streak](https://streak-stats.demolab.com/?user=George-RD&theme=nightowl)](https://git.io/streak-stats)</p>
+<p align="center">
+  [![GitHub Streak](https://streak-stats.demolab.com/?user=George-RD&theme=nightowl)](https://git.io/streak-stats)
+</p>
 
 
 I'm currently having fun with creating:
