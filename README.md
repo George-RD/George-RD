@@ -1,7 +1,7 @@
-## Hi there 👋
+## Hi there, I'm George 👋
 
+[![GitHub Streak](https://streak-stats.demolab.com/?user=George-RD&theme=nightowl)](https://git.io/streak-stats)
 
-[![George-RD's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=George-RD&theme=nightowl)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 I'm currently having fun with creating:
 
@@ -11,7 +11,7 @@ I'm currently having fun with creating:
 - A web design company called [ReavesHQ](https://reaveshq.com)
 - Making a artisinal soap company called BLOCK, so I can have a physical non-tech business to do with my wife and children
 
-[![GitHub Streak](https://streak-stats.demolab.com/?user=George-RD&theme=nightowl)](https://git.io/streak-stats)
+[![George-RD's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=George-RD&theme=nightowl)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 <!--
 **George-RD/George-RD** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
