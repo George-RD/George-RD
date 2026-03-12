@@ -10,10 +10,12 @@ I'm currently having fun with creating:
 - a CLI to generate RIVE animations, so that I can create agent skills to do it programatically. [(to be named)](https://github.com/george-rd/rive-rs-cli)
 - A web design company called [ReavesHQ](https://reaveshq.com)
 - Making a artisinal soap company called BLOCK, so I can have a physical non-tech business to do with my wife and children
-- 
+
+[![GitHub Streak](https://streak-stats.demolab.com/?user=George-RD&theme=nightowl)](https://git.io/streak-stats)
+
 <!--
 **George-RD/George-RD** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-[![GitHub Streak](https://streak-stats.demolab.com/?user=George-RD&theme=nightowl)](https://git.io/streak-stats)
+
 Here are some ideas to get you started:
 
 - 🔭 I’m currently working on ...
