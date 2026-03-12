@@ -1,7 +1,6 @@
 ## Hi there, I'm George 👋
 
   [![GitHub Streak](https://streak-stats.demolab.com/?user=George-RD&theme=nightowl)](https://git.io/streak-stats)
-a
 
 I'm currently having fun with creating:
 
