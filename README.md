@@ -1,17 +1,26 @@
-## Hi there, I'm George 👋
+<div align="center">
 
-  [![GitHub Streak](https://streak-stats.demolab.com/?user=George-RD&theme=nightowl)](https://git.io/streak-stats)
+# Hi there, I'm George 👋
 
+[![GitHub Streak](https://streak-stats.demolab.com/?user=George-RD&theme=nightowl&hide_border=true)](https://git.io/streak-stats)
 
-I'm currently having fun with creating:
+</div>
 
-- A childrens iOS app called Yarnling
-- A memory system called [MAG](https://github.com/George-RD/mag) (memory augmented generation)
-- a CLI to generate RIVE animations, so that I can create agent skills to do it programatically. [(to be named)](https://github.com/george-rd/rive-rs-cli)
-- A web design company called [ReavesHQ](https://reaveshq.com)
-- Making a artisinal soap company called BLOCK, so I can have a physical non-tech business to do with my wife and children.
+### 🚀 What I'm currently building:
 
-[![George-RD's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=George-RD&theme=nightowl)](https://github.com/ashutosh00710/github-readme-activity-graph)
+- 📱 **Yarnling** - A children's iOS app.
+- 🧠 **[MAG](https://github.com/George-RD/mag)** - A memory augmented generation system.
+- 🎬 **[Rive CLI](https://github.com/george-rd/rive-rs-cli)** - A CLI to generate RIVE animations to create agent skills programmatically.
+- 🌐 **[ReavesHQ](https://reaveshq.com)** - A web design company.
+- 🧼 **BLOCK** - An artisanal soap company, a physical non-tech business I run with my wife and children.
+
+<br />
+
+<div align="center">
+
+[![George-RD's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=George-RD&theme=nightowl&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
+</div>
 
 <!--
 **George-RD/George-RD** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
