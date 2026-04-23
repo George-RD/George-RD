@@ -8,7 +8,7 @@
 
 I'm currently having fun with creating:
 
-- 📱 A childrens iOS app called **Yarnling**
+- 📱 A children's iOS app called **Yarnling**
 - 🧠 A memory system called **[MAG](https://github.com/George-RD/mag)** (memory augmented generation)
 - 🎬 A CLI to generate RIVE animations, so that I can create agent skills to do it programatically. **[(to be named)](https://github.com/george-rd/rive-rs-cli)**
 - 🎨 A web design company called **[ReavesHQ](https://reaveshq.com)**
