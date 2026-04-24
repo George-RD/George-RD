@@ -3,16 +3,19 @@
 ## Hi there, I'm George 👋
 
 [![GitHub Streak](https://streak-stats.demolab.com/?user=George-RD&theme=nightowl&hide_border=true)](https://git.io/streak-stats)
+[![George's GitHub stats](https://github-readme-stats.vercel.app/api?username=George-RD&theme=nightowl&hide_border=true&show_icons=true)](https://github.com/anuraghazra/github-readme-stats)
 
 </div>
 
-I'm currently having fun with creating:
+### 🚀 What I'm currently working on
 
 - 📱 A children's iOS app called **Yarnling**
 - 🧠 A memory system called **[MAG](https://github.com/George-RD/mag)** (memory augmented generation)
 - 🎬 A CLI to generate RIVE animations, so that I can create agent skills to do it programmatically. **[(to be named)](https://github.com/george-rd/rive-rs-cli)**
 - 🎨 A web design company called **[ReavesHQ](https://reaveshq.com)**
 - 🧼 Making an artisanal soap company called **BLOCK**, so I can have a physical non-tech business to do with my wife and children.
+
+### 📊 My GitHub Activity
 
 <div align="center">
 
