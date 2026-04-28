@@ -2,11 +2,11 @@
 
 ## Hi there, I'm George 👋
 
-[![GitHub Streak](https://streak-stats.demolab.com/?user=George-RD&theme=nightowl&hide_border=true)](https://git.io/streak-stats)
+[![GitHub Streak Stats for George-RD](https://streak-stats.demolab.com/?user=George-RD&theme=nightowl&hide_border=true)](https://git.io/streak-stats)
 
 </div>
 
-I'm currently having fun with creating:
+### ✨ I'm currently having fun with creating:
 
 - 📱 A children's iOS app called **Yarnling**
 - 🧠 A memory system called **[MAG](https://github.com/George-RD/mag)** (memory augmented generation)
@@ -16,7 +16,7 @@ I'm currently having fun with creating:
 
 <div align="center">
 
-[![George-RD's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=George-RD&theme=nightowl&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+[![George-RD's GitHub activity graph showing recent contributions](https://github-readme-activity-graph.vercel.app/graph?username=George-RD&theme=nightowl&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 </div>
 

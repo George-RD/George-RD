@@ -1,0 +1,3 @@
+## 2024-03-21 - Profile README Semantic Headings and Alt Texts
+**Learning:** Even simple markdown profile pages often lack proper semantic structure (using plain text instead of headers) and have generic, non-descriptive alt texts for dynamically generated stat images, which degrades the experience for screen reader users trying to scan the content.
+**Action:** Always check markdown files, especially profile READMEs, for opportunities to convert bold or plain text section dividers into proper semantic headings (`###`) and ensure image alt texts descriptively explain what data is being shown, not just the name of the tool generating it.
