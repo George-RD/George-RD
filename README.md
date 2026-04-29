@@ -6,13 +6,13 @@
 
 </div>
 
-I'm currently having fun with creating:
+### 🚀 What I'm Currently Building
 
-- 📱 A children's iOS app called **Yarnling**
-- 🧠 A memory system called **[MAG](https://github.com/George-RD/mag)** (memory augmented generation)
-- 🎬 A CLI to generate RIVE animations, so that I can create agent skills to do it programmatically. **[(to be named)](https://github.com/george-rd/rive-rs-cli)**
-- 🎨 A web design company called **[ReavesHQ](https://reaveshq.com)**
-- 🧼 Making an artisanal soap company called **BLOCK**, so I can have a physical non-tech business to do with my wife and children.
+- 📱 **Yarnling** – A children's iOS app
+- 🧠 **[MAG](https://github.com/George-RD/mag)** – A memory system (memory augmented generation)
+- 🎬 **[(to be named)](https://github.com/george-rd/rive-rs-cli)** – A CLI to generate RIVE animations programmatically
+- 🎨 **[ReavesHQ](https://reaveshq.com)** – A web design company
+- 🧼 **BLOCK** – An artisanal soap company, a physical non-tech business with my family
 
 <div align="center">
 
