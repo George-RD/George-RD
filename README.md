@@ -6,7 +6,7 @@
 
 </div>
 
-I'm currently having fun with creating:
+### 🚀 Currently having fun creating:
 
 - 📱 A children's iOS app called **Yarnling**
 - 🧠 A memory system called **[MAG](https://github.com/George-RD/mag)** (memory augmented generation)
