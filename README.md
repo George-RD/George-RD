@@ -12,11 +12,11 @@ I'm currently having fun with creating:
 - 🧠 A memory system called **[MAG](https://github.com/George-RD/mag)** (memory augmented generation)
 - 🎬 A CLI to generate RIVE animations, so that I can create agent skills to do it programmatically. **[(to be named)](https://github.com/george-rd/rive-rs-cli)**
 - 🎨 A web design company called **[ReavesHQ](https://reaveshq.com)**
-- 🧼 Making an artisanal soap company called **BLOCK**, so I can have a physical non-tech business to do with my wife and children.
+- 🧼 Making an artisanal Marshamllow company **[OG Mallow](https://ogmallow.com)** a physical non-tech business to do with my wife and children (also - I didnt know marshamallows could be this good!)
 
 <div align="center">
 
-[![George-RD's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=George-RD&theme=nightowl&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+[![Tokscale Stats](https://tokscale.ai/api/embed/George-RD/svg?template=minimal&color=purple&graph=1&rank=percent&tokens=compact&cost=compact)](https://tokscale.ai/u/George-RD)
 
 </div>
 
