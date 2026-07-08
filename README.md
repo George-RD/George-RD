@@ -2,6 +2,9 @@
 
 ## Hi there, I'm George 👋
 
+[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=George-RD&theme=nightowl&hide_border=true&show_icons=true)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=George-RD&theme=nightowl&hide_border=true&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+<br />
 [![GitHub Streak](https://streak-stats.demolab.com/?user=George-RD&theme=nightowl&hide_border=true)](https://git.io/streak-stats)
 
 </div>
