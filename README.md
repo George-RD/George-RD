@@ -1,12 +1,12 @@
 <div align="center">
 
-## Hi there, I'm George 👋
+# Hi there, I'm George 👋
 
 [![GitHub Streak](https://streak-stats.demolab.com/?user=George-RD&theme=nightowl&hide_border=true)](https://git.io/streak-stats)
 
 </div>
 
-I'm currently having fun with creating:
+## 🚀 What I'm currently creating:
 
 - 📱 A children's iOS app called **Yarnling**
 - 🧠 A memory system called **[MAG](https://github.com/George-RD/mag)** (memory augmented generation)
