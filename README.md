@@ -1,36 +1,27 @@
-<div align="center">
+# George Reid-Dowd
 
-## Hi there, I'm George 👋
+Product and technology leader building the missing capability across operations, AI systems and physical workflows.
 
-[![GitHub Streak](https://streak-stats.demolab.com/?user=George-RD&theme=nightowl&hide_border=true)](https://git.io/streak-stats)
+I learn unfamiliar domains by making their rules explicit, testable and reusable. Some projects become tools I keep using. Others remain honest experiments that changed how I understand the problem.
 
-</div>
+**[Portfolio and career evidence →](https://georgerd.com/)** · Abu Dhabi, UAE
 
-I'm currently having fun with creating:
+## Flagship systems
 
-- 📱 A children's iOS app called **Yarnling**
-- 🧠 A memory system called **[MAG](https://github.com/George-RD/mag)** (memory augmented generation)
-- 🎬 A CLI to generate RIVE animations, so that I can create agent skills to do it programmatically. **[(to be named)](https://github.com/george-rd/rive-rs-cli)**
-- 🎨 A web design company called **[ReavesHQ](https://reaveshq.com)**
-- 🧼 Making an artisanal Marshamllow company **[OG Mallow](https://ogmallow.com)** a physical non-tech business to do with my wife and children (also - I didnt know marshamallows could be this good!)
+- **[Cairn](https://cairn-framework.github.io/cairn/)** — architecture memory and drift enforcement for coding agents. [Source](https://github.com/cairn-framework/cairn)
+- **[MAG](https://george-rd.github.io/mag/)** — portable, local-first memory shared across AI tools. [Source](https://github.com/George-RD/mag)
+- **[OpenSpine](https://george-rd.github.io/openspine/)** — a governed runtime for agents trusted with real actions. [Source](https://github.com/George-RD/openspine)
+- **[Rive CLI](https://george-rd.github.io/rive-rs-cli/)** — deterministic inspection, rendering and evaluation for Rive files. [Source](https://github.com/George-RD/rive-rs-cli)
 
-<div align="center">
+## Tools and experiments
 
-[![Tokscale Stats](https://tokscale.ai/api/embed/George-RD/svg?template=minimal&color=purple&graph=1&rank=percent&tokens=compact&cost=compact)](https://tokscale.ai/u/George-RD)
+- **[Design Studio](https://george-rd.github.io/design-studio/)** — separates design direction, implementation and blind evaluation. [Source](https://github.com/George-RD/design-studio)
+- **[Growth Arsenal](https://george-rd.github.io/growth-arsenal/)** — pressure-tests offers, lead plans and customer copy. [Source](https://github.com/George-RD/growth-arsenal)
+- **[MeerK40t CLI](https://george-rd.github.io/cli-anything-meerk40t/)** — gives agents a safety-gated path to a real laser engraver. [Source](https://github.com/George-RD/cli-anything-meerk40t)
+- **[Hologlyph](https://george-rd.github.io/hologlyph/)** — a web-native talking head built from text, speech and expression. [Source](https://github.com/George-RD/hologlyph)
 
-</div>
+## Products and ventures
 
-<!--
-**George-RD/George-RD** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- **Yarnling** — a private TestFlight product where a child's toy becomes a persistent story character. [Case study](https://georgerd.com/#proof)
+- **[ReavesHQ](https://www.reaveshq.com/)** — assistants that work across real communication and operating systems.
+- **[OG Mallow](https://ogmallow.com/)** — a family physical-product venture spanning recipe, compliance, production and sales.
