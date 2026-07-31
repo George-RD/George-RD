@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720" role="img" aria-labelledby="title desc">
   <title id="title">George Reid-Dowd</title>
-  <desc id="desc">A mobile editorial field-dossier header with an animated route from field product work to public systems.</desc>
+  <desc id="desc">A mobile editorial header with an animated route from field product work to public systems.</desc>
   <!-- Hallmark · genre: editorial-operational · macrostructure: Workbench · pre-emit critique: P5 H5 E5 S5 R5 V5 -->
   <style>
     :root {
@@ -76,9 +76,10 @@
 
   <rect class="paper" width="720" height="720" />
   <rect class="edge" x="1" y="1" width="718" height="718" />
-  <line class="rule" x1="42" y1="62" x2="678" y2="62" />
-  <text class="kicker" x="44" y="42">FIELD DOSSIER / 2026</text>
-  <text class="meta" x="676" y="42" text-anchor="end">ABU DHABI / UAE</text>
+  <line class="rule" x1="42" y1="78" x2="678" y2="78" />
+  <text class="kicker" x="44" y="34">PRODUCT + TECHNOLOGY</text>
+  <text class="kicker" x="44" y="58">FROM FIRST VERSION TO DAILY USE</text>
+  <text class="meta" x="676" y="34" text-anchor="end">ABU DHABI / UAE</text>
 
   <text class="name" x="42" y="154">GEORGE</text>
   <text class="name" x="42" y="229">REID-DOWD</text>
