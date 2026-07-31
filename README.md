@@ -4,7 +4,7 @@
 </picture>
 
 <p align="center">
-  <a href="https://georgerd.com/"><strong>Portfolio and career evidence</strong></a>
+  <a href="https://georgerd.com/"><strong>Portfolio</strong></a>
   &nbsp;·&nbsp;
   <a href="mailto:george@reid-dowd.me"><strong>Contact</strong></a><br />
   <sub>ABU DHABI, UAE</sub>
