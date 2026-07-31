@@ -1,0 +1,62 @@
+name: Update Tokscale dossier
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * *"
+  push:
+    branches:
+      - main
+  pull_request:
+    paths:
+      - "README.md"
+      - "assets/tokscale-dossier.svg"
+      - "assets/tokscale-dossier.json"
+      - "scripts/render-tokscale-dossier.mjs"
+      - ".github/workflows/tokscale-dossier.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Validate renderer syntax
+        run: node --check scripts/render-tokscale-dossier.mjs
+
+      - name: Render Tokscale dossier
+        run: |
+          node scripts/render-tokscale-dossier.mjs \
+            --username George-RD \
+            --out assets/tokscale-dossier.svg \
+            --meta assets/tokscale-dossier.json
+
+      - name: Check generated files exist
+        run: |
+          test -s assets/tokscale-dossier.svg
+          test -s assets/tokscale-dossier.json
+
+      - name: Commit generated dossier
+        if: github.event_name != 'pull_request'
+        run: |
+          if git diff --quiet -- assets/tokscale-dossier.svg assets/tokscale-dossier.json; then
+            echo "Tokscale dossier is already current."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/tokscale-dossier.svg assets/tokscale-dossier.json
+          git commit -m "Refresh Tokscale dossier"
+          git push
