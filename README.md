@@ -76,6 +76,14 @@ Makes interactive Rive files inspectable from the command line. People and agent
 
 My current work is converging on one problem. Agents need to remember past work, understand the system, receive limited authority and act through a safe path.
 
+## AI activity trace
+
+A public readout of recent AI-tool activity, rendered from my Tokscale profile in the same field-instrument style as this page.
+
+<a href="https://tokscale.ai/u/George-RD">
+  <img src="assets/tokscale-dossier.svg" width="100%" alt="Tokscale AI activity trace for George-RD, generated from public token usage data." />
+</a>
+
 ## Contact
 
 **Start with the problem.**
