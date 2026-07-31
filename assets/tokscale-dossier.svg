@@ -1,20 +1,48 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
   <title id="title">George-RD Tokscale activity trace</title>
-  <desc id="desc">A placeholder field instrument for the public Tokscale profile. The scheduled workflow refreshes this asset from live Tokscale data.</desc>
+  <desc id="desc">64.5B all-time tokens, $37.8K estimated all-time cost, 29 active days in the current 30-day window.</desc>
+  <!-- Generated from https://tokscale.ai/api/users/George-RD at 2026-07-31T15:35:26.281Z -->
   <style>
+    :root {
+      --paper: #f1ede4;
+      --paper-deep: #e4ded1;
+      --ink: #10231f;
+      --ink-soft: #304943;
+      --rust: #c9482b;
+      --rust-dark: #9f341f;
+      --tide: #173e50;
+      --field: #445d50;
+      --signal: #e9be48;
+      --line: #b9b2a5;
+      --display: "Arial Narrow", "Avenir Next Condensed", "Helvetica Neue", sans-serif;
+      --body: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
+      --mono: ui-monospace, "SFMono-Regular", Consolas, monospace;
+      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+    }
     .paper { fill: #f1ede4; }
     .edge, .rule, .grid { fill: none; stroke: #b9b2a5; }
     .edge { stroke: #10231f; stroke-width: 2; }
     .rule { stroke-width: 1; }
     .grid { stroke-width: 1; opacity: 0.55; }
     .kicker { fill: #c9482b; font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; font-size: 14px; font-weight: 700; letter-spacing: 2px; }
-    .meta, .label, .stamp { fill: #304943; font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; font-size: 11px; font-weight: 700; letter-spacing: 1px; }
-    .title { fill: #10231f; font-family: "Arial Narrow", "Avenir Next Condensed", "Helvetica Neue", sans-serif; font-size: 37px; font-weight: 800; letter-spacing: -0.5px; }
-    .copy { fill: #304943; font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif; font-size: 15px; font-weight: 600; }
-    .bar { fill: #e4ded1; stroke: #b9b2a5; stroke-width: 0.6; transform-box: fill-box; transform-origin: bottom; animation: rise 820ms cubic-bezier(0.16, 1, 0.3, 1) both; animation-delay: var(--delay); }
-    .trace { fill: none; stroke: #c9482b; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 1600ms cubic-bezier(0.16, 1, 0.3, 1) forwards; }
-    .node-ring { fill: #f1ede4; stroke: #10231f; stroke-width: 2; }
-    .node-core { fill: #e9be48; }
+    .meta, .metric-label, .model-label { fill: #304943; font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; font-size: 11px; font-weight: 700; letter-spacing: 1px; }
+    .metric-value { fill: #10231f; font-family: "Arial Narrow", "Avenir Next Condensed", "Helvetica Neue", sans-serif; font-size: 36px; font-weight: 800; letter-spacing: -0.5px; }
+    .metric-note { fill: #304943; font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif; font-size: 12px; font-weight: 600; }
+    .chart-title { fill: #10231f; font-family: "Arial Narrow", "Avenir Next Condensed", "Helvetica Neue", sans-serif; font-size: 21px; font-weight: 800; letter-spacing: 0.3px; }
+    .chart-note, .model-name { fill: #304943; font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif; font-size: 13px; font-weight: 600; }
+    .model-value { fill: #10231f; font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.7px; }
+    .trace { fill: none; stroke: #c9482b; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 1600ms var(--ease-out) forwards; }
+    .bar { transform-box: fill-box; transform-origin: bottom; animation: rise 820ms var(--ease-out) both; animation-delay: var(--delay); }
+    .i0 { fill: #e4ded1; stroke: #b9b2a5; stroke-width: 0.6; }
+    .i1 { fill: #c9b99a; }
+    .i2 { fill: #445d50; }
+    .i3 { fill: #173e50; }
+    .i4 { fill: #c9482b; }
+    .mix-input { fill: #c9482b; }
+    .mix-output { fill: #e9be48; }
+    .mix-cache { fill: #173e50; }
+    .mix-reasoning { fill: #445d50; }
+    .stamp { fill: #304943; font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; font-size: 10px; font-weight: 600; letter-spacing: 0.75px; }
     @keyframes draw { to { stroke-dashoffset: 0; } }
     @keyframes rise { from { transform: scaleY(0.08); opacity: 0.35; } to { transform: scaleY(1); opacity: 1; } }
     @media (prefers-reduced-motion: reduce) {
@@ -29,31 +57,68 @@
   <text class="kicker" x="58" y="39">TOKSCALE / AI ACTIVITY TRACE</text>
   <text class="meta" x="1142" y="39" text-anchor="end">PUBLIC PROFILE / SCHEDULED REFRESH</text>
 
-  <text class="label" x="58" y="104">DATA SOURCE</text>
-  <text class="title" x="58" y="143">TOKSCALE.AI/U/GEORGE-RD</text>
-  <text class="copy" x="58" y="177">This field instrument is regenerated from the public Tokscale API.</text>
-  <text class="copy" x="58" y="203">The first scheduled refresh will replace this scaffold with live token, cost, model and activity data.</text>
-  <text class="stamp" x="58" y="247">STATUS / WAITING FOR FIRST REFRESH</text>
+  <text class="metric-label" x="58" y="96">ALL TIME TOKENS</text>
+  <text class="metric-value" x="58" y="130">64.5B</text>
+  <text class="metric-note" x="58" y="153">$37.8K ESTIMATED COST</text>
+  <text class="metric-label" x="314" y="96">30 DAY TOKENS</text>
+  <text class="metric-value" x="314" y="130">46.6B</text>
+  <text class="metric-note" x="314" y="153">29 ACTIVE DAYS</text>
+  <text class="metric-label" x="58" y="180">GLOBAL RANK</text>
+  <text class="metric-value" x="58" y="214">#126</text>
+  <text class="metric-note" x="58" y="237">TOKENS SORT / George-RD</text>
+  <text class="metric-label" x="314" y="180">SUBMISSIONS</text>
+  <text class="metric-value" x="314" y="214">31</text>
+  <text class="metric-note" x="314" y="237">35.9K SESSIONS</text>
 
-  <text class="label" x="642" y="96">30 DAY ACTIVITY FIELD</text>
+  <text class="model-label" x="58" y="249">TOKEN MIX</text>
+  <rect x="58" y="260" width="478" height="12" fill="#e4ded1" />
+  <rect class="mix-input" x="58.0" y="260" width="24.8" height="12" /><title>input · 5.2%</title>
+    <rect class="mix-output" x="82.8" y="260" width="3.0" height="12" /><title>output · 0.4%</title>
+    <rect class="mix-cache" x="85.8" y="260" width="451.2" height="12" /><title>cache · 94.4%</title>
+    <rect class="mix-reasoning" x="537.0" y="260" width="3.0" height="12" /><title>reasoning · 0%</title>
+  <text class="stamp" x="58" y="294">INPUT 5.2% / OUTPUT 0.4% / CACHE 94.4% / REASONING 0%</text>
+
+  <text class="chart-title" x="642" y="96">30 DAY ACTIVITY FIELD</text>
+  <text class="chart-note" x="642" y="119">DATA THROUGH 2026-07-30 / HIGHEST DAY 7.41B</text>
   <line class="grid" x1="642" y1="132" x2="1098" y2="132" />
   <line class="grid" x1="642" y1="168" x2="1098" y2="168" />
   <line class="grid" x1="642" y1="204" x2="1098" y2="204" />
-  <g aria-label="Pending activity bars">
-    <rect class="bar" x="646" y="197" width="7.5" height="6" rx="2" style="--delay:0ms" />
-    <rect class="bar" x="684" y="192" width="7.5" height="11" rx="2" style="--delay:70ms" />
-    <rect class="bar" x="722" y="184" width="7.5" height="19" rx="2" style="--delay:140ms" />
-    <rect class="bar" x="760" y="176" width="7.5" height="27" rx="2" style="--delay:210ms" />
-    <rect class="bar" x="798" y="169" width="7.5" height="34" rx="2" style="--delay:280ms" />
-    <rect class="bar" x="836" y="159" width="7.5" height="44" rx="2" style="--delay:350ms" />
-    <rect class="bar" x="874" y="151" width="7.5" height="52" rx="2" style="--delay:420ms" />
-    <rect class="bar" x="912" y="143" width="7.5" height="60" rx="2" style="--delay:490ms" />
-    <rect class="bar" x="950" y="134" width="7.5" height="69" rx="2" style="--delay:560ms" />
-    <rect class="bar" x="988" y="125" width="7.5" height="78" rx="2" style="--delay:630ms" />
+  <g aria-label="Daily activity bars">
+    <rect class="bar i2" x="642.0" y="169" width="7.5" height="34" rx="2" style="--delay:0ms"><title>2026-07-02 · 3.55B tokens</title></rect>
+    <rect class="bar i2" x="655.0" y="182" width="7.5" height="21" rx="2" style="--delay:22ms"><title>2026-07-03 · 2.12B tokens</title></rect>
+    <rect class="bar i1" x="668.0" y="199" width="7.5" height="4" rx="2" style="--delay:44ms"><title>2026-07-04 · 275M tokens</title></rect>
+    <rect class="bar i1" x="681.0" y="199" width="7.5" height="4" rx="2" style="--delay:66ms"><title>2026-07-05 · 188M tokens</title></rect>
+    <rect class="bar i1" x="694.0" y="196" width="7.5" height="7" rx="2" style="--delay:88ms"><title>2026-07-06 · 738M tokens</title></rect>
+    <rect class="bar i1" x="707.0" y="191" width="7.5" height="12" rx="2" style="--delay:110ms"><title>2026-07-07 · 1.2B tokens</title></rect>
+    <rect class="bar i1" x="720.0" y="198" width="7.5" height="5" rx="2" style="--delay:132ms"><title>2026-07-08 · 475M tokens</title></rect>
+    <rect class="bar i1" x="733.0" y="198" width="7.5" height="5" rx="2" style="--delay:154ms"><title>2026-07-09 · 470M tokens</title></rect>
+    <rect class="bar i1" x="746.0" y="191" width="7.5" height="12" rx="2" style="--delay:176ms"><title>2026-07-10 · 1.19B tokens</title></rect>
+    <rect class="bar i1" x="759.0" y="197" width="7.5" height="6" rx="2" style="--delay:198ms"><title>2026-07-11 · 619M tokens</title></rect>
+    <rect class="bar i1" x="772.0" y="197" width="7.5" height="6" rx="2" style="--delay:220ms"><title>2026-07-12 · 666M tokens</title></rect>
+    <rect class="bar i1" x="785.0" y="195" width="7.5" height="8" rx="2" style="--delay:242ms"><title>2026-07-13 · 835M tokens</title></rect>
+    <rect class="bar i1" x="798.0" y="196" width="7.5" height="7" rx="2" style="--delay:264ms"><title>2026-07-14 · 744M tokens</title></rect>
+    <rect class="bar i1" x="811.0" y="196" width="7.5" height="7" rx="2" style="--delay:286ms"><title>2026-07-15 · 721M tokens</title></rect>
+    <rect class="bar i2" x="824.0" y="171" width="7.5" height="32" rx="2" style="--delay:308ms"><title>2026-07-16 · 3.34B tokens</title></rect>
+    <rect class="bar i4" x="837.0" y="131" width="7.5" height="72" rx="2" style="--delay:330ms"><title>2026-07-17 · 7.41B tokens</title></rect>
+    <rect class="bar i4" x="850.0" y="137" width="7.5" height="66" rx="2" style="--delay:352ms"><title>2026-07-18 · 6.77B tokens</title></rect>
+    <rect class="bar i1" x="863.0" y="198" width="7.5" height="5" rx="2" style="--delay:374ms"><title>2026-07-19 · 473M tokens</title></rect>
+    <rect class="bar i1" x="876.0" y="199" width="7.5" height="4" rx="2" style="--delay:396ms"><title>2026-07-20 · 10M tokens</title></rect>
+    <rect class="bar i1" x="889.0" y="195" width="7.5" height="8" rx="2" style="--delay:418ms"><title>2026-07-21 · 866M tokens</title></rect>
+    <rect class="bar i1" x="902.0" y="198" width="7.5" height="5" rx="2" style="--delay:440ms"><title>2026-07-22 · 488M tokens</title></rect>
+    <rect class="bar i2" x="915.0" y="179" width="7.5" height="24" rx="2" style="--delay:462ms"><title>2026-07-23 · 2.43B tokens</title></rect>
+    <rect class="bar i2" x="928.0" y="189" width="7.5" height="14" rx="2" style="--delay:484ms"><title>2026-07-24 · 1.48B tokens</title></rect>
+    <rect class="bar i1" x="941.0" y="195" width="7.5" height="8" rx="2" style="--delay:506ms"><title>2026-07-25 · 847M tokens</title></rect>
+    <rect class="bar i2" x="954.0" y="183" width="7.5" height="20" rx="2" style="--delay:528ms"><title>2026-07-26 · 2.08B tokens</title></rect>
+    <rect class="bar i2" x="967.0" y="171" width="7.5" height="32" rx="2" style="--delay:550ms"><title>2026-07-27 · 3.29B tokens</title></rect>
+    <rect class="bar i1" x="980.0" y="190" width="7.5" height="13" rx="2" style="--delay:572ms"><title>2026-07-28 · 1.3B tokens</title></rect>
+    <rect class="bar i1" x="993.0" y="197" width="7.5" height="6" rx="2" style="--delay:594ms"><title>2026-07-29 · 638M tokens</title></rect>
+    <rect class="bar i2" x="1006.0" y="190" width="7.5" height="13" rx="2" style="--delay:616ms"><title>2026-07-30 · 1.35B tokens</title></rect>
   </g>
-  <path class="trace" pathLength="1" d="M646 197L684 192L722 184L760 176L798 169L836 159L874 151L912 143L950 134L988 125" />
-  <g transform="translate(646 197)"><circle class="node-ring" r="12" /><circle class="node-core" r="4" /></g>
-  <g transform="translate(988 125)"><circle class="node-ring" r="12" /><circle class="node-core" r="4" /></g>
-  <text class="stamp" x="642" y="247">LIVE DATA COMMITTED BY GITHUB ACTIONS</text>
-  <text class="stamp" x="642" y="294">SOURCE tokscale.ai/u/George-RD</text>
+  <path class="trace" pathLength="1" d="M646.0 163.6 L659.0 177.8 L672.0 194.0 L685.0 194.0 L698.0 191.6 L711.0 187.0 L724.0 194.0 L737.0 194.0 L750.0 187.1 L763.0 192.8 L776.0 192.3 L789.0 190.7 L802.0 191.6 L815.0 191.8 L828.0 165.7 L841.0 125.0 L854.0 131.4 L867.0 194.0 L880.0 194.0 L893.0 190.3 L906.0 194.0 L919.0 174.7 L932.0 184.2 L945.0 190.5 L958.0 178.2 L971.0 166.1 L984.0 186.0 L997.0 192.6 L1010.0 185.5" />
+
+  <text class="model-label" x="642" y="225">TOP MODELS IN WINDOW</text>
+  <text class="model-name" x="642" y="245">gpt-5.6-sol</text><text class="model-value" x="1098" y="245" text-anchor="end">13.3B</text>
+  <text class="model-name" x="642" y="266">claude-fable-5</text><text class="model-value" x="1098" y="266" text-anchor="end">5.54B</text>
+  <text class="model-name" x="642" y="287">claude-opus-5</text><text class="model-value" x="1098" y="287" text-anchor="end">4.82B</text>
+  <text class="stamp" x="642" y="294">SOURCE tokScale.ai/u/George-RD / GENERATED 31 JUL 2026</text>
 </svg>
