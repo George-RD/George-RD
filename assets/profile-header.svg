@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" role="img" aria-labelledby="title desc">
+  <title id="title">George Reid-Dowd</title>
+  <desc id="desc">An editorial field-dossier header with an animated route from field product work to operating capability and public systems.</desc>
+  <!-- Hallmark · genre: editorial-operational · macrostructure: Workbench · pre-emit critique: P5 H5 E5 S5 R5 V5 -->
+  <style>
+    :root {
+      --paper: #f1ede4;
+      --paper-deep: #e4ded1;
+      --ink: #10231f;
+      --ink-soft: #304943;
+      --rust: #c9482b;
+      --tide: #173e50;
+      --signal: #e9be48;
+      --line: #b9b2a5;
+      --display: "Arial Narrow", "Avenir Next Condensed", "Helvetica Neue", sans-serif;
+      --body: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
+      --mono: ui-monospace, "SFMono-Regular", Consolas, monospace;
+      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .paper { fill: var(--paper); }
+    .edge { fill: none; stroke: var(--ink); stroke-width: 2; }
+    .rule { stroke: var(--line); stroke-width: 1; }
+    .kicker { fill: var(--rust); font: 700 14px var(--mono); letter-spacing: 2.2px; }
+    .meta { fill: var(--ink-soft); font: 650 12px var(--mono); letter-spacing: 1.4px; }
+    .name { fill: var(--ink); font: 850 86px var(--display); letter-spacing: -2.5px; }
+    .statement { fill: var(--ink); font: 680 20px var(--body); letter-spacing: 0.2px; }
+    .contour {
+      fill: none;
+      stroke: var(--tide);
+      stroke-width: 1.35;
+      opacity: 0.18;
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: swell 15s ease-in-out infinite alternate;
+    }
+    .contour.alt { animation-name: undertow; animation-duration: 18s; animation-delay: -7s; }
+    .contour.late { animation-duration: 21s; animation-delay: -12s; }
+    .route {
+      fill: none;
+      stroke: var(--rust);
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: 1;
+      stroke-dashoffset: 1;
+      animation: draw-route 1.8s var(--ease-out) 180ms forwards;
+    }
+    .node-ring { fill: var(--paper); stroke: var(--ink); stroke-width: 2; }
+    .node-core { fill: var(--signal); }
+    .node-label { fill: var(--ink); font: 750 12px var(--mono); letter-spacing: 1px; }
+    .node-note { fill: var(--ink-soft); font: 600 12px var(--body); }
+    .node {
+      opacity: 0;
+      animation: settle 720ms var(--ease-out) forwards;
+    }
+    .node.one { animation-delay: 520ms; }
+    .node.two { animation-delay: 900ms; }
+    .node.three { animation-delay: 1280ms; }
+    .coordinate { fill: var(--ink-soft); font: 600 11px var(--mono); letter-spacing: 1px; }
+    @keyframes draw-route { to { stroke-dashoffset: 0; } }
+    @keyframes settle {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes swell {
+      0% { transform: translate(-9px, 3px) scale(1.012, 0.98); }
+      50% { transform: translate(5px, -5px) scale(0.996, 1.03); }
+      100% { transform: translate(10px, 2px) scale(1.006, 0.99); }
+    }
+    @keyframes undertow {
+      0% { transform: translate(10px, -3px) scale(0.994, 1.025); }
+      52% { transform: translate(-5px, 5px) scale(1.008, 0.975); }
+      100% { transform: translate(-11px, -1px) scale(1.002, 1.03); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .contour, .route, .node { animation: none; }
+      .route { stroke-dashoffset: 0; }
+      .node { opacity: 1; }
+    }
+  </style>
+
+  <rect class="paper" width="1200" height="400" />
+  <rect class="edge" x="1" y="1" width="1198" height="398" />
+  <line class="rule" x1="54" y1="58" x2="1146" y2="58" />
+  <text class="kicker" x="58" y="39">FIELD DOSSIER / PRODUCT + TECHNOLOGY</text>
+  <text class="meta" x="1142" y="39" text-anchor="end">ABU DHABI / UAE</text>
+
+  <text class="name" x="58" y="158">GEORGE</text>
+  <text class="name" x="58" y="242">REID-DOWD</text>
+  <text class="statement" x="62" y="312">I TURN UNCLEAR, CONSEQUENTIAL PROBLEMS</text>
+  <text class="statement" x="62" y="340">INTO SYSTEMS PEOPLE CAN USE.</text>
+  <text class="coordinate" x="62" y="374">OPERATIONS / AI SYSTEMS / NEW PRODUCTS</text>
+
+  <g aria-hidden="true">
+    <path class="contour" d="M602 311C690 239 756 236 825 253c81 20 128 65 222 39 62-17 99-48 164-36" />
+    <path class="contour alt" d="M591 337C687 258 758 256 831 275c83 22 130 65 225 39 65-18 103-51 173-38" />
+    <path class="contour late" d="M610 365C700 291 771 287 845 307c85 23 132 62 229 39 62-15 101-46 151-38" />
+    <path class="contour alt late" d="M675 121C741 77 813 75 875 95c68 22 103 55 179 35 52-14 87-40 145-27" />
+  </g>
+
+  <path class="route" pathLength="1" d="M678 320C710 239 756 220 816 217S913 177 944 129s82-59 150-37" />
+
+  <g class="node one" transform="translate(678 320)">
+    <circle class="node-ring" r="14" />
+    <circle class="node-core" r="5" />
+    <text class="node-label" x="25" y="-10">FIELD PRODUCT</text>
+    <text class="node-note" x="25" y="10">build / test / operate</text>
+  </g>
+  <g class="node two" transform="translate(816 217)">
+    <circle class="node-ring" r="14" />
+    <circle class="node-core" r="5" />
+    <text class="node-label" x="25" y="-10">OPERATING CAPABILITY</text>
+    <text class="node-note" x="25" y="10">people / systems / service</text>
+  </g>
+  <g class="node three" transform="translate(1094 92)">
+    <circle class="node-ring" r="14" />
+    <circle class="node-core" r="5" />
+    <text class="node-label" x="-25" y="28" text-anchor="end">PUBLIC SYSTEMS</text>
+    <text class="node-note" x="-25" y="47" text-anchor="end">memory / authority / action</text>
+  </g>
+</svg>
