@@ -1,36 +1,83 @@
-<div align="center">
+<picture>
+  <source media="(max-width: 640px)" srcset="assets/profile-header-mobile.svg" />
+  <img src="assets/profile-header.svg" width="100%" alt="George Reid-Dowd, product and technology leader across operations, AI systems and new products." />
+</picture>
 
-## Hi there, I'm George 👋
+<p align="center">
+  <a href="https://georgerd.com/"><strong>Portfolio and career evidence</strong></a>
+  &nbsp;·&nbsp;
+  <a href="mailto:george@reid-dowd.me"><strong>Contact</strong></a><br />
+  <sub>ABU DHABI, UAE</sub>
+</p>
 
-[![GitHub Streak](https://streak-stats.demolab.com/?user=George-RD&theme=nightowl&hide_border=true)](https://git.io/streak-stats)
+# George Reid-Dowd
 
-</div>
+I take unclear, important work from the first useful version to something people can rely on. My background runs from commercial uncrewed vessels and regional remote operations to private AI memory, safe agent access and tools that control real machines.
 
-I'm currently having fun with creating:
+The pattern is consistent. I find what is failing and build a working version. Then I test it with the people who depend on it until it holds up in daily use.
 
-- 📱 A children's iOS app called **Yarnling**
-- 🧠 A memory system called **[MAG](https://github.com/George-RD/mag)** (memory augmented generation)
-- 🎬 A CLI to generate RIVE animations, so that I can create agent skills to do it programmatically. **[(to be named)](https://github.com/george-rd/rive-rs-cli)**
-- 🎨 A web design company called **[ReavesHQ](https://reaveshq.com)**
-- 🧼 Making an artisanal Marshamllow company **[OG Mallow](https://ogmallow.com)** a physical non-tech business to do with my wife and children (also - I didnt know marshamallows could be this good!)
+## Operating thread
 
-<div align="center">
+With the team, I took a commercial uncrewed survey vessel through build, testing, marketing, sale and client work. I then used that learning to build a regional remote-operations capability. The same discipline shapes the software below.
 
-[![Tokscale Stats](https://tokscale.ai/api/embed/George-RD/svg?template=minimal&color=purple&graph=1&rank=percent&tokens=compact&cost=compact)](https://tokscale.ai/u/George-RD)
+<picture>
+  <source media="(max-width: 640px)" srcset="assets/system-map-mobile.svg" />
+  <img src="assets/system-map.svg" width="100%" alt="A system map connecting Cairn architecture, MAG memory, OpenSpine authority and Rive plus MeerK40t execution." />
+</picture>
 
-</div>
+## Flagship systems
 
-<!--
-**George-RD/George-RD** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### [Cairn](https://cairn-framework.github.io/cairn/)
 
-Here are some ideas to get you started:
+<sub>ACTIVE PUBLIC PRODUCT / ARCHITECTURE</sub>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Keeps the plan a coding agent follows tied to the code that exists. Cairn records the intended architecture, spots drift and can block a conflicting change.
+
+[Source](https://github.com/cairn-framework/cairn)
+
+### [MAG](https://george-rd.github.io/mag/)
+
+<sub>EARLY ALPHA / MEMORY</sub>
+
+Gives several AI tools one private, local-first record of decisions, fixes and handoffs. It stores exact text, meaning and relationships in one portable SQLite file.
+
+[Source](https://github.com/George-RD/mag)
+
+### [OpenSpine](https://george-rd.github.io/openspine/)
+
+<sub>WORKING ALPHA / AUTHORITY</sub>
+
+Puts a policy-controlled runtime between an assistant and real accounts. The runtime decides what the agent may access and change, rather than trusting the model with a master key.
+
+[Source](https://github.com/George-RD/openspine)
+
+### [Rive CLI](https://george-rd.github.io/rive-rs-cli/)
+
+<sub>WORKING PUBLIC BUILD / VISUAL SYSTEMS</sub>
+
+Makes interactive Rive files inspectable from the command line. People and agents can render, test and compare animation output in repeatable steps.
+
+[Source](https://github.com/George-RD/rive-rs-cli)
+
+## Applied tools
+
+- **[Design Studio](https://george-rd.github.io/design-studio/):** separates design direction, implementation and blind review before a change reaches the frontend. [Source](https://github.com/George-RD/design-studio)
+- **[Growth Arsenal](https://george-rd.github.io/growth-arsenal/):** pressure-tests offers, lead plans and customer copy, then keeps the approved decisions in the project. [Source](https://github.com/George-RD/growth-arsenal)
+- **[MeerK40t CLI](https://george-rd.github.io/cli-anything-meerk40t/):** gives an agent a safety-gated path from inspection and calibration to a verified physical engraving. [Source](https://github.com/George-RD/cli-anything-meerk40t)
+- **[Hologlyph](https://george-rd.github.io/hologlyph/):** explores a talking face for the web, driven by text, speech and expression. [Source](https://github.com/George-RD/hologlyph)
+
+## Products and ventures
+
+- **Yarnling:** a private TestFlight product where a child's toy becomes a persistent story character. [Portfolio case](https://georgerd.com/#proof)
+- **[ReavesHQ](https://www.reaveshq.com/):** assistants built for real communication and operating workflows.
+- **[OG Mallow](https://ogmallow.com/):** a family physical-product venture spanning recipe, compliance, production and sales.
+
+## Current direction
+
+My current work is converging on one problem. Agents need to remember past work, understand the system, receive limited authority and act through a safe path.
+
+## Contact
+
+**Start with the problem.**
+
+[georgerd.com](https://georgerd.com/) &nbsp;·&nbsp; [GitHub](https://github.com/George-RD) &nbsp;·&nbsp; [george@reid-dowd.me](mailto:george@reid-dowd.me)
