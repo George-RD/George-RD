@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">George-RD Tokscale activity trace</title>
+  <desc id="desc">A placeholder field instrument for the public Tokscale profile. The scheduled workflow refreshes this asset from live Tokscale data.</desc>
+  <style>
+    .paper { fill: #f1ede4; }
+    .edge, .rule, .grid { fill: none; stroke: #b9b2a5; }
+    .edge { stroke: #10231f; stroke-width: 2; }
+    .rule { stroke-width: 1; }
+    .grid { stroke-width: 1; opacity: 0.55; }
+    .kicker { fill: #c9482b; font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; font-size: 14px; font-weight: 700; letter-spacing: 2px; }
+    .meta, .label, .stamp { fill: #304943; font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; font-size: 11px; font-weight: 700; letter-spacing: 1px; }
+    .title { fill: #10231f; font-family: "Arial Narrow", "Avenir Next Condensed", "Helvetica Neue", sans-serif; font-size: 37px; font-weight: 800; letter-spacing: -0.5px; }
+    .copy { fill: #304943; font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif; font-size: 15px; font-weight: 600; }
+    .bar { fill: #e4ded1; stroke: #b9b2a5; stroke-width: 0.6; transform-box: fill-box; transform-origin: bottom; animation: rise 820ms cubic-bezier(0.16, 1, 0.3, 1) both; animation-delay: var(--delay); }
+    .trace { fill: none; stroke: #c9482b; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 1600ms cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+    .node-ring { fill: #f1ede4; stroke: #10231f; stroke-width: 2; }
+    .node-core { fill: #e9be48; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    @keyframes rise { from { transform: scaleY(0.08); opacity: 0.35; } to { transform: scaleY(1); opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) {
+      .trace, .bar { animation: none; }
+      .trace { stroke-dashoffset: 0; }
+    }
+  </style>
+
+  <rect class="paper" width="1200" height="320" />
+  <rect class="edge" x="1" y="1" width="1198" height="318" />
+  <line class="rule" x1="58" y1="58" x2="1142" y2="58" />
+  <text class="kicker" x="58" y="39">TOKSCALE / AI ACTIVITY TRACE</text>
+  <text class="meta" x="1142" y="39" text-anchor="end">PUBLIC PROFILE / SCHEDULED REFRESH</text>
+
+  <text class="label" x="58" y="104">DATA SOURCE</text>
+  <text class="title" x="58" y="143">TOKSCALE.AI/U/GEORGE-RD</text>
+  <text class="copy" x="58" y="177">This field instrument is regenerated from the public Tokscale API.</text>
+  <text class="copy" x="58" y="203">The first scheduled refresh will replace this scaffold with live token, cost, model and activity data.</text>
+  <text class="stamp" x="58" y="247">STATUS / WAITING FOR FIRST REFRESH</text>
+
+  <text class="label" x="642" y="96">30 DAY ACTIVITY FIELD</text>
+  <line class="grid" x1="642" y1="132" x2="1098" y2="132" />
+  <line class="grid" x1="642" y1="168" x2="1098" y2="168" />
+  <line class="grid" x1="642" y1="204" x2="1098" y2="204" />
+  <g aria-label="Pending activity bars">
+    <rect class="bar" x="646" y="197" width="7.5" height="6" rx="2" style="--delay:0ms" />
+    <rect class="bar" x="684" y="192" width="7.5" height="11" rx="2" style="--delay:70ms" />
+    <rect class="bar" x="722" y="184" width="7.5" height="19" rx="2" style="--delay:140ms" />
+    <rect class="bar" x="760" y="176" width="7.5" height="27" rx="2" style="--delay:210ms" />
+    <rect class="bar" x="798" y="169" width="7.5" height="34" rx="2" style="--delay:280ms" />
+    <rect class="bar" x="836" y="159" width="7.5" height="44" rx="2" style="--delay:350ms" />
+    <rect class="bar" x="874" y="151" width="7.5" height="52" rx="2" style="--delay:420ms" />
+    <rect class="bar" x="912" y="143" width="7.5" height="60" rx="2" style="--delay:490ms" />
+    <rect class="bar" x="950" y="134" width="7.5" height="69" rx="2" style="--delay:560ms" />
+    <rect class="bar" x="988" y="125" width="7.5" height="78" rx="2" style="--delay:630ms" />
+  </g>
+  <path class="trace" pathLength="1" d="M646 197L684 192L722 184L760 176L798 169L836 159L874 151L912 143L950 134L988 125" />
+  <g transform="translate(646 197)"><circle class="node-ring" r="12" /><circle class="node-core" r="4" /></g>
+  <g transform="translate(988 125)"><circle class="node-ring" r="12" /><circle class="node-core" r="4" /></g>
+  <text class="stamp" x="642" y="247">LIVE DATA COMMITTED BY GITHUB ACTIONS</text>
+  <text class="stamp" x="642" y="294">SOURCE tokscale.ai/u/George-RD</text>
+</svg>
