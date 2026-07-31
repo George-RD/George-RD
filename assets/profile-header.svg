@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" role="img" aria-labelledby="title desc">
   <title id="title">George Reid-Dowd</title>
-  <desc id="desc">An editorial field-dossier header with an animated route from field product work to operating capability and public systems.</desc>
+  <desc id="desc">An editorial header with an animated route from field product work to operating capability and public systems.</desc>
   <!-- Hallmark · genre: editorial-operational · macrostructure: Workbench · pre-emit critique: P5 H5 E5 S5 R5 V5 -->
   <style>
     :root {
@@ -82,7 +82,7 @@
   <rect class="paper" width="1200" height="400" />
   <rect class="edge" x="1" y="1" width="1198" height="398" />
   <line class="rule" x1="54" y1="58" x2="1146" y2="58" />
-  <text class="kicker" x="58" y="39">FIELD DOSSIER / PRODUCT + TECHNOLOGY</text>
+  <text class="kicker" x="58" y="39">PRODUCT + TECHNOLOGY / FROM FIRST VERSION TO DAILY USE</text>
   <text class="meta" x="1142" y="39" text-anchor="end">ABU DHABI / UAE</text>
 
   <text class="name" x="58" y="158">GEORGE</text>
