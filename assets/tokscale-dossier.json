@@ -1,10 +1,10 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-08-01T06:08:25.451Z",
+  "generatedAt": "2026-08-02T06:11:26.055Z",
   "username": "George-RD",
   "allTime": {
-    "rank": 128,
+    "rank": 130,
     "totalTokens": 64501314317,
     "totalCost": 37786.2956,
     "activeDays": 165,
@@ -12,10 +12,10 @@
     "sessions": 35887
   },
   "month": {
-    "totalTokens": 43019215330,
-    "totalCost": 26746.3844,
-    "activeDays": 28,
-    "contributions": 28
+    "totalTokens": 40898680872,
+    "totalCost": 25527.077899999997,
+    "activeDays": 27,
+    "contributions": 27
   },
   "clients": [
     "claude",
@@ -96,8 +96,8 @@
     },
     {
       "model": "claude-fable-5",
-      "tokens": 4632388013,
-      "cost": 6493.045644000001
+      "tokens": 4327142516,
+      "cost": 6020.199341500001
     },
     {
       "model": "claude-opus-5",
@@ -106,8 +106,8 @@
     },
     {
       "model": "claude-opus-4-8",
-      "tokens": 2677172880,
-      "cost": 2415.4245032500003
+      "tokens": 2245005488,
+      "cost": 2083.851529
     },
     {
       "model": "gpt-5.6-terra",
