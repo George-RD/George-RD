@@ -7,10 +7,12 @@ on:
   push:
     branches:
       - main
+      - agent/tokscale-model-momentum
   pull_request:
     paths:
       - "README.md"
       - "assets/tokscale-dossier.svg"
+      - "assets/tokscale-model-momentum.svg"
       - "assets/tokscale-dossier.json"
       - "scripts/render-tokscale-dossier.mjs"
       - ".github/workflows/tokscale-dossier.yml"
@@ -40,23 +42,25 @@ jobs:
           node scripts/render-tokscale-dossier.mjs \
             --username George-RD \
             --out assets/tokscale-dossier.svg \
+            --trends-out assets/tokscale-model-momentum.svg \
             --meta assets/tokscale-dossier.json
 
       - name: Check generated files exist
         run: |
           test -s assets/tokscale-dossier.svg
+          test -s assets/tokscale-model-momentum.svg
           test -s assets/tokscale-dossier.json
 
       - name: Commit generated dossier
         if: github.event_name != 'pull_request'
         run: |
-          if git diff --quiet -- assets/tokscale-dossier.svg assets/tokscale-dossier.json; then
+          if git diff --quiet -- assets/tokscale-dossier.svg assets/tokscale-model-momentum.svg assets/tokscale-dossier.json; then
             echo "Tokscale dossier is already current."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/tokscale-dossier.svg assets/tokscale-dossier.json
+          git add assets/tokscale-dossier.svg assets/tokscale-model-momentum.svg assets/tokscale-dossier.json
           git commit -m "Refresh Tokscale dossier"
           git push
