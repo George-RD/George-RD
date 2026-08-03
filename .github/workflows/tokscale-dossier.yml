@@ -71,6 +71,26 @@ jobs:
           test -s assets/contribution-lens-mobile.svg
           test -s assets/contribution-lens.json
 
+      - name: Rasterize contribution lens for visual review
+        if: github.event_name == 'pull_request'
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq librsvg2-bin
+          mkdir -p visual-check
+          rsvg-convert -w 1200 assets/contribution-lens.svg > visual-check/contribution-lens-desktop.png
+          rsvg-convert -w 720 assets/contribution-lens-mobile.svg > visual-check/contribution-lens-mobile.png
+          test -s visual-check/contribution-lens-desktop.png
+          test -s visual-check/contribution-lens-mobile.png
+
+      - name: Upload contribution lens visual check
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: contribution-lens-visual-check
+          path: visual-check/*.png
+          if-no-files-found: error
+          retention-days: 7
+
       - name: Commit generated graphics
         if: github.event_name != 'pull_request'
         run: |
