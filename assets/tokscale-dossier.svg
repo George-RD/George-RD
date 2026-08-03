@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" role="img" aria-labelledby="title desc">
   <title id="title">George-RD Tokscale activity trace</title>
   <desc id="desc">64.5B all-time tokens, $37.8K estimated all-time cost, 26 active days in the current 30-day window.</desc>
-  <!-- Generated from https://tokscale.ai/api/users/George-RD at 2026-08-03T06:33:44.517Z -->
+  <!-- Generated from https://tokscale.ai/api/users/George-RD at 2026-08-03T07:06:48.529Z -->
   <style>
     :root {
       --paper: #f1ede4;
@@ -51,8 +51,8 @@
     }
   </style>
 
-  <rect class="paper" width="1200" height="320" />
-  <rect class="edge" x="1" y="1" width="1198" height="318" />
+  <rect class="paper" width="1200" height="350" />
+  <rect class="edge" x="1" y="1" width="1198" height="348" />
   <line class="rule" x1="58" y1="58" x2="1142" y2="58" />
   <text class="kicker" x="58" y="39">TOKSCALE / AI ACTIVITY TRACE</text>
   <text class="meta" x="1142" y="39" text-anchor="end">PUBLIC PROFILE / SCHEDULED REFRESH</text>
@@ -72,11 +72,10 @@
 
   <text class="model-label" x="58" y="249">TOKEN MIX</text>
   <rect x="58" y="260" width="478" height="12" fill="#e4ded1" />
-  <rect class="mix-input" x="58.0" y="260" width="24.8" height="12" /><title>input · 5.2%</title>
-    <rect class="mix-output" x="82.8" y="260" width="3.0" height="12" /><title>output · 0.4%</title>
-    <rect class="mix-cache" x="85.8" y="260" width="451.2" height="12" /><title>cache · 94.4%</title>
-    <rect class="mix-reasoning" x="537.0" y="260" width="3.0" height="12" /><title>reasoning · 0%</title>
-  <text class="stamp" x="58" y="294">INPUT 5.2% / OUTPUT 0.4% / CACHE 94.4% / REASONING 0%</text>
+  <rect class="mix-input" x="58.0" y="260" width="24.8" height="12"><title>input · 5.2%</title></rect>
+    <rect class="mix-output" x="82.8" y="260" width="3.0" height="12"><title>output · 0.4%</title></rect>
+    <rect class="mix-cache" x="85.8" y="260" width="451.2" height="12"><title>cache · 94.4%</title></rect>
+    <rect class="mix-reasoning" x="537.0" y="260" width="3.0" height="12"><title>reasoning · 0%</title></rect>
 
   <text class="chart-title" x="642" y="96">30 DAY ACTIVITY FIELD</text>
   <text class="chart-note" x="642" y="119">DATA THROUGH 2026-07-30 / HIGHEST DAY 7.41B</text>
@@ -115,7 +114,9 @@
 
   <text class="model-label" x="642" y="225">TOP MODELS IN WINDOW</text>
   <text class="model-name" x="642" y="245">gpt-5.6-sol</text><text class="model-value" x="1098" y="245" text-anchor="end">13.3B</text>
-  <text class="model-name" x="642" y="266">claude-fable-5</text><text class="model-value" x="1098" y="266" text-anchor="end">4.28B</text>
-  <text class="model-name" x="642" y="287">claude-opus-5</text><text class="model-value" x="1098" y="287" text-anchor="end">4.82B</text>
-  <text class="stamp" x="642" y="294">SOURCE tokScale.ai/u/George-RD / GENERATED 03 AUG 2026</text>
+  <text class="model-name" x="642" y="269">claude-fable-5</text><text class="model-value" x="1098" y="269" text-anchor="end">4.28B</text>
+  <text class="model-name" x="642" y="293">claude-opus-5</text><text class="model-value" x="1098" y="293" text-anchor="end">4.82B</text>
+  <line class="rule" x1="58" y1="311" x2="1142" y2="311" />
+  <text class="stamp" x="58" y="333">INPUT 5.2% / OUTPUT 0.4% / CACHE 94.4% / REASONING 0%</text>
+  <text class="stamp" x="642" y="333">SOURCE TOKSCALE.AI/U/George-RD / GENERATED 03 AUG 2026</text>
 </svg>
