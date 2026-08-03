@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 450" role="img" aria-labelledby="title desc">
+  <title id="title">George-RD personal model momentum</title>
+  <desc id="desc">Thirty-day model activity with the latest seven days compared with the preceding seven days.</desc>
+  <!-- Generated from https://tokscale.ai/api/users/George-RD?period=month at 2026-08-03T07:06:48.535Z -->
+  <style>
+    :root {
+      --paper: #f1ede4;
+      --paper-deep: #e4ded1;
+      --ink: #10231f;
+      --ink-soft: #304943;
+      --rust: #c9482b;
+      --tide: #173e50;
+      --field: #445d50;
+      --signal: #e9be48;
+      --line: #b9b2a5;
+      --display: "Arial Narrow", "Avenir Next Condensed", "Helvetica Neue", sans-serif;
+      --body: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
+      --mono: ui-monospace, "SFMono-Regular", Consolas, monospace;
+      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .paper { fill: #f1ede4; }
+    .edge, .rule, .row-rule, .row-baseline, .recent-boundary { fill: none; stroke: #b9b2a5; }
+    .edge { stroke: #10231f; stroke-width: 2; }
+    .rule { stroke-width: 1; }
+    .row-rule { stroke-width: 0.8; opacity: 0.6; }
+    .row-baseline { stroke-width: 1; opacity: 0.8; }
+    .recent-boundary { stroke-width: 1; stroke-dasharray: 3 4; opacity: 0.7; }
+    .kicker { fill: #c9482b; font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; font-size: 14px; font-weight: 700; letter-spacing: 2px; }
+    .meta, .summary-label, .column-label, .row-rank, .stamp { fill: #304943; font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; font-weight: 700; letter-spacing: 1px; }
+    .meta { font-size: 11px; }
+    .summary-label, .column-label { font-size: 10px; }
+    .summary-value { fill: #10231f; font-family: "Arial Narrow", "Avenir Next Condensed", "Helvetica Neue", sans-serif; font-size: 23px; font-weight: 800; }
+    .summary-note { fill: #304943; font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif; font-size: 11px; font-weight: 600; }
+    .row-rank { font-size: 11px; }
+    .row-model { fill: #10231f; font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif; font-size: 15px; font-weight: 700; }
+    .row-value, .row-delta { font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; }
+    .row-value { fill: #10231f; }
+    .row-delta.up { fill: #c9482b; }
+    .row-delta.down { fill: #173e50; }
+    .row-delta.flat { fill: #445d50; }
+    .spark { fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 1300ms var(--ease-out) forwards; animation-delay: var(--delay); }
+    .spark.up { stroke: #c9482b; }
+    .spark.down { stroke: #173e50; }
+    .spark.flat { stroke: #445d50; }
+    .spark-area { opacity: 0.09; }
+    .spark-area.up, .spark-dot.up { fill: #c9482b; }
+    .spark-area.down, .spark-dot.down { fill: #173e50; }
+    .spark-area.flat, .spark-dot.flat { fill: #445d50; }
+    .spark-dot { transform-box: fill-box; transform-origin: center; animation: ping 650ms var(--ease-out) both; animation-delay: calc(var(--delay) + 900ms); }
+    .model-row { animation: reveal 500ms var(--ease-out) both; animation-delay: var(--delay); }
+    .stamp { font-size: 10px; }
+    .empty { fill: #304943; font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; font-size: 13px; font-weight: 700; letter-spacing: 1px; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    @keyframes reveal { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes ping { from { opacity: 0; transform: scale(0.3); } to { opacity: 1; transform: scale(1); } }
+    @media (prefers-reduced-motion: reduce) {
+      .spark, .spark-dot, .model-row { animation: none; }
+      .spark { stroke-dashoffset: 0; }
+    }
+  </style>
+
+  <rect class="paper" width="1200" height="450" />
+  <rect class="edge" x="1" y="1" width="1198" height="448" />
+  <line class="rule" x1="58" y1="58" x2="1142" y2="58" />
+  <text class="kicker" x="58" y="39">TOKSCALE / PERSONAL MODEL MOMENTUM</text>
+  <text class="meta" x="1142" y="39" text-anchor="end">LATEST 7 DAYS / PREVIOUS 7 DAYS</text>
+
+  <text class="summary-label" x="58" y="87">LEADING NOW</text>
+  <text class="summary-value" x="58" y="116">gpt-5.6-sol</text>
+  <text class="summary-note" x="58" y="134">1.2B IN LATEST 7D</text>
+
+  <text class="summary-label" x="420" y="87">FASTEST RISER</text>
+  <text class="summary-value" x="420" y="116">claude-fable-5</text>
+  <text class="summary-note" x="420" y="134">+15.7 PP SHARE SHIFT</text>
+
+  <text class="summary-label" x="822" y="87">7 DAY MODEL TOKENS</text>
+  <text class="summary-value" x="822" y="116">3.29B</text>
+  <text class="summary-note" x="822" y="134">28 JUL — 03 AUG</text>
+
+  <line class="rule" x1="58" y1="151" x2="1142" y2="151" />
+  <text class="column-label" x="58" y="169">RANK / MODEL</text>
+  <text class="column-label" x="355" y="169">30 DAY TRACE / DASHED LINE MARKS LATEST 7D</text>
+  <text class="column-label" x="1032" y="169" text-anchor="end">LATEST 7D</text>
+  <text class="column-label" x="1142" y="169" text-anchor="end">SHARE SHIFT</text>
+
+  <g class="model-row" style="--delay:0ms">
+    <text class="row-rank" x="58" y="202">01</text>
+    <text class="row-model" x="96" y="202">gpt-5.6-sol</text>
+    <line class="row-baseline" x1="355" y1="210" x2="895" y2="210" />
+    <line class="recent-boundary" x1="783.3" y1="180" x2="783.3" y2="211" />
+    <path class="spark-area up" d="M355.0 210.0 L355.0 210.0 L373.6 210.0 L392.2 210.0 L410.9 210.0 L429.5 210.0 L448.1 210.0 L466.7 209.7 L485.3 209.6 L504.0 207.0 L522.6 208.5 L541.2 208.6 L559.8 198.8 L578.4 182.0 L597.1 188.3 L615.7 209.0 L634.3 210.0 L652.9 210.0 L671.6 208.8 L690.2 198.4 L708.8 200.3 L727.4 209.9 L746.0 208.3 L764.7 207.9 L783.3 207.8 L801.9 208.1 L820.5 204.8 L839.1 210.0 L857.8 210.0 L876.4 210.0 L895.0 210.0 L895.0 210.0 Z" />
+    <path class="spark up" pathLength="1" d="M355.0 210.0 L373.6 210.0 L392.2 210.0 L410.9 210.0 L429.5 210.0 L448.1 210.0 L466.7 209.7 L485.3 209.6 L504.0 207.0 L522.6 208.5 L541.2 208.6 L559.8 198.8 L578.4 182.0 L597.1 188.3 L615.7 209.0 L634.3 210.0 L652.9 210.0 L671.6 208.8 L690.2 198.4 L708.8 200.3 L727.4 209.9 L746.0 208.3 L764.7 207.9 L783.3 207.8 L801.9 208.1 L820.5 204.8 L839.1 210.0 L857.8 210.0 L876.4 210.0 L895.0 210.0" />
+    <circle class="spark-dot up" cx="895.0" cy="210.0" r="3.5" />
+    <text class="row-value" x="1032" y="202" text-anchor="end">1.2B</text>
+    <text class="row-delta up" x="1142" y="202" text-anchor="end">+6.9 PP</text>
+    <line class="row-rule" x1="58" y1="221" x2="1142" y2="221" />
+  </g>
+  <g class="model-row" style="--delay:110ms">
+    <text class="row-rank" x="58" y="250">02</text>
+    <text class="row-model" x="96" y="250">claude-opus-5</text>
+    <line class="row-baseline" x1="355" y1="258" x2="895" y2="258" />
+    <line class="recent-boundary" x1="783.3" y1="228" x2="783.3" y2="259" />
+    <path class="spark-area down" d="M355.0 258.0 L355.0 258.0 L373.6 258.0 L392.2 258.0 L410.9 258.0 L429.5 258.0 L448.1 258.0 L466.7 258.0 L485.3 258.0 L504.0 258.0 L522.6 258.0 L541.2 258.0 L559.8 258.0 L578.4 258.0 L597.1 258.0 L615.7 258.0 L634.3 258.0 L652.9 258.0 L671.6 258.0 L690.2 258.0 L708.8 258.0 L727.4 252.4 L746.0 244.1 L764.7 230.0 L783.3 249.9 L801.9 256.3 L820.5 257.3 L839.1 258.0 L857.8 258.0 L876.4 258.0 L895.0 258.0 L895.0 258.0 Z" />
+    <path class="spark down" pathLength="1" d="M355.0 258.0 L373.6 258.0 L392.2 258.0 L410.9 258.0 L429.5 258.0 L448.1 258.0 L466.7 258.0 L485.3 258.0 L504.0 258.0 L522.6 258.0 L541.2 258.0 L559.8 258.0 L578.4 258.0 L597.1 258.0 L615.7 258.0 L634.3 258.0 L652.9 258.0 L671.6 258.0 L690.2 258.0 L708.8 258.0 L727.4 252.4 L746.0 244.1 L764.7 230.0 L783.3 249.9 L801.9 256.3 L820.5 257.3 L839.1 258.0 L857.8 258.0 L876.4 258.0 L895.0 258.0" />
+    <circle class="spark-dot down" cx="895.0" cy="258.0" r="3.5" />
+    <text class="row-value" x="1032" y="250" text-anchor="end">872M</text>
+    <text class="row-delta down" x="1142" y="250" text-anchor="end">-7.8 PP</text>
+    <line class="row-rule" x1="58" y1="269" x2="1142" y2="269" />
+  </g>
+  <g class="model-row" style="--delay:220ms">
+    <text class="row-rank" x="58" y="298">03</text>
+    <text class="row-model" x="96" y="298">claude-fable-5</text>
+    <line class="row-baseline" x1="355" y1="306" x2="895" y2="306" />
+    <line class="recent-boundary" x1="783.3" y1="276" x2="783.3" y2="307" />
+    <path class="spark-area up" d="M355.0 306.0 L355.0 305.8 L373.6 303.6 L392.2 295.3 L410.9 306.0 L429.5 305.0 L448.1 288.0 L466.7 295.2 L485.3 298.3 L504.0 303.4 L522.6 306.0 L541.2 306.0 L559.8 291.7 L578.4 278.0 L597.1 282.4 L615.7 301.3 L634.3 306.0 L652.9 299.6 L671.6 306.0 L690.2 306.0 L708.8 306.0 L727.4 306.0 L746.0 306.0 L764.7 306.0 L783.3 306.0 L801.9 299.8 L820.5 292.3 L839.1 306.0 L857.8 306.0 L876.4 306.0 L895.0 306.0 L895.0 306.0 Z" />
+    <path class="spark up" pathLength="1" d="M355.0 305.8 L373.6 303.6 L392.2 295.3 L410.9 306.0 L429.5 305.0 L448.1 288.0 L466.7 295.2 L485.3 298.3 L504.0 303.4 L522.6 306.0 L541.2 306.0 L559.8 291.7 L578.4 278.0 L597.1 282.4 L615.7 301.3 L634.3 306.0 L652.9 299.6 L671.6 306.0 L690.2 306.0 L708.8 306.0 L727.4 306.0 L746.0 306.0 L764.7 306.0 L783.3 306.0 L801.9 299.8 L820.5 292.3 L839.1 306.0 L857.8 306.0 L876.4 306.0 L895.0 306.0" />
+    <circle class="spark-dot up" cx="895.0" cy="306.0" r="3.5" />
+    <text class="row-value" x="1032" y="298" text-anchor="end">568M</text>
+    <text class="row-delta up" x="1142" y="298" text-anchor="end">+15.7 PP</text>
+    <line class="row-rule" x1="58" y1="317" x2="1142" y2="317" />
+  </g>
+  <g class="model-row" style="--delay:330ms">
+    <text class="row-rank" x="58" y="346">04</text>
+    <text class="row-model" x="96" y="346">gpt-5.6-terra</text>
+    <line class="row-baseline" x1="355" y1="354" x2="895" y2="354" />
+    <line class="recent-boundary" x1="783.3" y1="324" x2="783.3" y2="355" />
+    <path class="spark-area up" d="M355.0 354.0 L355.0 354.0 L373.6 354.0 L392.2 354.0 L410.9 354.0 L429.5 354.0 L448.1 353.1 L466.7 352.6 L485.3 354.0 L504.0 354.0 L522.6 354.0 L541.2 354.0 L559.8 354.0 L578.4 354.0 L597.1 329.5 L615.7 354.0 L634.3 354.0 L652.9 353.4 L671.6 350.5 L690.2 332.3 L708.8 347.3 L727.4 354.0 L746.0 336.3 L764.7 326.0 L783.3 340.3 L801.9 351.8 L820.5 346.2 L839.1 354.0 L857.8 354.0 L876.4 354.0 L895.0 354.0 L895.0 354.0 Z" />
+    <path class="spark up" pathLength="1" d="M355.0 354.0 L373.6 354.0 L392.2 354.0 L410.9 354.0 L429.5 354.0 L448.1 353.1 L466.7 352.6 L485.3 354.0 L504.0 354.0 L522.6 354.0 L541.2 354.0 L559.8 354.0 L578.4 354.0 L597.1 329.5 L615.7 354.0 L634.3 354.0 L652.9 353.4 L671.6 350.5 L690.2 332.3 L708.8 347.3 L727.4 354.0 L746.0 336.3 L764.7 326.0 L783.3 340.3 L801.9 351.8 L820.5 346.2 L839.1 354.0 L857.8 354.0 L876.4 354.0 L895.0 354.0" />
+    <circle class="spark-dot up" cx="895.0" cy="354.0" r="3.5" />
+    <text class="row-value" x="1032" y="346" text-anchor="end">562M</text>
+    <text class="row-delta up" x="1142" y="346" text-anchor="end">+0.9 PP</text>
+    <line class="row-rule" x1="58" y1="365" x2="1142" y2="365" />
+  </g>
+  <g class="model-row" style="--delay:440ms">
+    <text class="row-rank" x="58" y="394">05</text>
+    <text class="row-model" x="96" y="394">gemini-3.6-flash</text>
+    <line class="row-baseline" x1="355" y1="402" x2="895" y2="402" />
+    <line class="recent-boundary" x1="783.3" y1="372" x2="783.3" y2="403" />
+    <path class="spark-area flat" d="M355.0 402.0 L355.0 402.0 L373.6 402.0 L392.2 402.0 L410.9 402.0 L429.5 402.0 L448.1 402.0 L466.7 402.0 L485.3 402.0 L504.0 402.0 L522.6 402.0 L541.2 402.0 L559.8 402.0 L578.4 402.0 L597.1 402.0 L615.7 402.0 L634.3 402.0 L652.9 402.0 L671.6 402.0 L690.2 374.0 L708.8 389.4 L727.4 394.6 L746.0 402.0 L764.7 402.0 L783.3 402.0 L801.9 399.8 L820.5 393.1 L839.1 402.0 L857.8 402.0 L876.4 402.0 L895.0 402.0 L895.0 402.0 Z" />
+    <path class="spark flat" pathLength="1" d="M355.0 402.0 L373.6 402.0 L392.2 402.0 L410.9 402.0 L429.5 402.0 L448.1 402.0 L466.7 402.0 L485.3 402.0 L504.0 402.0 L522.6 402.0 L541.2 402.0 L559.8 402.0 L578.4 402.0 L597.1 402.0 L615.7 402.0 L634.3 402.0 L652.9 402.0 L671.6 402.0 L690.2 374.0 L708.8 389.4 L727.4 394.6 L746.0 402.0 L764.7 402.0 L783.3 402.0 L801.9 399.8 L820.5 393.1 L839.1 402.0 L857.8 402.0 L876.4 402.0 L895.0 402.0" />
+    <circle class="spark-dot flat" cx="895.0" cy="402.0" r="3.5" />
+    <text class="row-value" x="1032" y="394" text-anchor="end">66.3M</text>
+    <text class="row-delta flat" x="1142" y="394" text-anchor="end">-0.5 PP</text>
+    <line class="row-rule" x1="58" y1="413" x2="1142" y2="413" />
+  </g>
+  
+
+  <text class="stamp" x="58" y="430">BASELINE 21 JUL — 27 JUL</text>
+  <text class="stamp" x="1142" y="430" text-anchor="end">SOURCE TOKSCALE.AI/U/George-RD / GENERATED 03 AUG 2026</text>
+</svg>
