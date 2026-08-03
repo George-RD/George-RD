@@ -1,0 +1,342 @@
+{
+  "generatedAt": "2026-08-03T15:32:05.003Z",
+  "username": "George-RD",
+  "sources": {
+    "github": "https://github.com/George-RD",
+    "tokscale": "https://tokscale.ai/u/George-RD"
+  },
+  "range": {
+    "overviewStart": "2025-08-03",
+    "overviewEnd": "2026-08-08",
+    "focusStart": "2026-07-13",
+    "focusEnd": "2026-08-09"
+  },
+  "totalContributions": 11724,
+  "metrics": {
+    "activeDays": 21,
+    "mergeDays": 5,
+    "focusShare": 0.4410621761658031,
+    "topRepos": [
+      "CAIRN",
+      "OPEN"
+    ]
+  },
+  "focus": [
+    {
+      "date": "2026-07-13",
+      "contributions": 46,
+      "repository": "hologlyph",
+      "event": null,
+      "modelFamilies": {
+        "claude": 159276198,
+        "gpt": 531768002,
+        "gemini": 0,
+        "other": 143777731
+      }
+    },
+    {
+      "date": "2026-07-14",
+      "contributions": 46,
+      "repository": "cli-anything-meerk40t",
+      "event": null,
+      "modelFamilies": {
+        "claude": 104696059,
+        "gpt": 195614419,
+        "gemini": 0,
+        "other": 443531376
+      }
+    },
+    {
+      "date": "2026-07-15",
+      "contributions": 58,
+      "repository": "cairn",
+      "event": null,
+      "modelFamilies": {
+        "claude": 195277790,
+        "gpt": 276760887,
+        "gemini": 0,
+        "other": 248968697
+      }
+    },
+    {
+      "date": "2026-07-16",
+      "contributions": 131,
+      "repository": "cairn",
+      "event": null,
+      "modelFamilies": {
+        "claude": 653262758,
+        "gpt": 2033142191,
+        "gemini": 204989022,
+        "other": 444150151
+      }
+    },
+    {
+      "date": "2026-07-17",
+      "contributions": 183,
+      "repository": "cairn",
+      "event": null,
+      "modelFamilies": {
+        "claude": 1289125544,
+        "gpt": 5079390826,
+        "gemini": 208392022,
+        "other": 832257788
+      }
+    },
+    {
+      "date": "2026-07-18",
+      "contributions": 113,
+      "repository": "hologlyph",
+      "event": null,
+      "modelFamilies": {
+        "claude": 758910172,
+        "gpt": 5358659506,
+        "gemini": 0,
+        "other": 647785016
+      }
+    },
+    {
+      "date": "2026-07-19",
+      "contributions": 15,
+      "repository": "cairn",
+      "event": null,
+      "modelFamilies": {
+        "claude": 234281001,
+        "gpt": 206151289,
+        "gemini": 0,
+        "other": 32108729
+      }
+    },
+    {
+      "date": "2026-07-20",
+      "contributions": 0,
+      "repository": null,
+      "event": "explore",
+      "modelFamilies": {
+        "claude": 6532201,
+        "gpt": 3465912,
+        "gemini": 0,
+        "other": 0
+      }
+    },
+    {
+      "date": "2026-07-21",
+      "contributions": 50,
+      "repository": "hologlyph",
+      "event": null,
+      "modelFamilies": {
+        "claude": 638310413,
+        "gpt": 19787313,
+        "gemini": 9014301,
+        "other": 198973370
+      }
+    },
+    {
+      "date": "2026-07-22",
+      "contributions": 14,
+      "repository": "cairn",
+      "event": null,
+      "modelFamilies": {
+        "claude": 84275047,
+        "gpt": 236777904,
+        "gemini": 131434062,
+        "other": 35458895
+      }
+    },
+    {
+      "date": "2026-07-23",
+      "contributions": 61,
+      "repository": "cairn",
+      "event": null,
+      "modelFamilies": {
+        "claude": 73075675,
+        "gpt": 2019923579,
+        "gemini": 167579327,
+        "other": 167544837
+      }
+    },
+    {
+      "date": "2026-07-24",
+      "contributions": 32,
+      "repository": "openspine",
+      "event": null,
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 1398921117,
+        "gemini": 75277380,
+        "other": 6963395
+      }
+    },
+    {
+      "date": "2026-07-25",
+      "contributions": 24,
+      "repository": "cairn",
+      "event": null,
+      "modelFamilies": {
+        "claude": 469047778,
+        "gpt": 332946154,
+        "gemini": 44357480,
+        "other": 184016
+      }
+    },
+    {
+      "date": "2026-07-26",
+      "contributions": 55,
+      "repository": "cairn",
+      "event": null,
+      "modelFamilies": {
+        "claude": 1150798620,
+        "gpt": 931543050,
+        "gemini": 0,
+        "other": 0
+      }
+    },
+    {
+      "date": "2026-07-27",
+      "contributions": 60,
+      "repository": "cairn",
+      "event": "review",
+      "modelFamilies": {
+        "claude": 2332134119,
+        "gpt": 961691831,
+        "gemini": 0,
+        "other": 24122
+      }
+    },
+    {
+      "date": "2026-07-28",
+      "contributions": 126,
+      "repository": "growth-arsenal",
+      "event": null,
+      "modelFamilies": {
+        "claude": 674355278,
+        "gpt": 630042974,
+        "gemini": 0,
+        "other": 61743
+      }
+    },
+    {
+      "date": "2026-07-29",
+      "contributions": 38,
+      "repository": "mag",
+      "event": "review",
+      "modelFamilies": {
+        "claude": 324614635,
+        "gpt": 299715146,
+        "gemini": 13190431,
+        "other": 0
+      }
+    },
+    {
+      "date": "2026-07-30",
+      "contributions": 135,
+      "repository": "mag",
+      "event": "merge",
+      "modelFamilies": {
+        "claude": 448252197,
+        "gpt": 847905115,
+        "gemini": 53133779,
+        "other": 0
+      }
+    },
+    {
+      "date": "2026-07-31",
+      "contributions": 134,
+      "repository": "cairn",
+      "event": "merge",
+      "modelFamilies": {}
+    },
+    {
+      "date": "2026-08-01",
+      "contributions": 31,
+      "repository": "mag",
+      "event": "merge",
+      "modelFamilies": {}
+    },
+    {
+      "date": "2026-08-02",
+      "contributions": 8,
+      "repository": "cairn",
+      "event": "merge",
+      "modelFamilies": {}
+    },
+    {
+      "date": "2026-08-03",
+      "contributions": 60,
+      "repository": "cairn",
+      "event": "merge",
+      "modelFamilies": {}
+    },
+    {
+      "date": "2026-08-04",
+      "contributions": 0,
+      "repository": null,
+      "event": null,
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 0
+      }
+    },
+    {
+      "date": "2026-08-05",
+      "contributions": 0,
+      "repository": null,
+      "event": null,
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 0
+      }
+    },
+    {
+      "date": "2026-08-06",
+      "contributions": 0,
+      "repository": null,
+      "event": null,
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 0
+      }
+    },
+    {
+      "date": "2026-08-07",
+      "contributions": 0,
+      "repository": null,
+      "event": null,
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 0
+      }
+    },
+    {
+      "date": "2026-08-08",
+      "contributions": 0,
+      "repository": null,
+      "event": null,
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 0
+      }
+    },
+    {
+      "date": "2026-08-09",
+      "contributions": 0,
+      "repository": null,
+      "event": null,
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 0
+      }
+    }
+  ]
+}

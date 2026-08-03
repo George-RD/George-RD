@@ -1,0 +1,479 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-labelledby="title desc">
+  <title id="title">Contribution lens for George-RD</title>
+  <desc id="desc">A mobile contribution lens showing a year overview, the latest four weeks and three focus metrics.</desc>
+  <style>
+    .paper { fill:#f1ede4; }
+    .edge { fill:none; stroke:#10231f; stroke-width:2; }
+    .rule { stroke:#b9b2a5; stroke-width:1; }
+    .rule-strong { stroke:#10231f; stroke-width:1.2; }
+    .title { fill:#10231f; font-family:"Arial Narrow","Avenir Next Condensed","Helvetica Neue",sans-serif; font-size:30px; font-weight:900; letter-spacing:1px; }
+    .kicker,.label,.month,.day,.metric-label,.stamp { fill:#40534e; font-family:ui-monospace,"SFMono-Regular",Consolas,monospace; font-weight:700; letter-spacing:1px; }
+    .kicker { font-size:12px; fill:#c9482b; }
+    .label { font-size:11px; }
+    .month,.day { font-size:10px; }
+    .metric { fill:#10231f; font-family:"Arial Narrow","Avenir Next Condensed","Helvetica Neue",sans-serif; font-size:34px; font-weight:900; }
+    .metric-label { font-size:10px; }
+    .repo { fill:#10231f; font-family:ui-monospace,"SFMono-Regular",Consolas,monospace; font-size:11px; font-weight:800; letter-spacing:.5px; }
+    .stamp { font-size:9px; }
+    .overview-cell,.lens-cell { stroke:#f1ede4; stroke-width:1; }
+    .future { opacity:.3; }
+    .selection { fill:none; stroke:#10231f; stroke-width:2; rx:8; }
+    .connector { fill:none; stroke:#40534e; stroke-width:1; stroke-dasharray:5 5; opacity:.65; }
+    .lens-panel { fill:#f7f4ed; stroke:#10231f; stroke-width:1.3; }
+    .metric-panel { fill:#f7f4ed; stroke:#b9b2a5; stroke-width:1; }
+    .event { fill:none; stroke:#10231f; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; }
+    .event-dot { fill:#c9482b; }
+    .family-claude { fill:#c9482b; }
+    .family-gpt { fill:#4b7fa0; }
+    .family-gemini { fill:#d5a72c; }
+    .family-other { fill:#8b9d83; }
+  
+    .title{font-size:40px}.kicker{font-size:15px}.label{font-size:14px}.month,.day{font-size:12px}.repo{font-size:14px}.metric{font-size:42px}.metric-label{font-size:13px}.stamp{font-size:11px}
+  </style>
+  <rect class="paper" width="720" height="900"/>
+  <rect class="edge" x="1" y="1" width="718" height="898"/>
+  <text class="kicker" x="32" y="38">GITHUB / CONTRIBUTION LENS</text>
+  <text class="title" x="32" y="84">BUILD CADENCE</text>
+  <line class="rule-strong" x1="32" y1="100" x2="688" y2="100"/>
+  <text class="month" x="44.0" y="116.0">AUG</text>
+  <text class="month" x="104.2" y="116.0">SEPT</text>
+  <text class="month" x="152.3" y="116.0">OCT</text>
+  <text class="month" x="200.5" y="116.0">NOV</text>
+  <text class="month" x="260.7" y="116.0">DEC</text>
+  <text class="month" x="308.8" y="116.0">JAN</text>
+  <text class="month" x="357.0" y="116.0">FEB</text>
+  <text class="month" x="405.1" y="116.0">MAR</text>
+  <text class="month" x="465.3" y="116.0">APR</text>
+  <text class="month" x="513.5" y="116.0">MAY</text>
+  <text class="month" x="573.7" y="116.0">JUN</text>
+  <text class="month" x="621.8" y="116.0">JUL</text>
+  <text class="month" x="670.0" y="116.0">AUG</text>
+  <rect class="overview-cell" data-day="2025-08-03" x="44.0" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2025-08-03 · 8 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-08-04" x="44.0" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2025-08-04 · 1 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-08-05" x="44.0" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2025-08-05 · 1 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-08-06" x="44.0" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-08-06 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-08-07" x="44.0" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2025-08-07 · 4 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-08-08" x="44.0" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-08-08 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-08-09" x="44.0" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-08-09 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-08-10" x="56.0" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-08-10 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-08-11" x="56.0" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-08-11 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-08-12" x="56.0" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2025-08-12 · 5 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-08-13" x="56.0" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-08-13 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-08-14" x="56.0" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-08-14 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-08-15" x="56.0" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-08-15 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-08-16" x="56.0" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-08-16 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-08-17" x="68.1" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-08-17 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-08-18" x="68.1" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-08-18 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-08-19" x="68.1" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-08-19 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-08-20" x="68.1" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-08-20 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-08-21" x="68.1" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-08-21 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-08-22" x="68.1" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-08-22 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-08-23" x="68.1" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-08-23 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-08-24" x="80.1" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-08-24 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-08-25" x="80.1" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2025-08-25 · 7 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-08-26" x="80.1" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-08-26 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-08-27" x="80.1" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2025-08-27 · 1 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-08-28" x="80.1" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-08-28 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-08-29" x="80.1" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-08-29 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-08-30" x="80.1" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-08-30 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-08-31" x="92.2" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-08-31 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-09-01" x="92.2" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2025-09-01 · 6 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-09-02" x="92.2" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2025-09-02 · 49 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-09-03" x="92.2" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2025-09-03 · 68 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-09-04" x="92.2" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2025-09-04 · 51 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-09-05" x="92.2" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-09-05 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-09-06" x="92.2" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2025-09-06 · 26 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-09-07" x="104.2" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2025-09-07 · 2 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-09-08" x="104.2" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2025-09-08 · 27 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-09-09" x="104.2" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2025-09-09 · 2 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-09-10" x="104.2" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2025-09-10 · 8 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-09-11" x="104.2" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2025-09-11 · 8 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-09-12" x="104.2" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2025-09-12 · 2 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-09-13" x="104.2" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-09-13 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-09-14" x="116.2" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-09-14 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-09-15" x="116.2" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-09-15 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-09-16" x="116.2" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-09-16 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-09-17" x="116.2" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-09-17 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-09-18" x="116.2" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-09-18 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-09-19" x="116.2" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-09-19 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-09-20" x="116.2" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-09-20 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-09-21" x="128.3" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-09-21 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-09-22" x="128.3" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-09-22 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-09-23" x="128.3" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-09-23 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-09-24" x="128.3" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-09-24 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-09-25" x="128.3" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-09-25 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-09-26" x="128.3" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-09-26 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-09-27" x="128.3" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2025-09-27 · 2 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-09-28" x="140.3" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-09-28 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-09-29" x="140.3" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-09-29 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-09-30" x="140.3" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-09-30 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-10-01" x="140.3" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-10-01 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-10-02" x="140.3" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-10-02 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-10-03" x="140.3" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-10-03 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-10-04" x="140.3" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-10-04 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-10-05" x="152.3" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-10-05 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-10-06" x="152.3" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-10-06 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-10-07" x="152.3" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-10-07 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-10-08" x="152.3" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-10-08 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-10-09" x="152.3" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2025-10-09 · 1 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-10-10" x="152.3" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2025-10-10 · 1 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-10-11" x="152.3" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-10-11 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-10-12" x="164.4" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-10-12 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-10-13" x="164.4" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-10-13 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-10-14" x="164.4" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-10-14 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-10-15" x="164.4" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-10-15 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-10-16" x="164.4" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-10-16 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-10-17" x="164.4" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-10-17 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-10-18" x="164.4" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-10-18 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-10-19" x="176.4" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-10-19 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-10-20" x="176.4" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-10-20 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-10-21" x="176.4" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-10-21 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-10-22" x="176.4" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-10-22 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-10-23" x="176.4" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-10-23 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-10-24" x="176.4" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-10-24 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-10-25" x="176.4" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-10-25 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-10-26" x="188.5" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-10-26 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-10-27" x="188.5" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-10-27 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-10-28" x="188.5" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-10-28 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-10-29" x="188.5" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-10-29 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-10-30" x="188.5" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-10-30 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-10-31" x="188.5" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-10-31 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-11-01" x="188.5" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-11-01 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-11-02" x="200.5" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-11-02 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-11-03" x="200.5" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-11-03 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-11-04" x="200.5" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-11-04 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-11-05" x="200.5" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-11-05 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-11-06" x="200.5" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-11-06 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-11-07" x="200.5" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-11-07 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-11-08" x="200.5" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-11-08 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-11-09" x="212.5" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-11-09 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-11-10" x="212.5" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-11-10 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-11-11" x="212.5" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-11-11 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-11-12" x="212.5" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2025-11-12 · 2 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-11-13" x="212.5" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2025-11-13 · 37 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-11-14" x="212.5" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2025-11-14 · 5 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-11-15" x="212.5" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-11-15 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-11-16" x="224.6" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-11-16 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-11-17" x="224.6" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2025-11-17 · 7 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-11-18" x="224.6" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2025-11-18 · 15 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-11-19" x="224.6" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2025-11-19 · 3 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-11-20" x="224.6" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2025-11-20 · 2 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-11-21" x="224.6" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-11-21 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-11-22" x="224.6" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-11-22 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-11-23" x="236.6" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-11-23 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-11-24" x="236.6" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-11-24 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-11-25" x="236.6" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-11-25 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-11-26" x="236.6" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2025-11-26 · 1 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-11-27" x="236.6" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-11-27 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-11-28" x="236.6" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-11-28 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-11-29" x="236.6" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-11-29 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-11-30" x="248.6" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-11-30 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-12-01" x="248.6" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-12-01 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-12-02" x="248.6" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-12-02 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-12-03" x="248.6" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-12-03 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-12-04" x="248.6" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-12-04 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-12-05" x="248.6" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-12-05 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-12-06" x="248.6" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-12-06 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-12-07" x="260.7" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-12-07 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-12-08" x="260.7" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-12-08 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-12-09" x="260.7" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-12-09 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-12-10" x="260.7" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-12-10 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-12-11" x="260.7" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-12-11 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-12-12" x="260.7" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2025-12-12 · 1 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-12-13" x="260.7" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-12-13 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-12-14" x="272.7" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-12-14 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-12-15" x="272.7" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-12-15 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-12-16" x="272.7" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-12-16 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-12-17" x="272.7" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-12-17 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-12-18" x="272.7" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2025-12-18 · 2 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-12-19" x="272.7" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2025-12-19 · 1 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-12-20" x="272.7" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-12-20 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-12-21" x="284.8" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-12-21 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-12-22" x="284.8" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2025-12-22 · 45 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-12-23" x="284.8" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-12-23 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-12-24" x="284.8" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2025-12-24 · 2 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-12-25" x="284.8" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-12-25 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-12-26" x="284.8" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2025-12-26 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-12-27" x="284.8" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2025-12-27 · 1 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-12-28" x="296.8" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2025-12-28 · 6 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-12-29" x="296.8" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2025-12-29 · 7 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-12-30" x="296.8" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2025-12-30 · 2 contributions</title></rect>
+  <rect class="overview-cell" data-day="2025-12-31" x="296.8" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2025-12-31 · 2 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-01-01" x="296.8" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-01-01 · 9 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-01-02" x="296.8" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-01-02 · 39 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-01-03" x="296.8" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-01-03 · 14 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-01-04" x="308.8" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-01-04 · 12 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-01-05" x="308.8" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-01-05 · 6 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-01-06" x="308.8" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2026-01-06 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-01-07" x="308.8" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2026-01-07 · 5 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-01-08" x="308.8" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2026-01-08 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-01-09" x="308.8" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2026-01-09 · 2 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-01-10" x="308.8" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2026-01-10 · 1 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-01-11" x="320.9" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2026-01-11 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-01-12" x="320.9" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2026-01-12 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-01-13" x="320.9" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2026-01-13 · 4 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-01-14" x="320.9" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2026-01-14 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-01-15" x="320.9" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2026-01-15 · 2 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-01-16" x="320.9" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2026-01-16 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-01-17" x="320.9" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-01-17 · 15 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-01-18" x="332.9" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-01-18 · 54 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-01-19" x="332.9" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-01-19 · 9 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-01-20" x="332.9" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-01-20 · 9 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-01-21" x="332.9" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-01-21 · 26 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-01-22" x="332.9" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2026-01-22 · 4 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-01-23" x="332.9" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-01-23 · 18 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-01-24" x="332.9" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2026-01-24 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-01-25" x="344.9" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-01-25 · 6 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-01-26" x="344.9" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-01-26 · 6 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-01-27" x="344.9" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-01-27 · 23 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-01-28" x="344.9" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-01-28 · 50 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-01-29" x="344.9" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-01-29 · 51 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-01-30" x="344.9" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-01-30 · 22 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-01-31" x="344.9" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2026-01-31 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-02-01" x="357.0" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2026-02-01 · 2 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-02-02" x="357.0" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-02-02 · 6 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-02-03" x="357.0" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-02-03 · 26 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-02-04" x="357.0" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-02-04 · 8 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-02-05" x="357.0" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-02-05 · 8 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-02-06" x="357.0" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-02-06 · 11 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-02-07" x="357.0" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2026-02-07 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-02-08" x="369.0" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2026-02-08 · 1 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-02-09" x="369.0" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-02-09 · 72 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-02-10" x="369.0" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-02-10 · 20 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-02-11" x="369.0" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-02-11 · 23 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-02-12" x="369.0" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-02-12 · 60 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-02-13" x="369.0" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-02-13 · 89 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-02-14" x="369.0" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-02-14 · 22 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-02-15" x="381.1" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-02-15 · 65 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-02-16" x="381.1" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-02-16 · 28 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-02-17" x="381.1" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-02-17 · 68 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-02-18" x="381.1" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-02-18 · 21 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-02-19" x="381.1" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-02-19 · 116 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-02-20" x="381.1" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-02-20 · 72 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-02-21" x="381.1" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2026-02-21 · 2 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-02-22" x="393.1" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2026-02-22 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-02-23" x="393.1" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-02-23 · 72 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-02-24" x="393.1" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#10231f"><title>2026-02-24 · 136 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-02-25" x="393.1" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#10231f"><title>2026-02-25 · 132 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-02-26" x="393.1" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#10231f"><title>2026-02-26 · 126 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-02-27" x="393.1" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-02-27 · 31 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-02-28" x="393.1" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2026-02-28 · 1 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-03-01" x="405.1" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2026-03-01 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-03-02" x="405.1" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2026-03-02 · 2 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-03-03" x="405.1" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-03-03 · 25 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-03-04" x="405.1" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2026-03-04 · 1 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-03-05" x="405.1" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-03-05 · 69 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-03-06" x="405.1" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-03-06 · 44 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-03-07" x="405.1" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-03-07 · 74 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-03-08" x="417.2" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-03-08 · 44 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-03-09" x="417.2" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#10231f"><title>2026-03-09 · 129 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-03-10" x="417.2" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#10231f"><title>2026-03-10 · 141 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-03-11" x="417.2" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-03-11 · 99 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-03-12" x="417.2" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-03-12 · 45 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-03-13" x="417.2" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#10231f"><title>2026-03-13 · 282 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-03-14" x="417.2" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-03-14 · 7 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-03-15" x="429.2" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2026-03-15 · 2 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-03-16" x="429.2" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-03-16 · 118 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-03-17" x="429.2" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-03-17 · 116 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-03-18" x="429.2" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-03-18 · 6 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-03-19" x="429.2" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-03-19 · 74 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-03-20" x="429.2" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-03-20 · 16 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-03-21" x="429.2" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2026-03-21 · 2 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-03-22" x="441.2" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-03-22 · 14 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-03-23" x="441.2" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-03-23 · 19 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-03-24" x="441.2" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-03-24 · 16 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-03-25" x="441.2" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-03-25 · 23 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-03-26" x="441.2" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-03-26 · 10 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-03-27" x="441.2" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-03-27 · 91 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-03-28" x="441.2" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-03-28 · 27 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-03-29" x="453.3" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2026-03-29 · 1 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-03-30" x="453.3" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-03-30 · 36 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-03-31" x="453.3" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-03-31 · 16 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-04-01" x="453.3" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-04-01 · 48 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-04-02" x="453.3" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-04-02 · 15 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-04-03" x="453.3" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-04-03 · 19 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-04-04" x="453.3" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2026-04-04 · 2 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-04-05" x="465.3" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-04-05 · 21 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-04-06" x="465.3" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-04-06 · 86 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-04-07" x="465.3" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-04-07 · 77 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-04-08" x="465.3" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-04-08 · 35 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-04-09" x="465.3" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-04-09 · 48 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-04-10" x="465.3" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-04-10 · 62 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-04-11" x="465.3" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2026-04-11 · 3 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-04-12" x="477.4" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2026-04-12 · 2 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-04-13" x="477.4" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2026-04-13 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-04-14" x="477.4" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-04-14 · 113 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-04-15" x="477.4" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-04-15 · 100 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-04-16" x="477.4" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-04-16 · 65 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-04-17" x="477.4" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-04-17 · 93 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-04-18" x="477.4" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2026-04-18 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-04-19" x="489.4" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-04-19 · 62 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-04-20" x="489.4" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-04-20 · 115 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-04-21" x="489.4" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-04-21 · 26 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-04-22" x="489.4" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2026-04-22 · 4 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-04-23" x="489.4" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-04-23 · 41 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-04-24" x="489.4" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-04-24 · 74 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-04-25" x="489.4" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2026-04-25 · 3 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-04-26" x="501.4" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-04-26 · 57 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-04-27" x="501.4" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2026-04-27 · 1 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-04-28" x="501.4" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-04-28 · 60 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-04-29" x="501.4" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2026-04-29 · 5 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-04-30" x="501.4" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-04-30 · 61 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-05-01" x="501.4" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-05-01 · 43 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-05-02" x="501.4" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2026-05-02 · 2 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-05-03" x="513.5" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-05-03 · 27 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-05-04" x="513.5" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-05-04 · 53 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-05-05" x="513.5" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2026-05-05 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-05-06" x="513.5" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-05-06 · 40 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-05-07" x="513.5" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-05-07 · 8 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-05-08" x="513.5" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-05-08 · 38 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-05-09" x="513.5" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-05-09 · 88 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-05-10" x="525.5" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-05-10 · 105 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-05-11" x="525.5" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#10231f"><title>2026-05-11 · 174 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-05-12" x="525.5" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#10231f"><title>2026-05-12 · 254 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-05-13" x="525.5" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-05-13 · 47 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-05-14" x="525.5" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-05-14 · 42 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-05-15" x="525.5" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-05-15 · 84 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-05-16" x="525.5" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-05-16 · 56 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-05-17" x="537.5" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-05-17 · 23 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-05-18" x="537.5" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-05-18 · 22 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-05-19" x="537.5" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-05-19 · 24 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-05-20" x="537.5" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-05-20 · 37 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-05-21" x="537.5" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-05-21 · 94 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-05-22" x="537.5" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#10231f"><title>2026-05-22 · 365 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-05-23" x="537.5" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#10231f"><title>2026-05-23 · 331 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-05-24" x="549.6" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#10231f"><title>2026-05-24 · 279 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-05-25" x="549.6" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-05-25 · 15 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-05-26" x="549.6" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-05-26 · 9 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-05-27" x="549.6" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-05-27 · 21 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-05-28" x="549.6" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-05-28 · 13 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-05-29" x="549.6" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-05-29 · 30 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-05-30" x="549.6" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-05-30 · 53 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-05-31" x="561.6" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-05-31 · 20 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-06-01" x="561.6" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-06-01 · 28 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-06-02" x="561.6" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-06-02 · 15 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-06-03" x="561.6" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-06-03 · 78 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-06-04" x="561.6" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#10231f"><title>2026-06-04 · 254 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-06-05" x="561.6" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#10231f"><title>2026-06-05 · 331 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-06-06" x="561.6" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-06-06 · 9 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-06-07" x="573.7" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2026-06-07 · 1 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-06-08" x="573.7" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2026-06-08 · 1 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-06-09" x="573.7" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-06-09 · 6 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-06-10" x="573.7" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-06-10 · 23 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-06-11" x="573.7" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-06-11 · 23 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-06-12" x="573.7" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-06-12 · 33 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-06-13" x="573.7" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-06-13 · 6 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-06-14" x="585.7" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2026-06-14 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-06-15" x="585.7" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-06-15 · 42 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-06-16" x="585.7" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-06-16 · 98 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-06-17" x="585.7" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-06-17 · 37 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-06-18" x="585.7" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-06-18 · 102 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-06-19" x="585.7" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-06-19 · 91 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-06-20" x="585.7" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2026-06-20 · 2 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-06-21" x="597.7" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2026-06-21 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-06-22" x="597.7" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-06-22 · 66 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-06-23" x="597.7" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#10231f"><title>2026-06-23 · 146 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-06-24" x="597.7" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#10231f"><title>2026-06-24 · 141 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-06-25" x="597.7" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-06-25 · 117 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-06-26" x="597.7" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-06-26 · 98 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-06-27" x="597.7" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#10231f"><title>2026-06-27 · 179 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-06-28" x="609.8" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#d7d6c8"><title>2026-06-28 · 5 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-06-29" x="609.8" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-06-29 · 70 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-06-30" x="609.8" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-06-30 · 10 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-07-01" x="609.8" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-07-01 · 24 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-07-02" x="609.8" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#10231f"><title>2026-07-02 · 294 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-07-03" x="609.8" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-07-03 · 108 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-07-04" x="609.8" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-07-04 · 20 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-07-05" x="621.8" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-07-05 · 10 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-07-06" x="621.8" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-07-06 · 42 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-07-07" x="621.8" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-07-07 · 100 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-07-08" x="621.8" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#10231f"><title>2026-07-08 · 121 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-07-09" x="621.8" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-07-09 · 44 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-07-10" x="621.8" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#10231f"><title>2026-07-10 · 144 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-07-11" x="621.8" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-07-11 · 68 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-07-12" x="633.8" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-07-12 · 47 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-07-13" x="633.8" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-07-13 · 46 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-07-14" x="633.8" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-07-14 · 46 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-07-15" x="633.8" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-07-15 · 58 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-07-16" x="633.8" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#10231f"><title>2026-07-16 · 131 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-07-17" x="633.8" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#10231f"><title>2026-07-17 · 183 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-07-18" x="633.8" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-07-18 · 113 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-07-19" x="645.9" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-07-19 · 15 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-07-20" x="645.9" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2026-07-20 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-07-21" x="645.9" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-07-21 · 50 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-07-22" x="645.9" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-07-22 · 14 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-07-23" x="645.9" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-07-23 · 61 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-07-24" x="645.9" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-07-24 · 32 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-07-25" x="645.9" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-07-25 · 24 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-07-26" x="657.9" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-07-26 · 55 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-07-27" x="657.9" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-07-27 · 60 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-07-28" x="657.9" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#10231f"><title>2026-07-28 · 126 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-07-29" x="657.9" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-07-29 · 38 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-07-30" x="657.9" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#10231f"><title>2026-07-30 · 135 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-07-31" x="657.9" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#10231f"><title>2026-07-31 · 134 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-08-01" x="657.9" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#8d9e88"><title>2026-08-01 · 31 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-08-02" x="670.0" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-08-02 · 8 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-08-03" x="670.0" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-08-03 · 60 contributions</title></rect>
+  <rect class="overview-cell future" data-day="2026-08-04" x="670.0" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2026-08-04 · 0 contributions</title></rect>
+  <rect class="overview-cell future" data-day="2026-08-05" x="670.0" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2026-08-05 · 0 contributions</title></rect>
+  <rect class="overview-cell future" data-day="2026-08-06" x="670.0" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2026-08-06 · 0 contributions</title></rect>
+  <rect class="overview-cell future" data-day="2026-08-07" x="670.0" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2026-08-07 · 0 contributions</title></rect>
+  <rect class="overview-cell future" data-day="2026-08-08" x="670.0" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2026-08-08 · 0 contributions</title></rect>
+  <rect class="selection" x="629.8" y="122.0" width="54.2" height="97.0"/>
+  <path class="connector" d="M656.9 228 C656.9 255 580 250 580 278"/>
+  <rect class="lens-panel" x="32" y="288" width="656" height="390" rx="14"/>
+  <text class="label" x="50" y="316">LATEST 4 WEEKS</text>
+  <text class="month" x="101.0" y="330.0">13 JUL</text>
+  <text class="month" x="240.0" y="330.0">20 JUL</text>
+  <text class="month" x="379.0" y="330.0">27 JUL</text>
+  <text class="month" x="518.0" y="330.0">03 AUG</text>
+  <text class="day" x="50" y="364.2">MON</text>
+  <text class="day" x="50" y="409.2">TUE</text>
+  <text class="day" x="50" y="454.2">WED</text>
+  <text class="day" x="50" y="499.2">THU</text>
+  <text class="day" x="50" y="544.2">FRI</text>
+  <text class="day" x="50" y="589.2">SAT</text>
+  <text class="day" x="50" y="634.2">SUN</text>
+  <g data-focus-day="2026-07-13" class=""><rect class="lens-cell" x="96.0" y="340.0" width="132" height="39" rx="4" fill="#8d9e88"><title>2026-07-13 · 46 contributions · hologlyph</title></rect><text class="repo" x="102.0" y="355.0" fill="#10231f" style="fill:#10231f">HOLOGL</text><rect class="family-claude" x="101.0" y="373" width="23.3" height="3"/><rect class="family-gpt" x="124.3" y="373" width="77.7" height="3"/><rect class="family-other" x="202.0" y="373" width="21.0" height="3"/></g>
+  <g data-focus-day="2026-07-14" class=""><rect class="lens-cell" x="96.0" y="385.0" width="132" height="39" rx="4" fill="#8d9e88"><title>2026-07-14 · 46 contributions · cli-anything-meerk40t</title></rect><text class="repo" x="102.0" y="400.0" fill="#10231f" style="fill:#10231f">CAM</text><rect class="family-claude" x="101.0" y="418" width="17.2" height="3"/><rect class="family-gpt" x="118.2" y="418" width="32.1" height="3"/><rect class="family-other" x="150.3" y="418" width="72.7" height="3"/></g>
+  <g data-focus-day="2026-07-15" class=""><rect class="lens-cell" x="96.0" y="430.0" width="132" height="39" rx="4" fill="#8d9e88"><title>2026-07-15 · 58 contributions · cairn</title></rect><text class="repo" x="102.0" y="445.0" fill="#10231f" style="fill:#10231f">CAIRN</text><rect class="family-claude" x="101.0" y="463" width="33.0" height="3"/><rect class="family-gpt" x="134.0" y="463" width="46.8" height="3"/><rect class="family-other" x="180.9" y="463" width="42.1" height="3"/></g>
+  <g data-focus-day="2026-07-16" class=""><rect class="lens-cell" x="96.0" y="475.0" width="132" height="39" rx="4" fill="#10231f"><title>2026-07-16 · 131 contributions · cairn</title></rect><text class="repo" x="102.0" y="490.0" fill="#f7f4ed" style="fill:#f7f4ed">CAIRN</text><rect class="family-claude" x="101.0" y="508" width="23.9" height="3"/><rect class="family-gpt" x="124.9" y="508" width="74.4" height="3"/><rect class="family-gemini" x="199.3" y="508" width="7.5" height="3"/><rect class="family-other" x="206.8" y="508" width="16.2" height="3"/></g>
+  <g data-focus-day="2026-07-17" class=""><rect class="lens-cell" x="96.0" y="520.0" width="132" height="39" rx="4" fill="#10231f"><title>2026-07-17 · 183 contributions · cairn</title></rect><text class="repo" x="102.0" y="535.0" fill="#f7f4ed" style="fill:#f7f4ed">CAIRN</text><rect class="family-claude" x="101.0" y="553" width="21.2" height="3"/><rect class="family-gpt" x="122.2" y="553" width="83.6" height="3"/><rect class="family-gemini" x="205.9" y="553" width="3.4" height="3"/><rect class="family-other" x="209.3" y="553" width="13.7" height="3"/></g>
+  <g data-focus-day="2026-07-18" class=""><rect class="lens-cell" x="96.0" y="565.0" width="132" height="39" rx="4" fill="#556e61"><title>2026-07-18 · 113 contributions · hologlyph</title></rect><text class="repo" x="102.0" y="580.0" fill="#f7f4ed" style="fill:#f7f4ed">HOLOGL</text><rect class="family-claude" x="101.0" y="598" width="13.7" height="3"/><rect class="family-gpt" x="114.7" y="598" width="96.6" height="3"/><rect class="family-other" x="211.3" y="598" width="11.7" height="3"/></g>
+  <g data-focus-day="2026-07-19" class=""><rect class="lens-cell" x="96.0" y="610.0" width="132" height="39" rx="4" fill="#b7bea9"><title>2026-07-19 · 15 contributions · cairn</title></rect><text class="repo" x="102.0" y="625.0" fill="#10231f" style="fill:#10231f">CAIRN</text><rect class="family-claude" x="101.0" y="643" width="60.5" height="3"/><rect class="family-gpt" x="161.5" y="643" width="53.2" height="3"/><rect class="family-other" x="214.7" y="643" width="8.3" height="3"/></g>
+  <g data-focus-day="2026-07-20" class=""><rect class="lens-cell" x="235.0" y="340.0" width="132" height="39" rx="4" fill="#eee9de"><title>2026-07-20 · 0 contributions · explore</title></rect><text class="repo" x="241.0" y="355.0" fill="#10231f" style="fill:#10231f">TOOLS</text><g class="event" transform="translate(349 348) scale(0.75)"><circle cx="5" cy="5" r="4"/><path d="M8 8l4 4"/></g><rect class="family-claude" x="240.0" y="373" width="79.7" height="3"/><rect class="family-gpt" x="319.7" y="373" width="42.3" height="3"/></g>
+  <g data-focus-day="2026-07-21" class=""><rect class="lens-cell" x="235.0" y="385.0" width="132" height="39" rx="4" fill="#8d9e88"><title>2026-07-21 · 50 contributions · hologlyph</title></rect><text class="repo" x="241.0" y="400.0" fill="#10231f" style="fill:#10231f">HOLOGL</text><rect class="family-claude" x="240.0" y="418" width="89.9" height="3"/><rect class="family-gpt" x="329.9" y="418" width="2.8" height="3"/><rect class="family-gemini" x="332.7" y="418" width="2.0" height="3"/><rect class="family-other" x="334.7" y="418" width="27.3" height="3"/></g>
+  <g data-focus-day="2026-07-22" class=""><rect class="lens-cell" x="235.0" y="430.0" width="132" height="39" rx="4" fill="#b7bea9"><title>2026-07-22 · 14 contributions · cairn</title></rect><text class="repo" x="241.0" y="445.0" fill="#10231f" style="fill:#10231f">CAIRN</text><rect class="family-claude" x="240.0" y="463" width="21.1" height="3"/><rect class="family-gpt" x="261.1" y="463" width="59.2" height="3"/><rect class="family-gemini" x="320.3" y="463" width="32.9" height="3"/><rect class="family-other" x="353.1" y="463" width="8.9" height="3"/></g>
+  <g data-focus-day="2026-07-23" class=""><rect class="lens-cell" x="235.0" y="475.0" width="132" height="39" rx="4" fill="#556e61"><title>2026-07-23 · 61 contributions · cairn</title></rect><text class="repo" x="241.0" y="490.0" fill="#f7f4ed" style="fill:#f7f4ed">CAIRN</text><rect class="family-claude" x="240.0" y="508" width="3.7" height="3"/><rect class="family-gpt" x="243.7" y="508" width="101.5" height="3"/><rect class="family-gemini" x="345.2" y="508" width="8.4" height="3"/><rect class="family-other" x="353.6" y="508" width="8.4" height="3"/></g>
+  <g data-focus-day="2026-07-24" class=""><rect class="lens-cell" x="235.0" y="520.0" width="132" height="39" rx="4" fill="#8d9e88"><title>2026-07-24 · 32 contributions · openspine</title></rect><text class="repo" x="241.0" y="535.0" fill="#10231f" style="fill:#10231f">OPEN</text><rect class="family-gpt" x="240.0" y="553" width="115.2" height="3"/><rect class="family-gemini" x="355.2" y="553" width="6.2" height="3"/><rect class="family-other" x="361.4" y="553" width="0.6" height="3"/></g>
+  <g data-focus-day="2026-07-25" class=""><rect class="lens-cell" x="235.0" y="565.0" width="132" height="39" rx="4" fill="#8d9e88"><title>2026-07-25 · 24 contributions · cairn</title></rect><text class="repo" x="241.0" y="580.0" fill="#10231f" style="fill:#10231f">CAIRN</text><rect class="family-claude" x="240.0" y="598" width="67.6" height="3"/><rect class="family-gpt" x="307.6" y="598" width="48.0" height="3"/><rect class="family-gemini" x="355.6" y="598" width="6.4" height="3"/><rect class="family-other" x="362.0" y="598" width="0.0" height="3"/></g>
+  <g data-focus-day="2026-07-26" class=""><rect class="lens-cell" x="235.0" y="610.0" width="132" height="39" rx="4" fill="#8d9e88"><title>2026-07-26 · 55 contributions · cairn</title></rect><text class="repo" x="241.0" y="625.0" fill="#10231f" style="fill:#10231f">CAIRN</text><rect class="family-claude" x="240.0" y="643" width="67.4" height="3"/><rect class="family-gpt" x="307.4" y="643" width="54.6" height="3"/></g>
+  <g data-focus-day="2026-07-27" class=""><rect class="lens-cell" x="374.0" y="340.0" width="132" height="39" rx="4" fill="#556e61"><title>2026-07-27 · 60 contributions · cairn · review</title></rect><text class="repo" x="380.0" y="355.0" fill="#f7f4ed" style="fill:#f7f4ed">CAIRN</text><g class="event" transform="translate(488 348) scale(0.75)"><rect x="0" y="1" width="11" height="8" rx="2"/><path d="M3 9v3l3-3"/></g><rect class="family-claude" x="379.0" y="373" width="86.4" height="3"/><rect class="family-gpt" x="465.4" y="373" width="35.6" height="3"/><rect class="family-other" x="501.0" y="373" width="0.0" height="3"/></g>
+  <g data-focus-day="2026-07-28" class=""><rect class="lens-cell" x="374.0" y="385.0" width="132" height="39" rx="4" fill="#10231f"><title>2026-07-28 · 126 contributions · growth-arsenal</title></rect><text class="repo" x="380.0" y="400.0" fill="#f7f4ed" style="fill:#f7f4ed">GROWTH</text><rect class="family-claude" x="379.0" y="418" width="63.1" height="3"/><rect class="family-gpt" x="442.1" y="418" width="58.9" height="3"/><rect class="family-other" x="501.0" y="418" width="0.0" height="3"/></g>
+  <g data-focus-day="2026-07-29" class=""><rect class="lens-cell" x="374.0" y="430.0" width="132" height="39" rx="4" fill="#8d9e88"><title>2026-07-29 · 38 contributions · mag · review</title></rect><text class="repo" x="380.0" y="445.0" fill="#10231f" style="fill:#10231f">MAG</text><g class="event" transform="translate(488 438) scale(0.75)"><rect x="0" y="1" width="11" height="8" rx="2"/><path d="M3 9v3l3-3"/></g><rect class="family-claude" x="379.0" y="463" width="62.1" height="3"/><rect class="family-gpt" x="441.1" y="463" width="57.4" height="3"/><rect class="family-gemini" x="498.5" y="463" width="2.5" height="3"/></g>
+  <g data-focus-day="2026-07-30" class=""><rect class="lens-cell" x="374.0" y="475.0" width="132" height="39" rx="4" fill="#10231f"><title>2026-07-30 · 135 contributions · mag · merge</title></rect><text class="repo" x="380.0" y="490.0" fill="#f7f4ed" style="fill:#f7f4ed">MAG</text><g class="event" transform="translate(488 483) scale(0.75)"><circle cx="1" cy="1" r="1.8"/><circle cx="9" cy="1" r="1.8"/><circle cx="9" cy="9" r="1.8"/><path d="M1 3v3c0 2 2 3 4 3h2M9 3v4"/></g><rect class="family-claude" x="379.0" y="508" width="40.5" height="3"/><rect class="family-gpt" x="419.5" y="508" width="76.7" height="3"/><rect class="family-gemini" x="496.2" y="508" width="4.8" height="3"/></g>
+  <g data-focus-day="2026-07-31" class=""><rect class="lens-cell" x="374.0" y="520.0" width="132" height="39" rx="4" fill="#10231f"><title>2026-07-31 · 134 contributions · cairn · merge</title></rect><text class="repo" x="380.0" y="535.0" fill="#f7f4ed" style="fill:#f7f4ed">CAIRN</text><g class="event" transform="translate(488 528) scale(0.75)"><circle cx="1" cy="1" r="1.8"/><circle cx="9" cy="1" r="1.8"/><circle cx="9" cy="9" r="1.8"/><path d="M1 3v3c0 2 2 3 4 3h2M9 3v4"/></g></g>
+  <g data-focus-day="2026-08-01" class=""><rect class="lens-cell" x="374.0" y="565.0" width="132" height="39" rx="4" fill="#8d9e88"><title>2026-08-01 · 31 contributions · mag · merge</title></rect><text class="repo" x="380.0" y="580.0" fill="#10231f" style="fill:#10231f">MAG</text><g class="event" transform="translate(488 573) scale(0.75)"><circle cx="1" cy="1" r="1.8"/><circle cx="9" cy="1" r="1.8"/><circle cx="9" cy="9" r="1.8"/><path d="M1 3v3c0 2 2 3 4 3h2M9 3v4"/></g></g>
+  <g data-focus-day="2026-08-02" class=""><rect class="lens-cell" x="374.0" y="610.0" width="132" height="39" rx="4" fill="#b7bea9"><title>2026-08-02 · 8 contributions · cairn · merge</title></rect><text class="repo" x="380.0" y="625.0" fill="#10231f" style="fill:#10231f">CAIRN</text><g class="event" transform="translate(488 618) scale(0.75)"><circle cx="1" cy="1" r="1.8"/><circle cx="9" cy="1" r="1.8"/><circle cx="9" cy="9" r="1.8"/><path d="M1 3v3c0 2 2 3 4 3h2M9 3v4"/></g></g>
+  <g data-focus-day="2026-08-03" class=""><rect class="lens-cell" x="513.0" y="340.0" width="132" height="39" rx="4" fill="#556e61"><title>2026-08-03 · 60 contributions · cairn · merge</title></rect><text class="repo" x="519.0" y="355.0" fill="#f7f4ed" style="fill:#f7f4ed">CAIRN</text><g class="event" transform="translate(627 348) scale(0.75)"><circle cx="1" cy="1" r="1.8"/><circle cx="9" cy="1" r="1.8"/><circle cx="9" cy="9" r="1.8"/><path d="M1 3v3c0 2 2 3 4 3h2M9 3v4"/></g></g>
+  <g data-focus-day="2026-08-04" class="future"><rect class="lens-cell" x="513.0" y="385.0" width="132" height="39" rx="4" fill="#eee9de"><title>2026-08-04 · 0 contributions</title></rect><text class="repo" x="519.0" y="400.0" fill="#10231f" style="fill:#10231f">—</text></g>
+  <g data-focus-day="2026-08-05" class="future"><rect class="lens-cell" x="513.0" y="430.0" width="132" height="39" rx="4" fill="#eee9de"><title>2026-08-05 · 0 contributions</title></rect><text class="repo" x="519.0" y="445.0" fill="#10231f" style="fill:#10231f">—</text></g>
+  <g data-focus-day="2026-08-06" class="future"><rect class="lens-cell" x="513.0" y="475.0" width="132" height="39" rx="4" fill="#eee9de"><title>2026-08-06 · 0 contributions</title></rect><text class="repo" x="519.0" y="490.0" fill="#10231f" style="fill:#10231f">—</text></g>
+  <g data-focus-day="2026-08-07" class="future"><rect class="lens-cell" x="513.0" y="520.0" width="132" height="39" rx="4" fill="#eee9de"><title>2026-08-07 · 0 contributions</title></rect><text class="repo" x="519.0" y="535.0" fill="#10231f" style="fill:#10231f">—</text></g>
+  <g data-focus-day="2026-08-08" class="future"><rect class="lens-cell" x="513.0" y="565.0" width="132" height="39" rx="4" fill="#eee9de"><title>2026-08-08 · 0 contributions</title></rect><text class="repo" x="519.0" y="580.0" fill="#10231f" style="fill:#10231f">—</text></g>
+  <g data-focus-day="2026-08-09" class="future"><rect class="lens-cell" x="513.0" y="610.0" width="132" height="39" rx="4" fill="#eee9de"><title>2026-08-09 · 0 contributions</title></rect><text class="repo" x="519.0" y="625.0" fill="#10231f" style="fill:#10231f">—</text></g>
+  <line class="rule-strong" x1="32" y1="708" x2="688" y2="708"/>
+  <text class="metric" x="50" y="770">21</text>
+  <text class="metric-label" x="50" y="787">ACTIVE DAYS</text>
+  <text class="metric" x="260" y="770">5</text>
+  <text class="metric-label" x="260" y="787">MERGE DAYS</text>
+  <text class="metric" x="470" y="770">44%</text>
+  <text class="metric-label" x="470" y="787">TOP 2 REPOS</text>
+  <text class="stamp" x="470" y="804">CAIRN + OPEN</text>
+  <line class="rule" x1="32" y1="818" x2="688" y2="818"/>
+  <circle cx="48" cy="850" r="3.5" fill="#c9482b"/><text class="stamp" x="60" y="853">CLAUDE</text>
+  <circle cx="153" cy="850" r="3.5" fill="#4b7fa0"/><text class="stamp" x="165" y="853">GPT</text>
+  <circle cx="258" cy="850" r="3.5" fill="#d5a72c"/><text class="stamp" x="270" y="853">GEMINI</text>
+  <circle cx="363" cy="850" r="3.5" fill="#8b9d83"/><text class="stamp" x="375" y="853">OTHER</text>
+  <text class="stamp" x="688" y="884" text-anchor="end">GITHUB + TOKSCALE</text>
+</svg>
