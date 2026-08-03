@@ -342,6 +342,8 @@ function repoShortName(repo) {
   const clean = String(repo || "").split("/").at(-1) || "";
   const labels = {
     openspine: "OPEN",
+    hologlyph: "HOLO",
+    "cli-anything-meerk40t": "MEER",
     mag: "MAG",
     cairn: "CAIRN",
     "rive-rs-cli": "RIVE",
@@ -445,7 +447,7 @@ function buildViewModel({ github, tokscale, username, now = new Date() }) {
       intensity: future ? 0 : scale(count),
       future,
       repo,
-      repoLabel: repoShortName(repo || (familyTotal > 0 ? "TOOLS" : "")),
+      repoLabel: future ? "" : repoShortName(repo || (familyTotal > 0 ? "TOOLS" : "")),
       families,
       familyTotal,
       event,
@@ -652,7 +654,7 @@ function renderDesktopSvg(view) {
   const lensHeight = 225;
   const lensGrid = renderLensGrid(view, {
     x: lensX + 18,
-    y: lensY + 42,
+    y: lensY + 48,
     labelWidth: 38,
     cellWidth: 158,
     cellHeight: 20,
@@ -680,7 +682,7 @@ function renderDesktopSvg(view) {
   ${overviewParts.selection}
   <path class="connector" d="M${connectorStartX.toFixed(1)} 237 C${connectorStartX.toFixed(1)} 272 ${connectorEndX.toFixed(1)} 270 ${connectorEndX.toFixed(1)} 302"/>
   <rect class="lens-panel" x="${lensX}" y="${lensY}" width="${lensWidth}" height="${lensHeight}" rx="12"/>
-  <text class="label" x="${lensX + 18}" y="${lensY + 24}">LATEST 4 WEEKS</text>
+  <text class="label" x="${lensX + 18}" y="${lensY + 20}">LATEST 4 WEEKS</text>
   ${lensGrid.weekLabels}
   ${lensGrid.dayLabels}
   ${lensGrid.cells}
