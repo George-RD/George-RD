@@ -76,6 +76,13 @@ Makes interactive Rive files inspectable from the command line. People and agent
 
 My current work is converging on one problem. Agents need to remember past work, understand the system, receive limited authority and act through a safe path.
 
+## Build cadence
+
+<picture>
+  <source media="(max-width: 640px)" srcset="assets/contribution-lens-mobile.svg" />
+  <img src="assets/contribution-lens.svg" width="100%" alt="A year of GitHub contributions with the latest four weeks enlarged to show repository focus, model-family mix and merge activity." />
+</picture>
+
 ## AI activity trace
 
 <a href="https://tokscale.ai/u/George-RD">
