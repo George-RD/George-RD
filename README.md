@@ -78,10 +78,12 @@ My current work is converging on one problem. Agents need to remember past work,
 
 ## AI activity trace
 
-A public readout of recent AI-tool activity, rendered from my Tokscale profile in the same field-instrument style as this page.
+<a href="https://tokscale.ai/u/George-RD">
+  <img src="assets/tokscale-dossier.svg" width="100%" alt="Tokscale all-time and 30-day AI activity for George-RD." />
+</a>
 
 <a href="https://tokscale.ai/u/George-RD">
-  <img src="assets/tokscale-dossier.svg" width="100%" alt="Tokscale AI activity trace for George-RD, generated from public token usage data." />
+  <img src="assets/tokscale-model-momentum.svg" width="100%" alt="Thirty-day model momentum for George-RD, comparing the latest seven days with the preceding seven days." />
 </a>
 
 ## Contact
