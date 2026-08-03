@@ -1,10 +1,10 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-08-03T07:10:07.208Z",
+  "generatedAt": "2026-08-03T15:32:45.880Z",
   "username": "George-RD",
   "allTime": {
-    "rank": 132,
+    "rank": 133,
     "totalTokens": 64501314317,
     "totalCost": 37786.2956,
     "activeDays": 165,
