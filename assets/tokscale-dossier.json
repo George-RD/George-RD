@@ -1,10 +1,10 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-08-04T06:03:44.403Z",
+  "generatedAt": "2026-08-05T06:02:53.425Z",
   "username": "George-RD",
   "allTime": {
-    "rank": 135,
+    "rank": 140,
     "totalTokens": 64501314317,
     "totalCost": 37786.2956,
     "activeDays": 164,
@@ -12,10 +12,10 @@
     "sessions": 35887
   },
   "month": {
-    "totalTokens": 40434968797,
-    "totalCost": 25138.410799999994,
-    "activeDays": 25,
-    "contributions": 25
+    "totalTokens": 39697447617,
+    "totalCost": 24718.8252,
+    "activeDays": 24,
+    "contributions": 24
   },
   "clients": [
     "claude",
@@ -96,8 +96,8 @@
     },
     {
       "model": "claude-fable-5",
-      "tokens": 4279453236,
-      "cost": 5921.093981000001
+      "tokens": 4210954314,
+      "cost": 5781.373896
     },
     {
       "model": "claude-opus-5",
@@ -106,8 +106,8 @@
     },
     {
       "model": "claude-opus-4-8",
-      "tokens": 2035647647,
-      "cost": 1912.46248975
+      "tokens": 1815058958,
+      "cost": 1742.16056875
     },
     {
       "model": "gpt-5.6-terra",
@@ -117,7 +117,6 @@
   ],
   "modelMomentum": {
     "dates": [
-      "2026-07-06",
       "2026-07-07",
       "2026-07-08",
       "2026-07-09",
@@ -146,29 +145,29 @@
       "2026-08-01",
       "2026-08-02",
       "2026-08-03",
-      "2026-08-04"
+      "2026-08-04",
+      "2026-08-05"
     ],
     "latestWindow": {
-      "start": "2026-07-29",
-      "end": "2026-08-04",
-      "totalTokens": 1986811303
+      "start": "2026-07-30",
+      "end": "2026-08-05",
+      "totalTokens": 1349291091
     },
     "previousWindow": {
-      "start": "2026-07-22",
-      "end": "2026-07-28",
-      "totalTokens": 11924418383
+      "start": "2026-07-23",
+      "end": "2026-07-29",
+      "totalTokens": 12073992687
     },
     "models": [
       {
         "model": "gpt-5.6-sol",
-        "recentTokens": 911745234,
-        "priorTokens": 3657569624,
-        "recentShare": 0.4588987553187883,
-        "priorShare": 0.30672939396477394,
-        "deltaPercentagePoints": 15.216936135401438,
+        "recentTokens": 663629452,
+        "priorTokens": 3754290856,
+        "recentShare": 0.49183564349199427,
+        "priorShare": 0.3109402956689069,
+        "deltaPercentagePoints": 18.089534782308736,
         "direction": "up",
         "series": [
-          0,
           0,
           0,
           0,
@@ -197,19 +196,19 @@
           0,
           0,
           0,
+          0,
           0
         ]
       },
       {
         "model": "claude-fable-5",
-        "recentTokens": 567992553,
-        "priorTokens": 0,
-        "recentShare": 0.2858814785995809,
-        "priorShare": 0,
-        "deltaPercentagePoints": 28.58814785995809,
+        "recentTokens": 391054038,
+        "priorTokens": 176938515,
+        "recentShare": 0.289821848382752,
+        "priorShare": 0.014654515667423644,
+        "deltaPercentagePoints": 27.516733271532836,
         "direction": "up",
         "series": [
-          68498922,
           303867224,
           0,
           29886634,
@@ -238,19 +237,19 @@
           0,
           0,
           0,
+          0,
           0
         ]
       },
       {
         "model": "gpt-5.6-terra",
-        "recentTokens": 235875027,
-        "priorTokens": 2167797130,
-        "recentShare": 0.11872039717301729,
-        "priorShare": 0.18179478951279598,
-        "deltaPercentagePoints": -6.3074392339778695,
+        "recentTokens": 184275663,
+        "priorTokens": 2135690927,
+        "recentShare": 0.136572207605275,
+        "priorShare": 0.17688356969931632,
+        "deltaPercentagePoints": -4.031136209404132,
         "direction": "down",
         "series": [
-          0,
           0,
           0,
           0,
@@ -279,19 +278,19 @@
           0,
           0,
           0,
+          0,
           0
         ]
       },
       {
         "model": "claude-opus-5",
-        "recentTokens": 198055916,
-        "priorTokens": 4619337473,
-        "recentShare": 0.09968531772541461,
-        "priorShare": 0.38738471970972943,
-        "deltaPercentagePoints": -28.76994019843148,
+        "recentTokens": 54490649,
+        "priorTokens": 4762902740,
+        "recentShare": 0.04038465040157891,
+        "priorShare": 0.3944761988408516,
+        "deltaPercentagePoints": -35.40915484392727,
         "direction": "down",
         "series": [
-          0,
           0,
           0,
           0,
@@ -320,19 +319,19 @@
           0,
           0,
           0,
+          0,
           0
         ]
       },
       {
         "model": "gemini-3.6-flash",
-        "recentTokens": 66324210,
-        "priorTokens": 287214187,
-        "recentShare": 0.03338223911845744,
-        "priorShare": 0.0240862218831122,
-        "deltaPercentagePoints": 0.929601723534524,
+        "recentTokens": 53133779,
+        "priorTokens": 300404618,
+        "recentShare": 0.039379033445348675,
+        "priorShare": 0.02488030478297738,
+        "deltaPercentagePoints": 1.4498728662371296,
         "direction": "up",
         "series": [
-          0,
           0,
           0,
           0,
@@ -357,6 +356,7 @@
           0,
           13190431,
           53133779,
+          0,
           0,
           0,
           0,
