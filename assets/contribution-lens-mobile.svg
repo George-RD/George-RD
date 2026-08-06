@@ -415,8 +415,8 @@
   <rect class="overview-cell" data-day="2026-08-02" x="670.0" y="126.0" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-08-02 · 8 contributions</title></rect>
   <rect class="overview-cell" data-day="2026-08-03" x="670.0" y="139.1" width="9.8" height="9.8" rx="1.4" fill="#556e61"><title>2026-08-03 · 68 contributions</title></rect>
   <rect class="overview-cell" data-day="2026-08-04" x="670.0" y="152.3" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-08-04 · 12 contributions</title></rect>
-  <rect class="overview-cell" data-day="2026-08-05" x="670.0" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2026-08-05 · 0 contributions</title></rect>
-  <rect class="overview-cell future" data-day="2026-08-06" x="670.0" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2026-08-06 · 0 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-08-05" x="670.0" y="165.4" width="9.8" height="9.8" rx="1.4" fill="#b7bea9"><title>2026-08-05 · 19 contributions</title></rect>
+  <rect class="overview-cell" data-day="2026-08-06" x="670.0" y="178.6" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2026-08-06 · 0 contributions</title></rect>
   <rect class="overview-cell future" data-day="2026-08-07" x="670.0" y="191.7" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2026-08-07 · 0 contributions</title></rect>
   <rect class="overview-cell future" data-day="2026-08-08" x="670.0" y="204.9" width="9.8" height="9.8" rx="1.4" fill="#eee9de"><title>2026-08-08 · 0 contributions</title></rect>
   <rect class="selection" x="629.8" y="122.0" width="54.2" height="97.0"/>
@@ -457,17 +457,17 @@
   <g data-focus-day="2026-08-02" class=""><rect class="lens-cell" x="374.0" y="610.0" width="132" height="39" rx="4" fill="#b7bea9"><title>2026-08-02 · 8 contributions · cairn · merge</title></rect><text class="repo" x="380.0" y="625.0" fill="#10231f" style="fill:#10231f">CAIRN</text><g class="event" transform="translate(488 618) scale(0.75)"><circle cx="1" cy="1" r="1.8"/><circle cx="9" cy="1" r="1.8"/><circle cx="9" cy="9" r="1.8"/><path d="M1 3v3c0 2 2 3 4 3h2M9 3v4"/></g></g>
   <g data-focus-day="2026-08-03" class=""><rect class="lens-cell" x="513.0" y="340.0" width="132" height="39" rx="4" fill="#556e61"><title>2026-08-03 · 68 contributions · cairn · merge</title></rect><text class="repo" x="519.0" y="355.0" fill="#f7f4ed" style="fill:#f7f4ed">CAIRN</text><g class="event" transform="translate(627 348) scale(0.75)"><circle cx="1" cy="1" r="1.8"/><circle cx="9" cy="1" r="1.8"/><circle cx="9" cy="9" r="1.8"/><path d="M1 3v3c0 2 2 3 4 3h2M9 3v4"/></g></g>
   <g data-focus-day="2026-08-04" class=""><rect class="lens-cell" x="513.0" y="385.0" width="132" height="39" rx="4" fill="#b7bea9"><title>2026-08-04 · 12 contributions · openspine · merge</title></rect><text class="repo" x="519.0" y="400.0" fill="#10231f" style="fill:#10231f">OPEN</text><g class="event" transform="translate(627 393) scale(0.75)"><circle cx="1" cy="1" r="1.8"/><circle cx="9" cy="1" r="1.8"/><circle cx="9" cy="9" r="1.8"/><path d="M1 3v3c0 2 2 3 4 3h2M9 3v4"/></g></g>
-  <g data-focus-day="2026-08-05" class=""><rect class="lens-cell" x="513.0" y="430.0" width="132" height="39" rx="4" fill="#eee9de"><title>2026-08-05 · 0 contributions</title></rect><text class="repo" x="519.0" y="445.0" fill="#10231f" style="fill:#10231f">—</text></g>
-  <g data-focus-day="2026-08-06" class="future"><rect class="lens-cell" x="513.0" y="475.0" width="132" height="39" rx="4" fill="#eee9de"><title>2026-08-06 · 0 contributions</title></rect></g>
+  <g data-focus-day="2026-08-05" class=""><rect class="lens-cell" x="513.0" y="430.0" width="132" height="39" rx="4" fill="#b7bea9"><title>2026-08-05 · 19 contributions · firth · merge</title></rect><text class="repo" x="519.0" y="445.0" fill="#10231f" style="fill:#10231f">FIRTH</text><g class="event" transform="translate(627 438) scale(0.75)"><circle cx="1" cy="1" r="1.8"/><circle cx="9" cy="1" r="1.8"/><circle cx="9" cy="9" r="1.8"/><path d="M1 3v3c0 2 2 3 4 3h2M9 3v4"/></g></g>
+  <g data-focus-day="2026-08-06" class=""><rect class="lens-cell" x="513.0" y="475.0" width="132" height="39" rx="4" fill="#eee9de"><title>2026-08-06 · 0 contributions</title></rect><text class="repo" x="519.0" y="490.0" fill="#10231f" style="fill:#10231f">—</text></g>
   <g data-focus-day="2026-08-07" class="future"><rect class="lens-cell" x="513.0" y="520.0" width="132" height="39" rx="4" fill="#eee9de"><title>2026-08-07 · 0 contributions</title></rect></g>
   <g data-focus-day="2026-08-08" class="future"><rect class="lens-cell" x="513.0" y="565.0" width="132" height="39" rx="4" fill="#eee9de"><title>2026-08-08 · 0 contributions</title></rect></g>
   <g data-focus-day="2026-08-09" class="future"><rect class="lens-cell" x="513.0" y="610.0" width="132" height="39" rx="4" fill="#eee9de"><title>2026-08-09 · 0 contributions</title></rect></g>
   <line class="rule-strong" x1="32" y1="708" x2="688" y2="708"/>
-  <text class="metric" x="50" y="770">22</text>
+  <text class="metric" x="50" y="770">23</text>
   <text class="metric-label" x="50" y="787">ACTIVE DAYS</text>
-  <text class="metric" x="260" y="770">6</text>
+  <text class="metric" x="260" y="770">7</text>
   <text class="metric-label" x="260" y="787">MERGE DAYS</text>
-  <text class="metric" x="470" y="770">44%</text>
+  <text class="metric" x="470" y="770">43%</text>
   <text class="metric-label" x="470" y="787">TOP 2 REPOS</text>
   <text class="stamp" x="470" y="804">CAIRN + OPEN</text>
   <line class="rule" x1="32" y1="818" x2="688" y2="818"/>
