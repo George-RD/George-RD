@@ -17,6 +17,11 @@ const COLORS = {
   intensity: ["#eee9de", "#d7d6c8", "#b7bea9", "#8d9e88", "#556e61", "#10231f"],
 };
 
+const DETAIL_START = "<!-- profile-detail:start -->";
+const DETAIL_END = "<!-- profile-detail:end -->";
+const STYLE_START = "/* profile-refinement:start */";
+const STYLE_END = "/* profile-refinement:end */";
+
 function parseArgs(argv) {
   const args = {
     input: "assets/contribution-lens.svg",
@@ -50,6 +55,12 @@ function escapeXml(value) {
 function number(value) {
   const parsed = Number(value);
   return Number.isFinite(parsed) ? parsed : 0;
+}
+
+function coordinate(value) {
+  const rounded = Math.round(number(value) * 100) / 100;
+  if (Object.is(rounded, -0)) return "0";
+  return String(rounded);
 }
 
 function dateKey(value) {
@@ -147,37 +158,30 @@ function summarize(meta) {
     streak += 1;
   }
 
-  const activeDays = elapsed.filter((day) => number(day.contributions) > 0).length;
-  const mergeDays = new Set(
-    elapsed.filter((day) => day.event === "merge").map((day) => dateKey(day.date)),
-  ).size;
-  const topRepos = (meta?.metrics?.topRepos || []).map(repoShortName);
-
   return {
     focus,
     generatedDate,
     streak,
-    activeDays,
-    mergeDays: number(meta?.metrics?.mergeDays) || mergeDays,
+    activeDays: elapsed.filter((day) => number(day.contributions) > 0).length,
     focusShare: number(meta?.metrics?.focusShare),
-    topRepos,
+    topRepos: (meta?.metrics?.topRepos || []).map(repoShortName),
   };
 }
 
 function eventGlyph(type, x, y, scale = 1) {
   if (type === "merge") {
-    return `<g class="event" transform="translate(${x} ${y}) scale(${scale})"><circle cx="1" cy="1" r="1.8"/><circle cx="9" cy="1" r="1.8"/><circle cx="9" cy="9" r="1.8"/><path d="M1 3v3c0 2 2 3 4 3h2M9 3v4"/></g>`;
+    return `<g class="event" transform="translate(${coordinate(x)} ${coordinate(y)}) scale(${coordinate(scale)})"><circle cx="1" cy="1" r="1.8"/><circle cx="9" cy="1" r="1.8"/><circle cx="9" cy="9" r="1.8"/><path d="M1 3v3c0 2 2 3 4 3h2M9 3v4"/></g>`;
   }
   if (type === "review") {
-    return `<g class="event" transform="translate(${x} ${y}) scale(${scale})"><rect x="0" y="1" width="11" height="8" rx="2"/><path d="M3 9v3l3-3"/></g>`;
+    return `<g class="event" transform="translate(${coordinate(x)} ${coordinate(y)}) scale(${coordinate(scale)})"><rect x="0" y="1" width="11" height="8" rx="2"/><path d="M3 9v3l3-3"/></g>`;
   }
   if (type === "explore") {
-    return `<g class="event" transform="translate(${x} ${y}) scale(${scale})"><circle cx="5" cy="5" r="4"/><path d="M8 8l4 4"/></g>`;
+    return `<g class="event" transform="translate(${coordinate(x)} ${coordinate(y)}) scale(${coordinate(scale)})"><circle cx="5" cy="5" r="4"/><path d="M8 8l4 4"/></g>`;
   }
   return "";
 }
 
-function familyBand(families, x, y, width, height) {
+function familyBand(families, { x, y, width, height, clipId }) {
   const entries = [
     ["claude", number(families?.claude)],
     ["gpt", number(families?.gpt)],
@@ -186,20 +190,19 @@ function familyBand(families, x, y, width, height) {
   ].filter(([, value]) => value > 0);
   const total = entries.reduce((sum, [, value]) => sum + value, 0);
   if (!total) return "";
-  let cursor = x;
+
+  let cumulative = 0;
   const segments = entries
     .map(([family, value], index) => {
-      const remaining = x + width - cursor;
-      const segmentWidth =
-        index === entries.length - 1
-          ? remaining
-          : Math.max(2, (value / total) * width);
-      const rect = `<rect class="family-${family}" x="${cursor.toFixed(1)}" y="${y.toFixed(1)}" width="${segmentWidth.toFixed(1)}" height="${height}"/>`;
-      cursor += segmentWidth;
-      return rect;
+      const segmentX = x + (cumulative / total) * width;
+      cumulative += value;
+      const segmentEnd =
+        index === entries.length - 1 ? x + width : x + (cumulative / total) * width;
+      return `<rect class="family-${family}" x="${coordinate(segmentX)}" y="${coordinate(y)}" width="${coordinate(segmentEnd - segmentX)}" height="${coordinate(height)}"/>`;
     })
     .join("");
-  return `<g class="family-band" data-family-band="true">${segments}</g>`;
+
+  return `<g class="family-band" data-family-band="true" clip-path="url(#${escapeXml(clipId)})">${segments}</g>`;
 }
 
 function renderGrid(summary, geometry) {
@@ -211,22 +214,23 @@ function renderGrid(summary, geometry) {
     cellHeight,
     gapX,
     gapY,
-    bandHeight,
+    bandRatio = 1 / 3,
     mobile = false,
   } = geometry;
   const focus = summary.focus;
   const intensity = intensityScale(focus);
+  const bandHeight = Math.round(cellHeight * bandRatio * 100) / 100;
   const weekLabels = Array.from({ length: 4 }, (_, week) => {
     const day = focus[week * 7];
     const xx = x + labelWidth + week * (cellWidth + gapX);
-    return `<text class="month" x="${(xx + 5).toFixed(1)}" y="${(y - 11).toFixed(1)}">${escapeXml(shortDay(day?.date))}</text>`;
+    return `<text class="month" x="${coordinate(xx + 5)}" y="${coordinate(y - 11)}">${escapeXml(shortDay(day?.date))}</text>`;
   }).join("\n  ");
   const dayLabels = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"]
     .map(
       (label, row) =>
-        `<text class="day" x="${x}" y="${(
-          y + row * (cellHeight + gapY) + cellHeight * 0.62
-        ).toFixed(1)}">${label}</text>`,
+        `<text class="day" x="${coordinate(x)}" y="${coordinate(
+          y + row * (cellHeight + gapY) + cellHeight * 0.62,
+        )}">${label}</text>`,
     )
     .join("\n  ");
 
@@ -259,18 +263,24 @@ function renderGrid(summary, geometry) {
             cellY + (mobile ? 12 : 7),
             mobile ? 0.9 : 0.75,
           );
+      const clipId = `focus-cell-${dateKey(day.date) || index}`;
+      const clip =
+        future || familyTotal <= 0
+          ? ""
+          : `<clipPath id="${escapeXml(clipId)}" clipPathUnits="userSpaceOnUse"><rect x="${coordinate(cellX)}" y="${coordinate(cellY)}" width="${coordinate(cellWidth)}" height="${coordinate(cellHeight)}" rx="4"/></clipPath>`;
       const band = future
         ? ""
-        : familyBand(
-            day.modelFamilies,
-            cellX + 1,
-            cellY + cellHeight - bandHeight - 1,
-            cellWidth - 2,
-            bandHeight,
-          );
+        : familyBand(day.modelFamilies, {
+            x: cellX,
+            y: cellY + cellHeight - bandHeight,
+            width: cellWidth,
+            height: bandHeight,
+            clipId,
+          });
       const title = `${day.date} · ${number(day.contributions)} contributions${day.repository ? ` · ${day.repository}` : ""}${day.event ? ` · ${day.event}` : ""}`;
-      const baseline = cellY + (mobile ? 22 : 15);
-      return `<g class="profile-grid-day${future ? " future" : ""}" data-focus-day="${escapeXml(day.date)}"><rect class="lens-cell" x="${cellX.toFixed(1)}" y="${cellY.toFixed(1)}" width="${cellWidth}" height="${cellHeight}" rx="4" fill="${fill}"><title>${escapeXml(title)}</title></rect>${repo ? `<text class="repo" x="${(cellX + (mobile ? 8 : 7)).toFixed(1)}" y="${baseline.toFixed(1)}" style="fill:${textColor}">${escapeXml(repo)}</text>` : ""}${event}${band}</g>`;
+      const baseline = cellY + (mobile ? 22 : 14);
+      const outline = `<rect class="lens-cell-outline" x="${coordinate(cellX)}" y="${coordinate(cellY)}" width="${coordinate(cellWidth)}" height="${coordinate(cellHeight)}" rx="4"/>`;
+      return `<g class="profile-grid-day${future ? " future" : ""}" data-focus-day="${escapeXml(day.date)}">${clip}<rect class="lens-cell" x="${coordinate(cellX)}" y="${coordinate(cellY)}" width="${coordinate(cellWidth)}" height="${coordinate(cellHeight)}" rx="4" fill="${fill}"><title>${escapeXml(title)}</title></rect>${band}${repo ? `<text class="repo" x="${coordinate(cellX + (mobile ? 8 : 7))}" y="${coordinate(baseline)}" style="fill:${textColor}">${escapeXml(repo)}</text>` : ""}${event}${outline}</g>`;
     })
     .join("\n  ");
 
@@ -278,25 +288,49 @@ function renderGrid(summary, geometry) {
 }
 
 function metricSvg(x, valueY, value, label, note = "") {
-  return `<text class="profile-metric" x="${x}" y="${valueY}">${escapeXml(value)}</text>
-  <text class="profile-metric-label" x="${x}" y="${valueY + 21}">${escapeXml(label)}</text>${note ? `\n  <text class="profile-metric-note" x="${x}" y="${valueY + 39}">${escapeXml(note)}</text>` : ""}`;
+  return `<text class="profile-metric" x="${coordinate(x)}" y="${coordinate(valueY)}">${escapeXml(value)}</text>
+  <text class="profile-metric-label" x="${coordinate(x)}" y="${coordinate(valueY + 30)}">${escapeXml(label)}</text>${note ? `\n  <text class="profile-metric-note" x="${coordinate(x)}" y="${coordinate(valueY + 52)}">${escapeXml(note)}</text>` : ""}`;
 }
 
-function additionalStyles() {
+function profileStyles({ mobile = false } = {}) {
   return `
+    ${STYLE_START}
     .profile-divider{stroke:${COLORS.line};stroke-width:1}
-    .profile-metric{fill:${COLORS.ink};font-family:"Arial Narrow","Avenir Next Condensed","Helvetica Neue",sans-serif;font-size:40px;font-weight:900}
-    .profile-metric-label,.profile-metric-note{fill:${COLORS.inkSoft};font-family:ui-monospace,"SFMono-Regular",Consolas,monospace;font-weight:700;letter-spacing:1px}
-    .profile-metric-label{font-size:10px}.profile-metric-note{font-size:9px}
+    .profile-metric{fill:${COLORS.ink};font-family:"Arial Narrow","Avenir Next Condensed","Helvetica Neue",sans-serif;font-size:44px;font-weight:900}
+    .profile-metric-label,.profile-metric-note{fill:${COLORS.inkSoft};font-family:ui-monospace,"SFMono-Regular",Consolas,monospace;font-weight:700;letter-spacing:.8px}
+    .profile-metric-label{font-size:11px}.profile-metric-note{font-size:9px}
     .profile-grid .repo{font-size:12px}.profile-grid .family-band{opacity:.96}.profile-grid-day.future{opacity:.3}
+    .lens-cell-outline{fill:none;stroke:${COLORS.paper};stroke-width:1;pointer-events:none}
+    ${mobile ? ".profile-grid .repo{font-size:14px}.profile-metric{font-size:46px}.profile-metric-label{font-size:12px}.profile-metric-note{font-size:10px}" : ""}
+    ${STYLE_END}
   `;
 }
 
-function injectStyles(svg) {
-  if (svg.includes(".profile-metric{")) return svg;
-  const closing = svg.lastIndexOf("</style>");
+function stripRefinementStyles(svg) {
+  let cleaned = svg.replace(
+    new RegExp(`\\s*${STYLE_START.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}[\\s\\S]*?${STYLE_END.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s*`, "g"),
+    "",
+  );
+  const legacyRules = [
+    /\s*\.profile-divider\{[^}]*\}/g,
+    /\s*\.profile-metric\{[^}]*\}/g,
+    /\s*\.profile-metric-label,\.profile-metric-note\{[^}]*\}/g,
+    /\s*\.profile-metric-label\{[^}]*\}/g,
+    /\s*\.profile-metric-note\{[^}]*\}/g,
+    /\s*\.profile-grid \.repo\{[^}]*\}/g,
+    /\s*\.profile-grid \.family-band\{[^}]*\}/g,
+    /\s*\.profile-grid-day\.future\{[^}]*\}/g,
+    /\s*\.lens-cell-outline\{[^}]*\}/g,
+  ];
+  for (const rule of legacyRules) cleaned = cleaned.replace(rule, "");
+  return cleaned;
+}
+
+function injectStyles(svg, options) {
+  const cleaned = stripRefinementStyles(svg);
+  const closing = cleaned.lastIndexOf("</style>");
   if (closing < 0) throw new Error("Contribution lens SVG has no style block");
-  return `${svg.slice(0, closing)}${additionalStyles()}${svg.slice(closing)}`;
+  return `${cleaned.slice(0, closing)}${profileStyles(options)}${cleaned.slice(closing)}`;
 }
 
 function desktopDetail(summary) {
@@ -308,9 +342,8 @@ function desktopDetail(summary) {
     cellHeight: 24,
     gapX: 8,
     gapY: 4,
-    bandHeight: 7,
   });
-  const topRepos = summary.topRepos.length ? summary.topRepos.join(" + ") : "—";
+  const topRepos = summary.topRepos.length ? summary.topRepos.join(" + ") : "NO REPO DATA";
   return `  <g class="profile-grid">
   <text class="label" x="64" y="280">LATEST 4 WEEKS</text>
   ${grid.weekLabels}
@@ -318,28 +351,10 @@ function desktopDetail(summary) {
   ${grid.cells}
   </g>
   <line class="profile-divider" x1="852" y1="270" x2="852" y2="540"/>
-  ${metricSvg(882, 310, String(summary.streak), "CURRENT STREAK", `${summary.activeDays} / 28 ACTIVE`)}
-  <line class="profile-divider" x1="882" y1="363" x2="1136" y2="363"/>
-  ${metricSvg(882, 396, String(summary.mergeDays), "MERGE DAYS", "LATEST 4 WEEKS")}
-  <line class="profile-divider" x1="882" y1="446" x2="1136" y2="446"/>
-  ${metricSvg(882, 477, percentage(summary.focusShare), "TOP 2 REPOS", topRepos)}
+  ${metricSvg(882, 331, String(summary.streak), "DAY STREAK", `${summary.activeDays} / 28 ACTIVE`)}
+  <line class="profile-divider" x1="882" y1="402" x2="1136" y2="402"/>
+  ${metricSvg(882, 469, percentage(summary.focusShare), topRepos, "OF 4-WEEK ACTIVITY")}
 `;
-}
-
-function mobileStyles() {
-  return `
-    .profile-grid .repo{font-size:14px}.profile-metric{font-size:42px}.profile-metric-label{font-size:12px}.profile-metric-note{font-size:10px}
-  `;
-}
-
-function injectMobileStyles(svg) {
-  if (svg.includes(".profile-metric{")) {
-    const closing = svg.lastIndexOf("</style>");
-    return `${svg.slice(0, closing)}${mobileStyles()}${svg.slice(closing)}`;
-  }
-  const withBase = injectStyles(svg);
-  const closing = withBase.lastIndexOf("</style>");
-  return `${withBase.slice(0, closing)}${mobileStyles()}${withBase.slice(closing)}`;
 }
 
 function mobileDetail(summary) {
@@ -351,10 +366,9 @@ function mobileDetail(summary) {
     cellHeight: 39,
     gapX: 7,
     gapY: 6,
-    bandHeight: 11,
     mobile: true,
   });
-  const topRepos = summary.topRepos.length ? summary.topRepos.join(" + ") : "—";
+  const topRepos = summary.topRepos.length ? summary.topRepos.join(" + ") : "NO REPO DATA";
   return `  <g class="profile-grid">
   <text class="label" x="32" y="268">LATEST 4 WEEKS</text>
   ${grid.weekLabels}
@@ -362,25 +376,37 @@ function mobileDetail(summary) {
   ${grid.cells}
   </g>
   <line class="rule-strong" x1="32" y1="674" x2="688" y2="674"/>
-  ${metricSvg(50, 732, String(summary.streak), "CURRENT STREAK", `${summary.activeDays} / 28 ACTIVE`)}
-  ${metricSvg(260, 732, String(summary.mergeDays), "MERGE DAYS", "LATEST 4 WEEKS")}
-  ${metricSvg(470, 732, percentage(summary.focusShare), "TOP 2 REPOS", topRepos)}
+  ${metricSvg(50, 744, String(summary.streak), "DAY STREAK", `${summary.activeDays} / 28 ACTIVE`)}
+  ${metricSvg(386, 744, percentage(summary.focusShare), topRepos, "OF 4-WEEK ACTIVITY")}
 `;
 }
 
-function replaceBetween(svg, startMarker, endMarker, replacement) {
+function wrapDetail(replacement) {
+  return `  ${DETAIL_START}\n${replacement}  ${DETAIL_END}\n`;
+}
+
+function replaceDetail(svg, startMarker, endMarker, replacement) {
+  const wrapped = wrapDetail(replacement);
+  const existingStart = svg.indexOf(DETAIL_START);
+  const existingEnd = svg.indexOf(DETAIL_END, existingStart + DETAIL_START.length);
+  if (existingStart >= 0 && existingEnd >= 0) {
+    const lineStart = svg.lastIndexOf("\n", existingStart) + 1;
+    const lineEnd = svg.indexOf("\n", existingEnd + DETAIL_END.length);
+    return `${svg.slice(0, lineStart)}${wrapped}${svg.slice(lineEnd < 0 ? svg.length : lineEnd + 1)}`;
+  }
+
   const start = svg.indexOf(startMarker);
   const end = svg.indexOf(endMarker, start + startMarker.length);
   if (start < 0 || end < 0) {
     throw new Error(`Could not locate contribution lens detail markers: ${startMarker}`);
   }
-  return `${svg.slice(0, start)}${replacement}${svg.slice(end)}`;
+  return `${svg.slice(0, start)}${wrapped}${svg.slice(end)}`;
 }
 
 function refineDesktopSvg(svg, meta) {
   const summary = summarize(meta);
   const styled = injectStyles(svg);
-  return replaceBetween(
+  return replaceDetail(
     styled,
     '  <path class="connector"',
     '  <line class="rule-strong" x1="58" y1="560"',
@@ -390,8 +416,8 @@ function refineDesktopSvg(svg, meta) {
 
 function refineMobileSvg(svg, meta) {
   const summary = summarize(meta);
-  const styled = injectMobileStyles(svg);
-  return replaceBetween(
+  const styled = injectStyles(svg, { mobile: true });
+  return replaceDetail(
     styled,
     '  <path class="connector"',
     '  <line class="rule" x1="32" y1="818"',
@@ -401,13 +427,13 @@ function refineMobileSvg(svg, meta) {
 
 function updateMeta(meta) {
   const summary = summarize(meta);
+  const { mergeDays: _mergeDays, ...existingMetrics } = meta.metrics || {};
   return {
     ...meta,
     metrics: {
-      ...(meta.metrics || {}),
+      ...existingMetrics,
       streak: summary.streak,
       activeDays: summary.activeDays,
-      mergeDays: summary.mergeDays,
       topRepos: summary.topRepos,
     },
   };
