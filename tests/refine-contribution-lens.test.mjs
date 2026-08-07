@@ -100,6 +100,7 @@ test("clips a flush, exact lower-third model band into every rounded cell", () =
       svg,
       /<g class="family-band" data-family-band="true" clip-path="url\(#focus-cell-2026-07-13\)">/,
     );
+    assert.match(svg, /class="lens-cell-outline"/);
   }
 
   assert.match(
@@ -110,6 +111,15 @@ test("clips a flush, exact lower-third model band into every rounded cell", () =
     mobile,
     /<rect class="family-claude" x="80" y="342" width="[^"]+" height="13"\/>/,
   );
+});
+
+test("refinement is idempotent for scheduled and local reruns", () => {
+  const once = refineDesktopSvg(desktopSkeleton(), metaFixture());
+  const twice = refineDesktopSvg(once, metaFixture());
+
+  assert.equal((twice.match(/profile-detail:start/g) || []).length, 1);
+  assert.equal((twice.match(/profile-refinement:start/g) || []).length, 1);
+  assert.equal(twice, once);
 });
 
 test("writes clarified metrics and drops merge-day metadata", () => {
