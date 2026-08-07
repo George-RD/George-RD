@@ -3,7 +3,7 @@ name: Update profile activity graphics
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 3 * * *"
+    - cron: "17 */6 * * *"
   push:
     branches:
       - main
@@ -17,16 +17,25 @@ on:
       - "assets/contribution-lens-mobile.svg"
       - "assets/contribution-lens.json"
       - "scripts/render-tokscale-dossier.mjs"
+      - "scripts/render-tokscale-momentum.mjs"
       - "scripts/render-contribution-lens.mjs"
+      - "scripts/refine-contribution-lens.mjs"
       - "tests/render-contribution-lens.test.mjs"
+      - "tests/render-tokscale-momentum.test.mjs"
+      - "tests/refine-contribution-lens.test.mjs"
       - ".github/workflows/tokscale-dossier.yml"
 
 permissions:
   contents: write
 
+concurrency:
+  group: profile-activity-graphics-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   render:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -41,10 +50,12 @@ jobs:
       - name: Validate renderer syntax
         run: |
           node --check scripts/render-tokscale-dossier.mjs
+          node --check scripts/render-tokscale-momentum.mjs
           node --check scripts/render-contribution-lens.mjs
+          node --check scripts/refine-contribution-lens.mjs
 
-      - name: Test contribution lens
-        run: node --test tests/render-contribution-lens.test.mjs
+      - name: Test profile graphics
+        run: node --test tests/*.test.mjs
 
       - name: Render profile activity graphics
         env:
@@ -56,11 +67,23 @@ jobs:
             --trends-out assets/tokscale-model-momentum.svg \
             --meta assets/tokscale-dossier.json
 
+          node scripts/render-tokscale-momentum.mjs \
+            --username George-RD \
+            --out assets/tokscale-model-momentum.svg \
+            --meta assets/tokscale-dossier.json
+
           node scripts/render-contribution-lens.mjs \
             --username George-RD \
             --out assets/contribution-lens.svg \
             --mobile-out assets/contribution-lens-mobile.svg \
             --meta assets/contribution-lens.json
+
+          node scripts/refine-contribution-lens.mjs \
+            --in assets/contribution-lens.svg \
+            --mobile-in assets/contribution-lens-mobile.svg \
+            --meta assets/contribution-lens.json \
+            --out assets/contribution-lens.svg \
+            --mobile-out assets/contribution-lens-mobile.svg
 
       - name: Check generated files exist
         run: |
@@ -71,7 +94,7 @@ jobs:
           test -s assets/contribution-lens-mobile.svg
           test -s assets/contribution-lens.json
 
-      - name: Rasterize contribution lens for visual review
+      - name: Rasterize profile graphics for visual review
         if: github.event_name == 'pull_request'
         run: |
           sudo apt-get update -qq
@@ -79,14 +102,16 @@ jobs:
           mkdir -p visual-check
           rsvg-convert -w 1200 assets/contribution-lens.svg > visual-check/contribution-lens-desktop.png
           rsvg-convert -w 720 assets/contribution-lens-mobile.svg > visual-check/contribution-lens-mobile.png
+          rsvg-convert -w 1200 assets/tokscale-model-momentum.svg > visual-check/tokscale-model-momentum.png
           test -s visual-check/contribution-lens-desktop.png
           test -s visual-check/contribution-lens-mobile.png
+          test -s visual-check/tokscale-model-momentum.png
 
-      - name: Upload contribution lens visual check
+      - name: Upload profile graphics visual check
         if: github.event_name == 'pull_request'
         uses: actions/upload-artifact@v4
         with:
-          name: contribution-lens-visual-check
+          name: profile-graphics-visual-check
           path: visual-check/*.png
           if-no-files-found: error
           retention-days: 7
