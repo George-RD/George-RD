@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T05:01:54.386Z",
+  "generatedAt": "2026-08-07T13:52:51.871Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,15 +11,16 @@
     "focusStart": "2026-07-13",
     "focusEnd": "2026-08-09"
   },
-  "totalContributions": 11860,
+  "totalContributions": 11947,
   "metrics": {
     "activeDays": 25,
     "mergeDays": 8,
-    "focusShare": 0.4339045287637699,
+    "focusShare": 0.47892938496583143,
     "topRepos": [
       "CAIRN",
-      "OPEN"
-    ]
+      "SPINE"
+    ],
+    "streak": 18
   },
   "focus": [
     {
@@ -199,7 +200,7 @@
         "claude": 2332134119,
         "gpt": 961691831,
         "gemini": 0,
-        "other": 24122
+        "other": 96008
       }
     },
     {
@@ -232,8 +233,8 @@
       "repository": "mag",
       "event": "review",
       "modelFamilies": {
-        "claude": 448252197,
-        "gpt": 847905115,
+        "claude": 460914803,
+        "gpt": 921091796,
         "gemini": 53133779,
         "other": 0
       }
@@ -243,56 +244,96 @@
       "contributions": 134,
       "repository": "rive-rs-cli",
       "event": "merge",
-      "modelFamilies": {}
+      "modelFamilies": {
+        "claude": 181760738,
+        "gpt": 710471929,
+        "gemini": 8917621,
+        "other": 0
+      }
     },
     {
       "date": "2026-08-01",
       "contributions": 31,
       "repository": "mag",
       "event": "merge",
-      "modelFamilies": {}
+      "modelFamilies": {
+        "claude": 13263671,
+        "gpt": 27016623,
+        "gemini": 601708,
+        "other": 0
+      }
     },
     {
       "date": "2026-08-02",
       "contributions": 8,
       "repository": "cairn",
       "event": "merge",
-      "modelFamilies": {}
+      "modelFamilies": {
+        "claude": 107959391,
+        "gpt": 327326027,
+        "gemini": 32980788,
+        "other": 125343770
+      }
     },
     {
       "date": "2026-08-03",
       "contributions": 68,
       "repository": "cairn",
       "event": "merge",
-      "modelFamilies": {}
+      "modelFamilies": {
+        "claude": 799708995,
+        "gpt": 3908814368,
+        "gemini": 17145515,
+        "other": 71009477
+      }
     },
     {
       "date": "2026-08-04",
-      "contributions": 12,
+      "contributions": 14,
       "repository": "openspine",
       "event": "merge",
-      "modelFamilies": {}
+      "modelFamilies": {
+        "claude": 669192158,
+        "gpt": 1217335119,
+        "gemini": 15243819,
+        "other": 0
+      }
     },
     {
       "date": "2026-08-05",
-      "contributions": 19,
+      "contributions": 28,
       "repository": "firth",
       "event": "merge",
-      "modelFamilies": {}
+      "modelFamilies": {
+        "claude": 226332173,
+        "gpt": 451198325,
+        "gemini": 2011762,
+        "other": 0
+      }
     },
     {
       "date": "2026-08-06",
-      "contributions": 88,
+      "contributions": 98,
       "repository": "firth",
       "event": "merge",
-      "modelFamilies": {}
+      "modelFamilies": {
+        "claude": 885902323,
+        "gpt": 1593239519,
+        "gemini": 22954858,
+        "other": 0
+      }
     },
     {
       "date": "2026-08-07",
-      "contributions": 9,
-      "repository": "openspine",
+      "contributions": 75,
+      "repository": "cairn",
       "event": "merge",
-      "modelFamilies": {}
+      "modelFamilies": {
+        "claude": 973962922,
+        "gpt": 139261016,
+        "gemini": 42505825,
+        "other": 303904642
+      }
     },
     {
       "date": "2026-08-08",
