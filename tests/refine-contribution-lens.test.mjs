@@ -69,27 +69,54 @@ test("uses a real current streak while retaining active-day context", () => {
   assert.equal(repoShortName("openspine"), "SPINE");
 });
 
-test("removes panel boxes and gives the model mix a lower cell band", () => {
+test("removes weak summary copy and keeps two clear metric blocks", () => {
   const desktop = refineDesktopSvg(desktopSkeleton(), metaFixture());
   const mobile = refineMobileSvg(mobileSkeleton(), metaFixture());
 
   for (const svg of [desktop, mobile]) {
     assert.doesNotMatch(svg, /class="lens-panel"/);
     assert.doesNotMatch(svg, /class="metric-panel"/);
-    assert.match(svg, /CURRENT STREAK/);
+    assert.match(svg, /DAY STREAK/);
     assert.match(svg, /25 \/ 28 ACTIVE/);
-    assert.match(svg, /SPINE/);
+    assert.match(svg, /CAIRN \+ SPINE/);
+    assert.match(svg, /OF 4-WEEK ACTIVITY/);
+    assert.doesNotMatch(svg, /CURRENT STREAK/);
+    assert.doesNotMatch(svg, /MERGE DAYS/);
+    assert.doesNotMatch(svg, /TOP 2 REPOS/);
     assert.doesNotMatch(svg, />OPEN</);
-    assert.match(svg, /data-family-band="true"/);
   }
-  assert.match(desktop, /height="7"/);
-  assert.match(mobile, /height="11"/);
 });
 
-test("writes the clarified metrics back to generated metadata", () => {
+test("clips a flush, exact lower-third model band into every rounded cell", () => {
+  const desktop = refineDesktopSvg(desktopSkeleton(), metaFixture());
+  const mobile = refineMobileSvg(mobileSkeleton(), metaFixture());
+
+  for (const svg of [desktop, mobile]) {
+    assert.match(
+      svg,
+      /<clipPath id="focus-cell-2026-07-13" clipPathUnits="userSpaceOnUse">/,
+    );
+    assert.match(
+      svg,
+      /<g class="family-band" data-family-band="true" clip-path="url\(#focus-cell-2026-07-13\)">/,
+    );
+  }
+
+  assert.match(
+    desktop,
+    /<rect class="family-claude" x="106" y="330" width="[^"]+" height="8"\/>/,
+  );
+  assert.match(
+    mobile,
+    /<rect class="family-claude" x="80" y="342" width="[^"]+" height="13"\/>/,
+  );
+});
+
+test("writes clarified metrics and drops merge-day metadata", () => {
   const meta = updateMeta(metaFixture());
 
   assert.equal(meta.metrics.streak, 18);
   assert.equal(meta.metrics.activeDays, 25);
   assert.deepEqual(meta.metrics.topRepos, ["CAIRN", "SPINE"]);
+  assert.equal("mergeDays" in meta.metrics, false);
 });
