@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-06T06:04:28.498Z",
+  "generatedAt": "2026-08-07T05:01:54.386Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,11 +11,11 @@
     "focusStart": "2026-07-13",
     "focusEnd": "2026-08-09"
   },
-  "totalContributions": 11763,
+  "totalContributions": 11860,
   "metrics": {
-    "activeDays": 23,
-    "mergeDays": 7,
-    "focusShare": 0.4330357142857143,
+    "activeDays": 25,
+    "mergeDays": 8,
+    "focusShare": 0.4339045287637699,
     "topRepos": [
       "CAIRN",
       "OPEN"
@@ -230,7 +230,7 @@
       "date": "2026-07-30",
       "contributions": 135,
       "repository": "mag",
-      "event": "merge",
+      "event": "review",
       "modelFamilies": {
         "claude": 448252197,
         "gpt": 847905115,
@@ -241,7 +241,7 @@
     {
       "date": "2026-07-31",
       "contributions": 134,
-      "repository": "cairn",
+      "repository": "rive-rs-cli",
       "event": "merge",
       "modelFamilies": {}
     },
@@ -282,22 +282,17 @@
     },
     {
       "date": "2026-08-06",
-      "contributions": 0,
-      "repository": null,
-      "event": null,
+      "contributions": 88,
+      "repository": "firth",
+      "event": "merge",
       "modelFamilies": {}
     },
     {
       "date": "2026-08-07",
-      "contributions": 0,
-      "repository": null,
-      "event": null,
-      "modelFamilies": {
-        "claude": 0,
-        "gpt": 0,
-        "gemini": 0,
-        "other": 0
-      }
+      "contributions": 9,
+      "repository": "openspine",
+      "event": "merge",
+      "modelFamilies": {}
     },
     {
       "date": "2026-08-08",
