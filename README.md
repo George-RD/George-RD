@@ -29,7 +29,7 @@ I helped build and operate an uncrewed survey vessel, then a regional remote ope
 
 <picture>
   <source media="(max-width: 640px)" srcset="assets/contribution-lens-mobile.svg" />
-  <img src="assets/contribution-lens.svg" width="100%" alt="A year of GitHub contributions with the latest four weeks enlarged to show repository focus, model-family mix and merge activity." />
+  <img src="assets/contribution-lens.svg" width="100%" alt="A year of GitHub contributions with the latest 14 days enlarged to show daily repository shares and the tracked AI model mix for each day." />
 </picture>
 
 <a href="https://tokscale.ai/u/George-RD">
