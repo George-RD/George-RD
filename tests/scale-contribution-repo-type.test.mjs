@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 
 import {
+  fontSizeForRelativeScore,
   fontSizeForShare,
   scaleSvg,
 } from "../scripts/scale-contribution-repo-type.mjs";
@@ -35,7 +36,7 @@ function fixtureMeta() {
   };
 }
 
-test("fontSizeForShare follows share while respecting the width cap", () => {
+test("fontSizeForShare follows absolute daily share while respecting width", () => {
   const small = fontSizeForShare("CAIRN", 0.2, {
     min: 16,
     max: 24,
@@ -59,7 +60,29 @@ test("fontSizeForShare follows share while respecting the width cap", () => {
   assert.ok(constrained < 12);
 });
 
-test("scaleSvg sizes each visible repository from its daily share", () => {
+test("fontSizeForRelativeScore differentiates repositories within one day", () => {
+  const second = fontSizeForRelativeScore("MAG", 20, 70, {
+    min: 7.5,
+    max: 19.5,
+    maxWidth: 100,
+  });
+  const third = fontSizeForRelativeScore("RIVE", 8, 70, {
+    min: 7.5,
+    max: 19.5,
+    maxWidth: 100,
+  });
+  const nearDominant = fontSizeForRelativeScore("SPINE", 63, 70, {
+    min: 7.5,
+    max: 19.5,
+    maxWidth: 100,
+  });
+
+  assert.equal(second, 12.8);
+  assert.equal(third, 10.4);
+  assert.ok(nearDominant > second);
+});
+
+test("scaleSvg sizes every visible repository relative to peers in its day", () => {
   const svg = scaleSvg(fixtureSvg(), fixtureMeta());
 
   assert.match(
@@ -68,17 +91,17 @@ test("scaleSvg sizes each visible repository from its daily share", () => {
   );
   assert.match(
     svg,
-    /class="secondary-repo"[^>]*data-share="0.2"[^>]*font-size:8.5px[^>]*>MAG/,
+    /class="secondary-repo"[^>]*data-score="20"[^>]*data-relative="0.2857"[^>]*font-size:12.8px[^>]*>MAG/,
   );
   assert.match(
     svg,
-    /class="secondary-repo"[^>]*data-share="0.08"[^>]*font-size:7.9px[^>]*>RIVE/,
+    /class="secondary-repo"[^>]*data-score="8"[^>]*data-relative="0.1143"[^>]*font-size:10.4px[^>]*>RIVE/,
   );
   assert.match(svg, /class="secondary-separator"/);
   assert.match(svg, /\+1 MORE/);
   assert.doesNotMatch(svg, /class="secondary-repos"/);
-  assert.match(svg, /REPO TYPE SIZE = SHARE OF THAT DAY/);
-  assert.match(svg, /TYPE SIZE = DAILY REPO SHARE/);
+  assert.match(svg, /REPO TYPE SIZE = SHARE WITHIN EACH DAY/);
+  assert.match(svg, /TYPE SIZE = REPO SHARE WITHIN DAY/);
 });
 
 test("scaleSvg constrains a dominant label to the available column width", () => {
