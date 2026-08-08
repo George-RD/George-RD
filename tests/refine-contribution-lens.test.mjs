@@ -133,14 +133,14 @@ test("renders fourteen large day cards with repo tiles and a full-width daily mo
   for (const svg of [desktop, mobile]) {
     assert.equal((svg.match(/data-recent-day=/g) || []).length, 14);
     assert.match(svg, /LATEST 14 DAYS/);
-    assert.match(svg, /REPO SHADE = SHARE OF THAT DAY/);
-    assert.match(svg, /LOWER BAND = TOKSCALE MODEL MIX/);
+    assert.match(svg, /REPO SHADE = RELATIVE ACTIVITY THAT DAY/);
+    assert.match(svg, /LOWER BAND = WHOLE-DAY TOKSCALE MIX/);
     assert.match(svg, /class="repo-tile"/);
     assert.match(svg, />SPINE</);
     assert.match(svg, />RIVE</);
     assert.match(svg, /data-model-band="day"/);
     assert.match(svg, /class="family-gpt"/);
-    assert.match(svg, /REPO SHARE/);
+    assert.match(svg, /REPO ACTIVITY/);
     assert.doesNotMatch(svg, /LATEST 4 WEEKS/);
     assert.doesNotMatch(svg, /class="profile-metric"/);
     assert.doesNotMatch(svg, /class="lens-panel"/);
