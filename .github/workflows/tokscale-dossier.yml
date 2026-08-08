@@ -21,10 +21,12 @@ on:
       - "scripts/render-tokscale-dossier.mjs"
       - "scripts/render-tokscale-momentum.mjs"
       - "scripts/render-contribution-lens.mjs"
+      - "scripts/enrich-contribution-lens-repositories.mjs"
       - "scripts/refine-contribution-lens.mjs"
       - "tests/render-repository-stars.test.mjs"
       - "tests/render-contribution-lens.test.mjs"
       - "tests/render-tokscale-momentum.test.mjs"
+      - "tests/enrich-contribution-lens-repositories.test.mjs"
       - "tests/refine-contribution-lens.test.mjs"
       - ".github/workflows/tokscale-dossier.yml"
 
@@ -56,6 +58,7 @@ jobs:
           node --check scripts/render-tokscale-dossier.mjs
           node --check scripts/render-tokscale-momentum.mjs
           node --check scripts/render-contribution-lens.mjs
+          node --check scripts/enrich-contribution-lens-repositories.mjs
           node --check scripts/refine-contribution-lens.mjs
 
       - name: Test profile graphics
@@ -84,6 +87,10 @@ jobs:
             --username George-RD \
             --out assets/contribution-lens.svg \
             --mobile-out assets/contribution-lens-mobile.svg \
+            --meta assets/contribution-lens.json
+
+          node scripts/enrich-contribution-lens-repositories.mjs \
+            --username George-RD \
             --meta assets/contribution-lens.json
 
           node scripts/refine-contribution-lens.mjs \
