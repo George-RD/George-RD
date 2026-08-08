@@ -249,8 +249,7 @@ function repoTiles(day, { x, y, tileSize, gap, maxTiles = 3 }) {
       return `<g class="repo-tile-group"><rect class="repo-tile" data-level="${level}" x="${coordinate(tileX)}" y="${coordinate(y)}" width="${coordinate(tileSize)}" height="${coordinate(tileSize)}" rx="3" fill="${COLORS.intensity[level]}"><title>${escapeXml(title)}</title></rect><text class="repo-tile-label" x="${coordinate(tileX + tileSize / 2)}" y="${coordinate(y + tileSize * 0.58)}" text-anchor="middle" style="fill:${textColor}">${escapeXml(repoShortName(repository.name))}</text></g>`;
     })
     .join("");
-  const extra = repositories.length - top.length;
-  return `${tiles}${extra > 0 ? `<text class="repo-extra" x="${coordinate(x + top.length * (tileSize + gap) - gap)}" y="${coordinate(y + tileSize - 3)}" text-anchor="end">+${extra}</text>` : ""}`;
+  return tiles;
 }
 
 function dayTitle(day) {
@@ -299,10 +298,10 @@ function profileStyles({ mobile = false } = {}) {
     ${STYLE_START}
     .recent-card{fill:${COLORS.paperSoft};stroke:none}
     .recent-card-outline{fill:none;stroke:${COLORS.line};stroke-width:1;pointer-events:none}
-    .day-date,.day-weekday,.day-contributions,.recent-summary,.recent-help,.repo-extra,.repo-count,.repo-empty,.repo-tile-label{font-family:ui-monospace,"SFMono-Regular",Consolas,monospace;font-weight:750;letter-spacing:.55px}
+    .day-date,.day-weekday,.day-contributions,.recent-summary,.recent-help,.repo-count,.repo-empty,.repo-tile-label{font-family:ui-monospace,"SFMono-Regular",Consolas,monospace;font-weight:750;letter-spacing:.55px}
     .day-date{fill:${COLORS.ink};font-size:10px}.day-weekday{fill:${COLORS.inkSoft};font-size:11px}.day-contributions{fill:${COLORS.inkSoft};font-size:10px}
     .recent-summary{fill:${COLORS.ink};font-size:10px}.recent-help{fill:${COLORS.inkSoft};font-size:8.5px;letter-spacing:.45px}
-    .repo-tile-label{font-size:8px}.repo-extra,.repo-count{fill:${COLORS.inkSoft};font-size:7px}.repo-empty{fill:${COLORS.inkSoft};font-size:8px}
+    .repo-tile-label{font-size:8px}.repo-count{fill:${COLORS.inkSoft};font-size:7px}.repo-empty{fill:${COLORS.inkSoft};font-size:8px}
     .model-band-base{fill:${COLORS.paperDeep}}.model-band-empty{fill:${COLORS.paperDeep}}.model-band-empty-mark{fill:none;stroke:${COLORS.line};stroke-width:1.2;stroke-linecap:round}.model-band-divider{stroke:${COLORS.line};stroke-width:.8}
     .family-claude{fill:${COLORS.rust}}.family-gpt{fill:${COLORS.blue}}.family-gemini{fill:${COLORS.gold}}.family-other{fill:${COLORS.sage}}
     .recent-selection{pointer-events:none}.selection-segment{fill:none;stroke:${COLORS.ink};stroke-width:1.8;rx:4}
@@ -415,8 +414,8 @@ function desktopDetail(summary) {
   return `  <g class="recent-grid">
   <text class="label" x="58" y="272">LATEST 14 DAYS</text>
   <text class="recent-summary" x="1142" y="272" text-anchor="end">${summary.activeDays} / 14 ACTIVE · ${summary.streak}-DAY STREAK</text>
-  <text class="recent-help" x="58" y="290">REPO SHADE = SHARE OF THAT DAY</text>
-  <text class="recent-help" x="1142" y="290" text-anchor="end">LOWER BAND = TOKSCALE MODEL MIX</text>
+  <text class="recent-help" x="58" y="290">REPO SHADE = RELATIVE ACTIVITY THAT DAY</text>
+  <text class="recent-help" x="1142" y="290" text-anchor="end">LOWER BAND = WHOLE-DAY TOKSCALE MIX</text>
   ${renderGrid(summary, layout)}
   </g>
 `;
@@ -437,7 +436,7 @@ function mobileDetail(summary) {
   return `  <g class="recent-grid">
   <text class="label" x="32" y="258">LATEST 14 DAYS</text>
   <text class="recent-summary" x="688" y="258" text-anchor="end">${summary.activeDays} / 14 ACTIVE · ${summary.streak}-DAY STREAK</text>
-  <text class="recent-help" x="32" y="280">REPO SHADE = SHARE OF THAT DAY · LOWER BAND = TOKSCALE MODEL MIX</text>
+  <text class="recent-help" x="32" y="280">REPO SHADE = RELATIVE ACTIVITY THAT DAY · LOWER BAND = WHOLE-DAY TOKSCALE MIX</text>
   ${renderGrid(summary, layout)}
   </g>
 `;
@@ -445,7 +444,7 @@ function mobileDetail(summary) {
 
 function desktopFooter() {
   return `  <line class="rule-strong" x1="58" y1="560" x2="1142" y2="560"/>
-  <text class="footer-label" x="58" y="584">REPO SHARE</text>
+  <text class="footer-label" x="58" y="584">REPO ACTIVITY</text>
   <text class="footer-note" x="139" y="584">LOW</text>
   <rect x="166" y="574" width="12" height="12" rx="1.5" fill="${COLORS.intensity[1]}"/>
   <rect x="184" y="574" width="12" height="12" rx="1.5" fill="${COLORS.intensity[2]}"/>
@@ -462,7 +461,7 @@ function desktopFooter() {
 
 function mobileFooter() {
   return `  <line class="rule" x1="32" y1="818" x2="688" y2="818"/>
-  <text class="footer-label" x="32" y="846">REPO SHARE</text>
+  <text class="footer-label" x="32" y="846">REPO ACTIVITY</text>
   <text class="footer-note" x="132" y="846">LOW</text>
   <rect x="168" y="834" width="15" height="15" rx="2" fill="${COLORS.intensity[1]}"/>
   <rect x="190" y="834" width="15" height="15" rx="2" fill="${COLORS.intensity[2]}"/>
