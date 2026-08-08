@@ -221,38 +221,19 @@ function fontSizeForRelativeScore(
   });
 }
 
-function textWidth(label, fontSize, widthFactor = 0.62) {
-  return Math.max(1, String(label || "").length) * fontSize * widthFactor;
+function slotSplit(leftScore, rightScore, { min = 0.54, max = 0.72 } = {}) {
+  const left = Math.max(0, number(leftScore));
+  const right = Math.max(0, number(rightScore));
+  if (right <= 0) return 1;
+  if (left <= 0) return 0;
+  return clamp(left / (left + right), min, max);
 }
 
-function fitInlineEntries(entries, maxWidth, mobile) {
-  const separatorWidth = mobile ? 8 : 7;
-  const gap = mobile ? 4 : 3;
-  const fitted = entries.map((entry) => ({ ...entry }));
-
-  const totalWidth = fitted.reduce(
-    (sum, entry, index) =>
-      sum +
-      textWidth(entry.label, entry.fontSize) +
-      (index > 0 ? separatorWidth + gap * 2 : 0),
-    0,
-  );
-  if (totalWidth <= maxWidth || totalWidth <= 0) return fitted;
-
-  const scale = maxWidth / totalWidth;
-  for (const entry of fitted) {
-    entry.fontSize =
-      Math.round(Math.max(6.2, entry.fontSize * scale) * 10) / 10;
-  }
-  return fitted;
-}
-
-function repoEntry(repository, dominant, dominantSize, maxWidth, mobile) {
+function repoEntry(repository, dominant, maxWidth, mobile, slot) {
+  if (!repository) return null;
   const label = repoShortName(repository.name);
-  const max = mobile
-    ? Math.max(9, Math.min(17, dominantSize - 0.5))
-    : Math.max(9.5, Math.min(20, dominantSize - 0.5));
-  const min = mobile ? 7.5 : 8;
+  const max = mobile ? 18 : 20.5;
+  const min = mobile ? 8 : 8.5;
   return {
     label,
     score: repository.score,
@@ -265,20 +246,17 @@ function repoEntry(repository, dominant, dominantSize, maxWidth, mobile) {
       label,
       repository.score,
       dominant.score,
-      { min, max, maxWidth, widthFactor: 0.58 },
+      { min, max, maxWidth, widthFactor: 0.57 },
     ),
     className: "secondary-repo",
+    slot,
   };
 }
 
-function aggregateEntry(repositories, dominant, dominantSize, maxWidth, mobile) {
+function aggregateEntry(repositories, dominant, maxWidth, mobile, slot) {
   const aggregate = aggregateHiddenRepositories(repositories);
   if (!aggregate.count) return null;
   const label = `+${aggregate.count} MORE`;
-  const max = mobile
-    ? Math.max(9, Math.min(17, dominantSize - 0.5))
-    : Math.max(9.5, Math.min(20, dominantSize - 0.5));
-  const min = mobile ? 7.5 : 8;
   return {
     label,
     score: aggregate.score,
@@ -288,107 +266,124 @@ function aggregateEntry(repositories, dominant, dominantSize, maxWidth, mobile) 
       label,
       aggregate.score,
       dominant.score,
-      { min, max, maxWidth, widthFactor: 0.58 },
+      {
+        min: mobile ? 8 : 8.5,
+        max: mobile ? 18 : 20.5,
+        maxWidth,
+        widthFactor: 0.57,
+      },
     ),
     className: "repo-more",
     aggregateCount: aggregate.count,
+    slot,
   };
 }
 
-function textMarkup(entry, x, y) {
+function textMarkup(entry, x, y, { anchor = "start" } = {}) {
+  if (!entry) return "";
   const aggregate =
     entry.aggregateCount === undefined
       ? ""
       : ` data-aggregate-count="${entry.aggregateCount}"`;
-  return `<text class="${entry.className}" x="${coordinate(x)}" y="${coordinate(y)}" data-score="${coordinate(entry.score)}" data-relative="${decimal(entry.relative)}" data-share="${decimal(entry.share)}"${aggregate} style="font-size:${coordinate(entry.fontSize)}px">${escapeXml(entry.label)}</text>`;
+  const anchorMarkup = anchor === "start" ? "" : ` text-anchor="${anchor}"`;
+  return `<text class="${entry.className}" data-slot="${entry.slot}" x="${coordinate(x)}" y="${coordinate(y)}"${anchorMarkup} data-score="${coordinate(entry.score)}" data-relative="${decimal(entry.relative)}" data-share="${decimal(entry.share)}"${aggregate} style="font-size:${coordinate(entry.fontSize)}px">${escapeXml(entry.label)}</text>`;
 }
 
-function dateStackMarkup(day, bandX, bandY, mobile) {
+function dateRailMarkup(day, contributions, bandX, bandY, railWidth, mobile) {
   const { weekday, day: dayNumber, month } = dateParts(day.date);
-  const weekdayY = bandY - (mobile ? 36 : 57);
-  const dayY = bandY - (mobile ? 21 : 39);
-  const monthY = bandY - (mobile ? 7 : 23);
-  return `<g class="day-date-stack" aria-label="${escapeXml(`${weekday} ${dayNumber} ${month}`)}"><text class="day-stack-weekday" x="${coordinate(bandX)}" y="${coordinate(weekdayY)}">${escapeXml(weekday)}</text><text class="day-stack-number" x="${coordinate(bandX)}" y="${coordinate(dayY)}">${escapeXml(dayNumber)}</text><text class="day-stack-month" x="${coordinate(bandX)}" y="${coordinate(monthY)}">${escapeXml(month)}</text></g>`;
+  const weekdayY = bandY - (mobile ? 38 : 61);
+  const dayY = bandY - (mobile ? 23 : 42);
+  const monthY = bandY - (mobile ? 8 : 25);
+  const countX = bandX + railWidth - (mobile ? 3 : 2);
+  return `<g class="day-date-stack" aria-label="${escapeXml(`${weekday} ${dayNumber} ${month}; ${number(contributions)} contributions`)}"><text class="day-stack-weekday" x="${coordinate(bandX)}" y="${coordinate(weekdayY)}">${escapeXml(weekday)}</text><text class="day-stack-count" x="${coordinate(countX)}" y="${coordinate(weekdayY)}" text-anchor="end">${number(contributions)}</text><text class="day-stack-number" x="${coordinate(bandX)}" y="${coordinate(dayY)}">${escapeXml(dayNumber)}</text><text class="day-stack-month" x="${coordinate(bandX)}" y="${coordinate(monthY)}">${escapeXml(month)}</text></g>`;
 }
 
-function repositoryBlockMarkup(day, bandX, bandY, bandWidth, mobile) {
+function repositoryFieldMarkup(day, bandX, bandY, bandWidth, mobile) {
   const repositories = repositoriesForDay(day);
-  const railWidth = mobile ? 42 : 28;
-  const x = bandX + railWidth;
-  const maxWidth = Math.max(36, bandWidth - railWidth - 2);
+  const railWidth = mobile ? 46 : 31;
+  const fieldX = bandX + railWidth;
+  const fieldWidth = Math.max(40, bandWidth - railWidth - 2);
+  const fieldRight = fieldX + fieldWidth;
+  const rowGap = mobile ? 8 : 6;
+  const topY = bandY - (mobile ? 29 : 45);
+  const bottomY = bandY - (mobile ? 8 : 14);
 
   if (!repositories.length) {
-    return `<g class="repo-type-block"><text class="repo-empty" x="${coordinate(x)}" y="${coordinate(bandY - (mobile ? 20 : 36))}">NO REPO ACTIVITY</text></g>`;
+    return `<g class="repo-type-field"><text class="repo-empty" x="${coordinate(fieldX)}" y="${coordinate(topY)}">NO REPO ACTIVITY</text></g>`;
   }
 
   const dominant = repositories[0];
+  const second = repositories[1] || null;
+  const third = repositories[2] || null;
+  const aggregate = aggregateHiddenRepositories(repositories);
+
+  const topRatio = slotSplit(dominant.score, second?.score, {
+    min: 0.56,
+    max: 0.72,
+  });
+  const topAvailable = fieldWidth - (second ? rowGap : 0);
+  const dominantWidth = second ? topAvailable * topRatio : topAvailable;
+  const secondWidth = second ? topAvailable - dominantWidth : 0;
+
   const dominantLabel = repoShortName(dominant.name);
   const dominantSize = fontSizeForShare(
     dominantLabel,
     dominant.share,
     mobile
-      ? { min: 15, max: 21, maxWidth, widthFactor: 0.55 }
-      : { min: 16, max: 24, maxWidth, widthFactor: 0.55 },
+      ? { min: 16, max: 23, maxWidth: dominantWidth, widthFactor: 0.55 }
+      : { min: 17, max: 25, maxWidth: dominantWidth, widthFactor: 0.55 },
   );
-  const dominantY = bandY - (mobile ? 27 : 50);
-  const dominantMarkup = `<text class="dominant-repo" x="${coordinate(x)}" y="${coordinate(dominantY)}" data-score="${coordinate(dominant.score)}" data-relative="1" data-share="${decimal(dominant.share)}" style="font-size:${coordinate(dominantSize)}px">${escapeXml(dominantLabel)}</text>`;
+  const dominantEntry = {
+    label: dominantLabel,
+    score: dominant.score,
+    share: dominant.share,
+    relative: 1,
+    fontSize: dominantSize,
+    className: "dominant-repo",
+    slot: "top-left",
+  };
 
-  if (mobile) {
-    const entries = repositories
-      .slice(1, 3)
-      .map((repository) =>
-        repoEntry(repository, dominant, dominantSize, maxWidth, true),
-      );
-    const aggregate = aggregateEntry(
-      repositories,
-      dominant,
-      dominantSize,
-      maxWidth,
-      true,
-    );
-    if (aggregate) entries.push(aggregate);
-    const fitted = fitInlineEntries(entries, maxWidth, true);
-    const secondaryY = bandY - 7;
-    let cursor = x;
-    const markup = [dominantMarkup];
-    fitted.forEach((entry, index) => {
-      if (index > 0) {
-        cursor += 4;
-        markup.push(
-          `<text class="secondary-separator" x="${coordinate(cursor)}" y="${coordinate(secondaryY)}" style="font-size:7.5px">·</text>`,
-        );
-        cursor += 7.5 * 0.62 + 4;
-      }
-      markup.push(textMarkup(entry, cursor, secondaryY));
-      cursor += textWidth(entry.label, entry.fontSize);
-    });
-    return `<g class="repo-type-block">${markup.join("")}</g>`;
-  }
+  const secondEntry = repoEntry(
+    second,
+    dominant,
+    secondWidth,
+    mobile,
+    "top-right",
+  );
 
-  const markup = [dominantMarkup];
-  const visible = repositories.slice(1, 3);
-  const lines = [bandY - 31, bandY - 15];
-  visible.forEach((repository, index) => {
-    const entry = repoEntry(
-      repository,
-      dominant,
-      dominantSize,
-      maxWidth,
-      false,
-    );
-    markup.push(textMarkup(entry, x, lines[index]));
+  const bottomRightScore = aggregate.count ? aggregate.score : 0;
+  const bottomRatio = slotSplit(third?.score, bottomRightScore, {
+    min: 0.46,
+    max: 0.64,
   });
-  const aggregate = aggregateEntry(
+  const bottomAvailable = fieldWidth - (third && aggregate.count ? rowGap : 0);
+  const thirdWidth = third
+    ? aggregate.count
+      ? bottomAvailable * bottomRatio
+      : bottomAvailable
+    : 0;
+  const aggregateWidth = aggregate.count
+    ? third
+      ? bottomAvailable - thirdWidth
+      : bottomAvailable
+    : 0;
+
+  const thirdEntry = repoEntry(
+    third,
+    dominant,
+    thirdWidth,
+    mobile,
+    "bottom-left",
+  );
+  const aggregateRepoEntry = aggregateEntry(
     repositories,
     dominant,
-    dominantSize,
-    maxWidth,
-    false,
+    aggregateWidth,
+    mobile,
+    "bottom-right",
   );
-  if (aggregate) {
-    markup.push(textMarkup(aggregate, x, bandY - 3));
-  }
-  return `<g class="repo-type-block">${markup.join("")}</g>`;
+
+  return `<g class="repo-type-field">${textMarkup(dominantEntry, fieldX, topY)}${textMarkup(secondEntry, fieldRight, topY, { anchor: "end" })}${textMarkup(thirdEntry, fieldX, bottomY)}${textMarkup(aggregateRepoEntry, fieldRight, bottomY, { anchor: "end" })}</g>`;
 }
 
 function scaleDaySegment(segment, day, mobile) {
@@ -401,11 +396,19 @@ function scaleDaySegment(segment, day, mobile) {
   const bandX = number(bandXRaw);
   const bandY = number(bandYRaw);
   const bandWidth = number(bandWidthRaw);
+  const contributionMatch = segment.match(
+    /<text class="day-contributions"[^>]*>([^<]*)<\/text>/,
+  );
+  const contributions = contributionMatch
+    ? number(contributionMatch[1])
+    : number(day.contributions);
 
   const cleaned = segment
     .replace(/<g class="day-date-stack"[\s\S]*?<\/g>/g, "")
+    .replace(/<g class="repo-type-field"[\s\S]*?<\/g>/g, "")
     .replace(/<g class="repo-type-block"[\s\S]*?<\/g>/g, "")
     .replace(/<text class="day-date"[^>]*>[^<]*<\/text>/g, "")
+    .replace(/<text class="day-contributions"[^>]*>[^<]*<\/text>/g, "")
     .replace(/<text class="dominant-repo"[^>]*>[^<]*<\/text>/g, "")
     .replace(/<text class="secondary-repos"[^>]*>[^<]*<\/text>/g, "")
     .replace(/<text class="secondary-repo"[^>]*>[^<]*<\/text>/g, "")
@@ -413,7 +416,7 @@ function scaleDaySegment(segment, day, mobile) {
     .replace(/<text class="repo-more"[^>]*>[^<]*<\/text>/g, "")
     .replace(/<text class="repo-empty"[^>]*>[^<]*<\/text>/g, "");
 
-  const markup = `${dateStackMarkup(day, bandX, bandY, mobile)}${repositoryBlockMarkup(day, bandX, bandY, bandWidth, mobile)}`;
+  const markup = `${dateRailMarkup(day, contributions, bandX, bandY, mobile ? 46 : 31, mobile)}${repositoryFieldMarkup(day, bandX, bandY, bandWidth, mobile)}`;
   const modelBandIndex = cleaned.indexOf('<g class="model-band"');
   if (modelBandIndex < 0) return cleaned;
   return `${cleaned.slice(0, modelBandIndex)}${markup}${cleaned.slice(modelBandIndex)}`;
@@ -430,10 +433,9 @@ function injectStyles(svg) {
   if (closing < 0) throw new Error("Contribution lens SVG has no style block");
   const styles = `
     ${STYLE_START}
-    .day-date-stack text,.secondary-repo,.secondary-separator,.repo-more{font-family:ui-monospace,"SFMono-Regular",Consolas,monospace;font-weight:800;letter-spacing:.3px}
-    .day-stack-weekday,.day-stack-month{fill:#40534e;font-size:7.5px}.day-stack-number{fill:#10231f;font-size:13px;font-weight:900}
-    .secondary-repo,.repo-more{fill:#40534e}.secondary-separator{fill:#b9b2a5;font-weight:700}
-    .repo-empty{fill:#40534e;font-family:ui-monospace,"SFMono-Regular",Consolas,monospace;font-size:8px;font-weight:750;letter-spacing:.4px}
+    .day-date-stack text,.secondary-repo,.repo-more{font-family:ui-monospace,"SFMono-Regular",Consolas,monospace;font-weight:850;letter-spacing:.25px}
+    .day-stack-weekday,.day-stack-month,.day-stack-count{fill:#40534e}.day-stack-weekday,.day-stack-month{font-size:7.5px}.day-stack-count{font-size:7px;font-weight:750}.day-stack-number{fill:#10231f;font-size:13px;font-weight:900}
+    .secondary-repo,.repo-more{fill:#40534e}.repo-more{font-weight:850}.repo-empty{fill:#40534e;font-family:ui-monospace,"SFMono-Regular",Consolas,monospace;font-size:8px;font-weight:750;letter-spacing:.4px}
     ${STYLE_END}
   `;
   return `${cleaned.slice(0, closing)}${styles}${cleaned.slice(closing)}`;
@@ -466,27 +468,35 @@ function scaleSvg(svg, meta, { mobile = false } = {}) {
   return injectStyles(output)
     .replaceAll(
       "REPOS RANKED BY GITHUB ACTIVITY",
-      "DATE STACK · REPO TYPE = SHARE WITHIN DAY",
+      "DATE RAIL · TYPE SIZE = SHARE WITHIN DAY",
     )
     .replaceAll(
       "REPO TYPE SIZE = SHARE WITHIN EACH DAY",
+      "DATE RAIL · TYPE SIZE = SHARE WITHIN DAY",
+    )
+    .replaceAll(
       "DATE STACK · REPO TYPE = SHARE WITHIN DAY",
+      "DATE RAIL · TYPE SIZE = SHARE WITHIN DAY",
     )
     .replaceAll(
       "TYPE WEIGHT = REPO RANK · RULE LENGTH = GITHUB ACTIVITY",
-      "TYPE SIZE = SHARE · +N = HIDDEN SHARE · RULE = ACTIVITY",
+      "2×2 TYPE FIELD · +N = HIDDEN SHARE · RULE = ACTIVITY",
     )
     .replaceAll(
       "TYPE = REPO RANK · RULE LENGTH = GITHUB ACTIVITY",
-      "TYPE SIZE = SHARE · +N = HIDDEN SHARE · RULE = ACTIVITY",
+      "2×2 TYPE FIELD · +N = HIDDEN SHARE · RULE = ACTIVITY",
     )
     .replaceAll(
       "TYPE SIZE = REPO SHARE WITHIN DAY · RULE LENGTH = GITHUB ACTIVITY",
-      "TYPE SIZE = SHARE · +N = HIDDEN SHARE · RULE = ACTIVITY",
+      "2×2 TYPE FIELD · +N = HIDDEN SHARE · RULE = ACTIVITY",
     )
     .replaceAll(
       "TYPE SIZE = REPO SHARE WITHIN DAY · RULE = GITHUB ACTIVITY",
+      "2×2 TYPE FIELD · +N = HIDDEN SHARE · RULE = ACTIVITY",
+    )
+    .replaceAll(
       "TYPE SIZE = SHARE · +N = HIDDEN SHARE · RULE = ACTIVITY",
+      "2×2 TYPE FIELD · +N = HIDDEN SHARE · RULE = ACTIVITY",
     );
 }
 
@@ -509,7 +519,7 @@ async function main() {
   await fs.writeFile(args.out, desktop, "utf8");
   await ensureParent(args.mobileOut);
   await fs.writeFile(args.mobileOut, mobile, "utf8");
-  console.log("Stacked dates vertically and scaled repository type within each day.");
+  console.log("Composed repository type across a bounded 2×2 field for each day.");
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
@@ -522,4 +532,5 @@ export {
   fontSizeForShare,
   repositoriesForDay,
   scaleSvg,
+  slotSplit,
 };
