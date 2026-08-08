@@ -4,8 +4,10 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
 
+const DISPLAY_DAYS = 14;
 const COLORS = {
   paper: "#f1ede4",
+  paperDeep: "#e4ded1",
   paperSoft: "#f7f4ed",
   ink: "#10231f",
   inkSoft: "#40534e",
@@ -14,7 +16,6 @@ const COLORS = {
   blue: "#4b7fa0",
   gold: "#d5a72c",
   sage: "#8b9d83",
-  intensity: ["#eee9de", "#d7d6c8", "#b7bea9", "#8d9e88", "#556e61", "#10231f"],
 };
 
 const DETAIL_START = "<!-- profile-detail:start -->";
@@ -59,26 +60,33 @@ function number(value) {
 
 function coordinate(value) {
   const rounded = Math.round(number(value) * 100) / 100;
-  if (Object.is(rounded, -0)) return "0";
-  return String(rounded);
+  return Object.is(rounded, -0) ? "0" : String(rounded);
 }
 
 function dateKey(value) {
   if (!value) return "";
   const date = new Date(value);
-  return Number.isNaN(date.getTime()) ? String(value).slice(0, 10) : date.toISOString().slice(0, 10);
+  return Number.isNaN(date.getTime())
+    ? String(value).slice(0, 10)
+    : date.toISOString().slice(0, 10);
 }
 
-function shortDay(value) {
+function dateParts(value) {
   const key = dateKey(value);
-  if (!key) return "—";
-  return new Date(`${key}T00:00:00.000Z`)
-    .toLocaleDateString("en-GB", {
-      day: "2-digit",
-      month: "short",
-      timeZone: "UTC",
-    })
-    .toUpperCase();
+  if (!key) return { weekday: "—", dayMonth: "—" };
+  const date = new Date(`${key}T00:00:00.000Z`);
+  return {
+    weekday: date
+      .toLocaleDateString("en-GB", { weekday: "short", timeZone: "UTC" })
+      .toUpperCase(),
+    dayMonth: date
+      .toLocaleDateString("en-GB", {
+        day: "2-digit",
+        month: "short",
+        timeZone: "UTC",
+      })
+      .toUpperCase(),
+  };
 }
 
 function percentage(value) {
@@ -88,6 +96,7 @@ function percentage(value) {
 function repoShortName(repo) {
   const clean = String(repo || "").split("/").at(-1) || "";
   const labels = {
+    private: "PRIV",
     openspine: "SPINE",
     open: "SPINE",
     spine: "SPINE",
@@ -113,83 +122,93 @@ function repoShortName(repo) {
   return clean.slice(0, 6).toUpperCase() || "—";
 }
 
-function quantile(values, q) {
-  if (!values.length) return 0;
-  const sorted = [...values].sort((a, b) => a - b);
-  const position = (sorted.length - 1) * q;
-  const base = Math.floor(position);
-  const rest = position - base;
-  return sorted[base + 1] === undefined
-    ? sorted[base]
-    : sorted[base] + rest * (sorted[base + 1] - sorted[base]);
-}
+function repositoryActivity(day) {
+  const repositories = Array.isArray(day?.repositories)
+    ? day.repositories
+        .map((repository) => ({
+          name: repository?.name || "repository",
+          score: number(repository?.score),
+          share: number(repository?.share),
+        }))
+        .filter((repository) => repository.score > 0)
+        .sort(
+          (left, right) =>
+            right.score - left.score || left.name.localeCompare(right.name),
+        )
+    : [];
 
-function intensityScale(focus) {
-  const positive = focus
-    .map((day) => number(day.contributions))
-    .filter((value) => value > 0);
-  const thresholds = [
-    0,
-    quantile(positive, 0.2),
-    quantile(positive, 0.45),
-    quantile(positive, 0.7),
-    quantile(positive, 0.9),
+  if (repositories.length) return repositories;
+  if (!day?.repository) return [];
+  return [
+    {
+      name: day.repository,
+      score: Math.max(1, number(day.contributions)),
+      share: 1,
+    },
   ];
-  return (value) => {
-    const count = number(value);
-    if (count <= 0) return 0;
-    if (count <= Math.max(1, thresholds[1])) return 1;
-    if (count <= Math.max(thresholds[1] + 1, thresholds[2])) return 2;
-    if (count <= Math.max(thresholds[2] + 1, thresholds[3])) return 3;
-    if (count <= Math.max(thresholds[3] + 1, thresholds[4])) return 4;
-    return 5;
-  };
 }
 
 function summarize(meta) {
-  const focus = [...(meta?.focus || [])].sort((a, b) =>
-    String(a.date).localeCompare(String(b.date)),
+  const focus = [...(meta?.focus || [])].sort((left, right) =>
+    String(left.date).localeCompare(String(right.date)),
   );
   const generatedDate = dateKey(meta?.generatedAt) || dateKey(new Date());
   const elapsed = focus.filter((day) => dateKey(day.date) <= generatedDate);
+  const recent = elapsed.slice(-DISPLAY_DAYS);
+
   let streak = 0;
   for (let index = elapsed.length - 1; index >= 0; index -= 1) {
     if (number(elapsed[index].contributions) <= 0) break;
     streak += 1;
   }
 
+  const repoTotals = new Map();
+  for (const day of recent) {
+    for (const repository of repositoryActivity(day)) {
+      repoTotals.set(
+        repository.name,
+        number(repoTotals.get(repository.name)) + repository.score,
+      );
+    }
+  }
+  const sortedRepos = [...repoTotals.entries()].sort(
+    (left, right) => right[1] - left[1] || left[0].localeCompare(right[0]),
+  );
+  const repoTotal = sortedRepos.reduce((sum, [, score]) => sum + score, 0);
+  const topTwoTotal = sortedRepos
+    .slice(0, 2)
+    .reduce((sum, [, score]) => sum + score, 0);
+
   return {
     focus,
+    recent,
     generatedDate,
     streak,
-    activeDays: elapsed.filter((day) => number(day.contributions) > 0).length,
-    focusShare: number(meta?.metrics?.focusShare),
-    topRepos: (meta?.metrics?.topRepos || []).map(repoShortName),
+    activeDays: recent.filter((day) => number(day.contributions) > 0).length,
+    focusShare: repoTotal ? topTwoTotal / repoTotal : 0,
+    topRepos: sortedRepos.slice(0, 2).map(([name]) => repoShortName(name)),
+    maxContributions: Math.max(
+      1,
+      ...recent.map((day) => number(day.contributions)),
+    ),
   };
 }
 
-function eventGlyph(type, x, y, scale = 1) {
-  if (type === "merge") {
-    return `<g class="event" transform="translate(${coordinate(x)} ${coordinate(y)}) scale(${coordinate(scale)})"><circle cx="1" cy="1" r="1.8"/><circle cx="9" cy="1" r="1.8"/><circle cx="9" cy="9" r="1.8"/><path d="M1 3v3c0 2 2 3 4 3h2M9 3v4"/></g>`;
-  }
-  if (type === "review") {
-    return `<g class="event" transform="translate(${coordinate(x)} ${coordinate(y)}) scale(${coordinate(scale)})"><rect x="0" y="1" width="11" height="8" rx="2"/><path d="M3 9v3l3-3"/></g>`;
-  }
-  if (type === "explore") {
-    return `<g class="event" transform="translate(${coordinate(x)} ${coordinate(y)}) scale(${coordinate(scale)})"><circle cx="5" cy="5" r="4"/><path d="M8 8l4 4"/></g>`;
-  }
-  return "";
-}
-
-function familyBand(families, { x, y, width, height, clipId }) {
-  const entries = [
+function familyEntries(families) {
+  return [
     ["claude", number(families?.claude)],
     ["gpt", number(families?.gpt)],
     ["gemini", number(families?.gemini)],
     ["other", number(families?.other)],
   ].filter(([, value]) => value > 0);
+}
+
+function modelBand(families, { x, y, width, height }) {
+  const entries = familyEntries(families);
   const total = entries.reduce((sum, [, value]) => sum + value, 0);
-  if (!total) return "";
+  if (!total) {
+    return `<g class="model-band" data-model-band="day"><rect class="model-band-empty" x="${coordinate(x)}" y="${coordinate(y)}" width="${coordinate(width)}" height="${coordinate(height)}"/><path class="model-band-empty-mark" d="M${coordinate(x + width / 2 - 8)} ${coordinate(y + height / 2)}h16"/></g>`;
+  }
 
   let cumulative = 0;
   const segments = entries
@@ -197,243 +216,317 @@ function familyBand(families, { x, y, width, height, clipId }) {
       const segmentX = x + (cumulative / total) * width;
       cumulative += value;
       const segmentEnd =
-        index === entries.length - 1 ? x + width : x + (cumulative / total) * width;
+        index === entries.length - 1
+          ? x + width
+          : x + (cumulative / total) * width;
       return `<rect class="family-${family}" x="${coordinate(segmentX)}" y="${coordinate(y)}" width="${coordinate(segmentEnd - segmentX)}" height="${coordinate(height)}"/>`;
     })
     .join("");
 
-  return `<g class="family-band" data-family-band="true" clip-path="url(#${escapeXml(clipId)})">${segments}</g>`;
+  return `<g class="model-band" data-model-band="day"><rect class="model-band-base" x="${coordinate(x)}" y="${coordinate(y)}" width="${coordinate(width)}" height="${coordinate(height)}"/>${segments}</g>`;
 }
 
-function renderGrid(summary, geometry) {
-  const {
-    x,
-    y,
-    labelWidth,
-    cellWidth,
-    cellHeight,
-    gapX,
-    gapY,
-    bandRatio = 1 / 3,
-    mobile = false,
-  } = geometry;
-  const focus = summary.focus;
-  const intensity = intensityScale(focus);
-  const bandHeight = Math.round(cellHeight * bandRatio * 100) / 100;
-  const weekLabels = Array.from({ length: 4 }, (_, week) => {
-    const day = focus[week * 7];
-    const xx = x + labelWidth + week * (cellWidth + gapX);
-    return `<text class="month" x="${coordinate(xx + 5)}" y="${coordinate(y - 11)}">${escapeXml(shortDay(day?.date))}</text>`;
-  }).join("\n  ");
-  const dayLabels = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"]
-    .map(
-      (label, row) =>
-        `<text class="day" x="${coordinate(x)}" y="${coordinate(
-          y + row * (cellHeight + gapY) + cellHeight * 0.62,
-        )}">${label}</text>`,
-    )
-    .join("\n  ");
-
-  const cells = focus
-    .map((day, index) => {
-      const week = Math.floor(index / 7);
-      const row = index % 7;
-      const cellX = x + labelWidth + week * (cellWidth + gapX);
-      const cellY = y + row * (cellHeight + gapY);
-      const future = dateKey(day.date) > summary.generatedDate;
-      const level = future ? 0 : intensity(day.contributions);
-      const fill = COLORS.intensity[level];
-      const textColor = level >= 4 ? COLORS.paperSoft : COLORS.ink;
-      const familyTotal = Object.values(day.modelFamilies || {}).reduce(
-        (sum, value) => sum + number(value),
-        0,
-      );
-      const repo = future
-        ? ""
-        : day.repository
-          ? repoShortName(day.repository)
-          : familyTotal > 0
-            ? "TOOLS"
-            : "—";
-      const event = future
-        ? ""
-        : eventGlyph(
-            day.event,
-            cellX + cellWidth - (mobile ? 20 : 18),
-            cellY + (mobile ? 12 : 7),
-            mobile ? 0.9 : 0.75,
-          );
-      const clipId = `focus-cell-${dateKey(day.date) || index}`;
-      const clip =
-        future || familyTotal <= 0
-          ? ""
-          : `<clipPath id="${escapeXml(clipId)}" clipPathUnits="userSpaceOnUse"><rect x="${coordinate(cellX)}" y="${coordinate(cellY)}" width="${coordinate(cellWidth)}" height="${coordinate(cellHeight)}" rx="4"/></clipPath>`;
-      const band = future
-        ? ""
-        : familyBand(day.modelFamilies, {
-            x: cellX,
-            y: cellY + cellHeight - bandHeight,
-            width: cellWidth,
-            height: bandHeight,
-            clipId,
-          });
-      const title = `${day.date} · ${number(day.contributions)} contributions${day.repository ? ` · ${day.repository}` : ""}${day.event ? ` · ${day.event}` : ""}`;
-      const baseline = cellY + (mobile ? 22 : 14);
-      const outline = `<rect class="lens-cell-outline" x="${coordinate(cellX)}" y="${coordinate(cellY)}" width="${coordinate(cellWidth)}" height="${coordinate(cellHeight)}" rx="4"/>`;
-      return `<g class="profile-grid-day${future ? " future" : ""}" data-focus-day="${escapeXml(day.date)}">${clip}<rect class="lens-cell" x="${coordinate(cellX)}" y="${coordinate(cellY)}" width="${coordinate(cellWidth)}" height="${coordinate(cellHeight)}" rx="4" fill="${fill}"><title>${escapeXml(title)}</title></rect>${band}${repo ? `<text class="repo" x="${coordinate(cellX + (mobile ? 8 : 7))}" y="${coordinate(baseline)}" style="fill:${textColor}">${escapeXml(repo)}</text>` : ""}${event}${outline}</g>`;
-    })
-    .join("\n  ");
-
-  return { weekLabels, dayLabels, cells };
+function dayTitle(day) {
+  const repositories = repositoryActivity(day)
+    .map((repository) => `${repository.name} ${percentage(repository.share)}`)
+    .join(", ");
+  const models = familyEntries(day.modelFamilies)
+    .map(([family, value]) => `${family} ${value}`)
+    .join(", ");
+  return `${day.date} · ${number(day.contributions)} GitHub contributions${repositories ? ` · repositories: ${repositories}` : ""}${models ? ` · tracked AI: ${models}` : " · no tracked AI data"}`;
 }
 
-function metricSvg(x, valueY, value, label, note = "") {
-  return `<text class="profile-metric" x="${coordinate(x)}" y="${coordinate(valueY)}">${escapeXml(value)}</text>
-  <text class="profile-metric-label" x="${coordinate(x)}" y="${coordinate(valueY + 30)}">${escapeXml(label)}</text>${note ? `\n  <text class="profile-metric-note" x="${coordinate(x)}" y="${coordinate(valueY + 52)}">${escapeXml(note)}</text>` : ""}`;
+function renderRepositoryText(day, layout, x, y) {
+  const repositories = repositoryActivity(day);
+  const dominant = repositories[0];
+  const secondary = repositories.slice(1, 3);
+  const extra = Math.max(0, repositories.length - 3);
+
+  if (!dominant) {
+    return `<text class="repo-empty" x="${coordinate(x + layout.repoX)}" y="${coordinate(y + layout.dominantY)}">NO REPO ACTIVITY</text>`;
+  }
+
+  const secondaryLabels = secondary.map((repository) =>
+    repoShortName(repository.name),
+  );
+  if (layout.mobile && extra > 0) secondaryLabels.push(`+${extra} MORE`);
+  const secondaryText = secondaryLabels.join(" · ");
+  const extraMarkup =
+    !layout.mobile && extra > 0
+      ? `<text class="repo-more" x="${coordinate(x + layout.repoX)}" y="${coordinate(y + layout.moreY)}">+${extra} MORE</text>`
+      : "";
+
+  return `<text class="dominant-repo" x="${coordinate(x + layout.repoX)}" y="${coordinate(y + layout.dominantY)}">${escapeXml(repoShortName(dominant.name))}</text>${secondaryText ? `<text class="secondary-repos" x="${coordinate(x + layout.repoX)}" y="${coordinate(y + layout.secondaryY)}">${escapeXml(secondaryText)}</text>` : ""}${extraMarkup}`;
+}
+
+function renderDay(day, index, summary, layout) {
+  const column = index % layout.columns;
+  const row = Math.floor(index / layout.columns);
+  const x = layout.x + column * (layout.columnWidth + layout.gapX);
+  const y = layout.y + row * (layout.rowHeight + layout.gapY);
+  const { weekday, dayMonth } = dateParts(day.date);
+  const activityRatio = Math.max(
+    0,
+    Math.min(1, number(day.contributions) / summary.maxContributions),
+  );
+  const fillEnd = x + layout.columnWidth * activityRatio;
+  const divider =
+    column > 0
+      ? `<line class="day-divider" x1="${coordinate(x - layout.gapX / 2)}" y1="${coordinate(y - 3)}" x2="${coordinate(x - layout.gapX / 2)}" y2="${coordinate(y + layout.activityY)}"/>`
+      : "";
+  const dateLabel = `${weekday} ${dayMonth}`;
+
+  return `<g class="recent-day" data-recent-day="${escapeXml(day.date)}"><title>${escapeXml(dayTitle(day))}</title>${divider}<text class="day-date" x="${coordinate(x)}" y="${coordinate(y + layout.dateY)}">${escapeXml(dateLabel)}</text><text class="day-contributions" x="${coordinate(x + layout.columnWidth)}" y="${coordinate(y + layout.dateY)}" text-anchor="end">${number(day.contributions)}</text>${renderRepositoryText(day, layout, x, y)}${modelBand(day.modelFamilies, { x, y: y + layout.bandY, width: layout.columnWidth, height: layout.bandHeight })}<line class="activity-track" x1="${coordinate(x)}" y1="${coordinate(y + layout.activityY)}" x2="${coordinate(x + layout.columnWidth)}" y2="${coordinate(y + layout.activityY)}"/><line class="activity-fill" x1="${coordinate(x)}" y1="${coordinate(y + layout.activityY)}" x2="${coordinate(fillEnd)}" y2="${coordinate(y + layout.activityY)}"/></g>`;
+}
+
+function renderGrid(summary, layout) {
+  return summary.recent
+    .map((day, index) => renderDay(day, index, summary, layout))
+    .join("\n  ");
 }
 
 function profileStyles({ mobile = false } = {}) {
   return `
     ${STYLE_START}
-    .profile-divider{stroke:${COLORS.line};stroke-width:1}
-    .profile-metric{fill:${COLORS.ink};font-family:"Arial Narrow","Avenir Next Condensed","Helvetica Neue",sans-serif;font-size:44px;font-weight:900}
-    .profile-metric-label,.profile-metric-note{fill:${COLORS.inkSoft};font-family:ui-monospace,"SFMono-Regular",Consolas,monospace;font-weight:700;letter-spacing:.8px}
-    .profile-metric-label{font-size:11px}.profile-metric-note{font-size:9px}
-    .profile-grid .repo{font-size:12px}.profile-grid .family-band{opacity:.96}.profile-grid-day.future{opacity:.3}
-    .lens-cell-outline{fill:none;stroke:${COLORS.paper};stroke-width:1;pointer-events:none}
-    ${mobile ? ".profile-grid .repo{font-size:14px}.profile-metric{font-size:46px}.profile-metric-label{font-size:12px}.profile-metric-note{font-size:10px}" : ""}
+    .day-date,.day-contributions,.recent-summary,.recent-help,.secondary-repos,.repo-more,.repo-empty{font-family:ui-monospace,"SFMono-Regular",Consolas,monospace;font-weight:750;letter-spacing:.5px}
+    .day-date{fill:${COLORS.ink};font-size:9.5px}.day-contributions{fill:${COLORS.inkSoft};font-size:9.5px}
+    .dominant-repo{fill:${COLORS.ink};font-family:"Arial Narrow","Avenir Next Condensed","Helvetica Neue",sans-serif;font-size:19px;font-weight:900;letter-spacing:-.2px}
+    .secondary-repos{fill:${COLORS.inkSoft};font-size:8.5px}.repo-more{fill:${COLORS.inkSoft};font-size:7.5px}.repo-empty{fill:${COLORS.inkSoft};font-size:8px}
+    .recent-summary{fill:${COLORS.ink};font-size:10px}.recent-help{fill:${COLORS.inkSoft};font-size:8.5px;letter-spacing:.45px}
+    .day-divider{stroke:${COLORS.line};stroke-width:1}
+    .activity-track{stroke:${COLORS.line};stroke-width:1}.activity-fill{stroke:${COLORS.ink};stroke-width:2;stroke-linecap:butt}
+    .model-band-base,.model-band-empty{fill:${COLORS.paperDeep}}.model-band-empty-mark{fill:none;stroke:${COLORS.line};stroke-width:1.2;stroke-linecap:round}
+    .family-claude{fill:${COLORS.rust}}.family-gpt{fill:${COLORS.blue}}.family-gemini{fill:${COLORS.gold}}.family-other{fill:${COLORS.sage}}
+    .recent-selection{pointer-events:none}.selection-segment{fill:none;stroke:${COLORS.ink};stroke-width:1.8;rx:4}
+    .footer-label,.footer-note{fill:${COLORS.inkSoft};font-family:ui-monospace,"SFMono-Regular",Consolas,monospace;font-weight:700;letter-spacing:.7px}.footer-label{font-size:9px}.footer-note{font-size:8px}
+    ${mobile ? `.day-date{font-size:10px}.day-contributions{font-size:10px}.dominant-repo{font-size:17px}.secondary-repos{font-size:8px}.repo-more{font-size:7px}.repo-empty{font-size:8px}.recent-summary{font-size:10px}.recent-help{font-size:8px}.footer-label{font-size:10px}.footer-note{font-size:9px}` : ""}
     ${STYLE_END}
   `;
 }
 
-function stripRefinementStyles(svg) {
-  let cleaned = svg.replace(
-    new RegExp(`\\s*${STYLE_START.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}[\\s\\S]*?${STYLE_END.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s*`, "g"),
-    "",
-  );
-  const legacyRules = [
-    /\s*\.profile-divider\{[^}]*\}/g,
-    /\s*\.profile-metric\{[^}]*\}/g,
-    /\s*\.profile-metric-label,\.profile-metric-note\{[^}]*\}/g,
-    /\s*\.profile-metric-label\{[^}]*\}/g,
-    /\s*\.profile-metric-note\{[^}]*\}/g,
-    /\s*\.profile-grid \.repo\{[^}]*\}/g,
-    /\s*\.profile-grid \.family-band\{[^}]*\}/g,
-    /\s*\.profile-grid-day\.future\{[^}]*\}/g,
-    /\s*\.lens-cell-outline\{[^}]*\}/g,
-  ];
-  for (const rule of legacyRules) cleaned = cleaned.replace(rule, "");
-  return cleaned;
+function escapeRegExp(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
 function injectStyles(svg, options) {
-  const cleaned = stripRefinementStyles(svg);
+  const stylePattern = new RegExp(
+    `\\s*${escapeRegExp(STYLE_START)}[\\s\\S]*?${escapeRegExp(STYLE_END)}\\s*`,
+    "g",
+  );
+  const cleaned = svg.replace(stylePattern, "");
   const closing = cleaned.lastIndexOf("</style>");
   if (closing < 0) throw new Error("Contribution lens SVG has no style block");
   return `${cleaned.slice(0, closing)}${profileStyles(options)}${cleaned.slice(closing)}`;
 }
 
+function updateHeader(svg, mobile = false) {
+  return svg
+    .replaceAll("365 DAYS / LATEST 4 WEEKS", "365 DAYS / LATEST 14 DAYS")
+    .replaceAll("latest four weeks", "latest 14 days")
+    .replaceAll(
+      "the latest four weeks enlarged to show repository focus, model-family mix and merge activity",
+      "the latest 14 days enlarged to show daily repository ranking and tracked model-family mix",
+    )
+    .replaceAll(
+      "the latest 14 days enlarged to show daily repository shares and tracked model-family mix",
+      "the latest 14 days enlarged to show daily repository ranking and tracked model-family mix",
+    )
+    .replaceAll(
+      "a year overview, the latest 14 days and three focus metrics",
+      "a year overview and the latest 14 days with daily repository ranking and tracked model mix",
+    )
+    .replaceAll(
+      "a year overview, the latest four weeks and three focus metrics",
+      "a year overview and the latest 14 days with daily repository ranking and tracked model mix",
+    )
+    .replace(
+      /<desc id="desc">[^<]*<\/desc>/,
+      `<desc id="desc">${mobile ? "A mobile contribution lens with a year overview and the latest 14 days showing daily repository ranking and tracked model mix." : "A contribution lens with a year overview and the latest 14 days showing daily repository ranking and tracked model mix."}</desc>`,
+    );
+}
+
+function selectionSegments(svg, dates) {
+  const selected = new Set(dates.map(dateKey));
+  const groups = new Map();
+  const cellPattern = /<rect class="overview-cell" data-day="([^"]+)" x="([^"]+)" y="([^"]+)" width="([^"]+)" height="([^"]+)"[^>]*>/g;
+  for (const match of svg.matchAll(cellPattern)) {
+    const [, date, xRaw, yRaw, widthRaw, heightRaw] = match;
+    if (!selected.has(dateKey(date))) continue;
+    const x = number(xRaw);
+    const y = number(yRaw);
+    const width = number(widthRaw);
+    const height = number(heightRaw);
+    const key = coordinate(x);
+    const group = groups.get(key) || {
+      x,
+      minY: y,
+      maxY: y + height,
+      width,
+    };
+    group.minY = Math.min(group.minY, y);
+    group.maxY = Math.max(group.maxY, y + height);
+    group.width = Math.max(group.width, width);
+    groups.set(key, group);
+  }
+
+  return [...groups.values()]
+    .sort((left, right) => left.x - right.x)
+    .map(
+      (group) =>
+        `<rect class="selection-segment" x="${coordinate(group.x - 3)}" y="${coordinate(group.minY - 3)}" width="${coordinate(group.width + 6)}" height="${coordinate(group.maxY - group.minY + 6)}" rx="4"/>`,
+    )
+    .join("");
+}
+
+function updateOverviewSelection(svg, dates) {
+  const segments = selectionSegments(svg, dates);
+  const group = `  <g class="recent-selection" aria-hidden="true">${segments}</g>`;
+  const existingGroup = /\s*<g class="recent-selection"[\s\S]*?<\/g>\s*/;
+  if (existingGroup.test(svg)) return svg.replace(existingGroup, `\n${group}\n`);
+  const existingSelection = /\s*<rect class="selection"[^>]*\/>\s*/;
+  if (existingSelection.test(svg)) {
+    return svg.replace(existingSelection, `\n${group}\n`);
+  }
+
+  const markerIndex = svg.indexOf(DETAIL_START);
+  const connectorIndex = svg.indexOf('<path class="connector"');
+  const insertAt = markerIndex >= 0 ? markerIndex : connectorIndex;
+  if (insertAt < 0) return svg;
+  const lineStart = svg.lastIndexOf("\n", insertAt) + 1;
+  return `${svg.slice(0, lineStart)}${group}\n${svg.slice(lineStart)}`;
+}
+
 function desktopDetail(summary) {
-  const grid = renderGrid(summary, {
-    x: 64,
-    y: 314,
-    labelWidth: 42,
-    cellWidth: 166,
-    cellHeight: 24,
-    gapX: 8,
-    gapY: 4,
-  });
-  const topRepos = summary.topRepos.length ? summary.topRepos.join(" + ") : "NO REPO DATA";
-  return `  <g class="profile-grid">
-  <text class="label" x="64" y="280">LATEST 4 WEEKS</text>
-  ${grid.weekLabels}
-  ${grid.dayLabels}
-  ${grid.cells}
+  const layout = {
+    x: 58,
+    y: 303,
+    columns: 7,
+    columnWidth: (1084 - 6 * 11) / 7,
+    rowHeight: 103,
+    gapX: 11,
+    gapY: 17,
+    dateY: 10,
+    repoX: 0,
+    dominantY: 47,
+    secondaryY: 69,
+    moreY: 83,
+    bandY: 88,
+    bandHeight: 7,
+    activityY: 103,
+    mobile: false,
+  };
+  return `  <g class="recent-grid">
+  <text class="label" x="58" y="272">LATEST 14 DAYS</text>
+  <text class="recent-summary" x="1142" y="272" text-anchor="end">${summary.activeDays} / 14 ACTIVE · ${summary.streak}-DAY STREAK</text>
+  <text class="recent-help" x="58" y="290">REPOS RANKED BY GITHUB ACTIVITY</text>
+  <text class="recent-help" x="1142" y="290" text-anchor="end">LOWER BAND = WHOLE-DAY TOKSCALE MIX</text>
+  ${renderGrid(summary, layout)}
   </g>
-  <line class="profile-divider" x1="852" y1="270" x2="852" y2="540"/>
-  ${metricSvg(882, 331, String(summary.streak), "DAY STREAK", `${summary.activeDays} / 28 ACTIVE`)}
-  <line class="profile-divider" x1="882" y1="402" x2="1136" y2="402"/>
-  ${metricSvg(882, 469, percentage(summary.focusShare), topRepos, "OF 4-WEEK ACTIVITY")}
 `;
 }
 
 function mobileDetail(summary) {
-  const grid = renderGrid(summary, {
+  const layout = {
     x: 32,
-    y: 316,
-    labelWidth: 48,
-    cellWidth: 133,
-    cellHeight: 39,
-    gapX: 7,
-    gapY: 6,
+    y: 292,
+    columns: 2,
+    columnWidth: 322,
+    rowHeight: 66,
+    gapX: 12,
+    gapY: 8,
+    dateY: 13,
+    repoX: 82,
+    dominantY: 28,
+    secondaryY: 45,
+    moreY: 56,
+    bandY: 54,
+    bandHeight: 7,
+    activityY: 66,
     mobile: true,
-  });
-  const topRepos = summary.topRepos.length ? summary.topRepos.join(" + ") : "NO REPO DATA";
-  return `  <g class="profile-grid">
-  <text class="label" x="32" y="268">LATEST 4 WEEKS</text>
-  ${grid.weekLabels}
-  ${grid.dayLabels}
-  ${grid.cells}
+  };
+  return `  <g class="recent-grid">
+  <text class="label" x="32" y="258">LATEST 14 DAYS</text>
+  <text class="recent-summary" x="688" y="258" text-anchor="end">${summary.activeDays} / 14 ACTIVE · ${summary.streak}-DAY STREAK</text>
+  <text class="recent-help" x="32" y="278">REPOS RANKED BY GITHUB ACTIVITY</text>
+  <text class="recent-help" x="688" y="278" text-anchor="end">LOWER BAND = WHOLE-DAY TOKSCALE MIX</text>
+  ${renderGrid(summary, layout)}
   </g>
-  <line class="rule-strong" x1="32" y1="674" x2="688" y2="674"/>
-  ${metricSvg(50, 744, String(summary.streak), "DAY STREAK", `${summary.activeDays} / 28 ACTIVE`)}
-  ${metricSvg(386, 744, percentage(summary.focusShare), topRepos, "OF 4-WEEK ACTIVITY")}
 `;
+}
+
+function desktopFooter() {
+  return `  <line class="rule-strong" x1="58" y1="560" x2="1142" y2="560"/>
+  <text class="footer-note" x="58" y="584">TYPE WEIGHT = REPO RANK · RULE LENGTH = GITHUB ACTIVITY</text>
+  <circle cx="465" cy="580" r="4" fill="${COLORS.rust}"/><text class="footer-label" x="478" y="584">CLAUDE</text>
+  <circle cx="595" cy="580" r="4" fill="${COLORS.blue}"/><text class="footer-label" x="608" y="584">GPT</text>
+  <circle cx="695" cy="580" r="4" fill="${COLORS.gold}"/><text class="footer-label" x="708" y="584">GEMINI</text>
+  <circle cx="825" cy="580" r="4" fill="${COLORS.sage}"/><text class="footer-label" x="838" y="584">OTHER</text>
+  <text class="footer-note" x="1142" y="584" text-anchor="end">COLOURS = TRACKED AI USE FOR WHOLE DAY</text>`;
+}
+
+function mobileFooter() {
+  return `  <line class="rule" x1="32" y1="818" x2="688" y2="818"/>
+  <text class="footer-note" x="32" y="846">TYPE = REPO RANK · RULE LENGTH = GITHUB ACTIVITY</text>
+  <circle cx="42" cy="878" r="5" fill="${COLORS.rust}"/><text class="footer-label" x="57" y="882">CLAUDE</text>
+  <circle cx="188" cy="878" r="5" fill="${COLORS.blue}"/><text class="footer-label" x="203" y="882">GPT</text>
+  <circle cx="292" cy="878" r="5" fill="${COLORS.gold}"/><text class="footer-label" x="307" y="882">GEMINI</text>
+  <circle cx="444" cy="878" r="5" fill="${COLORS.sage}"/><text class="footer-label" x="459" y="882">OTHER</text>
+  <text class="footer-note" x="688" y="882" text-anchor="end">WHOLE-DAY AI MIX</text>`;
 }
 
 function wrapDetail(replacement) {
   return `  ${DETAIL_START}\n${replacement}  ${DETAIL_END}\n`;
 }
 
-function replaceDetail(svg, startMarker, endMarker, replacement) {
-  const wrapped = wrapDetail(replacement);
+function replaceDetailAndFooter(svg, detail, footer) {
   const existingStart = svg.indexOf(DETAIL_START);
-  const existingEnd = svg.indexOf(DETAIL_END, existingStart + DETAIL_START.length);
-  if (existingStart >= 0 && existingEnd >= 0) {
-    const lineStart = svg.lastIndexOf("\n", existingStart) + 1;
-    const lineEnd = svg.indexOf("\n", existingEnd + DETAIL_END.length);
-    return `${svg.slice(0, lineStart)}${wrapped}${svg.slice(lineEnd < 0 ? svg.length : lineEnd + 1)}`;
-  }
-
-  const start = svg.indexOf(startMarker);
-  const end = svg.indexOf(endMarker, start + startMarker.length);
-  if (start < 0 || end < 0) {
-    throw new Error(`Could not locate contribution lens detail markers: ${startMarker}`);
-  }
-  return `${svg.slice(0, start)}${wrapped}${svg.slice(end)}`;
+  const connectorStart = svg.indexOf('<path class="connector"');
+  const start = existingStart >= 0 ? existingStart : connectorStart;
+  if (start < 0) throw new Error("Could not locate contribution lens detail region");
+  const lineStart = svg.lastIndexOf("\n", start) + 1;
+  return `${svg.slice(0, lineStart)}${wrapDetail(detail)}${footer}\n</svg>\n`;
 }
 
 function refineDesktopSvg(svg, meta) {
   const summary = summarize(meta);
-  const styled = injectStyles(svg);
-  return replaceDetail(
+  const styled = injectStyles(updateHeader(svg, false));
+  const selected = updateOverviewSelection(
     styled,
-    '  <path class="connector"',
-    '  <line class="rule-strong" x1="58" y1="560"',
+    summary.recent.map((day) => day.date),
+  );
+  return replaceDetailAndFooter(
+    selected,
     desktopDetail(summary),
+    desktopFooter(),
   );
 }
 
 function refineMobileSvg(svg, meta) {
   const summary = summarize(meta);
-  const styled = injectStyles(svg, { mobile: true });
-  return replaceDetail(
+  const styled = injectStyles(updateHeader(svg, true), { mobile: true });
+  const selected = updateOverviewSelection(
     styled,
-    '  <path class="connector"',
-    '  <line class="rule" x1="32" y1="818"',
-    mobileDetail(summary),
+    summary.recent.map((day) => day.date),
   );
+  return replaceDetailAndFooter(selected, mobileDetail(summary), mobileFooter());
 }
 
 function updateMeta(meta) {
   const summary = summarize(meta);
-  const { mergeDays: _mergeDays, ...existingMetrics } = meta.metrics || {};
+  const { mergeDays: _mergeDays, ...existingMetrics } = meta?.metrics || {};
   return {
     ...meta,
+    range: {
+      ...(meta?.range || {}),
+      focusStart: summary.recent[0]?.date || meta?.range?.focusStart || "",
+      focusEnd: summary.recent.at(-1)?.date || meta?.range?.focusEnd || "",
+    },
     metrics: {
       ...existingMetrics,
+      focusDays: DISPLAY_DAYS,
       streak: summary.streak,
       activeDays: summary.activeDays,
+      focusShare: summary.focusShare,
       topRepos: summary.topRepos,
     },
   };
@@ -462,7 +555,7 @@ async function main() {
   await ensureParent(args.meta);
   await fs.writeFile(args.meta, `${JSON.stringify(refinedMeta, null, 2)}\n`, "utf8");
   console.log(
-    `Refined contribution lens: ${refinedMeta.metrics.streak}-day streak, ${refinedMeta.metrics.activeDays}/28 active`,
+    `Refined contribution lens: ${refinedMeta.metrics.activeDays}/${DISPLAY_DAYS} active, ${refinedMeta.metrics.streak}-day streak.`,
   );
 }
 
