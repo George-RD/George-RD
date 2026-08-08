@@ -232,7 +232,7 @@ function slotSplit(leftScore, rightScore, { min = 0.54, max = 0.72 } = {}) {
 function repoEntry(repository, dominant, maxWidth, mobile, slot) {
   if (!repository) return null;
   const label = repoShortName(repository.name);
-  const max = mobile ? 18 : 20.5;
+  const max = mobile ? 18 : 19.5;
   const min = mobile ? 8 : 8.5;
   return {
     label,
@@ -246,7 +246,7 @@ function repoEntry(repository, dominant, maxWidth, mobile, slot) {
       label,
       repository.score,
       dominant.score,
-      { min, max, maxWidth, widthFactor: 0.57 },
+      { min, max, maxWidth, widthFactor: mobile ? 0.59 : 0.64 },
     ),
     className: "secondary-repo",
     slot,
@@ -268,9 +268,9 @@ function aggregateEntry(repositories, dominant, maxWidth, mobile, slot) {
       dominant.score,
       {
         min: mobile ? 8 : 8.5,
-        max: mobile ? 18 : 20.5,
+        max: mobile ? 18 : 19.5,
         maxWidth,
-        widthFactor: 0.57,
+        widthFactor: mobile ? 0.59 : 0.64,
       },
     ),
     className: "repo-more",
@@ -304,12 +304,14 @@ function repositoryFieldMarkup(day, bandX, bandY, bandWidth, mobile) {
   const fieldX = bandX + railWidth;
   const fieldWidth = Math.max(40, bandWidth - railWidth - 2);
   const fieldRight = fieldX + fieldWidth;
-  const rowGap = mobile ? 8 : 6;
-  const topY = bandY - (mobile ? 29 : 45);
-  const bottomY = bandY - (mobile ? 8 : 14);
+  const rowGap = mobile ? 8 : 9;
+  const topLeftY = bandY - (mobile ? 29 : 44);
+  const topRightY = bandY - (mobile ? 29 : 61);
+  const bottomLeftY = bandY - (mobile ? 8 : 10);
+  const bottomRightY = bandY - (mobile ? 8 : 27);
 
   if (!repositories.length) {
-    return `<g class="repo-type-field"><text class="repo-empty" x="${coordinate(fieldX)}" y="${coordinate(topY)}">NO REPO ACTIVITY</text></g>`;
+    return `<g class="repo-type-field"><text class="repo-empty" x="${coordinate(fieldX)}" y="${coordinate(topLeftY)}">NO REPO ACTIVITY</text></g>`;
   }
 
   const dominant = repositories[0];
@@ -330,8 +332,8 @@ function repositoryFieldMarkup(day, bandX, bandY, bandWidth, mobile) {
     dominantLabel,
     dominant.share,
     mobile
-      ? { min: 16, max: 23, maxWidth: dominantWidth, widthFactor: 0.55 }
-      : { min: 17, max: 25, maxWidth: dominantWidth, widthFactor: 0.55 },
+      ? { min: 16, max: 23, maxWidth: dominantWidth, widthFactor: 0.58 }
+      : { min: 17, max: 24, maxWidth: dominantWidth, widthFactor: 0.62 },
   );
   const dominantEntry = {
     label: dominantLabel,
@@ -353,8 +355,8 @@ function repositoryFieldMarkup(day, bandX, bandY, bandWidth, mobile) {
 
   const bottomRightScore = aggregate.count ? aggregate.score : 0;
   const bottomRatio = slotSplit(third?.score, bottomRightScore, {
-    min: 0.46,
-    max: 0.64,
+    min: 0.42,
+    max: 0.62,
   });
   const bottomAvailable = fieldWidth - (third && aggregate.count ? rowGap : 0);
   const thirdWidth = third
@@ -383,7 +385,7 @@ function repositoryFieldMarkup(day, bandX, bandY, bandWidth, mobile) {
     "bottom-right",
   );
 
-  return `<g class="repo-type-field">${textMarkup(dominantEntry, fieldX, topY)}${textMarkup(secondEntry, fieldRight, topY, { anchor: "end" })}${textMarkup(thirdEntry, fieldX, bottomY)}${textMarkup(aggregateRepoEntry, fieldRight, bottomY, { anchor: "end" })}</g>`;
+  return `<g class="repo-type-field">${textMarkup(dominantEntry, fieldX, topLeftY)}${textMarkup(secondEntry, fieldRight, topRightY, { anchor: "end" })}${textMarkup(thirdEntry, fieldX, bottomLeftY)}${textMarkup(aggregateRepoEntry, fieldRight, bottomRightY, { anchor: "end" })}</g>`;
 }
 
 function scaleDaySegment(segment, day, mobile) {
