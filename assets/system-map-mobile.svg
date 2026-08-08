@@ -1,50 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 800" role="img" aria-labelledby="title desc">
-  <title id="title">From system model to bounded action</title>
-  <desc id="desc">A vertical four-stage map connecting Cairn, MAG, OpenSpine and Rive plus MeerK40t.</desc>
-  <!-- Hallmark · genre: editorial-operational · macrostructure: Workbench · pre-emit critique: P5 H5 E5 S5 R5 V5 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 650" role="img" aria-labelledby="title desc">
+  <title id="title">How the projects fit together</title>
+  <desc id="desc">Cairn keeps a plan tied to code. MAG keeps context between tools. OpenSpine limits agent access. Rive CLI and MeerK40t CLI test visual and physical output.</desc>
   <style>
-    :root {
-      --ink: #10231f;
-      --ink-soft: #304943;
-      --paper: #f1ede4;
-      --paper-soft: #d9d3c7;
-      --rust: #c9482b;
-      --signal: #e9be48;
-      --tide: #6f97a7;
-      --display: "Arial Narrow", "Avenir Next Condensed", "Helvetica Neue", sans-serif;
-      --body: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
-      --mono: ui-monospace, "SFMono-Regular", Consolas, monospace;
-      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .surface { fill: var(--ink); }
-    .edge { fill: none; stroke: var(--paper); stroke-width: 1.5; opacity: 0.5; }
-    .kicker { fill: var(--signal); font: 700 20px var(--mono); letter-spacing: 1.5px; }
-    .heading { fill: var(--paper); font: 780 42px var(--display); }
-    .route-base { fill: none; stroke: var(--ink-soft); stroke-width: 3; }
+    .surface { fill: #10231f; }
+    .edge { fill: none; stroke: #f1ede4; stroke-width: 1.5; opacity: 0.5; }
+    .heading { fill: #f1ede4; font-family: "Arial Narrow", "Avenir Next Condensed", "Helvetica Neue", sans-serif; font-size: 38px; font-weight: 800; }
+    .route-base { fill: none; stroke: #304943; stroke-width: 3; }
     .route {
       fill: none;
-      stroke: var(--rust);
+      stroke: #c9482b;
       stroke-width: 3;
       stroke-linecap: round;
       stroke-dasharray: 1;
-      stroke-dashoffset: 1;
-      animation: draw 1.9s var(--ease-out) 160ms forwards;
+      stroke-dashoffset: 0;
+      animation: draw 1.9s cubic-bezier(0.16, 1, 0.3, 1) 160ms both;
     }
-    .node { opacity: 0; animation: reveal 620ms var(--ease-out) forwards; }
+    .node { opacity: 1; animation: reveal 620ms cubic-bezier(0.16, 1, 0.3, 1) both; }
     .node.one { animation-delay: 430ms; }
     .node.two { animation-delay: 700ms; }
     .node.three { animation-delay: 970ms; }
     .node.four { animation-delay: 1240ms; }
-    .ring { fill: var(--ink); stroke: var(--paper); stroke-width: 2; }
-    .core { fill: var(--signal); }
-    .stage { fill: var(--tide); font: 700 20px var(--mono); letter-spacing: 1.3px; }
-    .project { fill: var(--paper); font: 780 36px var(--display); }
-    .note { fill: var(--paper-soft); font: 600 23px var(--body); }
-    @keyframes draw { to { stroke-dashoffset: 0; } }
-    @keyframes reveal {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
+    .ring { fill: #10231f; stroke: #f1ede4; stroke-width: 2; }
+    .core { fill: #e9be48; }
+    .project { fill: #f1ede4; font-family: "Arial Narrow", "Avenir Next Condensed", "Helvetica Neue", sans-serif; font-size: 34px; font-weight: 800; }
+    .note { fill: #d9d3c7; font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif; font-size: 22px; font-weight: 600; }
+    @keyframes draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+    @keyframes reveal { from { opacity: 0; } to { opacity: 1; } }
     @media (prefers-reduced-motion: reduce) {
       .route, .node { animation: none; }
       .route { stroke-dashoffset: 0; }
@@ -52,44 +33,39 @@
     }
   </style>
 
-  <rect class="surface" width="720" height="800" />
-  <rect class="edge" x="1" y="1" width="718" height="798" />
-  <text class="kicker" x="44" y="45">CURRENT SYSTEM / ONE OPERATING THREAD</text>
-  <text class="heading" x="44" y="92">MODEL. REMEMBER.</text>
-  <text class="heading" x="44" y="137">GOVERN. ACT.</text>
+  <rect class="surface" width="720" height="650" />
+  <rect class="edge" x="1" y="1" width="718" height="648" />
+  <text class="heading" x="44" y="54">HOW THE PROJECTS</text>
+  <text class="heading" x="44" y="94">FIT TOGETHER</text>
 
-  <path class="route-base" d="M86 194V718" />
-  <path class="route" pathLength="1" d="M86 194V718" />
+  <path class="route-base" d="M78 150V570" />
+  <path class="route" pathLength="1" d="M78 150V570" />
 
-  <g class="node one" transform="translate(86 194)">
+  <g class="node one" transform="translate(78 150)">
     <circle class="ring" r="14" />
     <circle class="core" r="5" />
-    <text class="stage" x="34" y="-16">MODEL</text>
     <text class="project" x="34" y="12">CAIRN</text>
-    <text class="note" x="34" y="35">architecture stays answerable to code</text>
+    <text class="note" x="34" y="42">keeps the plan tied to code</text>
   </g>
 
-  <g class="node two" transform="translate(86 366)">
+  <g class="node two" transform="translate(78 290)">
     <circle class="ring" r="14" />
     <circle class="core" r="5" />
-    <text class="stage" x="34" y="-16">MEMORY</text>
     <text class="project" x="34" y="12">MAG</text>
-    <text class="note" x="34" y="35">context survives the tool</text>
+    <text class="note" x="34" y="42">keeps context between tools</text>
   </g>
 
-  <g class="node three" transform="translate(86 538)">
+  <g class="node three" transform="translate(78 430)">
     <circle class="ring" r="14" />
     <circle class="core" r="5" />
-    <text class="stage" x="34" y="-16">AUTHORITY</text>
     <text class="project" x="34" y="12">OPENSPINE</text>
-    <text class="note" x="34" y="35">policy bounds every action</text>
+    <text class="note" x="34" y="42">limits agent access</text>
   </g>
 
-  <g class="node four" transform="translate(86 710)">
+  <g class="node four" transform="translate(78 570)">
     <circle class="ring" r="14" />
     <circle class="core" r="5" />
-    <text class="stage" x="34" y="-16">EXECUTION</text>
     <text class="project" x="34" y="12">RIVE / MEERK40T</text>
-    <text class="note" x="34" y="35">visual and physical execution</text>
+    <text class="note" x="34" y="42">tests visual and physical output</text>
   </g>
 </svg>
