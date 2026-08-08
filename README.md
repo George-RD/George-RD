@@ -4,86 +4,32 @@
 </picture>
 
 <p align="center">
-  <a href="https://georgerd.com/"><strong>Portfolio</strong></a>
-  &nbsp;·&nbsp;
-  <a href="mailto:george@reid-dowd.me"><strong>Contact</strong></a><br />
-  <sub>ABU DHABI, UAE</sub>
+  <a href="https://georgerd.com/"><img src="assets/links/portfolio.svg" height="42" alt="View George Reid-Dowd's portfolio" /></a>
+  <a href="#projects"><img src="assets/links/projects.svg" height="42" alt="Jump to projects" /></a>
+  <a href="#activity"><img src="assets/links/activity.svg" height="42" alt="Jump to activity" /></a>
+  <a href="mailto:george@reid-dowd.me"><img src="assets/links/contact.svg" height="42" alt="Email George Reid-Dowd" /></a>
 </p>
 
-# George Reid-Dowd
-
-I take unclear, important work from the first useful version to something people can rely on. My background runs from commercial uncrewed vessels and regional remote operations to private AI memory, safe agent access and tools that control real machines.
-
-The pattern is consistent. I find what is failing and build a working version. Then I test it with the people who depend on it until it holds up in daily use.
-
-## Operating thread
-
-With the team, I took a commercial uncrewed survey vessel through build, testing, marketing, sale and client work. I then used that learning to build a regional remote-operations capability. The same discipline shapes the software below.
+I helped build and operate an uncrewed survey vessel, then a regional remote operations service at Fugro. The projects below test how AI tools understand a codebase, remember past work, act within limits and check visual or physical output.
 
 <picture>
   <source media="(max-width: 640px)" srcset="assets/system-map-mobile.svg" />
-  <img src="assets/system-map.svg" width="100%" alt="A system map connecting Cairn architecture, MAG memory, OpenSpine authority and Rive plus MeerK40t execution." />
+  <img src="assets/system-map.svg" width="100%" alt="How Cairn, MAG, OpenSpine, Rive CLI and MeerK40t CLI fit together." />
 </picture>
 
-## Flagship systems
+## Projects
 
-### [Cairn](https://cairn-framework.github.io/cairn/)
+- [**Cairn**](https://cairn-framework.github.io/cairn/) keeps the plan for a codebase tied to the code and flags drift. ([source](https://github.com/cairn-framework/cairn))
+- [**MAG**](https://george-rd.github.io/mag/) gives AI tools one private, local memory. ([source](https://github.com/George-RD/mag))
+- [**OpenSpine**](https://george-rd.github.io/openspine/) limits what an AI agent may access and change. ([source](https://github.com/George-RD/openspine))
+- [**Rive CLI**](https://george-rd.github.io/rive-rs-cli/) inspects, renders and tests Rive files from the command line. ([source](https://github.com/George-RD/rive-rs-cli))
 
-<sub>ACTIVE PUBLIC PRODUCT / ARCHITECTURE</sub>
-
-Keeps the plan a coding agent follows tied to the code that exists. Cairn records the intended architecture, spots drift and can block a conflicting change.
-
-[Source](https://github.com/cairn-framework/cairn)
-
-### [MAG](https://george-rd.github.io/mag/)
-
-<sub>EARLY ALPHA / MEMORY</sub>
-
-Gives several AI tools one private, local-first record of decisions, fixes and handoffs. It stores exact text, meaning and relationships in one portable SQLite file.
-
-[Source](https://github.com/George-RD/mag)
-
-### [OpenSpine](https://george-rd.github.io/openspine/)
-
-<sub>WORKING ALPHA / AUTHORITY</sub>
-
-Puts a policy-controlled runtime between an assistant and real accounts. The runtime decides what the agent may access and change, rather than trusting the model with a master key.
-
-[Source](https://github.com/George-RD/openspine)
-
-### [Rive CLI](https://george-rd.github.io/rive-rs-cli/)
-
-<sub>WORKING PUBLIC BUILD / VISUAL SYSTEMS</sub>
-
-Makes interactive Rive files inspectable from the command line. People and agents can render, test and compare animation output in repeatable steps.
-
-[Source](https://github.com/George-RD/rive-rs-cli)
-
-## Applied tools
-
-- **[Design Studio](https://george-rd.github.io/design-studio/):** separates design direction, implementation and blind review before a change reaches the frontend. [Source](https://github.com/George-RD/design-studio)
-- **[Growth Arsenal](https://george-rd.github.io/growth-arsenal/):** pressure-tests offers, lead plans and customer copy, then keeps the approved decisions in the project. [Source](https://github.com/George-RD/growth-arsenal)
-- **[MeerK40t CLI](https://george-rd.github.io/cli-anything-meerk40t/):** gives an agent a safety-gated path from inspection and calibration to a verified physical engraving. [Source](https://github.com/George-RD/cli-anything-meerk40t)
-- **[Hologlyph](https://george-rd.github.io/hologlyph/):** explores a talking face for the web, driven by text, speech and expression. [Source](https://github.com/George-RD/hologlyph)
-
-## Products and ventures
-
-- **Yarnling:** a private TestFlight product where a child's toy becomes a persistent story character. [Portfolio case](https://georgerd.com/#proof)
-- **[ReavesHQ](https://www.reaveshq.com/):** assistants built for real communication and operating workflows.
-- **[OG Mallow](https://ogmallow.com/):** a family physical-product venture spanning recipe, compliance, production and sales.
-
-## Current direction
-
-My current work is converging on one problem. Agents need to remember past work, understand the system, receive limited authority and act through a safe path.
-
-## Build cadence
+## Activity
 
 <picture>
   <source media="(max-width: 640px)" srcset="assets/contribution-lens-mobile.svg" />
   <img src="assets/contribution-lens.svg" width="100%" alt="A year of GitHub contributions with the latest four weeks enlarged to show repository focus, model-family mix and merge activity." />
 </picture>
-
-## AI activity trace
 
 <a href="https://tokscale.ai/u/George-RD">
   <img src="assets/tokscale-dossier.svg" width="100%" alt="Tokscale all-time and 30-day AI activity for George-RD." />
@@ -93,8 +39,8 @@ My current work is converging on one problem. Agents need to remember past work,
   <img src="assets/tokscale-model-momentum.svg" width="100%" alt="Thirty-day model momentum for George-RD, comparing the latest seven days with the preceding seven days." />
 </a>
 
-## Contact
+## More work
 
-**Start with the problem.**
+Tools: [Design Studio](https://george-rd.github.io/design-studio/) ([source](https://github.com/George-RD/design-studio)) · [Growth Arsenal](https://george-rd.github.io/growth-arsenal/) ([source](https://github.com/George-RD/growth-arsenal)) · [MeerK40t CLI](https://george-rd.github.io/cli-anything-meerk40t/) ([source](https://github.com/George-RD/cli-anything-meerk40t)) · [Hologlyph](https://george-rd.github.io/hologlyph/) ([source](https://github.com/George-RD/hologlyph))
 
-[georgerd.com](https://georgerd.com/) &nbsp;·&nbsp; [GitHub](https://github.com/George-RD) &nbsp;·&nbsp; [george@reid-dowd.me](mailto:george@reid-dowd.me)
+Products: [Yarnling](https://georgerd.com/#proof) · [ReavesHQ](https://www.reaveshq.com/) · [OG Mallow](https://ogmallow.com/)
