@@ -1,7 +1,7 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-08-07T19:18:53.110Z",
+  "generatedAt": "2026-08-08T02:24:01.728Z",
   "username": "George-RD",
   "allTime": {
     "rank": 117,
@@ -12,10 +12,10 @@
     "sessions": 38737
   },
   "month": {
-    "totalTokens": 50978741143,
-    "totalCost": 28659.525100000003,
-    "activeDays": 30,
-    "contributions": 30
+    "totalTokens": 50508349855,
+    "totalCost": 28429.462800000005,
+    "activeDays": 29,
+    "contributions": 29
   },
   "clients": [
     "claude",
@@ -96,8 +96,8 @@
     },
     {
       "model": "claude-fable-5",
-      "tokens": 4951471863,
-      "cost": 6705.243444500001
+      "tokens": 4921585229,
+      "cost": 6644.694825500002
     },
     {
       "model": "claude-opus-5",
@@ -116,7 +116,7 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-08-07T19:18:55.717Z",
+    "generatedAt": "2026-08-08T02:24:04.332Z",
     "dataThrough": "2026-08-07",
     "sourceUpdatedAt": "2026-08-07T12:32:36.473Z",
     "dates": [
@@ -173,7 +173,7 @@
         "deltaPercentagePoints": 38.664131817125366,
         "direction": "up",
         "series": [
-          112352,
+          0,
           8514249,
           79656302,
           209343951,
@@ -296,7 +296,7 @@
         "deltaPercentagePoints": 2.64801007962453,
         "direction": "up",
         "series": [
-          29886634,
+          0,
           513764451,
           307174642,
           219425376,
@@ -375,6 +375,6 @@
   "sourceFreshness": {
     "dataThrough": "2026-08-07",
     "sourceUpdatedAt": "2026-08-07T12:32:36.473Z",
-    "generatedAt": "2026-08-07T19:18:55.717Z"
+    "generatedAt": "2026-08-08T02:24:04.332Z"
   }
 }
