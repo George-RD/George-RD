@@ -43,6 +43,12 @@ function coordinate(value) {
   return Object.is(rounded, -0) ? "0" : String(rounded);
 }
 
+function decimal(value, places = 4) {
+  const factor = 10 ** places;
+  const rounded = Math.round(number(value) * factor) / factor;
+  return Object.is(rounded, -0) ? "0" : String(rounded);
+}
+
 function dateKey(value) {
   if (!value) return "";
   const date = new Date(value);
@@ -126,15 +132,55 @@ function repositoriesForDay(day) {
   }));
 }
 
+function widthConstrainedSize(
+  label,
+  desired,
+  { min = 6, max = Infinity, maxWidth = Infinity, widthFactor = 0.6 },
+) {
+  const estimatedUnits = Math.max(1, String(label || "").length) * widthFactor;
+  const widthCap = maxWidth / estimatedUnits;
+  return (
+    Math.round(Math.max(min, Math.min(desired, max, widthCap)) * 10) / 10
+  );
+}
+
 function fontSizeForShare(
   label,
   share,
   { min, max, maxWidth = Infinity, widthFactor = 0.6 },
 ) {
   const desired = min + (max - min) * clamp(number(share), 0, 1);
-  const estimatedUnits = Math.max(1, String(label || "").length) * widthFactor;
-  const widthCap = maxWidth / estimatedUnits;
-  return Math.round(Math.max(6, Math.min(desired, max, widthCap)) * 10) / 10;
+  return widthConstrainedSize(label, desired, {
+    min: 6,
+    max,
+    maxWidth,
+    widthFactor,
+  });
+}
+
+function fontSizeForRelativeScore(
+  label,
+  score,
+  referenceScore,
+  {
+    min,
+    max,
+    maxWidth = Infinity,
+    widthFactor = 0.6,
+    exponent = 0.65,
+  },
+) {
+  const relative =
+    number(referenceScore) > 0
+      ? clamp(number(score) / number(referenceScore), 0, 1)
+      : 0;
+  const desired = min + (max - min) * relative ** exponent;
+  return widthConstrainedSize(label, desired, {
+    min: 6,
+    max,
+    maxWidth,
+    widthFactor,
+  });
 }
 
 function textWidth(label, fontSize, widthFactor = 0.62) {
@@ -144,10 +190,10 @@ function textWidth(label, fontSize, widthFactor = 0.62) {
 function fitSecondaryEntries(entries, maxWidth, mobile) {
   const separatorWidth = mobile ? 8 : 7;
   const gap = mobile ? 4 : 3;
-  const base = entries.map((entry) => ({ ...entry }));
+  const fitted = entries.map((entry) => ({ ...entry }));
 
   const totalWidth = () =>
-    base.reduce(
+    fitted.reduce(
       (sum, entry, index) =>
         sum +
         textWidth(entry.label, entry.fontSize) +
@@ -156,18 +202,19 @@ function fitSecondaryEntries(entries, maxWidth, mobile) {
     );
 
   const current = totalWidth();
-  if (current <= maxWidth || current <= 0) return base;
+  if (current <= maxWidth || current <= 0) return fitted;
 
   const scale = maxWidth / current;
-  for (const entry of base) {
+  for (const entry of fitted) {
     entry.fontSize =
       Math.round(Math.max(6.2, entry.fontSize * scale) * 10) / 10;
   }
-  return base;
+  return fitted;
 }
 
 function secondaryMarkup({
   repositories,
+  dominantSize,
   x,
   y,
   maxWidth,
@@ -176,15 +223,27 @@ function secondaryMarkup({
 }) {
   const visible = repositories.slice(1, 3);
   const extra = Math.max(0, repositories.length - 3);
+  const topScore = Math.max(1, number(repositories[0]?.score));
+  const secondaryMax = mobile
+    ? Math.max(8, Math.min(16, dominantSize - 1))
+    : Math.max(8.5, Math.min(19.5, dominantSize - 1));
   const config = mobile
-    ? { min: 7, max: 11, maxWidth }
-    : { min: 7.5, max: 12.5, maxWidth };
+    ? { min: 7, max: secondaryMax, maxWidth }
+    : { min: 7.5, max: secondaryMax, maxWidth };
+
   const entries = visible.map((repository) => {
     const label = repoShortName(repository.name);
     return {
       label,
       share: repository.share,
-      fontSize: fontSizeForShare(label, repository.share, config),
+      score: repository.score,
+      relative: repository.score / topScore,
+      fontSize: fontSizeForRelativeScore(
+        label,
+        repository.score,
+        topScore,
+        config,
+      ),
       className: "secondary-repo",
     };
   });
@@ -193,6 +252,8 @@ function secondaryMarkup({
     entries.push({
       label: `+${extra} MORE`,
       share: 0,
+      score: 0,
+      relative: 0,
       fontSize: 7,
       className: "repo-more",
     });
@@ -213,14 +274,14 @@ function secondaryMarkup({
       cursor += separatorSize * 0.62 + gap;
     }
     markup.push(
-      `<text class="${entry.className}" x="${coordinate(cursor)}" y="${coordinate(y)}" data-share="${coordinate(entry.share)}" style="font-size:${coordinate(entry.fontSize)}px">${escapeXml(entry.label)}</text>`,
+      `<text class="${entry.className}" x="${coordinate(cursor)}" y="${coordinate(y)}" data-score="${coordinate(entry.score)}" data-relative="${decimal(entry.relative)}" data-share="${decimal(entry.share)}" style="font-size:${coordinate(entry.fontSize)}px">${escapeXml(entry.label)}</text>`,
     );
     cursor += textWidth(entry.label, entry.fontSize);
   });
 
   if (!mobile && extra > 0) {
     markup.push(
-      `<text class="repo-more" x="${coordinate(x)}" y="${coordinate(moreY)}" data-share="0" style="font-size:7.5px">+${extra} MORE</text>`,
+      `<text class="repo-more" x="${coordinate(x)}" y="${coordinate(moreY)}" data-score="0" data-relative="0" data-share="0" style="font-size:7.5px">+${extra} MORE</text>`,
     );
   }
 
@@ -277,7 +338,7 @@ function scaleDaySegment(segment, day, mobile) {
     dominant.share,
     dominantConfig,
   );
-  const dominantMarkup = `<text class="dominant-repo" x="${coordinate(dominantX)}" y="${coordinate(dominantY)}" data-share="${coordinate(dominant.share)}" style="font-size:${coordinate(dominantSize)}px">${escapeXml(dominantLabel)}</text>`;
+  const dominantMarkup = `<text class="dominant-repo" x="${coordinate(dominantX)}" y="${coordinate(dominantY)}" data-score="${coordinate(dominant.score)}" data-relative="1" data-share="${decimal(dominant.share)}" style="font-size:${coordinate(dominantSize)}px">${escapeXml(dominantLabel)}</text>`;
 
   const secondaryX = secondaryPosition
     ? number(secondaryPosition[1])
@@ -290,6 +351,7 @@ function scaleDaySegment(segment, day, mobile) {
     : secondaryY + (mobile ? 10 : 14);
   const secondary = secondaryMarkup({
     repositories,
+    dominantSize,
     x: secondaryX,
     y: secondaryY,
     maxWidth: Math.max(28, bandX + bandWidth - secondaryX - 2),
@@ -314,7 +376,7 @@ function injectStyles(svg) {
   if (closing < 0) throw new Error("Contribution lens SVG has no style block");
   const styles = `
     ${STYLE_START}
-    .secondary-repo,.secondary-separator{font-family:ui-monospace,"SFMono-Regular",Consolas,monospace;font-weight:800;letter-spacing:.35px}
+    .secondary-repo,.secondary-separator{font-family:ui-monospace,"SFMono-Regular",Consolas,monospace;font-weight:850;letter-spacing:.3px}
     .secondary-repo{fill:#40534e}.secondary-separator{fill:#b9b2a5;font-weight:700}.repo-more{fill:#40534e}
     ${STYLE_END}
   `;
@@ -348,15 +410,27 @@ function scaleSvg(svg, meta, { mobile = false } = {}) {
   return injectStyles(output)
     .replaceAll(
       "REPOS RANKED BY GITHUB ACTIVITY",
+      "REPO TYPE SIZE = SHARE WITHIN EACH DAY",
+    )
+    .replaceAll(
       "REPO TYPE SIZE = SHARE OF THAT DAY",
+      "REPO TYPE SIZE = SHARE WITHIN EACH DAY",
     )
     .replaceAll(
       "TYPE WEIGHT = REPO RANK · RULE LENGTH = GITHUB ACTIVITY",
+      "TYPE SIZE = REPO SHARE WITHIN DAY · RULE LENGTH = GITHUB ACTIVITY",
+    )
+    .replaceAll(
       "TYPE SIZE = DAILY REPO SHARE · RULE LENGTH = GITHUB ACTIVITY",
+      "TYPE SIZE = REPO SHARE WITHIN DAY · RULE LENGTH = GITHUB ACTIVITY",
     )
     .replaceAll(
       "TYPE = REPO RANK · RULE LENGTH = GITHUB ACTIVITY",
+      "TYPE SIZE = REPO SHARE WITHIN DAY · RULE = GITHUB ACTIVITY",
+    )
+    .replaceAll(
       "TYPE SIZE = DAILY REPO SHARE · RULE = GITHUB ACTIVITY",
+      "TYPE SIZE = REPO SHARE WITHIN DAY · RULE = GITHUB ACTIVITY",
     );
 }
 
@@ -379,11 +453,16 @@ async function main() {
   await fs.writeFile(args.out, desktop, "utf8");
   await ensureParent(args.mobileOut);
   await fs.writeFile(args.mobileOut, mobile, "utf8");
-  console.log("Scaled repository type by daily activity share.");
+  console.log("Scaled every repository label relative to peers within its day.");
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   await main();
 }
 
-export { fontSizeForShare, repositoriesForDay, scaleSvg };
+export {
+  fontSizeForRelativeScore,
+  fontSizeForShare,
+  repositoriesForDay,
+  scaleSvg,
+};
