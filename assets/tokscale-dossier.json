@@ -1,21 +1,21 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-08-08T12:04:30.123Z",
+  "generatedAt": "2026-08-08T13:14:52.937Z",
   "username": "George-RD",
   "allTime": {
-    "rank": 117,
-    "totalTokens": 77462600572,
-    "totalCost": 42869.2573,
-    "activeDays": 172,
-    "submissions": 32,
-    "sessions": 38737
+    "rank": 109,
+    "totalTokens": 81743411814,
+    "totalCost": 44574.7924,
+    "activeDays": 173,
+    "submissions": 33,
+    "sessions": 39903
   },
   "month": {
-    "totalTokens": 50508349855,
-    "totalCost": 28429.462800000005,
-    "activeDays": 29,
-    "contributions": 29
+    "totalTokens": 54789161097,
+    "totalCost": 30134.977500000005,
+    "activeDays": 30,
+    "contributions": 30
   },
   "clients": [
     "claude",
@@ -24,8 +24,8 @@
     "hermes",
     "jcode",
     "gemini",
-    "opencode",
     "kimi",
+    "opencode",
     "kiro",
     "copilot",
     "grok"
@@ -51,9 +51,7 @@
     "gpt-5-codex",
     "gpt-5.2-codex",
     "gemini-3-pro-preview",
-    "gemini-2.5-flash",
     "gpt-5.3-codex",
-    "k2p6",
     "grok-4.5",
     "gpt-5.6-sol",
     "gpt-5.6-luna",
@@ -67,60 +65,61 @@
     "gemini-3.6-flash-high",
     "gemini-3.6-flash",
     "claude-opus-5",
+    "gemini-2.5-flash",
     "claude-opus-4-7",
     "gpt-oss-120b",
     "minimax-m2.7",
     "minimax-m2.7-highspeed",
     "auto",
-    "deepseek-v4-flash:0731",
-    "gemini-3.1-pro-preview",
     "claude-sonnet-4-6-thinking",
     "kimi",
     "minimax",
     "opus-4.7",
     "deepseek-v4-pro",
     "minimax-m3",
+    "claude-opus-4-5",
+    "k2p6",
+    "tencent/hy3-preview:free",
+    "gemini-3.1-pro-preview",
+    "anthropic/claude-sonnet-4",
     "grok-build-0.1",
     "kimi-k2.7-code",
     "kimi-for-coding-highspeed",
     "openai/gpt-5.6-luna",
-    "tencent/hy3-preview:free",
-    "claude-opus-4-5",
-    "anthropic/claude-sonnet-4"
+    "deepseek-v4-flash:0731"
   ],
   "topModels": [
     {
       "model": "gpt-5.6-sol",
-      "tokens": 15803173593,
-      "cost": 12124.887548000002
+      "tokens": 15896259207,
+      "cost": 12199.191164999997
     },
     {
       "model": "claude-fable-5",
-      "tokens": 4921585229,
-      "cost": 6644.694825500002
+      "tokens": 5116107060,
+      "cost": 6924.247713000001
     },
     {
       "model": "claude-opus-5",
-      "tokens": 7643753593,
-      "cost": 5008.571431750001
+      "tokens": 9250365601,
+      "cost": 6092.28099575
+    },
+    {
+      "model": "gpt-5.6-terra",
+      "tokens": 4554487347,
+      "cost": 1426.355488
     },
     {
       "model": "claude-opus-4-8",
       "tokens": 1317852638,
-      "cost": 1330.2120907499998
-    },
-    {
-      "model": "gpt-5.6-terra",
-      "tokens": 4178149626,
-      "cost": 1301.5231199999994
+      "cost": 1330.2120907499996
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-08-08T12:04:34.900Z",
-    "dataThrough": "2026-08-07",
-    "sourceUpdatedAt": "2026-08-07T12:32:36.473Z",
+    "generatedAt": "2026-08-08T13:14:58.614Z",
+    "dataThrough": "2026-08-08",
+    "sourceUpdatedAt": "2026-08-08T12:57:39.303Z",
     "dates": [
-      "2026-07-09",
       "2026-07-10",
       "2026-07-11",
       "2026-07-12",
@@ -149,31 +148,31 @@
       "2026-08-04",
       "2026-08-05",
       "2026-08-06",
-      "2026-08-07"
+      "2026-08-07",
+      "2026-08-08"
     ],
     "latestWindow": {
-      "start": "2026-08-01",
-      "end": "2026-08-07",
-      "totalTokens": 11974214794
+      "start": "2026-08-02",
+      "end": "2026-08-08",
+      "totalTokens": 16214144034
     },
     "previousWindow": {
-      "start": "2026-07-25",
-      "end": "2026-07-31",
-      "totalTokens": 10501069929
+      "start": "2026-07-26",
+      "end": "2026-08-01",
+      "totalTokens": 9695416503
     },
     "leadingModel": "gpt-5.6-luna",
     "fastestRiser": "gpt-5.6-luna",
     "models": [
       {
         "model": "gpt-5.6-luna",
-        "recentTokens": 4828427386,
+        "recentTokens": 6488911022,
         "priorTokens": 174255696,
-        "recentShare": 0.40323540783813333,
-        "priorShare": 0.016594089666879697,
-        "deltaPercentagePoints": 38.664131817125366,
+        "recentShare": 0.4002006524916257,
+        "priorShare": 0.017972997441221942,
+        "deltaPercentagePoints": 38.22276550504037,
         "direction": "up",
         "series": [
-          0,
           8514249,
           79656302,
           209343951,
@@ -202,19 +201,19 @@
           870992347,
           302848192,
           1067555913,
-          67602624
+          68928055,
+          1659158205
         ]
       },
       {
         "model": "claude-opus-5",
-        "recentTokens": 2669143512,
-        "priorTokens": 4974610081,
-        "recentShare": 0.22290760253753303,
-        "priorShare": 0.4737241171265797,
-        "deltaPercentagePoints": -25.081651458904663,
+        "recentTokens": 4262491849,
+        "priorTokens": 4518825974,
+        "recentShare": 0.26288725695675536,
+        "priorShare": 0.46607858183315426,
+        "deltaPercentagePoints": -20.31913248763989,
         "direction": "down",
         "series": [
-          0,
           0,
           0,
           0,
@@ -243,19 +242,19 @@
           640188018,
           135315671,
           553516234,
-          803552427
+          1923774551,
+          486389884
         ]
       },
       {
         "model": "gpt-5.6-sol",
-        "recentTokens": 1879419082,
-        "priorTokens": 2308096171,
-        "recentShare": 0.1569555176963865,
-        "priorShare": 0.2197962861504148,
-        "deltaPercentagePoints": -6.284076845402831,
+        "recentTokens": 1955499389,
+        "priorTokens": 2309195785,
+        "recentShare": 0.12060454038766683,
+        "priorShare": 0.23817396439704042,
+        "deltaPercentagePoints": -11.756942400937358,
         "direction": "down",
         "series": [
-          0,
           0,
           33326061,
           49808786,
@@ -284,60 +283,19 @@
           80719407,
           44175472,
           214918398,
-          30341607
-        ]
-      },
-      {
-        "model": "claude-fable-5",
-        "recentTokens": 1007178121,
-        "priorTokens": 605199205,
-        "recentShare": 0.08411224771954763,
-        "priorShare": 0.05763214692330233,
-        "deltaPercentagePoints": 2.64801007962453,
-        "direction": "up",
-        "series": [
-          0,
-          513764451,
-          307174642,
-          219425376,
-          73465131,
-          0,
-          0,
-          408435703,
-          798695413,
-          672805126,
-          133790275,
-          11970,
-          181639816,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          176938515,
-          403716644,
-          24544046,
-          0,
-          35225363,
-          349135532,
-          29004140,
-          91016502,
-          332386089,
-          170410495
+          88991183,
+          34436038
         ]
       },
       {
         "model": "gpt-5.6-terra",
-        "recentTokens": 956344529,
-        "priorTokens": 1814386263,
-        "recentShare": 0.07986699298890161,
-        "priorShare": 0.1727810856672184,
-        "deltaPercentagePoints": -9.291409267831678,
+        "recentTokens": 1322670934,
+        "priorTokens": 1824397579,
+        "recentShare": 0.08157513163978596,
+        "priorShare": 0.18817114029453882,
+        "deltaPercentagePoints": -10.659600865475287,
         "direction": "down",
         "series": [
-          0,
           20900156,
           32236299,
           0,
@@ -366,15 +324,57 @@
           265623365,
           104174661,
           310765208,
-          41316785
+          41316785,
+          376337721
+        ]
+      },
+      {
+        "model": "claude-fable-5",
+        "recentTokens": 1201699952,
+        "priorTokens": 605199205,
+        "recentShare": 0.07411430103742225,
+        "priorShare": 0.06242116620907792,
+        "deltaPercentagePoints": 1.1693134828344331,
+        "direction": "up",
+        "series": [
+          513764451,
+          307174642,
+          219425376,
+          73465131,
+          0,
+          0,
+          408435703,
+          798695413,
+          672805126,
+          133790275,
+          11970,
+          181639816,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          176938515,
+          403716644,
+          24544046,
+          0,
+          35225363,
+          349135532,
+          29004140,
+          91016502,
+          332386089,
+          198502216,
+          166430110
         ]
       }
     ]
   },
-  "updatedAt": "2026-08-07T12:32:36.473Z",
+  "updatedAt": "2026-08-08T12:57:39.303Z",
   "sourceFreshness": {
-    "dataThrough": "2026-08-07",
-    "sourceUpdatedAt": "2026-08-07T12:32:36.473Z",
-    "generatedAt": "2026-08-08T12:04:34.900Z"
+    "dataThrough": "2026-08-08",
+    "sourceUpdatedAt": "2026-08-08T12:57:39.303Z",
+    "generatedAt": "2026-08-08T13:14:58.614Z"
   }
 }

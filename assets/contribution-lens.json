@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T12:04:40.981Z",
+  "generatedAt": "2026-08-08T13:15:05.032Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,10 +11,10 @@
     "focusStart": "2026-07-13",
     "focusEnd": "2026-08-09"
   },
-  "totalContributions": 12052,
+  "totalContributions": 12234,
   "metrics": {
     "activeDays": 26,
-    "focusShare": 0.4729872881355932,
+    "focusShare": 0.4002695417789757,
     "topRepos": [
       "CAIRN",
       "SPINE"
@@ -228,7 +228,7 @@
     },
     {
       "date": "2026-07-30",
-      "contributions": 135,
+      "contributions": 143,
       "repository": "mag",
       "event": "review",
       "modelFamilies": {
@@ -240,8 +240,8 @@
     },
     {
       "date": "2026-07-31",
-      "contributions": 134,
-      "repository": "cairn",
+      "contributions": 237,
+      "repository": "design-studio",
       "event": null,
       "modelFamilies": {
         "claude": 181760738,
@@ -252,8 +252,8 @@
     },
     {
       "date": "2026-08-01",
-      "contributions": 31,
-      "repository": "mag",
+      "contributions": 44,
+      "repository": "design-studio",
       "event": null,
       "modelFamilies": {
         "claude": 13263671,
@@ -276,7 +276,7 @@
     },
     {
       "date": "2026-08-03",
-      "contributions": 68,
+      "contributions": 88,
       "repository": "cairn",
       "event": "merge",
       "modelFamilies": {
@@ -312,7 +312,7 @@
     },
     {
       "date": "2026-08-06",
-      "contributions": 98,
+      "contributions": 100,
       "repository": "firth",
       "event": "merge",
       "modelFamilies": {
@@ -328,18 +328,23 @@
       "repository": "openspine",
       "event": "merge",
       "modelFamilies": {
-        "claude": 973962922,
-        "gpt": 139261016,
-        "gemini": 42505825,
-        "other": 303904642
+        "claude": 2122276767,
+        "gpt": 199236023,
+        "gemini": 44914916,
+        "other": 592692122
       }
     },
     {
       "date": "2026-08-08",
-      "contributions": 65,
-      "repository": "George-RD",
+      "contributions": 101,
+      "repository": "firth",
       "event": "merge",
-      "modelFamilies": {}
+      "modelFamilies": {
+        "claude": 652819994,
+        "gpt": 2069931964,
+        "gemini": 0,
+        "other": 58573861
+      }
     },
     {
       "date": "2026-08-09",
