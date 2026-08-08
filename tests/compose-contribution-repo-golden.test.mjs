@@ -6,7 +6,7 @@ import {
   composeSvg,
   layoutGoldenField,
   repositoriesForDay,
-} from "../scripts/compose-contribution-repo-golden.mjs";
+} from "../scripts/optimize-contribution-repo-golden.mjs";
 
 function repositories(scores = [70, 45, 15, 12, 8], names = []) {
   const defaults = [
@@ -120,15 +120,15 @@ test("overflow is aggregated only after individual labels cannot be placed", () 
 
 function fixtureSvg() {
   return `<svg><style>.x{}</style>
-  <text>DATE RAIL · TYPE SIZE = SHARE WITHIN DAY</text>
-  <text>LEFT FLOW · +N ONLY WHEN SPACE RUNS OUT · RULE = ACTIVITY</text>
-  <g class="recent-day" data-recent-day="2026-07-26"><title>day</title><g class="day-date-stack"><text class="day-stack-weekday">SUN</text><text class="day-stack-count">100</text><text class="day-stack-number">26</text><text class="day-stack-month">JUL</text></g><g class="repo-type-flow"><text class="dominant-repo">CAIRN</text></g><g class="model-band"><rect class="model-band-base" x="58" y="390" width="145" height="7"/></g></g>
+  <text>TYPE SIZE = DAILY REPO SHARE</text>
+  <text>TYPE SIZE = DAILY REPO SHARE · +N = OVERFLOW · RULE = ACTIVITY</text>
+  <g class="recent-day" data-recent-day="2026-07-26"><title>day</title><g class="day-date-stack"><text class="day-stack-weekday">SUN</text><text class="day-stack-number">26</text><text class="day-stack-month">JUL</text></g><g class="repo-golden-field" data-layout="golden"><text class="dominant-repo">CAIRN</text></g><g class="model-band"><rect class="model-band-base" x="58" y="390" width="145" height="7"/></g></g>
   </g>
   <!-- profile-detail:end -->
 </svg>`;
 }
 
-test("composeSvg removes the visible count and replaces the row flow", () => {
+test("composeSvg replaces the conservative golden field", () => {
   const svg = composeSvg(fixtureSvg(), {
     focus: [
       {
@@ -142,10 +142,9 @@ test("composeSvg removes the visible count and replaces the row flow", () => {
   assert.match(svg, /class="repo-golden-field"/);
   assert.match(svg, /data-layout="golden-adaptive"/);
   assert.match(svg, /data-visible-repos="5"/);
-  assert.doesNotMatch(svg, /class="repo-type-flow"/);
-  assert.doesNotMatch(svg, /class="day-stack-count"/);
+  assert.doesNotMatch(svg, /data-layout="golden"/);
   assert.match(svg, /class="day-stack-weekday"[^>]*>SUN/);
-  assert.match(svg, /ADAPTIVE GOLDEN FIELD/);
+  assert.match(svg, /\+N ONLY WHEN SPACE RUNS OUT/);
   assert.doesNotMatch(
     svg,
     /text-anchor="end"[^>]*class="(?:dominant-repo|secondary-repo|repo-more)"/,
@@ -165,6 +164,6 @@ test("composeSvg is idempotent", () => {
   const once = composeSvg(fixtureSvg(), meta);
   const twice = composeSvg(once, meta);
 
-  assert.equal((twice.match(/repo-golden-field:start/g) || []).length, 1);
+  assert.equal((twice.match(/data-layout="golden-adaptive"/g) || []).length, 1);
   assert.equal(twice, once);
 });
