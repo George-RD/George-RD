@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 
 import {
+  aggregateHiddenRepositories,
   fontSizeForRelativeScore,
   fontSizeForShare,
   scaleSvg,
@@ -9,31 +10,42 @@ import {
 
 function fixtureSvg({ mobile = false, narrow = false } = {}) {
   const width = narrow ? 46 : mobile ? 322 : 145;
-  const x = mobile ? 114 : 58;
+  const x = mobile ? 32 : 58;
   return `<svg viewBox="0 0 ${mobile ? 720 : 1200} ${mobile ? 900 : 610}"><style>.dominant-repo{font-size:19px}.secondary-repos{font-size:8px}</style>
   <text>REPOS RANKED BY GITHUB ACTIVITY</text>
-  <text>TYPE WEIGHT = REPO RANK · RULE LENGTH = GITHUB ACTIVITY</text>
-  <g class="recent-day" data-recent-day="2026-08-07"><title>day</title><text class="dominant-repo" x="${x}" y="350">CAIRN</text><text class="secondary-repos" x="${x}" y="372">MAG · RIVE</text><text class="repo-more" x="${x}" y="386">+1 MORE</text><g class="model-band" data-model-band="day"><rect class="model-band-base" x="${x}" y="390" width="${width}" height="7"/></g></g>
+  <text>TYPE SIZE = REPO SHARE WITHIN DAY · RULE = GITHUB ACTIVITY</text>
+  <g class="recent-day" data-recent-day="2026-07-26"><title>day</title><text class="day-date" x="${x}" y="313">SUN 26 JUL</text><text class="day-contributions" x="${x + width}" y="313">100</text><text class="dominant-repo" x="${x}" y="350">CAIRN</text><text class="secondary-repos" x="${x}" y="372">MAG · RIVE</text><text class="repo-more" x="${x}" y="386">+2 MORE</text><g class="model-band" data-model-band="day"><rect class="model-band-base" x="${x}" y="390" width="${width}" height="7"/></g></g>
   </g>
   <!-- profile-detail:end -->
 </svg>`;
 }
 
 function fixtureMeta() {
+  const scores = [70, 35, 14, 10, 6];
+  const total = scores.reduce((sum, score) => sum + score, 0);
   return {
     focus: [
       {
-        date: "2026-08-07",
+        date: "2026-07-26",
         contributions: 100,
         repositories: [
-          { name: "cairn", score: 70, share: 0.7 },
-          { name: "mag", score: 20, share: 0.2 },
-          { name: "rive-rs-cli", score: 8, share: 0.08 },
-          { name: "design-studio", score: 2, share: 0.02 },
+          { name: "cairn", score: 70, share: 70 / total },
+          { name: "mag", score: 35, share: 35 / total },
+          { name: "rive-rs-cli", score: 14, share: 14 / total },
+          { name: "design-studio", score: 10, share: 10 / total },
+          { name: "growth-arsenal", score: 6, share: 6 / total },
         ],
       },
     ],
   };
+}
+
+function fontSize(svg, label) {
+  const match = svg.match(
+    new RegExp(`(?:dominant-repo|secondary-repo|repo-more)"[^>]*font-size:([0-9.]+)px[^>]*>${label}<`),
+  );
+  assert.ok(match, `missing font size for ${label}`);
+  return Number(match[1]);
 }
 
 test("fontSizeForShare follows absolute daily share while respecting width", () => {
@@ -61,55 +73,69 @@ test("fontSizeForShare follows absolute daily share while respecting width", () 
 });
 
 test("fontSizeForRelativeScore differentiates repositories within one day", () => {
-  const second = fontSizeForRelativeScore("MAG", 20, 70, {
-    min: 7.5,
-    max: 19.5,
+  const second = fontSizeForRelativeScore("MAG", 35, 70, {
+    min: 8,
+    max: 20,
     maxWidth: 100,
   });
-  const third = fontSizeForRelativeScore("RIVE", 8, 70, {
-    min: 7.5,
-    max: 19.5,
-    maxWidth: 100,
-  });
-  const nearDominant = fontSizeForRelativeScore("SPINE", 63, 70, {
-    min: 7.5,
-    max: 19.5,
+  const third = fontSizeForRelativeScore("RIVE", 14, 70, {
+    min: 8,
+    max: 20,
     maxWidth: 100,
   });
 
-  assert.equal(second, 12.8);
-  assert.equal(third, 10.4);
-  assert.ok(nearDominant > second);
+  assert.ok(second > third);
 });
 
-test("scaleSvg sizes every visible repository relative to peers in its day", () => {
+test("aggregateHiddenRepositories combines all hidden repository activity", () => {
+  const repositories = fixtureMeta().focus[0].repositories;
+  const aggregate = aggregateHiddenRepositories(repositories);
+
+  assert.equal(aggregate.count, 2);
+  assert.equal(aggregate.score, 16);
+  assert.equal(aggregate.relative, 16 / 70);
+  assert.equal(aggregate.share, 16 / 135);
+});
+
+test("scaleSvg stacks the date and gives repository names separate proportional lines", () => {
   const svg = scaleSvg(fixtureSvg(), fixtureMeta());
 
+  assert.match(svg, /class="day-date-stack"/);
+  assert.match(svg, /class="day-stack-weekday"[^>]*>SUN</);
+  assert.match(svg, /class="day-stack-number"[^>]*>26</);
+  assert.match(svg, /class="day-stack-month"[^>]*>JUL</);
+  assert.doesNotMatch(svg, />SUN 26 JUL</);
+
+  assert.match(svg, /class="dominant-repo" x="86"/);
+  assert.match(svg, /class="secondary-repo"[^>]*data-score="35"[^>]*>MAG</);
+  assert.match(svg, /class="secondary-repo"[^>]*data-score="14"[^>]*>RIVE</);
   assert.match(
     svg,
-    /class="dominant-repo"[^>]*data-share="0.7"[^>]*font-size:21.6px[^>]*>CAIRN/,
+    /class="repo-more"[^>]*data-score="16"[^>]*data-relative="0.2286"[^>]*data-aggregate-count="2"[^>]*>\+2 MORE</,
   );
-  assert.match(
-    svg,
-    /class="secondary-repo"[^>]*data-score="20"[^>]*data-relative="0.2857"[^>]*font-size:12.8px[^>]*>MAG/,
-  );
-  assert.match(
-    svg,
-    /class="secondary-repo"[^>]*data-score="8"[^>]*data-relative="0.1143"[^>]*font-size:10.4px[^>]*>RIVE/,
-  );
-  assert.match(svg, /class="secondary-separator"/);
-  assert.match(svg, /\+1 MORE/);
-  assert.doesNotMatch(svg, /class="secondary-repos"/);
-  assert.match(svg, /REPO TYPE SIZE = SHARE WITHIN EACH DAY/);
-  assert.match(svg, /TYPE SIZE = REPO SHARE WITHIN DAY/);
+  assert.ok(fontSize(svg, "MAG") > fontSize(svg, "RIVE"));
+  assert.ok(fontSize(svg, "\\+2 MORE") > fontSize(svg, "RIVE"));
+  assert.match(svg, /DATE STACK · REPO TYPE = SHARE WITHIN DAY/);
+  assert.match(svg, /\+N = HIDDEN SHARE/);
 });
 
-test("scaleSvg constrains a dominant label to the available column width", () => {
+test("mobile keeps the date rail while fitting secondary and aggregate labels inline", () => {
+  const svg = scaleSvg(fixtureSvg({ mobile: true }), fixtureMeta(), {
+    mobile: true,
+  });
+
+  assert.match(svg, /class="day-date-stack"/);
+  assert.match(svg, /class="dominant-repo" x="74"/);
+  assert.match(svg, /class="secondary-separator"/);
+  assert.match(svg, /data-aggregate-count="2"/);
+});
+
+test("scaleSvg constrains a dominant label to the available repository area", () => {
   const meta = fixtureMeta();
   meta.focus[0].repositories[0] = {
     name: "george-rd",
-    score: 98,
-    share: 0.98,
+    score: 120,
+    share: 0.8,
   };
   const svg = scaleSvg(fixtureSvg({ narrow: true }), meta);
   const match = svg.match(
