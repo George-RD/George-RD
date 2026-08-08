@@ -228,7 +228,7 @@ function textWidth(label, fontSize, widthFactor = 0.62) {
 function repositoryEntry(repository, dominant, fieldWidth, mobile, order) {
   const label = repoShortName(repository.name);
   const dominantEntry = order === 0;
-  const widthFactor = dominantEntry ? 0.61 : 0.62;
+  const widthFactor = dominantEntry ? 0.76 : 0.72;
   const fontSize = dominantEntry
     ? fontSizeForShare(
         label,
@@ -272,7 +272,7 @@ function aggregateEntry(
   const aggregate = aggregateHiddenRepositories(repositories, visibleCount);
   if (!aggregate.count) return null;
   const label = `+${aggregate.count} MORE`;
-  const widthFactor = 0.62;
+  const widthFactor = 0.72;
   const fontSize = fontSizeForRelativeScore(
     label,
     aggregate.score,
@@ -322,7 +322,7 @@ function layoutRepositoryFlow(repositories, fieldWidth, mobile, bandY) {
   const rowBaselines = mobile
     ? [bandY - 28, bandY - 7]
     : [bandY - 51, bandY - 29, bandY - 8];
-  const gap = mobile ? 10 : 8;
+  const gap = mobile ? 14 : 12;
 
   for (let visibleCount = repositories.length; visibleCount >= 1; visibleCount -= 1) {
     const visible = repositories
