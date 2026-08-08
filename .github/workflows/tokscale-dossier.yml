@@ -24,12 +24,14 @@ on:
       - "scripts/enrich-contribution-lens-repositories.mjs"
       - "scripts/refine-contribution-lens.mjs"
       - "scripts/scale-contribution-repo-type.mjs"
+      - "scripts/compose-contribution-repo-golden.mjs"
       - "tests/render-repository-stars.test.mjs"
       - "tests/render-contribution-lens.test.mjs"
       - "tests/render-tokscale-momentum.test.mjs"
       - "tests/enrich-contribution-lens-repositories.test.mjs"
       - "tests/refine-contribution-lens.test.mjs"
       - "tests/scale-contribution-repo-type.test.mjs"
+      - "tests/compose-contribution-repo-golden.test.mjs"
       - ".github/workflows/tokscale-dossier.yml"
 
 permissions:
@@ -63,6 +65,7 @@ jobs:
           node --check scripts/enrich-contribution-lens-repositories.mjs
           node --check scripts/refine-contribution-lens.mjs
           node --check scripts/scale-contribution-repo-type.mjs
+          node --check scripts/compose-contribution-repo-golden.mjs
 
       - name: Test profile graphics
         run: node --test tests/*.test.mjs
@@ -104,6 +107,13 @@ jobs:
             --mobile-out assets/contribution-lens-mobile.svg
 
           node scripts/scale-contribution-repo-type.mjs \
+            --in assets/contribution-lens.svg \
+            --mobile-in assets/contribution-lens-mobile.svg \
+            --meta assets/contribution-lens.json \
+            --out assets/contribution-lens.svg \
+            --mobile-out assets/contribution-lens-mobile.svg
+
+          node scripts/compose-contribution-repo-golden.mjs \
             --in assets/contribution-lens.svg \
             --mobile-in assets/contribution-lens-mobile.svg \
             --meta assets/contribution-lens.json \
