@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 166 42" role="img" aria-labelledby="title">
+  <title id="title">Activity</title>
+  <rect x="0.75" y="0.75" width="164.5" height="40.5" fill="#f1ede4" stroke="#10231f" stroke-width="1.5"/>
+  <rect width="42" height="42" fill="#e9be48"/>
+  <g fill="#10231f">
+    <rect x="11" y="24" width="4" height="7"/>
+    <rect x="19" y="18" width="4" height="13"/>
+    <rect x="27" y="11" width="4" height="20"/>
+  </g>
+  <path d="M10 15l7 2 6-6 9-4" fill="none" stroke="#10231f" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="58" y="26" fill="#10231f" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="13" font-weight="750" letter-spacing="1.5">ACTIVITY</text>
+</svg>

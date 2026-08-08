@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 42" role="img" aria-labelledby="title">
+  <title id="title">Contact</title>
+  <rect x="0.75" y="0.75" width="158.5" height="40.5" fill="#f1ede4" stroke="#10231f" stroke-width="1.5"/>
+  <rect width="42" height="42" fill="#10231f"/>
+  <g fill="none" stroke="#f1ede4" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="10.5" y="13" width="21" height="16"/>
+    <path d="M11.5 14l9.5 8 9.5-8"/>
+  </g>
+  <text x="58" y="26" fill="#10231f" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="13" font-weight="750" letter-spacing="1.5">CONTACT</text>
+</svg>
