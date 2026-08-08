@@ -8,23 +8,28 @@ import {
   repositoriesForDay,
 } from "../scripts/compose-contribution-repo-golden.mjs";
 
-function repositories(scores = [70, 45, 15, 12, 8]) {
-  const names = [
+function repositories(scores = [70, 45, 15, 12, 8], names = []) {
+  const defaults = [
     "cairn",
     "hologlyph",
     "rive-rs-cli",
     "design-studio",
     "mag",
+    "growth-arsenal",
+    "george-rd",
+    "cli-anything-meerk40t",
+    "private",
+    "openspine",
   ];
   const total = scores.reduce((sum, score) => sum + score, 0);
   return scores.map((score, index) => ({
-    name: names[index] || `repo-${index}`,
+    name: names[index] || defaults[index] || `repo-${index}`,
     score,
     share: score / total,
   }));
 }
 
-function overlaps(left, right, margin = 3) {
+function overlaps(left, right, margin = 2.5) {
   return !(
     left.right + margin <= right.left ||
     right.right + margin <= left.left ||
@@ -40,16 +45,38 @@ test("a single repository uses the interior instead of the top edge", () => {
   assert.equal(layout.entries.length, 1);
   const entry = layout.entries[0];
   assert.ok(entry.x > 8);
-  assert.ok(entry.y > layout.fieldTop + layout.fieldHeight * 0.35);
-  assert.ok(entry.y < layout.fieldTop + layout.fieldHeight * 0.8);
+  assert.ok(entry.y > layout.fieldTop + layout.fieldHeight * 0.3);
+  assert.ok(entry.y < layout.fieldTop + layout.fieldHeight * 0.82);
 });
 
-test("multiple repositories occupy varied golden-section anchors without overlap", () => {
+test("five normal repositories remain individually visible", () => {
   const normalized = repositoriesForDay({ repositories: repositories() });
   const layout = layoutGoldenField(normalized, 112, false, 390);
 
   assert.equal(layout.hiddenCount, 0);
+  assert.equal(layout.visibleCount, 5);
   assert.equal(layout.entries.length, 5);
+  assert.ok(layout.visibleShare > 0.999);
+});
+
+test("adaptive density exposes more than three repositories in a busy day", () => {
+  const scores = [90, 58, 42, 31, 24, 18, 12, 9];
+  const normalized = repositoriesForDay({ repositories: repositories(scores) });
+  const layout = layoutGoldenField(normalized, 112, false, 390);
+
+  assert.ok(layout.visibleCount >= 5, `only ${layout.visibleCount} visible`);
+  assert.ok(layout.visibleShare >= 0.82, `coverage ${layout.visibleShare}`);
+  assert.equal(
+    layout.entries.some((entry) => entry.className === "repo-more"),
+    layout.hiddenCount > 0,
+  );
+});
+
+test("adaptive density uses space without overlap", () => {
+  const scores = [90, 58, 42, 31, 24, 18, 12];
+  const normalized = repositoriesForDay({ repositories: repositories(scores) });
+  const layout = layoutGoldenField(normalized, 112, false, 390);
+
   assert.ok(new Set(layout.entries.map((entry) => Math.round(entry.x))).size >= 3);
   assert.ok(new Set(layout.entries.map((entry) => Math.round(entry.y))).size >= 3);
 
@@ -65,10 +92,10 @@ test("multiple repositories occupy varied golden-section anchors without overlap
 });
 
 test("overflow is aggregated only after individual labels cannot be placed", () => {
-  const raw = Array.from({ length: 12 }, (_, index) => ({
-    name: `repo-${index}`,
+  const raw = Array.from({ length: 14 }, (_, index) => ({
+    name: `repository-${index}`,
     score: 100 - index * 4,
-    share: 1 / 12,
+    share: 1 / 14,
   }));
   const normalized = repositoriesForDay({ repositories: raw });
   const layout = layoutGoldenField(normalized, 62, false, 390);
@@ -77,13 +104,11 @@ test("overflow is aggregated only after individual labels cannot be placed", () 
   );
 
   assert.ok(layout.hiddenCount > 0);
+  assert.ok(layout.visibleCount >= 2);
   assert.ok(aggregate);
   assert.equal(aggregate.aggregateCount, layout.hiddenCount);
   assert.deepEqual(
-    aggregateHiddenRepositories(
-      normalized,
-      normalized.length - layout.hiddenCount,
-    ),
+    aggregateHiddenRepositories(normalized, layout.visibleCount),
     {
       count: layout.hiddenCount,
       score: aggregate.score,
@@ -115,11 +140,12 @@ test("composeSvg removes the visible count and replaces the row flow", () => {
   });
 
   assert.match(svg, /class="repo-golden-field"/);
-  assert.match(svg, /data-layout="golden"/);
+  assert.match(svg, /data-layout="golden-adaptive"/);
+  assert.match(svg, /data-visible-repos="5"/);
   assert.doesNotMatch(svg, /class="repo-type-flow"/);
   assert.doesNotMatch(svg, /class="day-stack-count"/);
   assert.match(svg, /class="day-stack-weekday"[^>]*>SUN/);
-  assert.match(svg, /TYPE SIZE = DAILY REPO SHARE/);
+  assert.match(svg, /ADAPTIVE GOLDEN FIELD/);
   assert.doesNotMatch(
     svg,
     /text-anchor="end"[^>]*class="(?:dominant-repo|secondary-repo|repo-more)"/,
