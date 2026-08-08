@@ -16,7 +16,6 @@ const COLORS = {
   blue: "#4b7fa0",
   gold: "#d5a72c",
   sage: "#8b9d83",
-  intensity: ["#eee9de", "#d7d6c8", "#b7bea9", "#8d9e88", "#556e61", "#10231f"],
 };
 
 const DETAIL_START = "<!-- profile-detail:start -->";
@@ -61,8 +60,7 @@ function number(value) {
 
 function coordinate(value) {
   const rounded = Math.round(number(value) * 100) / 100;
-  if (Object.is(rounded, -0)) return "0";
-  return String(rounded);
+  return Object.is(rounded, -0) ? "0" : String(rounded);
 }
 
 function dateKey(value) {
@@ -189,15 +187,11 @@ function summarize(meta) {
     activeDays: recent.filter((day) => number(day.contributions) > 0).length,
     focusShare: repoTotal ? topTwoTotal / repoTotal : 0,
     topRepos: sortedRepos.slice(0, 2).map(([name]) => repoShortName(name)),
+    maxContributions: Math.max(
+      1,
+      ...recent.map((day) => number(day.contributions)),
+    ),
   };
-}
-
-function repoLevel(ratio) {
-  if (ratio >= 0.8) return 5;
-  if (ratio >= 0.55) return 4;
-  if (ratio >= 0.3) return 3;
-  if (ratio >= 0.15) return 2;
-  return 1;
 }
 
 function familyEntries(families) {
@@ -209,11 +203,11 @@ function familyEntries(families) {
   ].filter(([, value]) => value > 0);
 }
 
-function modelBand(families, { x, y, width, height, clipId }) {
+function modelBand(families, { x, y, width, height }) {
   const entries = familyEntries(families);
   const total = entries.reduce((sum, [, value]) => sum + value, 0);
   if (!total) {
-    return `<g class="model-band" data-model-band="day" clip-path="url(#${escapeXml(clipId)})"><rect class="model-band-empty" x="${coordinate(x)}" y="${coordinate(y)}" width="${coordinate(width)}" height="${coordinate(height)}"/><path class="model-band-empty-mark" d="M${coordinate(x + width / 2 - 8)} ${coordinate(y + height / 2)}h16"/></g>`;
+    return `<g class="model-band" data-model-band="day"><rect class="model-band-empty" x="${coordinate(x)}" y="${coordinate(y)}" width="${coordinate(width)}" height="${coordinate(height)}"/><path class="model-band-empty-mark" d="M${coordinate(x + width / 2 - 8)} ${coordinate(y + height / 2)}h16"/></g>`;
   }
 
   let cumulative = 0;
@@ -229,84 +223,83 @@ function modelBand(families, { x, y, width, height, clipId }) {
     })
     .join("");
 
-  return `<g class="model-band" data-model-band="day" clip-path="url(#${escapeXml(clipId)})"><rect class="model-band-base" x="${coordinate(x)}" y="${coordinate(y)}" width="${coordinate(width)}" height="${coordinate(height)}"/>${segments}</g>`;
-}
-
-function repoTiles(day, { x, y, tileSize, gap, maxTiles = 3 }) {
-  const repositories = repositoryActivity(day);
-  if (!repositories.length) {
-    return `<text class="repo-empty" x="${coordinate(x)}" y="${coordinate(y + tileSize * 0.62)}">NO GITHUB REPO</text>`;
-  }
-
-  const top = repositories.slice(0, maxTiles);
-  const maxScore = Math.max(...top.map((repository) => repository.score), 1);
-  const tiles = top
-    .map((repository, index) => {
-      const tileX = x + index * (tileSize + gap);
-      const level = repoLevel(repository.score / maxScore);
-      const textColor = level >= 4 ? COLORS.paperSoft : COLORS.ink;
-      const title = `${repository.name} · ${percentage(repository.share || repository.score / repositories.reduce((sum, item) => sum + item.score, 0))} of weighted GitHub activity`;
-      return `<g class="repo-tile-group"><rect class="repo-tile" data-level="${level}" x="${coordinate(tileX)}" y="${coordinate(y)}" width="${coordinate(tileSize)}" height="${coordinate(tileSize)}" rx="3" fill="${COLORS.intensity[level]}"><title>${escapeXml(title)}</title></rect><text class="repo-tile-label" x="${coordinate(tileX + tileSize / 2)}" y="${coordinate(y + tileSize * 0.58)}" text-anchor="middle" style="fill:${textColor}">${escapeXml(repoShortName(repository.name))}</text></g>`;
-    })
-    .join("");
-  return tiles;
+  return `<g class="model-band" data-model-band="day"><rect class="model-band-base" x="${coordinate(x)}" y="${coordinate(y)}" width="${coordinate(width)}" height="${coordinate(height)}"/>${segments}</g>`;
 }
 
 function dayTitle(day) {
-  const repos = repositoryActivity(day)
+  const repositories = repositoryActivity(day)
     .map((repository) => `${repository.name} ${percentage(repository.share)}`)
     .join(", ");
   const models = familyEntries(day.modelFamilies)
     .map(([family, value]) => `${family} ${value}`)
     .join(", ");
-  return `${day.date} · ${number(day.contributions)} GitHub contributions${repos ? ` · repositories: ${repos}` : ""}${models ? ` · tracked AI: ${models}` : " · no tracked AI data"}`;
+  return `${day.date} · ${number(day.contributions)} GitHub contributions${repositories ? ` · repositories: ${repositories}` : ""}${models ? ` · tracked AI: ${models}` : " · no tracked AI data"}`;
 }
 
-function renderDayCard(day, index, layout) {
-  const column = index % layout.columns;
-  const row = Math.floor(index / layout.columns);
-  const x = layout.x + column * (layout.cardWidth + layout.gapX);
-  const y = layout.y + row * (layout.cardHeight + layout.gapY);
-  const clipId = `recent-card-${dateKey(day.date) || index}`;
-  const { weekday, dayMonth } = dateParts(day.date);
-  const bandY = y + layout.cardHeight - layout.bandHeight;
-  const mobile = layout.mobile;
-  const tileX = mobile ? x + 68 : x + 5;
-  const tileY = mobile ? y + 6 : y + 30;
-  const tileSize = 42;
-  const tileGap = mobile ? 7 : 6;
+function renderRepositoryText(day, layout, x, y) {
   const repositories = repositoryActivity(day);
+  const dominant = repositories[0];
+  const secondary = repositories.slice(1, 3);
   const extra = Math.max(0, repositories.length - 3);
 
-  const dateMarkup = mobile
-    ? `<text class="day-weekday" x="${coordinate(x + 8)}" y="${coordinate(y + 19)}">${escapeXml(weekday)}</text><text class="day-date" x="${coordinate(x + 8)}" y="${coordinate(y + 40)}">${escapeXml(dayMonth)}</text>`
-    : `<text class="day-date" x="${coordinate(x + 8)}" y="${coordinate(y + 18)}">${escapeXml(`${weekday} ${dayMonth}`)}</text>`;
-  const contributionY = mobile ? y + 19 : y + 18;
-  const extraY = mobile ? y + 43 : y + 82;
+  if (!dominant) {
+    return `<text class="repo-empty" x="${coordinate(x + layout.repoX)}" y="${coordinate(y + layout.dominantY)}">NO REPO ACTIVITY</text>`;
+  }
 
-  return `<g class="recent-day" data-recent-day="${escapeXml(day.date)}"><clipPath id="${escapeXml(clipId)}" clipPathUnits="userSpaceOnUse"><rect x="${coordinate(x)}" y="${coordinate(y)}" width="${coordinate(layout.cardWidth)}" height="${coordinate(layout.cardHeight)}" rx="5"/></clipPath><rect class="recent-card" x="${coordinate(x)}" y="${coordinate(y)}" width="${coordinate(layout.cardWidth)}" height="${coordinate(layout.cardHeight)}" rx="5"><title>${escapeXml(dayTitle(day))}</title></rect>${dateMarkup}<text class="day-contributions" x="${coordinate(x + layout.cardWidth - 8)}" y="${coordinate(contributionY)}" text-anchor="end">${number(day.contributions)}</text>${repoTiles(day, { x: tileX, y: tileY, tileSize, gap: tileGap })}${extra > 0 ? `<text class="repo-count" x="${coordinate(x + layout.cardWidth - 8)}" y="${coordinate(extraY)}" text-anchor="end">+${extra} REPOS</text>` : ""}<line class="model-band-divider" x1="${coordinate(x)}" y1="${coordinate(bandY)}" x2="${coordinate(x + layout.cardWidth)}" y2="${coordinate(bandY)}"/>${modelBand(day.modelFamilies, { x, y: bandY, width: layout.cardWidth, height: layout.bandHeight, clipId })}<rect class="recent-card-outline" x="${coordinate(x)}" y="${coordinate(y)}" width="${coordinate(layout.cardWidth)}" height="${coordinate(layout.cardHeight)}" rx="5"/></g>`;
+  const secondaryLabels = secondary.map((repository) =>
+    repoShortName(repository.name),
+  );
+  if (layout.mobile && extra > 0) secondaryLabels.push(`+${extra} MORE`);
+  const secondaryText = secondaryLabels.join(" · ");
+  const extraMarkup =
+    !layout.mobile && extra > 0
+      ? `<text class="repo-more" x="${coordinate(x + layout.repoX)}" y="${coordinate(y + layout.moreY)}">+${extra} MORE</text>`
+      : "";
+
+  return `<text class="dominant-repo" x="${coordinate(x + layout.repoX)}" y="${coordinate(y + layout.dominantY)}">${escapeXml(repoShortName(dominant.name))}</text>${secondaryText ? `<text class="secondary-repos" x="${coordinate(x + layout.repoX)}" y="${coordinate(y + layout.secondaryY)}">${escapeXml(secondaryText)}</text>` : ""}${extraMarkup}`;
+}
+
+function renderDay(day, index, summary, layout) {
+  const column = index % layout.columns;
+  const row = Math.floor(index / layout.columns);
+  const x = layout.x + column * (layout.columnWidth + layout.gapX);
+  const y = layout.y + row * (layout.rowHeight + layout.gapY);
+  const { weekday, dayMonth } = dateParts(day.date);
+  const activityRatio = Math.max(
+    0,
+    Math.min(1, number(day.contributions) / summary.maxContributions),
+  );
+  const fillEnd = x + layout.columnWidth * activityRatio;
+  const divider =
+    column > 0
+      ? `<line class="day-divider" x1="${coordinate(x - layout.gapX / 2)}" y1="${coordinate(y - 3)}" x2="${coordinate(x - layout.gapX / 2)}" y2="${coordinate(y + layout.activityY)}"/>`
+      : "";
+  const dateLabel = `${weekday} ${dayMonth}`;
+
+  return `<g class="recent-day" data-recent-day="${escapeXml(day.date)}"><title>${escapeXml(dayTitle(day))}</title>${divider}<text class="day-date" x="${coordinate(x)}" y="${coordinate(y + layout.dateY)}">${escapeXml(dateLabel)}</text><text class="day-contributions" x="${coordinate(x + layout.columnWidth)}" y="${coordinate(y + layout.dateY)}" text-anchor="end">${number(day.contributions)}</text>${renderRepositoryText(day, layout, x, y)}${modelBand(day.modelFamilies, { x, y: y + layout.bandY, width: layout.columnWidth, height: layout.bandHeight })}<line class="activity-track" x1="${coordinate(x)}" y1="${coordinate(y + layout.activityY)}" x2="${coordinate(x + layout.columnWidth)}" y2="${coordinate(y + layout.activityY)}"/><line class="activity-fill" x1="${coordinate(x)}" y1="${coordinate(y + layout.activityY)}" x2="${coordinate(fillEnd)}" y2="${coordinate(y + layout.activityY)}"/></g>`;
 }
 
 function renderGrid(summary, layout) {
   return summary.recent
-    .map((day, index) => renderDayCard(day, index, layout))
+    .map((day, index) => renderDay(day, index, summary, layout))
     .join("\n  ");
 }
 
 function profileStyles({ mobile = false } = {}) {
   return `
     ${STYLE_START}
-    .recent-card{fill:${COLORS.paperSoft};stroke:none}
-    .recent-card-outline{fill:none;stroke:${COLORS.line};stroke-width:1;pointer-events:none}
-    .day-date,.day-weekday,.day-contributions,.recent-summary,.recent-help,.repo-count,.repo-empty,.repo-tile-label{font-family:ui-monospace,"SFMono-Regular",Consolas,monospace;font-weight:750;letter-spacing:.55px}
-    .day-date{fill:${COLORS.ink};font-size:10px}.day-weekday{fill:${COLORS.inkSoft};font-size:11px}.day-contributions{fill:${COLORS.inkSoft};font-size:10px}
+    .day-date,.day-contributions,.recent-summary,.recent-help,.secondary-repos,.repo-more,.repo-empty{font-family:ui-monospace,"SFMono-Regular",Consolas,monospace;font-weight:750;letter-spacing:.5px}
+    .day-date{fill:${COLORS.ink};font-size:9.5px}.day-contributions{fill:${COLORS.inkSoft};font-size:9.5px}
+    .dominant-repo{fill:${COLORS.ink};font-family:"Arial Narrow","Avenir Next Condensed","Helvetica Neue",sans-serif;font-size:19px;font-weight:900;letter-spacing:-.2px}
+    .secondary-repos{fill:${COLORS.inkSoft};font-size:8.5px}.repo-more{fill:${COLORS.inkSoft};font-size:7.5px}.repo-empty{fill:${COLORS.inkSoft};font-size:8px}
     .recent-summary{fill:${COLORS.ink};font-size:10px}.recent-help{fill:${COLORS.inkSoft};font-size:8.5px;letter-spacing:.45px}
-    .repo-tile-label{font-size:8px}.repo-count{fill:${COLORS.inkSoft};font-size:7px}.repo-empty{fill:${COLORS.inkSoft};font-size:8px}
-    .model-band-base{fill:${COLORS.paperDeep}}.model-band-empty{fill:${COLORS.paperDeep}}.model-band-empty-mark{fill:none;stroke:${COLORS.line};stroke-width:1.2;stroke-linecap:round}.model-band-divider{stroke:${COLORS.line};stroke-width:.8}
+    .day-divider{stroke:${COLORS.line};stroke-width:1}
+    .activity-track{stroke:${COLORS.line};stroke-width:1}.activity-fill{stroke:${COLORS.ink};stroke-width:2;stroke-linecap:butt}
+    .model-band-base,.model-band-empty{fill:${COLORS.paperDeep}}.model-band-empty-mark{fill:none;stroke:${COLORS.line};stroke-width:1.2;stroke-linecap:round}
     .family-claude{fill:${COLORS.rust}}.family-gpt{fill:${COLORS.blue}}.family-gemini{fill:${COLORS.gold}}.family-other{fill:${COLORS.sage}}
     .recent-selection{pointer-events:none}.selection-segment{fill:none;stroke:${COLORS.ink};stroke-width:1.8;rx:4}
     .footer-label,.footer-note{fill:${COLORS.inkSoft};font-family:ui-monospace,"SFMono-Regular",Consolas,monospace;font-weight:700;letter-spacing:.7px}.footer-label{font-size:9px}.footer-note{font-size:8px}
-    ${mobile ? `.day-date{font-size:11px}.day-weekday{font-size:10px}.day-contributions{font-size:10px}.recent-summary{font-size:10px}.recent-help{font-size:8px}.repo-tile-label{font-size:8px}.footer-label{font-size:10px}.footer-note{font-size:9px}` : ""}
+    ${mobile ? `.day-date{font-size:10px}.day-contributions{font-size:10px}.dominant-repo{font-size:17px}.secondary-repos{font-size:8px}.repo-more{font-size:7px}.repo-empty{font-size:8px}.recent-summary{font-size:10px}.recent-help{font-size:8px}.footer-label{font-size:10px}.footer-note{font-size:9px}` : ""}
     ${STYLE_END}
   `;
 }
@@ -332,19 +325,23 @@ function updateHeader(svg, mobile = false) {
     .replaceAll("latest four weeks", "latest 14 days")
     .replaceAll(
       "the latest four weeks enlarged to show repository focus, model-family mix and merge activity",
+      "the latest 14 days enlarged to show daily repository ranking and tracked model-family mix",
+    )
+    .replaceAll(
       "the latest 14 days enlarged to show daily repository shares and tracked model-family mix",
+      "the latest 14 days enlarged to show daily repository ranking and tracked model-family mix",
     )
     .replaceAll(
       "a year overview, the latest 14 days and three focus metrics",
-      "a year overview and the latest 14 days with daily repository shares and tracked model mix",
+      "a year overview and the latest 14 days with daily repository ranking and tracked model mix",
     )
     .replaceAll(
       "a year overview, the latest four weeks and three focus metrics",
-      "a year overview and the latest 14 days with daily repository shares and tracked model mix",
+      "a year overview and the latest 14 days with daily repository ranking and tracked model mix",
     )
     .replace(
       /<desc id="desc">[^<]*<\/desc>/,
-      `<desc id="desc">${mobile ? "A mobile contribution lens with a year overview and the latest 14 days showing daily repository shares and tracked model mix." : "A contribution lens with a year overview and the latest 14 days showing daily repository shares and tracked model mix."}</desc>`,
+      `<desc id="desc">${mobile ? "A mobile contribution lens with a year overview and the latest 14 days showing daily repository ranking and tracked model mix." : "A contribution lens with a year overview and the latest 14 days showing daily repository ranking and tracked model mix."}</desc>`,
     );
 }
 
@@ -404,17 +401,24 @@ function desktopDetail(summary) {
     x: 58,
     y: 303,
     columns: 7,
-    cardWidth: 148,
-    cardHeight: 104,
-    gapX: 8,
-    gapY: 12,
-    bandHeight: 16,
+    columnWidth: (1084 - 6 * 11) / 7,
+    rowHeight: 103,
+    gapX: 11,
+    gapY: 17,
+    dateY: 10,
+    repoX: 0,
+    dominantY: 47,
+    secondaryY: 69,
+    moreY: 83,
+    bandY: 88,
+    bandHeight: 7,
+    activityY: 103,
     mobile: false,
   };
   return `  <g class="recent-grid">
   <text class="label" x="58" y="272">LATEST 14 DAYS</text>
   <text class="recent-summary" x="1142" y="272" text-anchor="end">${summary.activeDays} / 14 ACTIVE · ${summary.streak}-DAY STREAK</text>
-  <text class="recent-help" x="58" y="290">REPO SHADE = RELATIVE ACTIVITY THAT DAY</text>
+  <text class="recent-help" x="58" y="290">REPOS RANKED BY GITHUB ACTIVITY</text>
   <text class="recent-help" x="1142" y="290" text-anchor="end">LOWER BAND = WHOLE-DAY TOKSCALE MIX</text>
   ${renderGrid(summary, layout)}
   </g>
@@ -426,17 +430,25 @@ function mobileDetail(summary) {
     x: 32,
     y: 292,
     columns: 2,
-    cardWidth: 322,
-    cardHeight: 66,
+    columnWidth: 322,
+    rowHeight: 66,
     gapX: 12,
     gapY: 8,
-    bandHeight: 12,
+    dateY: 13,
+    repoX: 82,
+    dominantY: 28,
+    secondaryY: 45,
+    moreY: 56,
+    bandY: 54,
+    bandHeight: 7,
+    activityY: 66,
     mobile: true,
   };
   return `  <g class="recent-grid">
   <text class="label" x="32" y="258">LATEST 14 DAYS</text>
   <text class="recent-summary" x="688" y="258" text-anchor="end">${summary.activeDays} / 14 ACTIVE · ${summary.streak}-DAY STREAK</text>
-  <text class="recent-help" x="32" y="280">REPO SHADE = RELATIVE ACTIVITY THAT DAY · LOWER BAND = WHOLE-DAY TOKSCALE MIX</text>
+  <text class="recent-help" x="32" y="278">REPOS RANKED BY GITHUB ACTIVITY</text>
+  <text class="recent-help" x="688" y="278" text-anchor="end">LOWER BAND = WHOLE-DAY TOKSCALE MIX</text>
   ${renderGrid(summary, layout)}
   </g>
 `;
@@ -444,31 +456,17 @@ function mobileDetail(summary) {
 
 function desktopFooter() {
   return `  <line class="rule-strong" x1="58" y1="560" x2="1142" y2="560"/>
-  <text class="footer-label" x="58" y="584">REPO ACTIVITY</text>
-  <text class="footer-note" x="139" y="584">LOW</text>
-  <rect x="166" y="574" width="12" height="12" rx="1.5" fill="${COLORS.intensity[1]}"/>
-  <rect x="184" y="574" width="12" height="12" rx="1.5" fill="${COLORS.intensity[2]}"/>
-  <rect x="202" y="574" width="12" height="12" rx="1.5" fill="${COLORS.intensity[3]}"/>
-  <rect x="220" y="574" width="12" height="12" rx="1.5" fill="${COLORS.intensity[4]}"/>
-  <rect x="238" y="574" width="12" height="12" rx="1.5" fill="${COLORS.intensity[5]}"/>
-  <text class="footer-note" x="259" y="584">DOMINANT</text>
-  <circle cx="390" cy="580" r="4" fill="${COLORS.rust}"/><text class="footer-label" x="403" y="584">CLAUDE</text>
-  <circle cx="520" cy="580" r="4" fill="${COLORS.blue}"/><text class="footer-label" x="533" y="584">GPT</text>
-  <circle cx="620" cy="580" r="4" fill="${COLORS.gold}"/><text class="footer-label" x="633" y="584">GEMINI</text>
-  <circle cx="750" cy="580" r="4" fill="${COLORS.sage}"/><text class="footer-label" x="763" y="584">OTHER</text>
-  <text class="footer-note" x="1142" y="584" text-anchor="end">COLOURS = TRACKED AI USE FOR THE WHOLE DAY</text>`;
+  <text class="footer-note" x="58" y="584">TYPE WEIGHT = REPO RANK · RULE LENGTH = GITHUB ACTIVITY</text>
+  <circle cx="465" cy="580" r="4" fill="${COLORS.rust}"/><text class="footer-label" x="478" y="584">CLAUDE</text>
+  <circle cx="595" cy="580" r="4" fill="${COLORS.blue}"/><text class="footer-label" x="608" y="584">GPT</text>
+  <circle cx="695" cy="580" r="4" fill="${COLORS.gold}"/><text class="footer-label" x="708" y="584">GEMINI</text>
+  <circle cx="825" cy="580" r="4" fill="${COLORS.sage}"/><text class="footer-label" x="838" y="584">OTHER</text>
+  <text class="footer-note" x="1142" y="584" text-anchor="end">COLOURS = TRACKED AI USE FOR WHOLE DAY</text>`;
 }
 
 function mobileFooter() {
   return `  <line class="rule" x1="32" y1="818" x2="688" y2="818"/>
-  <text class="footer-label" x="32" y="846">REPO ACTIVITY</text>
-  <text class="footer-note" x="132" y="846">LOW</text>
-  <rect x="168" y="834" width="15" height="15" rx="2" fill="${COLORS.intensity[1]}"/>
-  <rect x="190" y="834" width="15" height="15" rx="2" fill="${COLORS.intensity[2]}"/>
-  <rect x="212" y="834" width="15" height="15" rx="2" fill="${COLORS.intensity[3]}"/>
-  <rect x="234" y="834" width="15" height="15" rx="2" fill="${COLORS.intensity[4]}"/>
-  <rect x="256" y="834" width="15" height="15" rx="2" fill="${COLORS.intensity[5]}"/>
-  <text class="footer-note" x="282" y="846">DOMINANT</text>
+  <text class="footer-note" x="32" y="846">TYPE = REPO RANK · RULE LENGTH = GITHUB ACTIVITY</text>
   <circle cx="42" cy="878" r="5" fill="${COLORS.rust}"/><text class="footer-label" x="57" y="882">CLAUDE</text>
   <circle cx="188" cy="878" r="5" fill="${COLORS.blue}"/><text class="footer-label" x="203" y="882">GPT</text>
   <circle cx="292" cy="878" r="5" fill="${COLORS.gold}"/><text class="footer-label" x="307" y="882">GEMINI</text>
