@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 234 42" role="img" aria-labelledby="title">
+  <title id="title">X, @GeorgeRD_builds</title>
+  <rect x="0.75" y="0.75" width="232.5" height="40.5" fill="#f1ede4" stroke="#10231f" stroke-width="1.5"/>
+  <rect width="42" height="42" fill="#10231f"/>
+  <path d="M11.5 10.5h6.2l4.7 6.5 5.5-6.5h2.5l-6.8 8 7.2 10h-6.2l-5.1-7-6 7h-2.5l7.3-8.5zM15.5 12.5l10.1 14h1.2l-10.1-14z" fill="#f1ede4" fill-rule="evenodd"/>
+  <text x="58" y="26" fill="#10231f" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="12.5" font-weight="750" letter-spacing="1.05">@GEORGERD_BUILDS</text>
+</svg>
