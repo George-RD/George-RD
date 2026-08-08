@@ -142,7 +142,7 @@ test("renders fourteen large day cards with repo tiles and a full-width daily mo
     assert.match(svg, /class="family-gpt"/);
     assert.match(svg, /REPO SHARE/);
     assert.doesNotMatch(svg, /LATEST 4 WEEKS/);
-    assert.doesNotMatch(svg, /DAY STREAK/);
+    assert.doesNotMatch(svg, /class="profile-metric"/);
     assert.doesNotMatch(svg, /class="lens-panel"/);
     assert.doesNotMatch(svg, /class="metric-panel"/);
   }
