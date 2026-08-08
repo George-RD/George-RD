@@ -5,9 +5,8 @@
 
 <p align="center">
   <a href="https://georgerd.com/"><img src="assets/links/portfolio.svg" height="42" alt="View George Reid-Dowd's portfolio" /></a>
-  <a href="#projects"><img src="assets/links/projects.svg" height="42" alt="Jump to projects" /></a>
-  <a href="#activity"><img src="assets/links/activity.svg" height="42" alt="Jump to activity" /></a>
-  <a href="mailto:george@reid-dowd.me"><img src="assets/links/contact.svg" height="42" alt="Email George Reid-Dowd" /></a>
+  <a href="https://x.com/GeorgeRD_builds"><img src="assets/links/x.svg" height="42" alt="Follow George Reid-Dowd on X at @GeorgeRD_builds" /></a>
+  <a href="https://www.linkedin.com/in/george-reid-dowd-68948136"><img src="assets/links/linkedin.svg" height="42" alt="View George Reid-Dowd on LinkedIn" /></a>
 </p>
 
 I helped build and operate an uncrewed survey vessel, then a regional remote operations service at Fugro. The projects below test how AI tools understand a codebase, remember past work, act within limits and check visual or physical output.
@@ -18,6 +17,8 @@ I helped build and operate an uncrewed survey vessel, then a regional remote ope
 </picture>
 
 ## Projects
+
+<a href="https://github.com/George-RD?tab=repositories"><img src="assets/repository-stars.svg" height="34" alt="Total stars across George-RD's public non-fork repositories" /></a>
 
 - [**Cairn**](https://cairn-framework.github.io/cairn/) keeps the plan for a codebase tied to the code and flags drift. ([source](https://github.com/cairn-framework/cairn))
 - [**MAG**](https://george-rd.github.io/mag/) gives AI tools one private, local memory. ([source](https://github.com/George-RD/mag))

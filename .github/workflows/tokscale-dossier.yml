@@ -1,4 +1,4 @@
-name: Update profile activity graphics
+name: Update profile graphics
 
 on:
   workflow_dispatch:
@@ -10,16 +10,19 @@ on:
   pull_request:
     paths:
       - "README.md"
+      - "assets/repository-stars.svg"
       - "assets/tokscale-dossier.svg"
       - "assets/tokscale-model-momentum.svg"
       - "assets/tokscale-dossier.json"
       - "assets/contribution-lens.svg"
       - "assets/contribution-lens-mobile.svg"
       - "assets/contribution-lens.json"
+      - "scripts/render-repository-stars.mjs"
       - "scripts/render-tokscale-dossier.mjs"
       - "scripts/render-tokscale-momentum.mjs"
       - "scripts/render-contribution-lens.mjs"
       - "scripts/refine-contribution-lens.mjs"
+      - "tests/render-repository-stars.test.mjs"
       - "tests/render-contribution-lens.test.mjs"
       - "tests/render-tokscale-momentum.test.mjs"
       - "tests/refine-contribution-lens.test.mjs"
@@ -29,7 +32,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: profile-activity-graphics-${{ github.ref }}
+  group: profile-graphics-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -49,6 +52,7 @@ jobs:
 
       - name: Validate renderer syntax
         run: |
+          node --check scripts/render-repository-stars.mjs
           node --check scripts/render-tokscale-dossier.mjs
           node --check scripts/render-tokscale-momentum.mjs
           node --check scripts/render-contribution-lens.mjs
@@ -57,10 +61,14 @@ jobs:
       - name: Test profile graphics
         run: node --test tests/*.test.mjs
 
-      - name: Render profile activity graphics
+      - name: Render profile graphics
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
+          node scripts/render-repository-stars.mjs \
+            --username George-RD \
+            --out assets/repository-stars.svg
+
           node scripts/render-tokscale-dossier.mjs \
             --username George-RD \
             --out assets/tokscale-dossier.svg \
@@ -87,6 +95,7 @@ jobs:
 
       - name: Check generated files exist
         run: |
+          test -s assets/repository-stars.svg
           test -s assets/tokscale-dossier.svg
           test -s assets/tokscale-model-momentum.svg
           test -s assets/tokscale-dossier.json
@@ -100,9 +109,11 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y -qq librsvg2-bin
           mkdir -p visual-check
+          rsvg-convert -w 286 assets/repository-stars.svg > visual-check/repository-stars.png
           rsvg-convert -w 1200 assets/contribution-lens.svg > visual-check/contribution-lens-desktop.png
           rsvg-convert -w 720 assets/contribution-lens-mobile.svg > visual-check/contribution-lens-mobile.png
           rsvg-convert -w 1200 assets/tokscale-model-momentum.svg > visual-check/tokscale-model-momentum.png
+          test -s visual-check/repository-stars.png
           test -s visual-check/contribution-lens-desktop.png
           test -s visual-check/contribution-lens-mobile.png
           test -s visual-check/tokscale-model-momentum.png
@@ -120,24 +131,26 @@ jobs:
         if: github.event_name != 'pull_request'
         run: |
           if git diff --quiet -- \
+            assets/repository-stars.svg \
             assets/tokscale-dossier.svg \
             assets/tokscale-model-momentum.svg \
             assets/tokscale-dossier.json \
             assets/contribution-lens.svg \
             assets/contribution-lens-mobile.svg \
             assets/contribution-lens.json; then
-            echo "Profile activity graphics are already current."
+            echo "Profile graphics are already current."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add \
+            assets/repository-stars.svg \
             assets/tokscale-dossier.svg \
             assets/tokscale-model-momentum.svg \
             assets/tokscale-dossier.json \
             assets/contribution-lens.svg \
             assets/contribution-lens-mobile.svg \
             assets/contribution-lens.json
-          git commit -m "Refresh profile activity graphics"
+          git commit -m "Refresh profile graphics"
           git push
