@@ -91,6 +91,7 @@ function overviewCells() {
 
 function desktopSkeleton() {
   return `<svg viewBox="0 0 1200 610"><style>.repo{font-size:11px}</style>
+  <desc id="desc">A year overview, the latest four weeks and three focus metrics</desc>
   <text>365 DAYS / LATEST 4 WEEKS</text>
   ${overviewCells()}
   <rect class="selection" x="100" y="116" width="60" height="118"/>
@@ -103,6 +104,7 @@ function desktopSkeleton() {
 
 function mobileSkeleton() {
   return `<svg viewBox="0 0 720 900"><style>.repo{font-size:14px}</style>
+  <desc id="desc">A year overview, the latest four weeks and three focus metrics</desc>
   <text>latest four weeks and three focus metrics</text>
   ${overviewCells()}
   <rect class="selection" x="100" y="116" width="60" height="118"/>
@@ -123,45 +125,64 @@ test("summarize chooses a 14-day display while keeping the true current streak",
   assert.equal(summary.streak, 14);
   assert.deepEqual(summary.topRepos, ["CAIRN", "SPINE"]);
   assert.equal(summary.focusShare, 0.7);
+  assert.equal(summary.maxContributions, 46);
   assert.equal(repoShortName("openspine"), "SPINE");
 });
 
-test("renders fourteen large day cards with repo tiles and a full-width daily model band", () => {
+test("renders fourteen open day columns with ranked repository type and whole-day model bands", () => {
   const desktop = refineDesktopSvg(desktopSkeleton(), metaFixture());
   const mobile = refineMobileSvg(mobileSkeleton(), metaFixture());
 
   for (const svg of [desktop, mobile]) {
     assert.equal((svg.match(/data-recent-day=/g) || []).length, 14);
     assert.match(svg, /LATEST 14 DAYS/);
-    assert.match(svg, /REPO SHADE = RELATIVE ACTIVITY THAT DAY/);
+    assert.match(svg, /REPOS RANKED BY GITHUB ACTIVITY/);
     assert.match(svg, /LOWER BAND = WHOLE-DAY TOKSCALE MIX/);
-    assert.match(svg, /class="repo-tile"/);
+    assert.match(svg, /class="dominant-repo"/);
+    assert.match(svg, /class="secondary-repos"/);
     assert.match(svg, />SPINE</);
     assert.match(svg, />RIVE</);
     assert.match(svg, /data-model-band="day"/);
     assert.match(svg, /class="family-gpt"/);
-    assert.match(svg, /REPO ACTIVITY/);
-    assert.doesNotMatch(svg, /LATEST 4 WEEKS/);
-    assert.doesNotMatch(svg, /class="profile-metric"/);
+    assert.match(svg, /class="activity-fill"/);
+    assert.match(svg, /RULE LENGTH = GITHUB ACTIVITY/);
+    assert.doesNotMatch(svg, /class="recent-card"/);
+    assert.doesNotMatch(svg, /class="recent-card-outline"/);
+    assert.doesNotMatch(svg, /class="repo-tile"/);
     assert.doesNotMatch(svg, /class="lens-panel"/);
     assert.doesNotMatch(svg, /class="metric-panel"/);
+    assert.doesNotMatch(svg, /LATEST 4 WEEKS/);
   }
 
   assert.match(
     desktop,
-    /data-recent-day="2026-07-25"[^]*?<rect class="recent-card" x="58" y="303" width="148" height="104"/,
+    /data-recent-day="2026-07-25"[^]*?<text class="dominant-repo" x="58" y="350">SPINE<\/text>/,
   );
   assert.match(
     desktop,
-    /data-recent-day="2026-08-01"[^]*?<rect class="recent-card" x="58" y="419" width="148" height="104"/,
+    /data-recent-day="2026-08-01"[^]*?<text class="dominant-repo" x="58" y="470">CAIRN<\/text>/,
   );
   assert.match(
     mobile,
-    /data-recent-day="2026-07-25"[^]*?<rect class="recent-card" x="32" y="292" width="322" height="66"/,
+    /data-recent-day="2026-07-25"[^]*?<text class="dominant-repo" x="114" y="320">SPINE<\/text>/,
   );
   assert.match(
     mobile,
-    /data-recent-day="2026-07-26"[^]*?<rect class="recent-card" x="366" y="292" width="322" height="66"/,
+    /data-recent-day="2026-07-26"[^]*?<text class="dominant-repo" x="448" y="320">CAIRN<\/text>/,
+  );
+  assert.ok((desktop.match(/class="day-divider"/g) || []).length >= 12);
+});
+
+test("activity rules scale to contribution volume without changing the full-width model band", () => {
+  const svg = refineDesktopSvg(desktopSkeleton(), metaFixture());
+
+  assert.match(
+    svg,
+    /data-recent-day="2026-08-07"[^]*?<line class="activity-fill" x1="996\.57" y1="526" x2="1142" y2="526"/,
+  );
+  assert.match(
+    svg,
+    /data-recent-day="2026-07-25"[^]*?<g class="model-band" data-model-band="day"><rect class="model-band-base" x="58" y="391" width="145\.43" height="7"/,
   );
 });
 
