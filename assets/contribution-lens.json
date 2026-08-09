@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T13:19:37.262Z",
+  "generatedAt": "2026-08-09T19:05:33.633Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,10 +11,10 @@
     "focusStart": "2026-07-27",
     "focusEnd": "2026-08-09"
   },
-  "totalContributions": 12308,
+  "totalContributions": 12337,
   "metrics": {
     "activeDays": 14,
-    "focusShare": 0.4601930036188179,
+    "focusShare": 0.4577380952380952,
     "topRepos": [
       "DESIGN",
       "CAIRN"
@@ -996,19 +996,19 @@
       "repositories": [
         {
           "name": "firth",
-          "score": 34,
+          "score": 26,
           "commits": 14,
-          "merges": 10,
+          "merges": 6,
           "reviews": 0,
-          "share": 0.4657534246575342
+          "share": 0.4727272727272727
         },
         {
           "name": "openspine",
-          "score": 24,
+          "score": 16,
           "commits": 12,
-          "merges": 6,
+          "merges": 2,
           "reviews": 0,
-          "share": 0.3287671232876712
+          "share": 0.2909090909090909
         },
         {
           "name": "cairn",
@@ -1016,15 +1016,15 @@
           "commits": 7,
           "merges": 0,
           "reviews": 0,
-          "share": 0.0958904109589041
+          "share": 0.12727272727272726
         },
         {
           "name": "rive-rs-cli",
-          "score": 5,
+          "score": 3,
           "commits": 3,
-          "merges": 1,
+          "merges": 0,
           "reviews": 0,
-          "share": 0.0684931506849315
+          "share": 0.05454545454545454
         },
         {
           "name": "design-studio",
@@ -1032,7 +1032,7 @@
           "commits": 2,
           "merges": 0,
           "reviews": 0,
-          "share": 0.0273972602739726
+          "share": 0.03636363636363636
         },
         {
           "name": "mag",
@@ -1040,7 +1040,7 @@
           "commits": 1,
           "merges": 0,
           "reviews": 0,
-          "share": 0.0136986301369863
+          "share": 0.01818181818181818
         }
       ]
     },
@@ -1062,7 +1062,7 @@
           "commits": 17,
           "merges": 17,
           "reviews": 0,
-          "share": 0.3923076923076923
+          "share": 0.40476190476190477
         },
         {
           "name": "cairn",
@@ -1070,15 +1070,15 @@
           "commits": 31,
           "merges": 5,
           "reviews": 0,
-          "share": 0.3153846153846154
+          "share": 0.3253968253968254
         },
         {
           "name": "rive-rs-cli",
-          "score": 15,
+          "score": 13,
           "commits": 5,
-          "merges": 5,
+          "merges": 4,
           "reviews": 0,
-          "share": 0.11538461538461539
+          "share": 0.10317460317460317
         },
         {
           "name": "George-RD",
@@ -1086,15 +1086,15 @@
           "commits": 9,
           "merges": 1,
           "reviews": 0,
-          "share": 0.08461538461538462
+          "share": 0.0873015873015873
         },
         {
           "name": "mag",
-          "score": 9,
+          "score": 7,
           "commits": 3,
-          "merges": 3,
+          "merges": 2,
           "reviews": 0,
-          "share": 0.06923076923076923
+          "share": 0.05555555555555555
         },
         {
           "name": "sigrank-app",
@@ -1102,13 +1102,13 @@
           "commits": 1,
           "merges": 1,
           "reviews": 0,
-          "share": 0.023076923076923078
+          "share": 0.023809523809523808
         }
       ]
     },
     {
       "date": "2026-08-08",
-      "contributions": 157,
+      "contributions": 160,
       "repository": "firth",
       "event": "merge",
       "modelFamilies": {
@@ -1194,26 +1194,26 @@
     },
     {
       "date": "2026-08-09",
-      "contributions": 32,
-      "repository": "cairn",
+      "contributions": 58,
+      "repository": "firth",
       "event": "merge",
       "modelFamilies": {},
       "repositories": [
         {
-          "name": "cairn",
-          "score": 20,
-          "commits": 10,
-          "merges": 5,
+          "name": "firth",
+          "score": 45,
+          "commits": 15,
+          "merges": 15,
           "reviews": 0,
-          "share": 0.5714285714285714
+          "share": 0.6617647058823529
         },
         {
-          "name": "firth",
-          "score": 15,
-          "commits": 5,
-          "merges": 5,
+          "name": "cairn",
+          "score": 23,
+          "commits": 11,
+          "merges": 6,
           "reviews": 0,
-          "share": 0.42857142857142855
+          "share": 0.3382352941176471
         }
       ]
     }
