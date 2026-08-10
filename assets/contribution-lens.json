@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T08:08:48.967Z",
+  "generatedAt": "2026-08-10T13:49:13.064Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,10 +11,10 @@
     "focusStart": "2026-07-28",
     "focusEnd": "2026-08-10"
   },
-  "totalContributions": 12353,
+  "totalContributions": 12361,
   "metrics": {
     "activeDays": 14,
-    "focusShare": 0.4820886460230723,
+    "focusShare": 0.49425981873111785,
     "topRepos": [
       "CAIRN",
       "DESIGN"
@@ -784,11 +784,11 @@
       "repositories": [
         {
           "name": "openspine",
-          "score": 51,
+          "score": 43,
           "commits": 17,
-          "merges": 17,
+          "merges": 13,
           "reviews": 0,
-          "share": 0.40476190476190477
+          "share": 0.3644067796610169
         },
         {
           "name": "cairn",
@@ -796,7 +796,7 @@
           "commits": 31,
           "merges": 5,
           "reviews": 0,
-          "share": 0.3253968253968254
+          "share": 0.3474576271186441
         },
         {
           "name": "rive-rs-cli",
@@ -804,7 +804,7 @@
           "commits": 5,
           "merges": 4,
           "reviews": 0,
-          "share": 0.10317460317460317
+          "share": 0.11016949152542373
         },
         {
           "name": "George-RD",
@@ -812,7 +812,7 @@
           "commits": 9,
           "merges": 1,
           "reviews": 0,
-          "share": 0.0873015873015873
+          "share": 0.09322033898305085
         },
         {
           "name": "mag",
@@ -820,7 +820,7 @@
           "commits": 3,
           "merges": 2,
           "reviews": 0,
-          "share": 0.05555555555555555
+          "share": 0.059322033898305086
         },
         {
           "name": "sigrank-app",
@@ -828,7 +828,7 @@
           "commits": 1,
           "merges": 1,
           "reviews": 0,
-          "share": 0.023809523809523808
+          "share": 0.025423728813559324
         }
       ]
     },
@@ -945,16 +945,16 @@
     },
     {
       "date": "2026-08-10",
-      "contributions": 15,
+      "contributions": 23,
       "repository": "cairn",
       "event": "merge",
       "modelFamilies": {},
       "repositories": [
         {
           "name": "cairn",
-          "score": 19,
-          "commits": 7,
-          "merges": 6,
+          "score": 31,
+          "commits": 11,
+          "merges": 10,
           "reviews": 0,
           "share": 1
         }
