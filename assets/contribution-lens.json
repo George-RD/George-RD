@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T07:41:49.702Z",
+  "generatedAt": "2026-08-11T13:47:13.244Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,10 +11,10 @@
     "focusStart": "2026-07-29",
     "focusEnd": "2026-08-11"
   },
-  "totalContributions": 12419,
+  "totalContributions": 12436,
   "metrics": {
     "activeDays": 14,
-    "focusShare": 0.5486950986632718,
+    "focusShare": 0.545224541429475,
     "topRepos": [
       "CAIRN",
       "DESIGN"
@@ -846,11 +846,11 @@
       "repositories": [
         {
           "name": "firth",
-          "score": 51,
+          "score": 49,
           "commits": 27,
-          "merges": 12,
+          "merges": 11,
           "reviews": 0,
-          "share": 0.27717391304347827
+          "share": 0.28160919540229884
         },
         {
           "name": "design-studio",
@@ -858,7 +858,7 @@
           "commits": 38,
           "merges": 3,
           "reviews": 0,
-          "share": 0.2391304347826087
+          "share": 0.25287356321839083
         },
         {
           "name": "cairn",
@@ -866,23 +866,15 @@
           "commits": 11,
           "merges": 15,
           "reviews": 0,
-          "share": 0.22282608695652173
+          "share": 0.23563218390804597
         },
         {
           "name": "George-RD",
-          "score": 30,
+          "score": 28,
           "commits": 24,
-          "merges": 3,
-          "reviews": 0,
-          "share": 0.16304347826086957
-        },
-        {
-          "name": "openspine",
-          "score": 6,
-          "commits": 2,
           "merges": 2,
           "reviews": 0,
-          "share": 0.03260869565217391
+          "share": 0.16091954022988506
         },
         {
           "name": "mag",
@@ -890,7 +882,7 @@
           "commits": 1,
           "merges": 1,
           "reviews": 0,
-          "share": 0.016304347826086956
+          "share": 0.017241379310344827
         },
         {
           "name": "rive-rs-cli",
@@ -898,7 +890,7 @@
           "commits": 1,
           "merges": 1,
           "reviews": 0,
-          "share": 0.016304347826086956
+          "share": 0.017241379310344827
         },
         {
           "name": "sigrank-app",
@@ -906,15 +898,23 @@
           "commits": 1,
           "merges": 1,
           "reviews": 0,
-          "share": 0.016304347826086956
+          "share": 0.017241379310344827
+        },
+        {
+          "name": "openspine",
+          "score": 2,
+          "commits": 2,
+          "merges": 0,
+          "reviews": 0,
+          "share": 0.011494252873563218
         },
         {
           "name": "sigrank-mcp",
-          "score": 3,
+          "score": 1,
           "commits": 1,
-          "merges": 1,
+          "merges": 0,
           "reviews": 0,
-          "share": 0.016304347826086956
+          "share": 0.005747126436781609
         }
       ]
     },
@@ -970,26 +970,26 @@
     },
     {
       "date": "2026-08-11",
-      "contributions": 37,
-      "repository": "cairn",
+      "contributions": 54,
+      "repository": "firth",
       "event": "merge",
       "modelFamilies": {},
       "repositories": [
+        {
+          "name": "firth",
+          "score": 22,
+          "commits": 12,
+          "merges": 5,
+          "reviews": 0,
+          "share": 0.55
+        },
         {
           "name": "cairn",
           "score": 18,
           "commits": 10,
           "merges": 4,
           "reviews": 0,
-          "share": 0.72
-        },
-        {
-          "name": "firth",
-          "score": 7,
-          "commits": 7,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.28
+          "share": 0.45
         }
       ]
     },
