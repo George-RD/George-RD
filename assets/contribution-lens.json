@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T02:50:27.573Z",
+  "generatedAt": "2026-08-14T07:54:25.776Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -838,8 +838,8 @@
       "repository": "design-studio",
       "event": "merge",
       "modelFamilies": {
-        "claude": 652819994,
-        "gpt": 2069931964,
+        "claude": 1016577396,
+        "gpt": 5382017651,
         "gemini": 0,
         "other": 58573861
       },
@@ -923,7 +923,12 @@
       "contributions": 59,
       "repository": "firth",
       "event": "merge",
-      "modelFamilies": {},
+      "modelFamilies": {
+        "claude": 625868562,
+        "gpt": 2898893080,
+        "gemini": 0,
+        "other": 0
+      },
       "repositories": [
         {
           "name": "firth",
@@ -948,7 +953,12 @@
       "contributions": 44,
       "repository": "cairn",
       "event": "merge",
-      "modelFamilies": {},
+      "modelFamilies": {
+        "claude": 709044084,
+        "gpt": 1604380624,
+        "gemini": 2342310,
+        "other": 1695603
+      },
       "repositories": [
         {
           "name": "cairn",
@@ -973,7 +983,12 @@
       "contributions": 56,
       "repository": "firth",
       "event": "merge",
-      "modelFamilies": {},
+      "modelFamilies": {
+        "claude": 362567686,
+        "gpt": 1409576410,
+        "gemini": 1414781,
+        "other": 0
+      },
       "repositories": [
         {
           "name": "firth",
@@ -998,7 +1013,12 @@
       "contributions": 11,
       "repository": "mag",
       "event": "merge",
-      "modelFamilies": {},
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 0
+      },
       "repositories": [
         {
           "name": "mag",
@@ -1031,7 +1051,12 @@
       "contributions": 10,
       "repository": "firth",
       "event": "merge",
-      "modelFamilies": {},
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 5596156156,
+        "gemini": 0,
+        "other": 9829728
+      },
       "repositories": [
         {
           "name": "firth",
@@ -1047,8 +1072,13 @@
       "date": "2026-08-14",
       "contributions": 0,
       "repository": null,
-      "event": null,
-      "modelFamilies": {},
+      "event": "explore",
+      "modelFamilies": {
+        "claude": 46662683,
+        "gpt": 5070513857,
+        "gemini": 0,
+        "other": 1324684
+      },
       "repositories": []
     },
     {
