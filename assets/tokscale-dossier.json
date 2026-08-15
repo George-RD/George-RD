@@ -1,7 +1,7 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-08-14T19:18:02.811Z",
+  "generatedAt": "2026-08-15T01:53:24.474Z",
   "username": "George-RD",
   "allTime": {
     "rank": 93,
@@ -12,10 +12,10 @@
     "sessions": 44187
   },
   "month": {
-    "totalTokens": 72028130045,
-    "totalCost": 31526.8535,
-    "activeDays": 29,
-    "contributions": 30
+    "totalTokens": 68692585923,
+    "totalCost": 29554.642499999998,
+    "activeDays": 28,
+    "contributions": 29
   },
   "clients": [
     "claude",
@@ -92,8 +92,8 @@
   "topModels": [
     {
       "model": "gpt-5.6-sol",
-      "tokens": 16801537396,
-      "cost": 12493.181316
+      "tokens": 15371983828,
+      "cost": 11470.182932999998
     },
     {
       "model": "claude-opus-5",
@@ -102,8 +102,8 @@
     },
     {
       "model": "claude-fable-5",
-      "tokens": 4469846610,
-      "cost": 5924.324387500001
+      "tokens": 4061410907,
+      "cost": 5373.609759000001
     },
     {
       "model": "gpt-5.6-terra",
@@ -112,12 +112,12 @@
     },
     {
       "model": "claude-opus-4-8",
-      "tokens": 886789152,
-      "cost": 926.7987842499996
+      "tokens": 823156438,
+      "cost": 840.9395434999996
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-08-14T19:18:05.532Z",
+    "generatedAt": "2026-08-15T01:53:27.134Z",
     "dataThrough": "2026-08-14",
     "sourceUpdatedAt": "2026-08-14T06:28:40.839Z",
     "dates": [
@@ -174,7 +174,7 @@
         "deltaPercentagePoints": 26.4449977003344,
         "direction": "up",
         "series": [
-          602893707,
+          0,
           1494748585,
           1556693168,
           74439107,
@@ -297,7 +297,7 @@
         "deltaPercentagePoints": -7.265906969102057,
         "direction": "down",
         "series": [
-          1429553568,
+          0,
           3579389162,
           2774930187,
           124142011,
@@ -338,7 +338,7 @@
         "deltaPercentagePoints": -5.126921595819804,
         "direction": "down",
         "series": [
-          408435703,
+          0,
           798695413,
           672805126,
           133790275,
@@ -376,6 +376,6 @@
   "sourceFreshness": {
     "dataThrough": "2026-08-14",
     "sourceUpdatedAt": "2026-08-14T06:28:40.839Z",
-    "generatedAt": "2026-08-14T19:18:05.532Z"
+    "generatedAt": "2026-08-15T01:53:27.134Z"
   }
 }
