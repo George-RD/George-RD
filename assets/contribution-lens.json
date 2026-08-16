@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T13:04:44.706Z",
+  "generatedAt": "2026-08-16T18:50:03.112Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,16 +11,16 @@
     "focusStart": "2026-08-03",
     "focusEnd": "2026-08-16"
   },
-  "totalContributions": 12465,
+  "totalContributions": 12476,
   "metrics": {
-    "activeDays": 12,
-    "focusShare": 0.6584507042253521,
+    "activeDays": 13,
+    "focusShare": 0.643598615916955,
     "topRepos": [
       "CAIRN",
       "FIRTH"
     ],
     "focusDays": 14,
-    "streak": 0
+    "streak": 1
   },
   "focus": [
     {
@@ -850,15 +850,15 @@
           "commits": 38,
           "merges": 3,
           "reviews": 0,
-          "share": 0.27848101265822783
+          "share": 0.2857142857142857
         },
         {
           "name": "firth",
-          "score": 43,
+          "score": 41,
           "commits": 27,
-          "merges": 8,
+          "merges": 7,
           "reviews": 0,
-          "share": 0.2721518987341772
+          "share": 0.2662337662337662
         },
         {
           "name": "cairn",
@@ -866,15 +866,15 @@
           "commits": 11,
           "merges": 14,
           "reviews": 0,
-          "share": 0.2468354430379747
+          "share": 0.2532467532467532
         },
         {
           "name": "George-RD",
-          "score": 26,
+          "score": 24,
           "commits": 24,
-          "merges": 1,
+          "merges": 0,
           "reviews": 0,
-          "share": 0.16455696202531644
+          "share": 0.15584415584415584
         },
         {
           "name": "openspine",
@@ -882,7 +882,7 @@
           "commits": 2,
           "merges": 0,
           "reviews": 0,
-          "share": 0.012658227848101266
+          "share": 0.012987012987012988
         },
         {
           "name": "mag",
@@ -890,7 +890,7 @@
           "commits": 1,
           "merges": 0,
           "reviews": 0,
-          "share": 0.006329113924050633
+          "share": 0.006493506493506494
         },
         {
           "name": "rive-rs-cli",
@@ -898,7 +898,7 @@
           "commits": 1,
           "merges": 0,
           "reviews": 0,
-          "share": 0.006329113924050633
+          "share": 0.006493506493506494
         },
         {
           "name": "sigrank-app",
@@ -906,7 +906,7 @@
           "commits": 1,
           "merges": 0,
           "reviews": 0,
-          "share": 0.006329113924050633
+          "share": 0.006493506493506494
         },
         {
           "name": "sigrank-mcp",
@@ -914,7 +914,7 @@
           "commits": 1,
           "merges": 0,
           "reviews": 0,
-          "share": 0.006329113924050633
+          "share": 0.006493506493506494
         }
       ]
     },
@@ -1048,7 +1048,7 @@
     },
     {
       "date": "2026-08-13",
-      "contributions": 10,
+      "contributions": 11,
       "repository": "firth",
       "event": "merge",
       "modelFamilies": {
@@ -1064,7 +1064,15 @@
           "commits": 2,
           "merges": 2,
           "reviews": 0,
-          "share": 1
+          "share": 0.8571428571428571
+        },
+        {
+          "name": "oh-my-pi-plugin-grok-build",
+          "score": 1,
+          "commits": 1,
+          "merges": 0,
+          "reviews": 0,
+          "share": 0.14285714285714285
         }
       ]
     },
@@ -1100,11 +1108,36 @@
     },
     {
       "date": "2026-08-16",
-      "contributions": 0,
-      "repository": null,
-      "event": null,
+      "contributions": 10,
+      "repository": "mag",
+      "event": "merge",
       "modelFamilies": {},
-      "repositories": []
+      "repositories": [
+        {
+          "name": "mag",
+          "score": 8,
+          "commits": 8,
+          "merges": 0,
+          "reviews": 0,
+          "share": 0.6153846153846154
+        },
+        {
+          "name": "rive-rs-cli",
+          "score": 3,
+          "commits": 1,
+          "merges": 1,
+          "reviews": 0,
+          "share": 0.23076923076923078
+        },
+        {
+          "name": "oh-my-pi-plugin-grok-build",
+          "score": 2,
+          "commits": 0,
+          "merges": 1,
+          "reviews": 0,
+          "share": 0.15384615384615385
+        }
+      ]
     }
   ]
 }
