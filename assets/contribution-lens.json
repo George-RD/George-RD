@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T18:50:03.112Z",
+  "generatedAt": "2026-08-17T01:58:21.274Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -8,222 +8,21 @@
   "range": {
     "overviewStart": "2025-08-17",
     "overviewEnd": "2026-08-22",
-    "focusStart": "2026-08-03",
-    "focusEnd": "2026-08-16"
+    "focusStart": "2026-08-04",
+    "focusEnd": "2026-08-17"
   },
   "totalContributions": 12476,
   "metrics": {
-    "activeDays": 13,
-    "focusShare": 0.643598615916955,
+    "activeDays": 12,
+    "focusShare": 0.6863117870722434,
     "topRepos": [
       "CAIRN",
       "FIRTH"
     ],
     "focusDays": 14,
-    "streak": 1
+    "streak": 0
   },
   "focus": [
-    {
-      "date": "2026-07-20",
-      "contributions": 0,
-      "repository": null,
-      "event": "explore",
-      "modelFamilies": {
-        "claude": 6532201,
-        "gpt": 3465912,
-        "gemini": 0,
-        "other": 0
-      },
-      "repositories": []
-    },
-    {
-      "date": "2026-07-21",
-      "contributions": 50,
-      "repository": "hologlyph",
-      "event": null,
-      "modelFamilies": {
-        "claude": 638310413,
-        "gpt": 19787313,
-        "gemini": 9014301,
-        "other": 198973370
-      },
-      "repositories": [
-        {
-          "name": "hologlyph",
-          "score": 10,
-          "commits": 10,
-          "merges": 0,
-          "reviews": 0,
-          "share": 1
-        }
-      ]
-    },
-    {
-      "date": "2026-07-22",
-      "contributions": 14,
-      "repository": "cairn",
-      "event": null,
-      "modelFamilies": {
-        "claude": 84275047,
-        "gpt": 236777904,
-        "gemini": 131434062,
-        "other": 35458895
-      },
-      "repositories": [
-        {
-          "name": "cairn",
-          "score": 2,
-          "commits": 2,
-          "merges": 0,
-          "reviews": 0,
-          "share": 1
-        }
-      ]
-    },
-    {
-      "date": "2026-07-23",
-      "contributions": 61,
-      "repository": "cairn",
-      "event": null,
-      "modelFamilies": {
-        "claude": 73075675,
-        "gpt": 2019923579,
-        "gemini": 167579327,
-        "other": 167544837
-      },
-      "repositories": [
-        {
-          "name": "cairn",
-          "score": 4,
-          "commits": 4,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.5
-        },
-        {
-          "name": "hologlyph",
-          "score": 2,
-          "commits": 2,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.25
-        },
-        {
-          "name": "openspine",
-          "score": 2,
-          "commits": 2,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.25
-        }
-      ]
-    },
-    {
-      "date": "2026-07-24",
-      "contributions": 32,
-      "repository": "openspine",
-      "event": null,
-      "modelFamilies": {
-        "claude": 0,
-        "gpt": 1398921117,
-        "gemini": 75277380,
-        "other": 6963395
-      },
-      "repositories": [
-        {
-          "name": "openspine",
-          "score": 10,
-          "commits": 10,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.625
-        },
-        {
-          "name": "cairn",
-          "score": 4,
-          "commits": 4,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.25
-        },
-        {
-          "name": "hologlyph",
-          "score": 2,
-          "commits": 2,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.125
-        }
-      ]
-    },
-    {
-      "date": "2026-07-25",
-      "contributions": 24,
-      "repository": "cairn",
-      "event": null,
-      "modelFamilies": {
-        "claude": 469047778,
-        "gpt": 332946154,
-        "gemini": 44357480,
-        "other": 184016
-      },
-      "repositories": [
-        {
-          "name": "cairn",
-          "score": 9,
-          "commits": 9,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.75
-        },
-        {
-          "name": "hologlyph",
-          "score": 3,
-          "commits": 3,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.25
-        }
-      ]
-    },
-    {
-      "date": "2026-07-26",
-      "contributions": 55,
-      "repository": "cairn",
-      "event": null,
-      "modelFamilies": {
-        "claude": 1150798620,
-        "gpt": 931543050,
-        "gemini": 0,
-        "other": 0
-      },
-      "repositories": [
-        {
-          "name": "cairn",
-          "score": 15,
-          "commits": 15,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.5
-        },
-        {
-          "name": "hologlyph",
-          "score": 9,
-          "commits": 9,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.3
-        },
-        {
-          "name": "rive-rs-cli",
-          "score": 6,
-          "commits": 6,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.2
-        }
-      ]
-    },
     {
       "date": "2026-07-27",
       "contributions": 60,
@@ -1138,6 +937,92 @@
           "share": 0.15384615384615385
         }
       ]
+    },
+    {
+      "date": "2026-08-17",
+      "contributions": 0,
+      "repository": null,
+      "event": null,
+      "modelFamilies": {},
+      "repositories": []
+    },
+    {
+      "date": "2026-08-18",
+      "contributions": 0,
+      "repository": null,
+      "event": null,
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 0
+      },
+      "repositories": []
+    },
+    {
+      "date": "2026-08-19",
+      "contributions": 0,
+      "repository": null,
+      "event": null,
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 0
+      },
+      "repositories": []
+    },
+    {
+      "date": "2026-08-20",
+      "contributions": 0,
+      "repository": null,
+      "event": null,
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 0
+      },
+      "repositories": []
+    },
+    {
+      "date": "2026-08-21",
+      "contributions": 0,
+      "repository": null,
+      "event": null,
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 0
+      },
+      "repositories": []
+    },
+    {
+      "date": "2026-08-22",
+      "contributions": 0,
+      "repository": null,
+      "event": null,
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 0
+      },
+      "repositories": []
+    },
+    {
+      "date": "2026-08-23",
+      "contributions": 0,
+      "repository": null,
+      "event": null,
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 0
+      },
+      "repositories": []
     }
   ]
 }
