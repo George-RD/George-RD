@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T13:15:14.283Z",
+  "generatedAt": "2026-08-20T19:04:24.768Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,10 +11,10 @@
     "focusStart": "2026-08-07",
     "focusEnd": "2026-08-20"
   },
-  "totalContributions": 12552,
+  "totalContributions": 12718,
   "metrics": {
     "activeDays": 12,
-    "focusShare": 0.6800847457627118,
+    "focusShare": 0.6772151898734177,
     "topRepos": [
       "CAIRN",
       "FIRTH"
@@ -633,7 +633,7 @@
     },
     {
       "date": "2026-08-08",
-      "contributions": 160,
+      "contributions": 188,
       "repository": "design-studio",
       "event": "merge",
       "modelFamilies": {
@@ -719,7 +719,7 @@
     },
     {
       "date": "2026-08-09",
-      "contributions": 59,
+      "contributions": 129,
       "repository": "firth",
       "event": "merge",
       "modelFamilies": {
@@ -983,20 +983,20 @@
     },
     {
       "date": "2026-08-20",
-      "contributions": 51,
+      "contributions": 119,
       "repository": "openspine",
       "event": "merge",
       "modelFamilies": {
-        "claude": 28731262,
-        "gpt": 23353147,
-        "gemini": 834397,
-        "other": 720615
+        "claude": 754980568,
+        "gpt": 370015725,
+        "gemini": 3870014,
+        "other": 34550856
       },
       "repositories": [
         {
           "name": "openspine",
-          "score": 5,
-          "commits": 3,
+          "score": 7,
+          "commits": 5,
           "merges": 1,
           "reviews": 0,
           "share": 1
