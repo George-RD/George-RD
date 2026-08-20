@@ -1,7 +1,7 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-08-19T18:57:02.303Z",
+  "generatedAt": "2026-08-20T01:55:04.428Z",
   "username": "George-RD",
   "allTime": {
     "rank": 101,
@@ -12,10 +12,10 @@
     "sessions": 44187
   },
   "month": {
-    "totalTokens": 54035525917,
-    "totalCost": 21969.4478,
-    "activeDays": 24,
-    "contributions": 25
+    "totalTokens": 53169440520,
+    "totalCost": 21154.1141,
+    "activeDays": 23,
+    "contributions": 24
   },
   "clients": [
     "claude",
@@ -97,27 +97,27 @@
     },
     {
       "model": "gpt-5.6-sol",
-      "tokens": 8893522468,
-      "cost": 6755.518397
+      "tokens": 8888582835,
+      "cost": 6750.259897
     },
     {
       "model": "claude-fable-5",
-      "tokens": 2456108123,
-      "cost": 3420.6824104999996
+      "tokens": 2274468307,
+      "cost": 3157.387398
     },
     {
       "model": "gpt-5.6-terra",
-      "tokens": 8292343957,
-      "cost": 2586.013546
+      "tokens": 8277496277,
+      "cost": 2579.8101239999996
     },
     {
-      "model": "claude-opus-4-8",
-      "tokens": 621573923,
-      "cost": 662.4287554999995
+      "model": "gpt-5.6-luna",
+      "tokens": 20470223248,
+      "cost": 611.10723944
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-08-19T18:57:04.929Z",
+    "generatedAt": "2026-08-20T01:55:07.127Z",
     "dataThrough": "2026-08-14",
     "sourceUpdatedAt": "2026-08-14T06:28:40.839Z",
     "dates": [
@@ -220,7 +220,7 @@
           0,
           0,
           0,
-          14847680,
+          0,
           83705567,
           514909733,
           158256057,
@@ -302,7 +302,7 @@
           0,
           0,
           0,
-          4939633,
+          0,
           151394550,
           1485316589,
           1240580695,
@@ -343,7 +343,7 @@
           0,
           0,
           0,
-          181639816,
+          0,
           0,
           0,
           0,
@@ -376,6 +376,6 @@
   "sourceFreshness": {
     "dataThrough": "2026-08-14",
     "sourceUpdatedAt": "2026-08-14T06:28:40.839Z",
-    "generatedAt": "2026-08-19T18:57:04.929Z"
+    "generatedAt": "2026-08-20T01:55:07.127Z"
   }
 }
