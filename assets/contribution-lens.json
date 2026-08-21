@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T07:11:43.613Z",
+  "generatedAt": "2026-08-21T13:14:53.288Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,12 +11,12 @@
     "focusStart": "2026-08-08",
     "focusEnd": "2026-08-21"
   },
-  "totalContributions": 12857,
+  "totalContributions": 12927,
   "metrics": {
     "activeDays": 12,
-    "focusShare": 0.580046403712297,
+    "focusShare": 0.5582959641255605,
     "topRepos": [
-      "FIRTH",
+      "SPINE",
       "CAIRN"
     ],
     "focusDays": 14,
@@ -731,19 +731,19 @@
       "repositories": [
         {
           "name": "firth",
-          "score": 45,
+          "score": 21,
           "commits": 15,
-          "merges": 15,
+          "merges": 3,
           "reviews": 0,
-          "share": 0.6716417910447762
+          "share": 0.5675675675675675
         },
         {
           "name": "cairn",
-          "score": 22,
+          "score": 16,
           "commits": 12,
-          "merges": 5,
+          "merges": 2,
           "reviews": 0,
-          "share": 0.3283582089552239
+          "share": 0.43243243243243246
         }
       ]
     },
@@ -987,10 +987,10 @@
       "repository": "openspine",
       "event": "merge",
       "modelFamilies": {
-        "claude": 754980568,
-        "gpt": 370015725,
-        "gemini": 3870014,
-        "other": 34550856
+        "claude": 1047693091,
+        "gpt": 370806030,
+        "gemini": 5260515,
+        "other": 52615880
       },
       "repositories": [
         {
@@ -1005,18 +1005,31 @@
     },
     {
       "date": "2026-08-21",
-      "contributions": 129,
+      "contributions": 199,
       "repository": "openspine",
       "event": "merge",
-      "modelFamilies": {},
+      "modelFamilies": {
+        "claude": 1182286794,
+        "gpt": 215306198,
+        "gemini": 32681380,
+        "other": 99744689
+      },
       "repositories": [
         {
           "name": "openspine",
-          "score": 68,
-          "commits": 22,
-          "merges": 23,
+          "score": 110,
+          "commits": 36,
+          "merges": 37,
           "reviews": 0,
-          "share": 1
+          "share": 0.9734513274336283
+        },
+        {
+          "name": "design-studio",
+          "score": 3,
+          "commits": 1,
+          "merges": 1,
+          "reviews": 0,
+          "share": 0.02654867256637168
         }
       ]
     },
