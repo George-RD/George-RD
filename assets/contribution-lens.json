@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T02:01:12.003Z",
+  "generatedAt": "2026-08-21T07:11:43.613Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,13 +11,13 @@
     "focusStart": "2026-08-08",
     "focusEnd": "2026-08-21"
   },
-  "totalContributions": 12737,
+  "totalContributions": 12857,
   "metrics": {
     "activeDays": 12,
-    "focusShare": 0.7024390243902439,
+    "focusShare": 0.580046403712297,
     "topRepos": [
-      "CAIRN",
-      "FIRTH"
+      "FIRTH",
+      "CAIRN"
     ],
     "focusDays": 14,
     "streak": 4
@@ -635,7 +635,7 @@
       "date": "2026-08-08",
       "contributions": 188,
       "repository": "design-studio",
-      "event": "merge",
+      "event": null,
       "modelFamilies": {
         "claude": 1016577396,
         "gpt": 5382017651,
@@ -645,27 +645,19 @@
       "repositories": [
         {
           "name": "design-studio",
-          "score": 44,
+          "score": 38,
           "commits": 38,
-          "merges": 3,
+          "merges": 0,
           "reviews": 0,
-          "share": 0.3055555555555556
+          "share": 0.3584905660377358
         },
         {
           "name": "firth",
-          "score": 39,
+          "score": 27,
           "commits": 27,
-          "merges": 6,
+          "merges": 0,
           "reviews": 0,
-          "share": 0.2708333333333333
-        },
-        {
-          "name": "cairn",
-          "score": 31,
-          "commits": 11,
-          "merges": 10,
-          "reviews": 0,
-          "share": 0.2152777777777778
+          "share": 0.25471698113207547
         },
         {
           "name": "George-RD",
@@ -673,7 +665,15 @@
           "commits": 24,
           "merges": 0,
           "reviews": 0,
-          "share": 0.16666666666666666
+          "share": 0.22641509433962265
+        },
+        {
+          "name": "cairn",
+          "score": 11,
+          "commits": 11,
+          "merges": 0,
+          "reviews": 0,
+          "share": 0.10377358490566038
         },
         {
           "name": "openspine",
@@ -681,7 +681,7 @@
           "commits": 2,
           "merges": 0,
           "reviews": 0,
-          "share": 0.013888888888888888
+          "share": 0.018867924528301886
         },
         {
           "name": "mag",
@@ -689,7 +689,7 @@
           "commits": 1,
           "merges": 0,
           "reviews": 0,
-          "share": 0.006944444444444444
+          "share": 0.009433962264150943
         },
         {
           "name": "rive-rs-cli",
@@ -697,7 +697,7 @@
           "commits": 1,
           "merges": 0,
           "reviews": 0,
-          "share": 0.006944444444444444
+          "share": 0.009433962264150943
         },
         {
           "name": "sigrank-app",
@@ -705,7 +705,7 @@
           "commits": 1,
           "merges": 0,
           "reviews": 0,
-          "share": 0.006944444444444444
+          "share": 0.009433962264150943
         },
         {
           "name": "sigrank-mcp",
@@ -713,7 +713,7 @@
           "commits": 1,
           "merges": 0,
           "reviews": 0,
-          "share": 0.006944444444444444
+          "share": 0.009433962264150943
         }
       ]
     },
@@ -735,15 +735,15 @@
           "commits": 15,
           "merges": 15,
           "reviews": 0,
-          "share": 0.6164383561643836
+          "share": 0.6716417910447762
         },
         {
           "name": "cairn",
-          "score": 28,
+          "score": 22,
           "commits": 12,
-          "merges": 8,
+          "merges": 5,
           "reviews": 0,
-          "share": 0.3835616438356164
+          "share": 0.3283582089552239
         }
       ]
     },
@@ -825,15 +825,7 @@
           "commits": 6,
           "merges": 1,
           "reviews": 0,
-          "share": 0.5714285714285714
-        },
-        {
-          "name": "design-studio",
-          "score": 3,
-          "commits": 1,
-          "merges": 1,
-          "reviews": 0,
-          "share": 0.21428571428571427
+          "share": 0.6666666666666666
         },
         {
           "name": "rive-rs-cli",
@@ -841,7 +833,15 @@
           "commits": 1,
           "merges": 1,
           "reviews": 0,
-          "share": 0.21428571428571427
+          "share": 0.25
+        },
+        {
+          "name": "design-studio",
+          "score": 1,
+          "commits": 1,
+          "merges": 0,
+          "reviews": 0,
+          "share": 0.08333333333333333
         }
       ]
     },
@@ -1005,16 +1005,16 @@
     },
     {
       "date": "2026-08-21",
-      "contributions": 9,
+      "contributions": 129,
       "repository": "openspine",
-      "event": null,
+      "event": "merge",
       "modelFamilies": {},
       "repositories": [
         {
           "name": "openspine",
-          "score": 1,
-          "commits": 1,
-          "merges": 0,
+          "score": 68,
+          "commits": 22,
+          "merges": 23,
           "reviews": 0,
           "share": 1
         }
