@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T19:00:32.683Z",
+  "generatedAt": "2026-08-22T01:53:33.084Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -8,19 +8,19 @@
   "range": {
     "overviewStart": "2025-08-17",
     "overviewEnd": "2026-08-22",
-    "focusStart": "2026-08-08",
-    "focusEnd": "2026-08-21"
+    "focusStart": "2026-08-09",
+    "focusEnd": "2026-08-22"
   },
-  "totalContributions": 12949,
+  "totalContributions": 12961,
   "metrics": {
     "activeDays": 12,
-    "focusShare": 0.5582959641255605,
+    "focusShare": 0.6941176470588235,
     "topRepos": [
       "SPINE",
       "CAIRN"
     ],
     "focusDays": 14,
-    "streak": 4
+    "streak": 5
   },
   "focus": [
     {
@@ -1005,7 +1005,7 @@
     },
     {
       "date": "2026-08-21",
-      "contributions": 221,
+      "contributions": 225,
       "repository": "openspine",
       "event": "merge",
       "modelFamilies": {
@@ -1035,15 +1035,10 @@
     },
     {
       "date": "2026-08-22",
-      "contributions": 0,
+      "contributions": 8,
       "repository": null,
       "event": null,
-      "modelFamilies": {
-        "claude": 0,
-        "gpt": 0,
-        "gemini": 0,
-        "other": 0
-      },
+      "modelFamilies": {},
       "repositories": []
     },
     {
