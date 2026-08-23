@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" role="img" aria-labelledby="title desc">
   <title id="title">George-RD Tokscale activity trace</title>
-  <desc id="desc">109B all-time tokens, $52.9K estimated all-time cost, 26 active days in the current 30-day window.</desc>
-  <!-- Generated from https://tokscale.ai/api/users/George-RD at 2026-08-22T18:52:13.263Z -->
+  <desc id="desc">109B all-time tokens, $52.9K estimated all-time cost, 25 active days in the current 30-day window.</desc>
+  <!-- Generated from https://tokscale.ai/api/users/George-RD at 2026-08-23T02:03:04.196Z -->
   <style>
     :root {
       --paper: #f1ede4;
@@ -61,8 +61,8 @@
   <text class="metric-value" x="58" y="130">109B</text>
   <text class="metric-note" x="58" y="153">$52.9K ESTIMATED COST</text>
   <text class="metric-label" x="314" y="96">30 DAY TOKENS</text>
-  <text class="metric-value" x="314" y="130">55.1B</text>
-  <text class="metric-note" x="314" y="153">26 ACTIVE DAYS</text>
+  <text class="metric-value" x="314" y="130">53.6B</text>
+  <text class="metric-note" x="314" y="153">25 ACTIVE DAYS</text>
   <text class="metric-label" x="58" y="180">GLOBAL RANK</text>
   <text class="metric-value" x="58" y="214">#106</text>
   <text class="metric-note" x="58" y="237">TOKENS SORT / George-RD</text>
@@ -83,41 +83,40 @@
   <line class="grid" x1="642" y1="168" x2="1098" y2="168" />
   <line class="grid" x1="642" y1="204" x2="1098" y2="204" />
   <g aria-label="Daily activity bars">
-    <rect class="bar i3" x="642.0" y="186" width="7.5" height="17" rx="2" style="--delay:0ms"><title>2026-07-24 · 1.48B tokens</title></rect>
-    <rect class="bar i1" x="655.0" y="194" width="7.5" height="9" rx="2" style="--delay:22ms"><title>2026-07-25 · 847M tokens</title></rect>
-    <rect class="bar i3" x="668.0" y="180" width="7.5" height="23" rx="2" style="--delay:44ms"><title>2026-07-26 · 2.08B tokens</title></rect>
-    <rect class="bar i4" x="681.0" y="166" width="7.5" height="37" rx="2" style="--delay:66ms"><title>2026-07-27 · 3.29B tokens</title></rect>
-    <rect class="bar i2" x="694.0" y="188" width="7.5" height="15" rx="2" style="--delay:88ms"><title>2026-07-28 · 1.3B tokens</title></rect>
-    <rect class="bar i2" x="707.0" y="196" width="7.5" height="7" rx="2" style="--delay:110ms"><title>2026-07-29 · 638M tokens</title></rect>
-    <rect class="bar i3" x="720.0" y="187" width="7.5" height="16" rx="2" style="--delay:132ms"><title>2026-07-30 · 1.44B tokens</title></rect>
-    <rect class="bar i2" x="733.0" y="193" width="7.5" height="10" rx="2" style="--delay:154ms"><title>2026-07-31 · 901M tokens</title></rect>
-    <rect class="bar i1" x="746.0" y="199" width="7.5" height="4" rx="2" style="--delay:176ms"><title>2026-08-01 · 40.9M tokens</title></rect>
-    <rect class="bar i1" x="759.0" y="196" width="7.5" height="7" rx="2" style="--delay:198ms"><title>2026-08-02 · 594M tokens</title></rect>
-    <rect class="bar i4" x="772.0" y="150" width="7.5" height="53" rx="2" style="--delay:220ms"><title>2026-08-03 · 4.8B tokens</title></rect>
-    <rect class="bar i2" x="785.0" y="182" width="7.5" height="21" rx="2" style="--delay:242ms"><title>2026-08-04 · 1.9B tokens</title></rect>
-    <rect class="bar i1" x="798.0" y="195" width="7.5" height="8" rx="2" style="--delay:264ms"><title>2026-08-05 · 680M tokens</title></rect>
-    <rect class="bar i3" x="811.0" y="175" width="7.5" height="28" rx="2" style="--delay:286ms"><title>2026-08-06 · 2.5B tokens</title></rect>
-    <rect class="bar i4" x="824.0" y="170" width="7.5" height="33" rx="2" style="--delay:308ms"><title>2026-08-07 · 2.96B tokens</title></rect>
-    <rect class="bar i4" x="837.0" y="131" width="7.5" height="72" rx="2" style="--delay:330ms"><title>2026-08-08 · 6.46B tokens</title></rect>
-    <rect class="bar i2" x="850.0" y="164" width="7.5" height="39" rx="2" style="--delay:352ms"><title>2026-08-09 · 3.52B tokens</title></rect>
-    <rect class="bar i2" x="863.0" y="177" width="7.5" height="26" rx="2" style="--delay:374ms"><title>2026-08-10 · 2.32B tokens</title></rect>
-    <rect class="bar i2" x="876.0" y="183" width="7.5" height="20" rx="2" style="--delay:396ms"><title>2026-08-11 · 1.77B tokens</title></rect>
-    <rect class="bar i0" x="889.0" y="201" width="7.5" height="2" rx="2" style="--delay:418ms"><title>2026-08-12 · 0 tokens</title></rect>
-    <rect class="bar i2" x="902.0" y="140" width="7.5" height="63" rx="2" style="--delay:440ms"><title>2026-08-13 · 5.61B tokens</title></rect>
-    <rect class="bar i3" x="915.0" y="136" width="7.5" height="67" rx="2" style="--delay:462ms"><title>2026-08-14 · 6.01B tokens</title></rect>
-    <rect class="bar i1" x="928.0" y="199" width="7.5" height="4" rx="2" style="--delay:484ms"><title>2026-08-18 · 50.3M tokens</title></rect>
-    <rect class="bar i1" x="941.0" y="199" width="7.5" height="4" rx="2" style="--delay:506ms"><title>2026-08-19 · 128M tokens</title></rect>
-    <rect class="bar i2" x="954.0" y="187" width="7.5" height="16" rx="2" style="--delay:528ms"><title>2026-08-20 · 1.48B tokens</title></rect>
-    <rect class="bar i4" x="967.0" y="181" width="7.5" height="22" rx="2" style="--delay:550ms"><title>2026-08-21 · 1.96B tokens</title></rect>
-    <rect class="bar i1" x="980.0" y="199" width="7.5" height="4" rx="2" style="--delay:572ms"><title>2026-08-22 · 354M tokens</title></rect>
+    <rect class="bar i1" x="642.0" y="194" width="7.5" height="9" rx="2" style="--delay:0ms"><title>2026-07-25 · 847M tokens</title></rect>
+    <rect class="bar i3" x="655.0" y="180" width="7.5" height="23" rx="2" style="--delay:22ms"><title>2026-07-26 · 2.08B tokens</title></rect>
+    <rect class="bar i4" x="668.0" y="166" width="7.5" height="37" rx="2" style="--delay:44ms"><title>2026-07-27 · 3.29B tokens</title></rect>
+    <rect class="bar i2" x="681.0" y="188" width="7.5" height="15" rx="2" style="--delay:66ms"><title>2026-07-28 · 1.3B tokens</title></rect>
+    <rect class="bar i2" x="694.0" y="196" width="7.5" height="7" rx="2" style="--delay:88ms"><title>2026-07-29 · 638M tokens</title></rect>
+    <rect class="bar i3" x="707.0" y="187" width="7.5" height="16" rx="2" style="--delay:110ms"><title>2026-07-30 · 1.44B tokens</title></rect>
+    <rect class="bar i2" x="720.0" y="193" width="7.5" height="10" rx="2" style="--delay:132ms"><title>2026-07-31 · 901M tokens</title></rect>
+    <rect class="bar i1" x="733.0" y="199" width="7.5" height="4" rx="2" style="--delay:154ms"><title>2026-08-01 · 40.9M tokens</title></rect>
+    <rect class="bar i1" x="746.0" y="196" width="7.5" height="7" rx="2" style="--delay:176ms"><title>2026-08-02 · 594M tokens</title></rect>
+    <rect class="bar i4" x="759.0" y="150" width="7.5" height="53" rx="2" style="--delay:198ms"><title>2026-08-03 · 4.8B tokens</title></rect>
+    <rect class="bar i2" x="772.0" y="182" width="7.5" height="21" rx="2" style="--delay:220ms"><title>2026-08-04 · 1.9B tokens</title></rect>
+    <rect class="bar i1" x="785.0" y="195" width="7.5" height="8" rx="2" style="--delay:242ms"><title>2026-08-05 · 680M tokens</title></rect>
+    <rect class="bar i3" x="798.0" y="175" width="7.5" height="28" rx="2" style="--delay:264ms"><title>2026-08-06 · 2.5B tokens</title></rect>
+    <rect class="bar i4" x="811.0" y="170" width="7.5" height="33" rx="2" style="--delay:286ms"><title>2026-08-07 · 2.96B tokens</title></rect>
+    <rect class="bar i4" x="824.0" y="131" width="7.5" height="72" rx="2" style="--delay:308ms"><title>2026-08-08 · 6.46B tokens</title></rect>
+    <rect class="bar i2" x="837.0" y="164" width="7.5" height="39" rx="2" style="--delay:330ms"><title>2026-08-09 · 3.52B tokens</title></rect>
+    <rect class="bar i2" x="850.0" y="177" width="7.5" height="26" rx="2" style="--delay:352ms"><title>2026-08-10 · 2.32B tokens</title></rect>
+    <rect class="bar i2" x="863.0" y="183" width="7.5" height="20" rx="2" style="--delay:374ms"><title>2026-08-11 · 1.77B tokens</title></rect>
+    <rect class="bar i0" x="876.0" y="201" width="7.5" height="2" rx="2" style="--delay:396ms"><title>2026-08-12 · 0 tokens</title></rect>
+    <rect class="bar i2" x="889.0" y="140" width="7.5" height="63" rx="2" style="--delay:418ms"><title>2026-08-13 · 5.61B tokens</title></rect>
+    <rect class="bar i3" x="902.0" y="136" width="7.5" height="67" rx="2" style="--delay:440ms"><title>2026-08-14 · 6.01B tokens</title></rect>
+    <rect class="bar i1" x="915.0" y="199" width="7.5" height="4" rx="2" style="--delay:462ms"><title>2026-08-18 · 50.3M tokens</title></rect>
+    <rect class="bar i1" x="928.0" y="199" width="7.5" height="4" rx="2" style="--delay:484ms"><title>2026-08-19 · 128M tokens</title></rect>
+    <rect class="bar i2" x="941.0" y="187" width="7.5" height="16" rx="2" style="--delay:506ms"><title>2026-08-20 · 1.48B tokens</title></rect>
+    <rect class="bar i4" x="954.0" y="181" width="7.5" height="22" rx="2" style="--delay:528ms"><title>2026-08-21 · 1.96B tokens</title></rect>
+    <rect class="bar i1" x="967.0" y="199" width="7.5" height="4" rx="2" style="--delay:550ms"><title>2026-08-22 · 354M tokens</title></rect>
   </g>
-  <path class="trace" pathLength="1" d="M646.0 182.0 L659.0 189.3 L672.0 175.1 L685.0 161.3 L698.0 184.1 L711.0 191.7 L724.0 182.6 L737.0 188.7 L750.0 194.0 L763.0 192.2 L776.0 144.0 L789.0 177.2 L802.0 191.2 L815.0 170.3 L828.0 165.1 L841.0 125.0 L854.0 158.6 L867.0 172.4 L880.0 178.7 L893.0 197.0 L906.0 134.8 L919.0 130.2 L932.0 194.0 L945.0 194.0 L958.0 182.1 L971.0 176.5 L984.0 194.0" />
+  <path class="trace" pathLength="1" d="M646.0 189.3 L659.0 175.1 L672.0 161.3 L685.0 184.1 L698.0 191.7 L711.0 182.6 L724.0 188.7 L737.0 194.0 L750.0 192.2 L763.0 144.0 L776.0 177.2 L789.0 191.2 L802.0 170.3 L815.0 165.1 L828.0 125.0 L841.0 158.6 L854.0 172.4 L867.0 178.7 L880.0 197.0 L893.0 134.8 L906.0 130.2 L919.0 194.0 L932.0 194.0 L945.0 182.1 L958.0 176.5 L971.0 194.0" />
 
   <text class="model-label" x="642" y="225">TOP MODELS IN WINDOW</text>
   <text class="model-name" x="642" y="245">claude-opus-5</text><text class="model-value" x="1098" y="245" text-anchor="end">12B</text>
-  <text class="model-name" x="642" y="269">gpt-5.6-sol</text><text class="model-value" x="1098" y="269" text-anchor="end">7.32B</text>
+  <text class="model-name" x="642" y="269">gpt-5.6-sol</text><text class="model-value" x="1098" y="269" text-anchor="end">6.08B</text>
   <text class="model-name" x="642" y="293">claude-fable-5</text><text class="model-value" x="1098" y="293" text-anchor="end">2.66B</text>
   <line class="rule" x1="58" y1="311" x2="1142" y2="311" />
   <text class="stamp" x="58" y="333">INPUT 4.7% / OUTPUT 0.4% / CACHE 94.9% / REASONING 0%</text>
-  <text class="stamp" x="642" y="333">SOURCE TOKSCALE.AI/U/George-RD / GENERATED 22 AUG 2026</text>
+  <text class="stamp" x="642" y="333">SOURCE TOKSCALE.AI/U/George-RD / GENERATED 23 AUG 2026</text>
 </svg>
