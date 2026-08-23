@@ -1,19 +1,19 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-08-23T07:05:23.081Z",
+  "generatedAt": "2026-08-23T13:05:44.285Z",
   "username": "George-RD",
   "allTime": {
     "rank": 107,
-    "totalTokens": 108618919406,
-    "totalCost": 52911.324,
+    "totalTokens": 109310254399,
+    "totalCost": 50460.7109,
     "activeDays": 182,
-    "submissions": 38,
-    "sessions": 45826
+    "submissions": 39,
+    "sessions": 46099
   },
   "month": {
-    "totalTokens": 53631603557,
-    "totalCost": 21471.103700000007,
+    "totalTokens": 54322938550,
+    "totalCost": 20936.205700000002,
     "activeDays": 25,
     "contributions": 26
   },
@@ -23,9 +23,9 @@
     "jcode",
     "pi",
     "gemini",
-    "opencode",
     "kimi",
     "hermes",
+    "opencode",
     "kiro",
     "copilot",
     "grok"
@@ -35,94 +35,94 @@
     "gpt-5.4",
     "deepseek-v4-flash",
     "deepseek:deepseek-v4-pro",
+    "grok-4.6",
+    "gpt-5.6-luna",
     "gpt-5.6-terra",
     "claude-fable-5",
     "claude-opus-4-8",
+    "gemini-3.7-flash",
+    "deepseek-v4-flash:0731",
     "dots-studio/dots-3-note-preview:free",
+    "gemini-2.5-flash",
     "gemini-3-pro-preview",
     "gemini-3-flash-preview",
     "gpt-5.2-codex",
-    "gemini-2.5-flash",
     "gpt-5.3-codex",
-    "minimax-m2.7",
-    "gemini-3.1-pro-preview",
-    "k2p6",
-    "kimi-k2.6",
+    "kimi-k2.5",
     "kimi-for-coding",
     "gpt-5.5",
-    "kimi",
-    "minimax",
-    "claude-opus-4-7",
-    "anthropic/claude-sonnet-4",
-    "kimi-k2.5",
-    "claude-haiku-4-5",
     "gpt-5.4-mini",
-    "claude-opus-4-6",
-    "claude-sonnet-4-6",
+    "kimi-k2.6",
     "glm-5.2",
-    "gpt-oss-120b",
-    "claude-sonnet-5",
-    "gemini-3.5-flash",
+    "gpt-5.6-sol",
     "tencent/hy3:free",
     "tencent/hy3-preview:free",
-    "gpt-5.6-sol",
-    "gpt-5.6-luna",
-    "kimi-k2.7-code",
     "grok-4.5",
-    "anthropic/claude-fable-5",
-    "deepseek/deepseek-v4-flash:free",
-    "codex-auto-review",
-    "gpt-5.3-codex-spark",
-    "claude-opus-5",
+    "claude-opus-4-7",
     "gemini-3.6-flash",
-    "anthropic/claude-opus-5",
-    "deepseek-v4-flash:0731",
-    "gemini-3.7-flash",
-    "grok-4.6",
+    "deepseek/deepseek-v4-flash:free",
+    "claude-opus-5",
     "gpt-5-codex",
+    "gemini-3.5-flash",
+    "gpt-5.3-codex-spark",
     "gemini-3.6-flash-high",
-    "minimax-m2.7-highspeed",
+    "gpt-oss-120b",
+    "claude-opus-4-6",
+    "claude-sonnet-5",
+    "claude-sonnet-4-6",
+    "claude-haiku-4-5",
+    "minimax-m2.7",
     "auto",
+    "codex-auto-review",
+    "kimi",
+    "minimax",
     "opus-4.7",
     "deepseek-v4-pro",
     "minimax-m3",
-    "claude-opus-4-5",
+    "minimax-m2.7-highspeed",
+    "gemini-3.1-pro-preview",
+    "k2p6",
+    "anthropic/claude-sonnet-4",
+    "claude-sonnet-4-6-thinking",
+    "kimi-k2.7-code",
     "openai/gpt-5.6-luna",
     "kimi-for-coding-highspeed",
-    "claude-sonnet-4-6-thinking",
+    "anthropic/claude-fable-5",
+    "claude-opus-4-5",
+    "anthropic/claude-opus-5",
     "grok-build-0.1"
   ],
   "topModels": [
     {
       "model": "claude-opus-5",
       "tokens": 11962878609,
-      "cost": 8012.165814249999
+      "cost": 8012.165814249998
+    },
+    {
+      "model": "claude-fable-5",
+      "tokens": 2727098136,
+      "cost": 3959.5739415000007
     },
     {
       "model": "gpt-5.6-sol",
       "tokens": 6077263561,
-      "cost": 4435.196736
-    },
-    {
-      "model": "claude-fable-5",
-      "tokens": 2664493012,
-      "cost": 3878.4297525000006
+      "cost": 3489.1257047999993
     },
     {
       "model": "gpt-5.6-terra",
-      "tokens": 8159235562,
-      "cost": 2555.7308163999996
+      "tokens": 8326479259,
+      "cost": 2607.7259215999998
     },
     {
       "model": "claude-opus-4-8",
-      "tokens": 1948846897,
-      "cost": 1484.7242587500002
+      "tokens": 2322272388,
+      "cost": 1747.7647135
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-08-23T07:05:26.637Z",
+    "generatedAt": "2026-08-23T13:05:49.693Z",
     "dataThrough": "2026-08-22",
-    "sourceUpdatedAt": "2026-08-22T09:04:27.774Z",
+    "sourceUpdatedAt": "2026-08-23T09:57:33.713Z",
     "dates": [
       "2026-07-24",
       "2026-07-25",
@@ -158,7 +158,7 @@
     "latestWindow": {
       "start": "2026-08-16",
       "end": "2026-08-22",
-      "totalTokens": 3972131857
+      "totalTokens": 4663466850
     },
     "previousWindow": {
       "start": "2026-08-09",
@@ -170,11 +170,11 @@
     "models": [
       {
         "model": "claude-opus-4-8",
-        "recentTokens": 1926417919,
+        "recentTokens": 2299843410,
         "priorTokens": 22428978,
-        "recentShare": 0.4849833762706332,
+        "recentShare": 0.4931617365308386,
         "priorShare": 0.0011665031812943514,
-        "deltaPercentagePoints": 48.381687308933884,
+        "deltaPercentagePoints": 49.19952333495443,
         "direction": "up",
         "series": [
           0,
@@ -206,16 +206,16 @@
           45605399,
           778390945,
           948177059,
-          140696369
+          514121860
         ]
       },
       {
         "model": "gpt-5.6-terra",
-        "recentTokens": 598875697,
+        "recentTokens": 766119394,
         "priorTokens": 3923623622,
-        "recentShare": 0.15076933962920053,
+        "recentShare": 0.16428108500438895,
         "priorShare": 0.20406277260001174,
-        "deltaPercentagePoints": -5.329343297081121,
+        "deltaPercentagePoints": -3.978168759562278,
         "direction": "down",
         "series": [
           0,
@@ -247,16 +247,16 @@
           0,
           153149273,
           289091082,
-          156458363
+          323702060
         ]
       },
       {
         "model": "claude-opus-5",
         "recentTokens": 546173814,
         "priorTokens": 1847090640,
-        "recentShare": 0.1375014308846495,
+        "recentShare": 0.11711755043353637,
         "priorShare": 0.09606488123083538,
-        "deltaPercentagePoints": 4.143654965381412,
+        "deltaPercentagePoints": 2.105266920270099,
         "direction": "up",
         "series": [
           0,
@@ -293,11 +293,11 @@
       },
       {
         "model": "claude-fable-5",
-        "recentTokens": 338494459,
+        "recentTokens": 401099583,
         "priorTokens": 474590548,
-        "recentShare": 0.08521732691312317,
+        "recentShare": 0.08600888478493206,
         "priorShare": 0.024682862681225583,
-        "deltaPercentagePoints": 6.053446423189759,
+        "deltaPercentagePoints": 6.1326022103706475,
         "direction": "up",
         "series": [
           0,
@@ -329,16 +329,16 @@
           15148386,
           89570494,
           167142206,
-          55510495
+          118115619
         ]
       },
       {
         "model": "gpt-5.6-luna",
-        "recentTokens": 209979789,
+        "recentTokens": 282602635,
         "priorTokens": 11228345273,
-        "recentShare": 0.05286324738438813,
+        "recentShare": 0.060599258896844095,
         "priorShare": 0.5839722381298824,
-        "deltaPercentagePoints": -53.11089907454944,
+        "deltaPercentagePoints": -52.33729792330383,
         "direction": "down",
         "series": [
           0,
@@ -370,15 +370,15 @@
           0,
           197608383,
           12371406,
-          0
+          72622846
         ]
       }
     ]
   },
-  "updatedAt": "2026-08-22T09:04:27.774Z",
+  "updatedAt": "2026-08-23T09:57:33.713Z",
   "sourceFreshness": {
     "dataThrough": "2026-08-22",
-    "sourceUpdatedAt": "2026-08-22T09:04:27.774Z",
-    "generatedAt": "2026-08-23T07:05:26.637Z"
+    "sourceUpdatedAt": "2026-08-23T09:57:33.713Z",
+    "generatedAt": "2026-08-23T13:05:49.693Z"
   }
 }
