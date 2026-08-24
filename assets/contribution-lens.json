@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T18:51:56.115Z",
+  "generatedAt": "2026-08-24T02:01:36.213Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -8,375 +8,21 @@
   "range": {
     "overviewStart": "2025-08-24",
     "overviewEnd": "2026-08-29",
-    "focusStart": "2026-08-10",
-    "focusEnd": "2026-08-23"
+    "focusStart": "2026-08-11",
+    "focusEnd": "2026-08-24"
   },
   "totalContributions": 13029,
   "metrics": {
-    "activeDays": 11,
-    "focusShare": 0.7260726072607261,
+    "activeDays": 10,
+    "focusShare": 0.7370892018779343,
     "topRepos": [
       "SPINE",
-      "CAIRN"
+      "FIRTH"
     ],
     "focusDays": 14,
     "streak": 0
   },
   "focus": [
-    {
-      "date": "2026-07-27",
-      "contributions": 60,
-      "repository": "cairn",
-      "event": "review",
-      "modelFamilies": {
-        "claude": 2332134119,
-        "gpt": 961691831,
-        "gemini": 0,
-        "other": 96008
-      },
-      "repositories": [
-        {
-          "name": "cairn",
-          "score": 11.5,
-          "commits": 11,
-          "merges": 0,
-          "reviews": 1,
-          "share": 0.46938775510204084
-        },
-        {
-          "name": "hologlyph",
-          "score": 11,
-          "commits": 11,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.4489795918367347
-        },
-        {
-          "name": "rive-rs-cli",
-          "score": 2,
-          "commits": 2,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.08163265306122448
-        }
-      ]
-    },
-    {
-      "date": "2026-07-28",
-      "contributions": 126,
-      "repository": "growth-arsenal",
-      "event": null,
-      "modelFamilies": {
-        "claude": 674355278,
-        "gpt": 630042974,
-        "gemini": 0,
-        "other": 61743
-      },
-      "repositories": [
-        {
-          "name": "growth-arsenal",
-          "score": 22,
-          "commits": 22,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.3142857142857143
-        },
-        {
-          "name": "cairn",
-          "score": 16,
-          "commits": 16,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.22857142857142856
-        },
-        {
-          "name": "mag",
-          "score": 14,
-          "commits": 14,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.2
-        },
-        {
-          "name": "cli-anything-meerk40t",
-          "score": 6,
-          "commits": 6,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.08571428571428572
-        },
-        {
-          "name": "hologlyph",
-          "score": 4,
-          "commits": 4,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.05714285714285714
-        },
-        {
-          "name": "rive-rs-cli",
-          "score": 4,
-          "commits": 4,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.05714285714285714
-        },
-        {
-          "name": "openspine",
-          "score": 3,
-          "commits": 3,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.04285714285714286
-        },
-        {
-          "name": "design-studio",
-          "score": 1,
-          "commits": 1,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.014285714285714285
-        }
-      ]
-    },
-    {
-      "date": "2026-07-29",
-      "contributions": 38,
-      "repository": "mag",
-      "event": "review",
-      "modelFamilies": {
-        "claude": 324614635,
-        "gpt": 299715146,
-        "gemini": 13190431,
-        "other": 0
-      },
-      "repositories": [
-        {
-          "name": "mag",
-          "score": 8,
-          "commits": 8,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.43243243243243246
-        },
-        {
-          "name": "rive-rs-cli",
-          "score": 5.5,
-          "commits": 5,
-          "merges": 0,
-          "reviews": 1,
-          "share": 0.2972972972972973
-        },
-        {
-          "name": "cairn",
-          "score": 5,
-          "commits": 5,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.2702702702702703
-        }
-      ]
-    },
-    {
-      "date": "2026-07-30",
-      "contributions": 143,
-      "repository": "design-studio",
-      "event": "review",
-      "modelFamilies": {
-        "claude": 460914803,
-        "gpt": 921091796,
-        "gemini": 53133779,
-        "other": 0
-      },
-      "repositories": [
-        {
-          "name": "design-studio",
-          "score": 15,
-          "commits": 15,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.25862068965517243
-        },
-        {
-          "name": "mag",
-          "score": 15,
-          "commits": 15,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.25862068965517243
-        },
-        {
-          "name": "rive-rs-cli",
-          "score": 11,
-          "commits": 11,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.1896551724137931
-        },
-        {
-          "name": "cairn",
-          "score": 7,
-          "commits": 7,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.1206896551724138
-        },
-        {
-          "name": "openspine",
-          "score": 5,
-          "commits": 4,
-          "merges": 0,
-          "reviews": 2,
-          "share": 0.08620689655172414
-        },
-        {
-          "name": "growth-arsenal",
-          "score": 4,
-          "commits": 4,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.06896551724137931
-        },
-        {
-          "name": "George-RD",
-          "score": 1,
-          "commits": 1,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.017241379310344827
-        }
-      ]
-    },
-    {
-      "date": "2026-07-31",
-      "contributions": 237,
-      "repository": "design-studio",
-      "event": null,
-      "modelFamilies": {
-        "claude": 181760738,
-        "gpt": 710471929,
-        "gemini": 8917621,
-        "other": 0
-      },
-      "repositories": [
-        {
-          "name": "design-studio",
-          "score": 103,
-          "commits": 103,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.7304964539007093
-        },
-        {
-          "name": "cairn",
-          "score": 10,
-          "commits": 10,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.07092198581560284
-        },
-        {
-          "name": "George-RD",
-          "score": 8,
-          "commits": 8,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.05673758865248227
-        },
-        {
-          "name": "new-view",
-          "score": 7,
-          "commits": 7,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.04964539007092199
-        },
-        {
-          "name": "rive-rs-cli",
-          "score": 7,
-          "commits": 7,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.04964539007092199
-        },
-        {
-          "name": "mag",
-          "score": 4,
-          "commits": 4,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.028368794326241134
-        },
-        {
-          "name": "openspine",
-          "score": 2,
-          "commits": 2,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.014184397163120567
-        }
-      ]
-    },
-    {
-      "date": "2026-08-01",
-      "contributions": 44,
-      "repository": "design-studio",
-      "event": null,
-      "modelFamilies": {
-        "claude": 13263671,
-        "gpt": 27016623,
-        "gemini": 601708,
-        "other": 0
-      },
-      "repositories": [
-        {
-          "name": "design-studio",
-          "score": 13,
-          "commits": 13,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.7647058823529411
-        },
-        {
-          "name": "mag",
-          "score": 2,
-          "commits": 2,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.11764705882352941
-        },
-        {
-          "name": "rive-rs-cli",
-          "score": 2,
-          "commits": 2,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.11764705882352941
-        }
-      ]
-    },
-    {
-      "date": "2026-08-02",
-      "contributions": 8,
-      "repository": "cairn",
-      "event": null,
-      "modelFamilies": {
-        "claude": 107959391,
-        "gpt": 327326027,
-        "gemini": 32980788,
-        "other": 125343770
-      },
-      "repositories": [
-        {
-          "name": "cairn",
-          "score": 1,
-          "commits": 1,
-          "merges": 0,
-          "reviews": 0,
-          "share": 1
-        }
-      ]
-    },
     {
       "date": "2026-08-03",
       "contributions": 88,
@@ -1052,6 +698,92 @@
       "repository": null,
       "event": null,
       "modelFamilies": {},
+      "repositories": []
+    },
+    {
+      "date": "2026-08-24",
+      "contributions": 0,
+      "repository": null,
+      "event": null,
+      "modelFamilies": {},
+      "repositories": []
+    },
+    {
+      "date": "2026-08-25",
+      "contributions": 0,
+      "repository": null,
+      "event": null,
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 0
+      },
+      "repositories": []
+    },
+    {
+      "date": "2026-08-26",
+      "contributions": 0,
+      "repository": null,
+      "event": null,
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 0
+      },
+      "repositories": []
+    },
+    {
+      "date": "2026-08-27",
+      "contributions": 0,
+      "repository": null,
+      "event": null,
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 0
+      },
+      "repositories": []
+    },
+    {
+      "date": "2026-08-28",
+      "contributions": 0,
+      "repository": null,
+      "event": null,
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 0
+      },
+      "repositories": []
+    },
+    {
+      "date": "2026-08-29",
+      "contributions": 0,
+      "repository": null,
+      "event": null,
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 0
+      },
+      "repositories": []
+    },
+    {
+      "date": "2026-08-30",
+      "contributions": 0,
+      "repository": null,
+      "event": null,
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 0
+      },
       "repositories": []
     }
   ]
