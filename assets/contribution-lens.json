@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T13:15:26.590Z",
+  "generatedAt": "2026-08-25T19:02:35.369Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,10 +11,10 @@
     "focusStart": "2026-08-12",
     "focusEnd": "2026-08-25"
   },
-  "totalContributions": 13114,
+  "totalContributions": 13147,
   "metrics": {
     "activeDays": 10,
-    "focusShare": 0.8162162162162162,
+    "focusShare": 0.8031914893617021,
     "topRepos": [
       "SPINE",
       "MAG"
@@ -367,7 +367,7 @@
       "date": "2026-08-09",
       "contributions": 129,
       "repository": "firth",
-      "event": "merge",
+      "event": null,
       "modelFamilies": {
         "claude": 625868562,
         "gpt": 2898893080,
@@ -381,15 +381,15 @@
           "commits": 15,
           "merges": 0,
           "reviews": 0,
-          "share": 0.5172413793103449
+          "share": 0.5555555555555556
         },
         {
           "name": "cairn",
-          "score": 14,
+          "score": 12,
           "commits": 12,
-          "merges": 1,
+          "merges": 0,
           "reviews": 0,
-          "share": 0.4827586206896552
+          "share": 0.4444444444444444
         }
       ]
     },
@@ -710,7 +710,7 @@
     },
     {
       "date": "2026-08-25",
-      "contributions": 81,
+      "contributions": 114,
       "repository": "mag",
       "event": "merge",
       "modelFamilies": {},
@@ -721,7 +721,15 @@
           "commits": 2,
           "merges": 2,
           "reviews": 0,
-          "share": 0.5
+          "share": 0.4
+        },
+        {
+          "name": "rive-rs-cli",
+          "score": 6,
+          "commits": 2,
+          "merges": 2,
+          "reviews": 0,
+          "share": 0.4
         },
         {
           "name": "design-studio",
@@ -729,15 +737,7 @@
           "commits": 1,
           "merges": 1,
           "reviews": 0,
-          "share": 0.25
-        },
-        {
-          "name": "rive-rs-cli",
-          "score": 3,
-          "commits": 1,
-          "merges": 1,
-          "reviews": 0,
-          "share": 0.25
+          "share": 0.2
         }
       ]
     },
