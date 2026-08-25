@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T07:12:21.502Z",
+  "generatedAt": "2026-08-25T13:15:26.590Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,10 +11,10 @@
     "focusStart": "2026-08-12",
     "focusEnd": "2026-08-25"
   },
-  "totalContributions": 13036,
+  "totalContributions": 13114,
   "metrics": {
     "activeDays": 10,
-    "focusShare": 0.838150289017341,
+    "focusShare": 0.8162162162162162,
     "topRepos": [
       "SPINE",
       "MAG"
@@ -377,19 +377,19 @@
       "repositories": [
         {
           "name": "firth",
-          "score": 21,
+          "score": 15,
           "commits": 15,
-          "merges": 3,
+          "merges": 0,
           "reviews": 0,
-          "share": 0.5675675675675675
+          "share": 0.5172413793103449
         },
         {
           "name": "cairn",
-          "score": 16,
+          "score": 14,
           "commits": 12,
-          "merges": 2,
+          "merges": 1,
           "reviews": 0,
-          "share": 0.43243243243243246
+          "share": 0.4827586206896552
         }
       ]
     },
@@ -681,7 +681,7 @@
     },
     {
       "date": "2026-08-22",
-      "contributions": 76,
+      "contributions": 80,
       "repository": null,
       "event": null,
       "modelFamilies": {
@@ -710,11 +710,36 @@
     },
     {
       "date": "2026-08-25",
-      "contributions": 7,
-      "repository": null,
-      "event": null,
+      "contributions": 81,
+      "repository": "mag",
+      "event": "merge",
       "modelFamilies": {},
-      "repositories": []
+      "repositories": [
+        {
+          "name": "mag",
+          "score": 6,
+          "commits": 2,
+          "merges": 2,
+          "reviews": 0,
+          "share": 0.5
+        },
+        {
+          "name": "design-studio",
+          "score": 3,
+          "commits": 1,
+          "merges": 1,
+          "reviews": 0,
+          "share": 0.25
+        },
+        {
+          "name": "rive-rs-cli",
+          "score": 3,
+          "commits": 1,
+          "merges": 1,
+          "reviews": 0,
+          "share": 0.25
+        }
+      ]
     },
     {
       "date": "2026-08-26",
