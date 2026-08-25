@@ -1,10 +1,10 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-08-24T19:04:02.518Z",
+  "generatedAt": "2026-08-25T01:55:35.455Z",
   "username": "George-RD",
   "allTime": {
-    "rank": 109,
+    "rank": 110,
     "totalTokens": 109310254399,
     "totalCost": 50460.7109,
     "activeDays": 182,
@@ -12,10 +12,10 @@
     "sessions": 46099
   },
   "month": {
-    "totalTokens": 53476403122,
-    "totalCost": 20519.7007,
-    "activeDays": 24,
-    "contributions": 25
+    "totalTokens": 51394061452,
+    "totalCost": 19460.4767,
+    "activeDays": 23,
+    "contributions": 24
   },
   "clients": [
     "claude",
@@ -95,8 +95,8 @@
   "topModels": [
     {
       "model": "claude-opus-5",
-      "tokens": 11493830831,
-      "cost": 7715.431657499998
+      "tokens": 10343032211,
+      "cost": 6982.756550499998
     },
     {
       "model": "claude-fable-5",
@@ -105,13 +105,13 @@
     },
     {
       "model": "gpt-5.6-sol",
-      "tokens": 6061357868,
-      "cost": 3478.6325967999987
+      "tokens": 5846892383,
+      "cost": 3342.937747999999
     },
     {
       "model": "gpt-5.6-terra",
-      "tokens": 8326479259,
-      "cost": 2607.7259215999998
+      "tokens": 7907052079,
+      "cost": 2479.0449992
     },
     {
       "model": "claude-opus-4-8",
@@ -120,7 +120,7 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-08-24T19:04:05.090Z",
+    "generatedAt": "2026-08-25T01:55:37.864Z",
     "dataThrough": "2026-08-22",
     "sourceUpdatedAt": "2026-08-23T09:57:33.713Z",
     "dates": [
@@ -220,7 +220,7 @@
         "series": [
           0,
           0,
-          419427180,
+          0,
           665331657,
           326166936,
           51599364,
@@ -261,7 +261,7 @@
         "series": [
           0,
           0,
-          1150798620,
+          0,
           2325135797,
           674355278,
           143565267,
@@ -343,7 +343,7 @@
         "series": [
           0,
           0,
-          125841130,
+          0,
           28186648,
           20227918,
           0,
@@ -379,6 +379,6 @@
   "sourceFreshness": {
     "dataThrough": "2026-08-22",
     "sourceUpdatedAt": "2026-08-23T09:57:33.713Z",
-    "generatedAt": "2026-08-24T19:04:05.090Z"
+    "generatedAt": "2026-08-25T01:55:37.864Z"
   }
 }
