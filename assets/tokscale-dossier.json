@@ -1,7 +1,7 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-08-25T19:02:12.713Z",
+  "generatedAt": "2026-08-26T02:01:57.696Z",
   "username": "George-RD",
   "allTime": {
     "rank": 111,
@@ -12,10 +12,10 @@
     "sessions": 46099
   },
   "month": {
-    "totalTokens": 51394061452,
-    "totalCost": 19460.4767,
-    "activeDays": 23,
-    "contributions": 24
+    "totalTokens": 48100139494,
+    "totalCost": 17602.1116,
+    "activeDays": 22,
+    "contributions": 23
   },
   "clients": [
     "claude",
@@ -95,8 +95,8 @@
   "topModels": [
     {
       "model": "claude-opus-5",
-      "tokens": 10343032211,
-      "cost": 6982.756550499998
+      "tokens": 8017896414,
+      "cost": 5491.656995749998
     },
     {
       "model": "claude-fable-5",
@@ -105,13 +105,13 @@
     },
     {
       "model": "gpt-5.6-sol",
-      "tokens": 5846892383,
-      "cost": 3342.937747999999
+      "tokens": 5580633891,
+      "cost": 3173.7746183999993
     },
     {
       "model": "gpt-5.6-terra",
-      "tokens": 7907052079,
-      "cost": 2479.0449992
+      "tokens": 7241720422,
+      "cost": 2290.0720112000004
     },
     {
       "model": "claude-opus-4-8",
@@ -120,7 +120,7 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-08-25T19:02:28.855Z",
+    "generatedAt": "2026-08-26T02:02:09.858Z",
     "dataThrough": "2026-08-22",
     "sourceUpdatedAt": "2026-08-23T09:57:33.713Z",
     "dates": [
@@ -221,7 +221,7 @@
           0,
           0,
           0,
-          665331657,
+          0,
           326166936,
           51599364,
           204077934,
@@ -262,7 +262,7 @@
           0,
           0,
           0,
-          2325135797,
+          0,
           674355278,
           143565267,
           54490649,
@@ -344,7 +344,7 @@
           0,
           0,
           0,
-          28186648,
+          0,
           20227918,
           0,
           0,
@@ -379,6 +379,6 @@
   "sourceFreshness": {
     "dataThrough": "2026-08-22",
     "sourceUpdatedAt": "2026-08-23T09:57:33.713Z",
-    "generatedAt": "2026-08-25T19:02:28.855Z"
+    "generatedAt": "2026-08-26T02:02:09.858Z"
   }
 }
