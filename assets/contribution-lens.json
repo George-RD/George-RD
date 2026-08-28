@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-28T11:30:22.502Z",
+  "generatedAt": "2026-08-28T22:26:18.844Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,10 +11,10 @@
     "focusStart": "2026-08-15",
     "focusEnd": "2026-08-28"
   },
-  "totalContributions": 13272,
+  "totalContributions": 13316,
   "metrics": {
     "activeDays": 10,
-    "focusShare": 0.7072599531615925,
+    "focusShare": 0.6928251121076233,
     "topRepos": [
       "SPINE",
       "DESIGN"
@@ -407,11 +407,11 @@
       "repositories": [
         {
           "name": "cairn",
-          "score": 42,
+          "score": 36,
           "commits": 18,
-          "merges": 12,
+          "merges": 9,
           "reviews": 0,
-          "share": 0.6176470588235294
+          "share": 0.5806451612903226
         },
         {
           "name": "firth",
@@ -419,7 +419,7 @@
           "commits": 4,
           "merges": 11,
           "reviews": 0,
-          "share": 0.38235294117647056
+          "share": 0.41935483870967744
         }
       ]
     },
@@ -793,18 +793,42 @@
     },
     {
       "date": "2026-08-28",
-      "contributions": 63,
-      "repository": "rive-rs-cli",
+      "contributions": 107,
+      "repository": "design-studio",
       "event": "merge",
       "modelFamilies": {},
       "repositories": [
+        {
+          "name": "design-studio",
+          "score": 6.5,
+          "commits": 2,
+          "merges": 2,
+          "reviews": 1,
+          "share": 0.26
+        },
+        {
+          "name": "growth-arsenal",
+          "score": 6,
+          "commits": 2,
+          "merges": 2,
+          "reviews": 0,
+          "share": 0.24
+        },
+        {
+          "name": "mag",
+          "score": 6,
+          "commits": 2,
+          "merges": 2,
+          "reviews": 0,
+          "share": 0.24
+        },
         {
           "name": "rive-rs-cli",
           "score": 3.5,
           "commits": 1,
           "merges": 1,
           "reviews": 1,
-          "share": 0.22580645161290322
+          "share": 0.14
         },
         {
           "name": "cli-anything-meerk40t",
@@ -812,31 +836,7 @@
           "commits": 1,
           "merges": 1,
           "reviews": 0,
-          "share": 0.1935483870967742
-        },
-        {
-          "name": "design-studio",
-          "score": 3,
-          "commits": 1,
-          "merges": 1,
-          "reviews": 0,
-          "share": 0.1935483870967742
-        },
-        {
-          "name": "growth-arsenal",
-          "score": 3,
-          "commits": 1,
-          "merges": 1,
-          "reviews": 0,
-          "share": 0.1935483870967742
-        },
-        {
-          "name": "mag",
-          "score": 3,
-          "commits": 1,
-          "merges": 1,
-          "reviews": 0,
-          "share": 0.1935483870967742
+          "share": 0.12
         }
       ]
     },
