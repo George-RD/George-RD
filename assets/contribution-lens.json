@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T22:19:28.364Z",
+  "generatedAt": "2026-08-28T11:30:22.502Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -8,19 +8,19 @@
   "range": {
     "overviewStart": "2025-08-24",
     "overviewEnd": "2026-08-29",
-    "focusStart": "2026-08-14",
-    "focusEnd": "2026-08-27"
+    "focusStart": "2026-08-15",
+    "focusEnd": "2026-08-28"
   },
-  "totalContributions": 13209,
+  "totalContributions": 13272,
   "metrics": {
     "activeDays": 10,
-    "focusShare": 0.7584541062801933,
+    "focusShare": 0.7072599531615925,
     "topRepos": [
       "SPINE",
       "DESIGN"
     ],
     "focusDays": 14,
-    "streak": 3
+    "streak": 4
   },
   "focus": [
     {
@@ -407,11 +407,11 @@
       "repositories": [
         {
           "name": "cairn",
-          "score": 52,
+          "score": 42,
           "commits": 18,
-          "merges": 17,
+          "merges": 12,
           "reviews": 0,
-          "share": 0.6666666666666666
+          "share": 0.6176470588235294
         },
         {
           "name": "firth",
@@ -419,7 +419,7 @@
           "commits": 4,
           "merges": 11,
           "reviews": 0,
-          "share": 0.3333333333333333
+          "share": 0.38235294117647056
         }
       ]
     },
@@ -793,16 +793,52 @@
     },
     {
       "date": "2026-08-28",
-      "contributions": 0,
-      "repository": null,
-      "event": null,
-      "modelFamilies": {
-        "claude": 0,
-        "gpt": 0,
-        "gemini": 0,
-        "other": 0
-      },
-      "repositories": []
+      "contributions": 63,
+      "repository": "rive-rs-cli",
+      "event": "merge",
+      "modelFamilies": {},
+      "repositories": [
+        {
+          "name": "rive-rs-cli",
+          "score": 3.5,
+          "commits": 1,
+          "merges": 1,
+          "reviews": 1,
+          "share": 0.22580645161290322
+        },
+        {
+          "name": "cli-anything-meerk40t",
+          "score": 3,
+          "commits": 1,
+          "merges": 1,
+          "reviews": 0,
+          "share": 0.1935483870967742
+        },
+        {
+          "name": "design-studio",
+          "score": 3,
+          "commits": 1,
+          "merges": 1,
+          "reviews": 0,
+          "share": 0.1935483870967742
+        },
+        {
+          "name": "growth-arsenal",
+          "score": 3,
+          "commits": 1,
+          "merges": 1,
+          "reviews": 0,
+          "share": 0.1935483870967742
+        },
+        {
+          "name": "mag",
+          "score": 3,
+          "commits": 1,
+          "merges": 1,
+          "reviews": 0,
+          "share": 0.1935483870967742
+        }
+      ]
     },
     {
       "date": "2026-08-29",
