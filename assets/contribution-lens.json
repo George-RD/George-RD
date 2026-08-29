@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-28T22:26:18.844Z",
+  "generatedAt": "2026-08-29T07:09:53.738Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -8,19 +8,19 @@
   "range": {
     "overviewStart": "2025-08-24",
     "overviewEnd": "2026-08-29",
-    "focusStart": "2026-08-15",
-    "focusEnd": "2026-08-28"
+    "focusStart": "2026-08-16",
+    "focusEnd": "2026-08-29"
   },
-  "totalContributions": 13316,
+  "totalContributions": 13365,
   "metrics": {
-    "activeDays": 10,
-    "focusShare": 0.6928251121076233,
+    "activeDays": 11,
+    "focusShare": 0.6726907630522089,
     "topRepos": [
       "SPINE",
       "DESIGN"
     ],
     "focusDays": 14,
-    "streak": 4
+    "streak": 5
   },
   "focus": [
     {
@@ -407,19 +407,19 @@
       "repositories": [
         {
           "name": "cairn",
-          "score": 36,
+          "score": 30,
           "commits": 18,
-          "merges": 9,
+          "merges": 6,
           "reviews": 0,
-          "share": 0.5806451612903226
+          "share": 0.6521739130434783
         },
         {
           "name": "firth",
-          "score": 26,
+          "score": 16,
           "commits": 4,
-          "merges": 11,
+          "merges": 6,
           "reviews": 0,
-          "share": 0.41935483870967744
+          "share": 0.34782608695652173
         }
       ]
     },
@@ -842,16 +842,44 @@
     },
     {
       "date": "2026-08-29",
-      "contributions": 0,
-      "repository": null,
-      "event": null,
-      "modelFamilies": {
-        "claude": 0,
-        "gpt": 0,
-        "gemini": 0,
-        "other": 0
-      },
-      "repositories": []
+      "contributions": 49,
+      "repository": "design-studio",
+      "event": "merge",
+      "modelFamilies": {},
+      "repositories": [
+        {
+          "name": "design-studio",
+          "score": 13,
+          "commits": 4,
+          "merges": 4,
+          "reviews": 2,
+          "share": 0.5
+        },
+        {
+          "name": "growth-arsenal",
+          "score": 9.5,
+          "commits": 3,
+          "merges": 3,
+          "reviews": 1,
+          "share": 0.36538461538461536
+        },
+        {
+          "name": "mag",
+          "score": 3,
+          "commits": 1,
+          "merges": 1,
+          "reviews": 0,
+          "share": 0.11538461538461539
+        },
+        {
+          "name": "rive-rs-cli",
+          "score": 0.5,
+          "commits": 0,
+          "merges": 0,
+          "reviews": 1,
+          "share": 0.019230769230769232
+        }
+      ]
     },
     {
       "date": "2026-08-30",
