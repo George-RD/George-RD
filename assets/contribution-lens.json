@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T07:09:53.738Z",
+  "generatedAt": "2026-08-29T16:47:16.938Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,10 +11,10 @@
     "focusStart": "2026-08-16",
     "focusEnd": "2026-08-29"
   },
-  "totalContributions": 13365,
+  "totalContributions": 13642,
   "metrics": {
     "activeDays": 11,
-    "focusShare": 0.6726907630522089,
+    "focusShare": 0.646795827123696,
     "topRepos": [
       "SPINE",
       "DESIGN"
@@ -397,7 +397,7 @@
       "date": "2026-08-10",
       "contributions": 44,
       "repository": "cairn",
-      "event": "merge",
+      "event": null,
       "modelFamilies": {
         "claude": 709044084,
         "gpt": 1604380624,
@@ -407,19 +407,19 @@
       "repositories": [
         {
           "name": "cairn",
-          "score": 30,
+          "score": 18,
           "commits": 18,
-          "merges": 6,
+          "merges": 0,
           "reviews": 0,
-          "share": 0.6521739130434783
+          "share": 0.8181818181818182
         },
         {
           "name": "firth",
-          "score": 16,
+          "score": 4,
           "commits": 4,
-          "merges": 6,
+          "merges": 0,
           "reviews": 0,
-          "share": 0.34782608695652173
+          "share": 0.18181818181818182
         }
       ]
     },
@@ -427,7 +427,7 @@
       "date": "2026-08-11",
       "contributions": 56,
       "repository": "firth",
-      "event": "merge",
+      "event": null,
       "modelFamilies": {
         "claude": 362567686,
         "gpt": 1409576410,
@@ -437,19 +437,19 @@
       "repositories": [
         {
           "name": "firth",
-          "score": 22,
+          "score": 12,
           "commits": 12,
-          "merges": 5,
+          "merges": 0,
           "reviews": 0,
-          "share": 0.55
+          "share": 0.5454545454545454
         },
         {
           "name": "cairn",
-          "score": 18,
+          "score": 10,
           "commits": 10,
-          "merges": 4,
+          "merges": 0,
           "reviews": 0,
-          "share": 0.45
+          "share": 0.45454545454545453
         }
       ]
     },
@@ -619,9 +619,9 @@
       "repositories": [
         {
           "name": "cairn",
-          "score": 9,
+          "score": 7,
           "commits": 3,
-          "merges": 3,
+          "merges": 2,
           "reviews": 0,
           "share": 1
         }
@@ -842,18 +842,26 @@
     },
     {
       "date": "2026-08-29",
-      "contributions": 49,
+      "contributions": 326,
       "repository": "design-studio",
       "event": "merge",
       "modelFamilies": {},
       "repositories": [
         {
           "name": "design-studio",
-          "score": 13,
-          "commits": 4,
-          "merges": 4,
-          "reviews": 2,
-          "share": 0.5
+          "score": 62.5,
+          "commits": 28,
+          "merges": 15,
+          "reviews": 9,
+          "share": 0.5458515283842795
+        },
+        {
+          "name": "rive-rs-cli",
+          "score": 33,
+          "commits": 9,
+          "merges": 9,
+          "reviews": 12,
+          "share": 0.28820960698689957
         },
         {
           "name": "growth-arsenal",
@@ -861,7 +869,15 @@
           "commits": 3,
           "merges": 3,
           "reviews": 1,
-          "share": 0.36538461538461536
+          "share": 0.08296943231441048
+        },
+        {
+          "name": "cli-anything-meerk40t",
+          "score": 6.5,
+          "commits": 2,
+          "merges": 2,
+          "reviews": 1,
+          "share": 0.056768558951965066
         },
         {
           "name": "mag",
@@ -869,15 +885,7 @@
           "commits": 1,
           "merges": 1,
           "reviews": 0,
-          "share": 0.11538461538461539
-        },
-        {
-          "name": "rive-rs-cli",
-          "score": 0.5,
-          "commits": 0,
-          "merges": 0,
-          "reviews": 1,
-          "share": 0.019230769230769232
+          "share": 0.026200873362445413
         }
       ]
     },
