@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-08-29T20:59:18.580Z",
+  "generatedAt": "2026-08-30T05:30:48.605Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
     "tokscale": "https://tokscale.ai/u/George-RD"
   },
   "range": {
-    "overviewStart": "2025-08-24",
-    "overviewEnd": "2026-08-29",
-    "focusStart": "2026-08-16",
-    "focusEnd": "2026-08-29"
+    "overviewStart": "2025-08-31",
+    "overviewEnd": "2026-09-05",
+    "focusStart": "2026-08-17",
+    "focusEnd": "2026-08-30"
   },
-  "totalContributions": 13666,
+  "totalContributions": 13717,
   "metrics": {
     "activeDays": 11,
-    "focusShare": 0.6451612903225806,
+    "focusShare": 0.6633522727272727,
     "topRepos": [
       "SPINE",
       "DESIGN"
     ],
     "focusDays": 14,
-    "streak": 5
+    "streak": 6
   },
   "focus": [
     {
@@ -495,7 +495,7 @@
       "date": "2026-08-13",
       "contributions": 11,
       "repository": "firth",
-      "event": "merge",
+      "event": null,
       "modelFamilies": {
         "claude": 0,
         "gpt": 5596156156,
@@ -505,11 +505,11 @@
       "repositories": [
         {
           "name": "firth",
-          "score": 4,
+          "score": 2,
           "commits": 2,
-          "merges": 1,
+          "merges": 0,
           "reviews": 0,
-          "share": 0.8
+          "share": 0.6666666666666666
         },
         {
           "name": "oh-my-pi-plugin-grok-build",
@@ -517,7 +517,7 @@
           "commits": 1,
           "merges": 0,
           "reviews": 0,
-          "share": 0.2
+          "share": 0.3333333333333333
         }
       ]
     },
@@ -535,9 +535,9 @@
       "repositories": [
         {
           "name": "openspine",
-          "score": 9,
+          "score": 7,
           "commits": 3,
-          "merges": 3,
+          "merges": 2,
           "reviews": 0,
           "share": 1
         }
@@ -834,7 +834,7 @@
     },
     {
       "date": "2026-08-29",
-      "contributions": 350,
+      "contributions": 349,
       "repository": "design-studio",
       "event": "merge",
       "modelFamilies": {},
@@ -883,16 +883,28 @@
     },
     {
       "date": "2026-08-30",
-      "contributions": 0,
-      "repository": null,
-      "event": null,
-      "modelFamilies": {
-        "claude": 0,
-        "gpt": 0,
-        "gemini": 0,
-        "other": 0
-      },
-      "repositories": []
+      "contributions": 60,
+      "repository": "design-studio",
+      "event": "merge",
+      "modelFamilies": {},
+      "repositories": [
+        {
+          "name": "design-studio",
+          "score": 3.5,
+          "commits": 1,
+          "merges": 1,
+          "reviews": 1,
+          "share": 0.5384615384615384
+        },
+        {
+          "name": "mag",
+          "score": 3,
+          "commits": 1,
+          "merges": 1,
+          "reviews": 0,
+          "share": 0.46153846153846156
+        }
+      ]
     }
   ]
 }
