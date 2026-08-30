@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T05:30:48.605Z",
+  "generatedAt": "2026-08-30T11:59:39.478Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,13 +11,13 @@
     "focusStart": "2026-08-17",
     "focusEnd": "2026-08-30"
   },
-  "totalContributions": 13717,
+  "totalContributions": 13911,
   "metrics": {
     "activeDays": 11,
-    "focusShare": 0.6633522727272727,
+    "focusShare": 0.6629834254143646,
     "topRepos": [
-      "SPINE",
-      "DESIGN"
+      "DESIGN",
+      "SPINE"
     ],
     "focusDays": 14,
     "streak": 6
@@ -525,7 +525,7 @@
       "date": "2026-08-14",
       "contributions": 11,
       "repository": "openspine",
-      "event": "merge",
+      "event": null,
       "modelFamilies": {
         "claude": 646629834,
         "gpt": 5316104447,
@@ -535,9 +535,9 @@
       "repositories": [
         {
           "name": "openspine",
-          "score": 7,
+          "score": 3,
           "commits": 3,
-          "merges": 2,
+          "merges": 0,
           "reviews": 0,
           "share": 1
         }
@@ -555,7 +555,7 @@
       "date": "2026-08-16",
       "contributions": 10,
       "repository": "mag",
-      "event": "merge",
+      "event": null,
       "modelFamilies": {},
       "repositories": [
         {
@@ -564,15 +564,15 @@
           "commits": 8,
           "merges": 0,
           "reviews": 0,
-          "share": 0.7272727272727273
+          "share": 0.8888888888888888
         },
         {
           "name": "rive-rs-cli",
-          "score": 3,
+          "score": 1,
           "commits": 1,
-          "merges": 1,
+          "merges": 0,
           "reviews": 0,
-          "share": 0.2727272727272727
+          "share": 0.1111111111111111
         }
       ]
     },
@@ -785,7 +785,7 @@
     },
     {
       "date": "2026-08-28",
-      "contributions": 107,
+      "contributions": 117,
       "repository": "design-studio",
       "event": "merge",
       "modelFamilies": {},
@@ -883,18 +883,26 @@
     },
     {
       "date": "2026-08-30",
-      "contributions": 60,
+      "contributions": 243,
       "repository": "design-studio",
       "event": "merge",
       "modelFamilies": {},
       "repositories": [
         {
           "name": "design-studio",
+          "score": 10,
+          "commits": 3,
+          "merges": 3,
+          "reviews": 2,
+          "share": 0.6060606060606061
+        },
+        {
+          "name": "rive-rs-cli",
           "score": 3.5,
           "commits": 1,
           "merges": 1,
           "reviews": 1,
-          "share": 0.5384615384615384
+          "share": 0.21212121212121213
         },
         {
           "name": "mag",
@@ -902,7 +910,7 @@
           "commits": 1,
           "merges": 1,
           "reviews": 0,
-          "share": 0.46153846153846156
+          "share": 0.18181818181818182
         }
       ]
     }
