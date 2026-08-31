@@ -1,7 +1,7 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-08-30T21:12:04.184Z",
+  "generatedAt": "2026-08-31T05:43:41.764Z",
   "username": "George-RD",
   "allTime": {
     "rank": 120,
@@ -12,10 +12,10 @@
     "sessions": 46099
   },
   "month": {
-    "totalTokens": 43821868621,
-    "totalCost": 14781.602299999999,
-    "activeDays": 18,
-    "contributions": 19
+    "totalTokens": 43780986619,
+    "totalCost": 14740.853299999999,
+    "activeDays": 17,
+    "contributions": 18
   },
   "clients": [
     "claude",
@@ -95,8 +95,8 @@
   "topModels": [
     {
       "model": "claude-opus-5",
-      "tokens": 6988268528,
-      "cost": 4796.264931249998
+      "tokens": 6975004857,
+      "cost": 4776.035864499998
     },
     {
       "model": "claude-fable-5",
@@ -105,13 +105,13 @@
     },
     {
       "model": "gpt-5.6-sol",
-      "tokens": 3769167390,
-      "cost": 2124.808370399999
+      "tokens": 3752162083,
+      "cost": 2109.5352927999993
     },
     {
       "model": "gpt-5.6-terra",
-      "tokens": 6512092996,
-      "cost": 2070.0396804000006
+      "tokens": 6502081680,
+      "cost": 2065.1592796000004
     },
     {
       "model": "claude-opus-4-8",
@@ -120,7 +120,7 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-08-30T21:12:06.309Z",
+    "generatedAt": "2026-08-31T05:43:44.659Z",
     "dataThrough": "2026-08-22",
     "sourceUpdatedAt": "2026-08-23T09:57:33.713Z",
     "dates": [
@@ -226,7 +226,7 @@
           0,
           0,
           0,
-          10011316,
+          0,
           6606796,
           217846398,
           265623365,
@@ -267,7 +267,7 @@
           0,
           0,
           0,
-          13263671,
+          0,
           72734028,
           450573463,
           640188018,
@@ -379,6 +379,6 @@
   "sourceFreshness": {
     "dataThrough": "2026-08-22",
     "sourceUpdatedAt": "2026-08-23T09:57:33.713Z",
-    "generatedAt": "2026-08-30T21:12:06.309Z"
+    "generatedAt": "2026-08-31T05:43:44.659Z"
   }
 }
