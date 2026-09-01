@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T16:44:12.222Z",
+  "generatedAt": "2026-09-01T21:07:00.787Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,7 +11,7 @@
     "focusStart": "2026-08-19",
     "focusEnd": "2026-09-01"
   },
-  "totalContributions": 14090,
+  "totalContributions": 14099,
   "metrics": {
     "activeDays": 12,
     "focusShare": 0.6611570247933884,
@@ -29,10 +29,10 @@
       "repository": "cairn",
       "event": null,
       "modelFamilies": {
-        "claude": 709044084,
-        "gpt": 1604380624,
-        "gemini": 2342310,
-        "other": 1695603
+        "claude": 1418088168,
+        "gpt": 3208761248,
+        "gemini": 4684620,
+        "other": 3391206
       },
       "repositories": [
         {
@@ -59,10 +59,10 @@
       "repository": "firth",
       "event": null,
       "modelFamilies": {
-        "claude": 362567686,
-        "gpt": 1409576410,
-        "gemini": 1414781,
-        "other": 0
+        "claude": 725135372,
+        "gpt": 2819152820,
+        "gemini": 2829562,
+        "other": 43476
       },
       "repositories": [
         {
@@ -128,9 +128,9 @@
       "event": null,
       "modelFamilies": {
         "claude": 0,
-        "gpt": 5596156156,
+        "gpt": 11192312312,
         "gemini": 0,
-        "other": 9829728
+        "other": 11996026
       },
       "repositories": [
         {
@@ -157,10 +157,10 @@
       "repository": "openspine",
       "event": null,
       "modelFamilies": {
-        "claude": 646629834,
-        "gpt": 5316104447,
+        "claude": 1270830690,
+        "gpt": 10632208894,
         "gemini": 0,
-        "other": 43029341
+        "other": 74106094
       },
       "repositories": [
         {
@@ -186,7 +186,12 @@
       "contributions": 10,
       "repository": "mag",
       "event": null,
-      "modelFamilies": {},
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 60512132
+      },
       "repositories": [
         {
           "name": "mag",
@@ -220,10 +225,10 @@
       "repository": null,
       "event": null,
       "modelFamilies": {
-        "claude": 36022006,
-        "gpt": 176979,
+        "claude": 58495865,
+        "gpt": 353958,
         "gemini": 0,
-        "other": 14054133
+        "other": 28108266
       },
       "repositories": []
     },
@@ -233,10 +238,10 @@
       "repository": "cairn",
       "event": "merge",
       "modelFamilies": {
-        "claude": 94356300,
+        "claude": 143107201,
         "gpt": 0,
-        "gemini": 1298249,
-        "other": 31921541
+        "gemini": 2596498,
+        "other": 227679519
       },
       "repositories": [
         {
@@ -255,10 +260,10 @@
       "repository": "openspine",
       "event": "merge",
       "modelFamilies": {
-        "claude": 1047693091,
-        "gpt": 370806030,
-        "gemini": 5260515,
-        "other": 52615880
+        "claude": 1297037195,
+        "gpt": 741612060,
+        "gemini": 10521030,
+        "other": 122378608
       },
       "repositories": [
         {
@@ -277,10 +282,10 @@
       "repository": "openspine",
       "event": "merge",
       "modelFamilies": {
-        "claude": 1456765973,
-        "gpt": 346892686,
-        "gemini": 57249754,
-        "other": 102861771
+        "claude": 1965354887,
+        "gpt": 693785372,
+        "gemini": 114499508,
+        "other": 205099753
       },
       "repositories": [
         {
@@ -307,10 +312,10 @@
       "repository": null,
       "event": null,
       "modelFamilies": {
-        "claude": 632237479,
-        "gpt": 396324906,
-        "gemini": 194043,
-        "other": 16735514
+        "claude": 750353098,
+        "gpt": 792649812,
+        "gemini": 388086,
+        "other": 20329163
       },
       "repositories": []
     },
@@ -368,7 +373,12 @@
       "contributions": 47,
       "repository": "design-studio",
       "event": "merge",
-      "modelFamilies": {},
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 365298,
+        "gemini": 0,
+        "other": 0
+      },
       "repositories": [
         {
           "name": "design-studio",
@@ -418,7 +428,12 @@
       "contributions": 117,
       "repository": "design-studio",
       "event": "merge",
-      "modelFamilies": {},
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 949315315,
+        "gemini": 6883789,
+        "other": 4500147
+      },
       "repositories": [
         {
           "name": "design-studio",
@@ -467,7 +482,12 @@
       "contributions": 349,
       "repository": "design-studio",
       "event": "merge",
-      "modelFamilies": {},
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 203960564
+      },
       "repositories": [
         {
           "name": "design-studio",
@@ -516,7 +536,12 @@
       "contributions": 254,
       "repository": "design-studio",
       "event": "merge",
-      "modelFamilies": {},
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 290787136,
+        "gemini": 0,
+        "other": 394752045
+      },
       "repositories": [
         {
           "name": "design-studio",
@@ -549,15 +574,25 @@
       "contributions": 61,
       "repository": null,
       "event": null,
-      "modelFamilies": {},
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 1361628123,
+        "gemini": 17570356,
+        "other": 60195617
+      },
       "repositories": []
     },
     {
       "date": "2026-09-01",
-      "contributions": 107,
+      "contributions": 116,
       "repository": "growth-arsenal",
       "event": null,
-      "modelFamilies": {},
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 2623317641,
+        "gemini": 74947018,
+        "other": 182677956
+      },
       "repositories": [
         {
           "name": "growth-arsenal",
