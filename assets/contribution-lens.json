@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T11:22:38.259Z",
+  "generatedAt": "2026-09-03T16:32:05.481Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,10 +11,10 @@
     "focusStart": "2026-08-21",
     "focusEnd": "2026-09-03"
   },
-  "totalContributions": 14252,
+  "totalContributions": 14259,
   "metrics": {
     "activeDays": 12,
-    "focusShare": 0.6590257879656161,
+    "focusShare": 0.647887323943662,
     "topRepos": [
       "DESIGN",
       "SPINE"
@@ -236,7 +236,7 @@
       "date": "2026-08-19",
       "contributions": 13,
       "repository": "cairn",
-      "event": "merge",
+      "event": null,
       "modelFamilies": {
         "claude": 94356300,
         "gpt": 0,
@@ -246,9 +246,9 @@
       "repositories": [
         {
           "name": "cairn",
-          "score": 5,
+          "score": 3,
           "commits": 3,
-          "merges": 1,
+          "merges": 0,
           "reviews": 0,
           "share": 1
         }
@@ -268,9 +268,9 @@
       "repositories": [
         {
           "name": "openspine",
-          "score": 10,
+          "score": 8,
           "commits": 6,
-          "merges": 2,
+          "merges": 1,
           "reviews": 0,
           "share": 1
         }
@@ -611,7 +611,7 @@
       "event": "merge",
       "modelFamilies": {
         "claude": 745909292,
-        "gpt": 527907443,
+        "gpt": 529933846,
         "gemini": 62075899,
         "other": 45087272
       },
@@ -628,16 +628,25 @@
     },
     {
       "date": "2026-09-03",
-      "contributions": 69,
-      "repository": null,
-      "event": null,
+      "contributions": 76,
+      "repository": "growth-arsenal",
+      "event": "merge",
       "modelFamilies": {
         "claude": 536987771,
-        "gpt": 550256772,
+        "gpt": 582018323,
         "gemini": 119387111,
         "other": 16965033
       },
-      "repositories": []
+      "repositories": [
+        {
+          "name": "growth-arsenal",
+          "score": 6,
+          "commits": 2,
+          "merges": 2,
+          "reviews": 0,
+          "share": 1
+        }
+      ]
     },
     {
       "date": "2026-09-04",

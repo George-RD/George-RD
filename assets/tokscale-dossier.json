@@ -1,19 +1,19 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-09-03T11:22:15.993Z",
+  "generatedAt": "2026-09-03T16:31:56.491Z",
   "username": "George-RD",
   "allTime": {
     "rank": 110,
-    "totalTokens": 117802881640,
-    "totalCost": 54381.4375,
+    "totalTokens": 117836669594,
+    "totalCost": 54427.0848,
     "activeDays": 184,
-    "submissions": 7,
-    "sessions": 48713
+    "submissions": 8,
+    "sessions": 48729
   },
   "month": {
-    "totalTokens": 46078934657,
-    "totalCost": 16712.8368,
+    "totalTokens": 46112722611,
+    "totalCost": 16758.4841,
     "activeDays": 23,
     "contributions": 24
   },
@@ -102,8 +102,8 @@
     "kimi-k3",
     "glm-5.3-flash",
     "deepseek-v4-pro:0813",
-    "deepseek-v4-flash-0731",
     "qwen3.8-27b",
+    "deepseek-v4-flash-0731",
     "qwen/qwen3-1.7b",
     "gemini-3.1-pro-preview",
     "qwen3.5-9b-optiq",
@@ -124,8 +124,8 @@
     },
     {
       "model": "gpt-5.6-sol",
-      "tokens": 5990764215,
-      "cost": 3534.500331199999
+      "tokens": 6024552169,
+      "cost": 3580.147611999999
     },
     {
       "model": "claude-fable-5",
@@ -144,9 +144,9 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-09-03T11:22:20.294Z",
+    "generatedAt": "2026-09-03T16:31:58.662Z",
     "dataThrough": "2026-09-03",
-    "sourceUpdatedAt": "2026-09-03T08:11:27.167Z",
+    "sourceUpdatedAt": "2026-09-03T16:12:09.524Z",
     "dates": [
       "2026-08-05",
       "2026-08-06",
@@ -182,7 +182,7 @@
     "latestWindow": {
       "start": "2026-08-28",
       "end": "2026-09-03",
-      "totalTokens": 9345702176
+      "totalTokens": 9379490130
     },
     "previousWindow": {
       "start": "2026-08-21",
@@ -194,11 +194,11 @@
     "models": [
       {
         "model": "gpt-5.6-sol",
-        "recentTokens": 3811284701,
+        "recentTokens": 3845072655,
         "priorTokens": 45725927,
-        "recentShare": 0.4078114869514541,
+        "recentShare": 0.40994474131399294,
         "priorShare": 0.015193218481252116,
-        "deltaPercentagePoints": 39.261826847020195,
+        "deltaPercentagePoints": 39.475152283274085,
         "direction": "up",
         "series": [
           44175472,
@@ -229,17 +229,17 @@
           142253725,
           835414877,
           1959573413,
-          213767092,
-          10860688
+          215793495,
+          42622239
         ]
       },
       {
         "model": "gpt-5.6-terra",
         "recentTokens": 1621094356,
         "priorTokens": 612862711,
-        "recentShare": 0.17345880763919605,
+        "recentShare": 0.1728339529688273,
         "priorShare": 0.20363407979100073,
-        "deltaPercentagePoints": -3.0175272151804684,
+        "deltaPercentagePoints": -3.080012682217342,
         "direction": "down",
         "series": [
           104174661,
@@ -278,9 +278,9 @@
         "model": "gpt-5.6-luna",
         "recentTokens": 1286365938,
         "priorTokens": 84994252,
-        "recentShare": 0.13764251350780474,
+        "recentShare": 0.13714668070128883,
         "priorShare": 0.028240788651186878,
-        "deltaPercentagePoints": 10.940172485661787,
+        "deltaPercentagePoints": 10.890589205010196,
         "direction": "up",
         "series": [
           302848192,
@@ -319,9 +319,9 @@
         "model": "claude-fable-5-1",
         "recentTokens": 1230838212,
         "priorTokens": 0,
-        "recentShare": 0.13170098819977633,
+        "recentShare": 0.13122655868715116,
         "priorShare": 0,
-        "deltaPercentagePoints": 13.170098819977632,
+        "deltaPercentagePoints": 13.122655868715116,
         "direction": "up",
         "series": [
           0,
@@ -360,9 +360,9 @@
         "model": "deepseek-v4-flash:0731",
         "recentTokens": 804304041,
         "priorTokens": 68634938,
-        "recentShare": 0.08606138156911025,
+        "recentShare": 0.08575136066591287,
         "priorShare": 0.022805127788468743,
-        "deltaPercentagePoints": 6.325625378064151,
+        "deltaPercentagePoints": 6.294623287744412,
         "direction": "up",
         "series": [
           0,
@@ -399,10 +399,10 @@
       }
     ]
   },
-  "updatedAt": "2026-09-03T08:11:27.167Z",
+  "updatedAt": "2026-09-03T16:12:09.524Z",
   "sourceFreshness": {
     "dataThrough": "2026-09-03",
-    "sourceUpdatedAt": "2026-09-03T08:11:27.167Z",
-    "generatedAt": "2026-09-03T11:22:20.294Z"
+    "sourceUpdatedAt": "2026-09-03T16:12:09.524Z",
+    "generatedAt": "2026-09-03T16:31:58.662Z"
   }
 }
