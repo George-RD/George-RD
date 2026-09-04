@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T21:07:01.802Z",
+  "generatedAt": "2026-09-04T04:41:09.241Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -8,19 +8,19 @@
   "range": {
     "overviewStart": "2025-08-31",
     "overviewEnd": "2026-09-05",
-    "focusStart": "2026-08-21",
-    "focusEnd": "2026-09-03"
+    "focusStart": "2026-08-22",
+    "focusEnd": "2026-09-04"
   },
-  "totalContributions": 14259,
+  "totalContributions": 14262,
   "metrics": {
     "activeDays": 12,
-    "focusShare": 0.647887323943662,
+    "focusShare": 0.7489878542510121,
     "topRepos": [
       "DESIGN",
-      "SPINE"
+      "RIVE"
     ],
     "focusDays": 14,
-    "streak": 10
+    "streak": 11
   },
   "focus": [
     {
@@ -258,7 +258,7 @@
       "date": "2026-08-20",
       "contributions": 129,
       "repository": "openspine",
-      "event": "merge",
+      "event": null,
       "modelFamilies": {
         "claude": 1047693091,
         "gpt": 370806030,
@@ -268,9 +268,9 @@
       "repositories": [
         {
           "name": "openspine",
-          "score": 8,
+          "score": 6,
           "commits": 6,
-          "merges": 1,
+          "merges": 0,
           "reviews": 0,
           "share": 1
         }
@@ -633,7 +633,7 @@
       "event": "merge",
       "modelFamilies": {
         "claude": 536987771,
-        "gpt": 582018323,
+        "gpt": 582043727,
         "gemini": 119387111,
         "other": 16965033
       },
@@ -650,16 +650,20 @@
     },
     {
       "date": "2026-09-04",
-      "contributions": 0,
-      "repository": null,
-      "event": null,
-      "modelFamilies": {
-        "claude": 0,
-        "gpt": 0,
-        "gemini": 0,
-        "other": 0
-      },
-      "repositories": []
+      "contributions": 3,
+      "repository": "rive-rs-cli",
+      "event": "merge",
+      "modelFamilies": {},
+      "repositories": [
+        {
+          "name": "rive-rs-cli",
+          "score": 3,
+          "commits": 1,
+          "merges": 1,
+          "reviews": 0,
+          "share": 1
+        }
+      ]
     },
     {
       "date": "2026-09-05",
