@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 450" role="img" aria-labelledby="title desc">
   <title id="title">George-RD personal model momentum</title>
   <desc id="desc">Thirty-day model activity, anchored to the latest day with model-level data, with the latest seven days compared with the preceding seven days.</desc>
-  <!-- Generated from https://tokscale.ai/api/users/George-RD?period=month at 2026-09-04T04:40:51.027Z -->
+  <!-- Generated from https://tokscale.ai/api/users/George-RD?period=month at 2026-09-04T11:25:36.729Z -->
   <style>
     .paper{fill:#f1ede4}.edge,.rule,.row-rule,.row-baseline,.recent-boundary{fill:none;stroke:#b9b2a5}.edge{stroke:#10231f;stroke-width:2}.rule{stroke-width:1}.row-rule{stroke-width:.8;opacity:.6}.row-baseline{stroke-width:1;opacity:.8}.recent-boundary{stroke-width:1;stroke-dasharray:3 4;opacity:.7}
     .kicker{fill:#c9482b;font-family:ui-monospace,"SFMono-Regular",Consolas,monospace;font-size:14px;font-weight:700;letter-spacing:2px}.meta,.summary-label,.column-label,.row-rank,.stamp{fill:#304943;font-family:ui-monospace,"SFMono-Regular",Consolas,monospace;font-weight:700;letter-spacing:1px}.meta{font-size:11px}.summary-label,.column-label{font-size:10px}.summary-value{fill:#10231f;font-family:"Arial Narrow","Avenir Next Condensed","Helvetica Neue",sans-serif;font-size:23px;font-weight:800}.summary-note{fill:#304943;font-family:"Avenir Next","Segoe UI","Helvetica Neue",sans-serif;font-size:11px;font-weight:600}.row-rank{font-size:11px}.row-model{fill:#10231f;font-family:"Avenir Next","Segoe UI","Helvetica Neue",sans-serif;font-size:15px;font-weight:700}.row-value,.row-delta{font-family:ui-monospace,"SFMono-Regular",Consolas,monospace;font-size:12px;font-weight:700;letter-spacing:.5px}.row-value{fill:#10231f}.row-delta.up{fill:#c9482b}.row-delta.down{fill:#173e50}.row-delta.flat{fill:#445d50}
@@ -13,19 +13,19 @@
   <rect class="edge" x="1" y="1" width="1198" height="448" />
   <line class="rule" x1="58" y1="58" x2="1142" y2="58" />
   <text class="kicker" x="58" y="39">TOKSCALE / PERSONAL MODEL MOMENTUM</text>
-  <text class="meta" x="1142" y="39" text-anchor="end">DATA THROUGH 03 SEPT / GENERATED 04 SEPT</text>
+  <text class="meta" x="1142" y="39" text-anchor="end">DATA THROUGH 04 SEPT / GENERATED 04 SEPT</text>
 
   <text class="summary-label" x="58" y="87">LEADING NOW</text>
   <text class="summary-value" x="58" y="116">gpt-5.6-sol</text>
-  <text class="summary-note" x="58" y="134">3.85B IN LATEST 7D</text>
+  <text class="summary-note" x="58" y="134">3.2B IN LATEST 7D</text>
 
   <text class="summary-label" x="420" y="87">FASTEST RISER</text>
-  <text class="summary-value" x="420" y="116">gpt-5.6-sol</text>
-  <text class="summary-note" x="420" y="134">+39.5 PP SHARE SHIFT</text>
+  <text class="summary-value" x="420" y="116">claude-fable-5-1</text>
+  <text class="summary-note" x="420" y="134">+14.6 PP SHARE SHIFT</text>
 
   <text class="summary-label" x="822" y="87">7 DAY MODEL TOKENS</text>
-  <text class="summary-value" x="822" y="116">9.38B</text>
-  <text class="summary-note" x="822" y="134">28 AUG — 03 SEPT</text>
+  <text class="summary-value" x="822" y="116">8.41B</text>
+  <text class="summary-note" x="822" y="134">29 AUG — 04 SEPT</text>
 
   <line class="rule" x1="58" y1="151" x2="1142" y2="151" />
   <text class="column-label" x="58" y="169">RANK / MODEL</text>
@@ -38,11 +38,11 @@
     <text class="row-model" x="96" y="202">gpt-5.6-sol</text>
     <line class="row-baseline" x1="355" y1="210" x2="895" y2="210" />
     <line class="recent-boundary" x1="783.3" y1="180" x2="783.3" y2="211" />
-    <path class="spark-area up" d="M355.0 210.0 L355.0 210.0 L373.6 206.9 L392.2 208.7 L410.9 208.7 L429.5 208.2 L448.1 206.4 L466.7 207.0 L485.3 210.0 L504.0 200.6 L522.6 203.8 L541.2 210.0 L559.8 210.0 L578.4 210.0 L597.1 210.0 L615.7 210.0 L634.3 209.7 L652.9 209.4 L671.6 210.0 L690.2 210.0 L708.8 210.0 L727.4 210.0 L746.0 210.0 L764.7 210.0 L783.3 200.7 L801.9 210.0 L820.5 208.0 L839.1 198.1 L857.8 182.0 L876.4 206.9 L895.0 209.4 L895.0 210.0 Z" />
-    <path class="spark up" style="animation-delay:0ms" pathLength="1" d="M355.0 210.0 L373.6 206.9 L392.2 208.7 L410.9 208.7 L429.5 208.2 L448.1 206.4 L466.7 207.0 L485.3 210.0 L504.0 200.6 L522.6 203.8 L541.2 210.0 L559.8 210.0 L578.4 210.0 L597.1 210.0 L615.7 210.0 L634.3 209.7 L652.9 209.4 L671.6 210.0 L690.2 210.0 L708.8 210.0 L727.4 210.0 L746.0 210.0 L764.7 210.0 L783.3 200.7 L801.9 210.0 L820.5 208.0 L839.1 198.1 L857.8 182.0 L876.4 206.9 L895.0 209.4" />
-    <circle class="spark-dot up" style="animation-delay:900ms" cx="895.0" cy="209.4" r="3.5" />
-    <text class="row-value" x="1032" y="202" text-anchor="end">3.85B</text>
-    <text class="row-delta up" x="1142" y="202" text-anchor="end">+39.5 PP</text>
+    <path class="spark-area up" d="M355.0 210.0 L355.0 206.9 L373.6 208.7 L392.2 208.7 L410.9 208.2 L429.5 206.4 L448.1 207.0 L466.7 210.0 L485.3 200.6 L504.0 203.8 L522.6 210.0 L541.2 210.0 L559.8 210.0 L578.4 210.0 L597.1 210.0 L615.7 209.7 L634.3 209.4 L652.9 210.0 L671.6 210.0 L690.2 210.0 L708.8 210.0 L727.4 210.0 L746.0 210.0 L764.7 200.7 L783.3 210.0 L801.9 208.0 L820.5 198.1 L839.1 182.0 L857.8 206.9 L876.4 209.4 L895.0 210.0 L895.0 210.0 Z" />
+    <path class="spark up" style="animation-delay:0ms" pathLength="1" d="M355.0 206.9 L373.6 208.7 L392.2 208.7 L410.9 208.2 L429.5 206.4 L448.1 207.0 L466.7 210.0 L485.3 200.6 L504.0 203.8 L522.6 210.0 L541.2 210.0 L559.8 210.0 L578.4 210.0 L597.1 210.0 L615.7 209.7 L634.3 209.4 L652.9 210.0 L671.6 210.0 L690.2 210.0 L708.8 210.0 L727.4 210.0 L746.0 210.0 L764.7 200.7 L783.3 210.0 L801.9 208.0 L820.5 198.1 L839.1 182.0 L857.8 206.9 L876.4 209.4 L895.0 210.0" />
+    <circle class="spark-dot up" style="animation-delay:900ms" cx="895.0" cy="210.0" r="3.5" />
+    <text class="row-value" x="1032" y="202" text-anchor="end">3.2B</text>
+    <text class="row-delta up" x="1142" y="202" text-anchor="end">+5.8 PP</text>
     <line class="row-rule" x1="58" y1="221" x2="1142" y2="221" />
   </g>
   <g class="model-row" style="animation-delay:110ms">
@@ -50,35 +50,35 @@
     <text class="row-model" x="96" y="250">gpt-5.6-terra</text>
     <line class="row-baseline" x1="355" y1="258" x2="895" y2="258" />
     <line class="recent-boundary" x1="783.3" y1="228" x2="783.3" y2="259" />
-    <path class="spark-area down" d="M355.0 258.0 L355.0 258.0 L373.6 252.1 L392.2 257.2 L410.9 241.6 L429.5 247.9 L448.1 251.1 L466.7 253.0 L485.3 258.0 L504.0 230.0 L522.6 233.9 L541.2 258.0 L559.8 258.0 L578.4 258.0 L597.1 258.0 L615.7 258.0 L634.3 255.1 L652.9 252.5 L671.6 251.9 L690.2 258.0 L708.8 258.0 L727.4 258.0 L746.0 258.0 L764.7 258.0 L783.3 255.1 L801.9 258.0 L820.5 257.0 L839.1 251.4 L857.8 244.9 L876.4 254.3 L895.0 254.7 L895.0 258.0 Z" />
-    <path class="spark down" style="animation-delay:110ms" pathLength="1" d="M355.0 258.0 L373.6 252.1 L392.2 257.2 L410.9 241.6 L429.5 247.9 L448.1 251.1 L466.7 253.0 L485.3 258.0 L504.0 230.0 L522.6 233.9 L541.2 258.0 L559.8 258.0 L578.4 258.0 L597.1 258.0 L615.7 258.0 L634.3 255.1 L652.9 252.5 L671.6 251.9 L690.2 258.0 L708.8 258.0 L727.4 258.0 L746.0 258.0 L764.7 258.0 L783.3 255.1 L801.9 258.0 L820.5 257.0 L839.1 251.4 L857.8 244.9 L876.4 254.3 L895.0 254.7" />
-    <circle class="spark-dot down" style="animation-delay:1010ms" cx="895.0" cy="254.7" r="3.5" />
-    <text class="row-value" x="1032" y="250" text-anchor="end">1.62B</text>
-    <text class="row-delta down" x="1142" y="250" text-anchor="end">-3.1 PP</text>
+    <path class="spark-area down" d="M355.0 258.0 L355.0 252.1 L373.6 257.2 L392.2 241.6 L410.9 247.9 L429.5 251.1 L448.1 253.0 L466.7 258.0 L485.3 230.0 L504.0 233.9 L522.6 258.0 L541.2 258.0 L559.8 258.0 L578.4 258.0 L597.1 258.0 L615.7 255.1 L634.3 252.5 L652.9 251.9 L671.6 258.0 L690.2 258.0 L708.8 258.0 L727.4 258.0 L746.0 258.0 L764.7 255.1 L783.3 258.0 L801.9 257.0 L820.5 251.4 L839.1 244.9 L857.8 254.3 L876.4 254.7 L895.0 258.0 L895.0 258.0 Z" />
+    <path class="spark down" style="animation-delay:110ms" pathLength="1" d="M355.0 252.1 L373.6 257.2 L392.2 241.6 L410.9 247.9 L429.5 251.1 L448.1 253.0 L466.7 258.0 L485.3 230.0 L504.0 233.9 L522.6 258.0 L541.2 258.0 L559.8 258.0 L578.4 258.0 L597.1 258.0 L615.7 255.1 L634.3 252.5 L652.9 251.9 L671.6 258.0 L690.2 258.0 L708.8 258.0 L727.4 258.0 L746.0 258.0 L764.7 255.1 L783.3 258.0 L801.9 257.0 L820.5 251.4 L839.1 244.9 L857.8 254.3 L876.4 254.7 L895.0 258.0" />
+    <circle class="spark-dot down" style="animation-delay:1010ms" cx="895.0" cy="258.0" r="3.5" />
+    <text class="row-value" x="1032" y="250" text-anchor="end">1.47B</text>
+    <text class="row-delta down" x="1142" y="250" text-anchor="end">-6.2 PP</text>
     <line class="row-rule" x1="58" y1="269" x2="1142" y2="269" />
   </g>
   <g class="model-row" style="animation-delay:220ms">
     <text class="row-rank" x="58" y="298">03</text>
-    <text class="row-model" x="96" y="298">gpt-5.6-luna</text>
+    <text class="row-model" x="96" y="298">claude-fable-5-1</text>
     <line class="row-baseline" x1="355" y1="306" x2="895" y2="306" />
     <line class="recent-boundary" x1="783.3" y1="276" x2="783.3" y2="307" />
-    <path class="spark-area up" d="M355.0 306.0 L355.0 306.0 L373.6 299.2 L392.2 305.6 L410.9 278.0 L429.5 291.8 L448.1 299.8 L466.7 300.1 L485.3 306.0 L504.0 284.1 L522.6 283.2 L541.2 306.0 L559.8 306.0 L578.4 306.0 L597.1 306.0 L615.7 306.0 L634.3 304.7 L652.9 305.9 L671.6 305.5 L690.2 306.0 L708.8 306.0 L727.4 306.0 L746.0 306.0 L764.7 306.0 L783.3 305.1 L801.9 306.0 L820.5 305.8 L839.1 304.9 L857.8 303.1 L876.4 305.2 L895.0 303.7 L895.0 306.0 Z" />
-    <path class="spark up" style="animation-delay:220ms" pathLength="1" d="M355.0 306.0 L373.6 299.2 L392.2 305.6 L410.9 278.0 L429.5 291.8 L448.1 299.8 L466.7 300.1 L485.3 306.0 L504.0 284.1 L522.6 283.2 L541.2 306.0 L559.8 306.0 L578.4 306.0 L597.1 306.0 L615.7 306.0 L634.3 304.7 L652.9 305.9 L671.6 305.5 L690.2 306.0 L708.8 306.0 L727.4 306.0 L746.0 306.0 L764.7 306.0 L783.3 305.1 L801.9 306.0 L820.5 305.8 L839.1 304.9 L857.8 303.1 L876.4 305.2 L895.0 303.7" />
-    <circle class="spark-dot up" style="animation-delay:1120ms" cx="895.0" cy="303.7" r="3.5" />
-    <text class="row-value" x="1032" y="298" text-anchor="end">1.29B</text>
-    <text class="row-delta up" x="1142" y="298" text-anchor="end">+10.9 PP</text>
+    <path class="spark-area up" d="M355.0 306.0 L355.0 306.0 L373.6 306.0 L392.2 306.0 L410.9 306.0 L429.5 306.0 L448.1 306.0 L466.7 306.0 L485.3 306.0 L504.0 306.0 L522.6 306.0 L541.2 306.0 L559.8 306.0 L578.4 306.0 L597.1 306.0 L615.7 306.0 L634.3 306.0 L652.9 306.0 L671.6 306.0 L690.2 306.0 L708.8 306.0 L727.4 306.0 L746.0 306.0 L764.7 306.0 L783.3 306.0 L801.9 306.0 L820.5 306.0 L839.1 306.0 L857.8 278.0 L876.4 284.5 L895.0 306.0 L895.0 306.0 Z" />
+    <path class="spark up" style="animation-delay:220ms" pathLength="1" d="M355.0 306.0 L373.6 306.0 L392.2 306.0 L410.9 306.0 L429.5 306.0 L448.1 306.0 L466.7 306.0 L485.3 306.0 L504.0 306.0 L522.6 306.0 L541.2 306.0 L559.8 306.0 L578.4 306.0 L597.1 306.0 L615.7 306.0 L634.3 306.0 L652.9 306.0 L671.6 306.0 L690.2 306.0 L708.8 306.0 L727.4 306.0 L746.0 306.0 L764.7 306.0 L783.3 306.0 L801.9 306.0 L820.5 306.0 L839.1 306.0 L857.8 278.0 L876.4 284.5 L895.0 306.0" />
+    <circle class="spark-dot up" style="animation-delay:1120ms" cx="895.0" cy="306.0" r="3.5" />
+    <text class="row-value" x="1032" y="298" text-anchor="end">1.23B</text>
+    <text class="row-delta up" x="1142" y="298" text-anchor="end">+14.6 PP</text>
     <line class="row-rule" x1="58" y1="317" x2="1142" y2="317" />
   </g>
   <g class="model-row" style="animation-delay:330ms">
     <text class="row-rank" x="58" y="346">04</text>
-    <text class="row-model" x="96" y="346">claude-fable-5-1</text>
+    <text class="row-model" x="96" y="346">gpt-5.6-luna</text>
     <line class="row-baseline" x1="355" y1="354" x2="895" y2="354" />
     <line class="recent-boundary" x1="783.3" y1="324" x2="783.3" y2="355" />
-    <path class="spark-area up" d="M355.0 354.0 L355.0 354.0 L373.6 354.0 L392.2 354.0 L410.9 354.0 L429.5 354.0 L448.1 354.0 L466.7 354.0 L485.3 354.0 L504.0 354.0 L522.6 354.0 L541.2 354.0 L559.8 354.0 L578.4 354.0 L597.1 354.0 L615.7 354.0 L634.3 354.0 L652.9 354.0 L671.6 354.0 L690.2 354.0 L708.8 354.0 L727.4 354.0 L746.0 354.0 L764.7 354.0 L783.3 354.0 L801.9 354.0 L820.5 354.0 L839.1 354.0 L857.8 354.0 L876.4 326.0 L895.0 332.5 L895.0 354.0 Z" />
-    <path class="spark up" style="animation-delay:330ms" pathLength="1" d="M355.0 354.0 L373.6 354.0 L392.2 354.0 L410.9 354.0 L429.5 354.0 L448.1 354.0 L466.7 354.0 L485.3 354.0 L504.0 354.0 L522.6 354.0 L541.2 354.0 L559.8 354.0 L578.4 354.0 L597.1 354.0 L615.7 354.0 L634.3 354.0 L652.9 354.0 L671.6 354.0 L690.2 354.0 L708.8 354.0 L727.4 354.0 L746.0 354.0 L764.7 354.0 L783.3 354.0 L801.9 354.0 L820.5 354.0 L839.1 354.0 L857.8 354.0 L876.4 326.0 L895.0 332.5" />
-    <circle class="spark-dot up" style="animation-delay:1230ms" cx="895.0" cy="332.5" r="3.5" />
-    <text class="row-value" x="1032" y="346" text-anchor="end">1.23B</text>
-    <text class="row-delta up" x="1142" y="346" text-anchor="end">+13.1 PP</text>
+    <path class="spark-area up" d="M355.0 354.0 L355.0 347.2 L373.6 353.6 L392.2 326.0 L410.9 339.8 L429.5 347.8 L448.1 348.1 L466.7 354.0 L485.3 332.1 L504.0 331.2 L522.6 354.0 L541.2 354.0 L559.8 354.0 L578.4 354.0 L597.1 354.0 L615.7 352.7 L634.3 353.9 L652.9 353.5 L671.6 354.0 L690.2 354.0 L708.8 354.0 L727.4 354.0 L746.0 354.0 L764.7 353.1 L783.3 354.0 L801.9 353.8 L820.5 352.9 L839.1 351.1 L857.8 353.2 L876.4 351.7 L895.0 354.0 L895.0 354.0 Z" />
+    <path class="spark up" style="animation-delay:330ms" pathLength="1" d="M355.0 347.2 L373.6 353.6 L392.2 326.0 L410.9 339.8 L429.5 347.8 L448.1 348.1 L466.7 354.0 L485.3 332.1 L504.0 331.2 L522.6 354.0 L541.2 354.0 L559.8 354.0 L578.4 354.0 L597.1 354.0 L615.7 352.7 L634.3 353.9 L652.9 353.5 L671.6 354.0 L690.2 354.0 L708.8 354.0 L727.4 354.0 L746.0 354.0 L764.7 353.1 L783.3 354.0 L801.9 353.8 L820.5 352.9 L839.1 351.1 L857.8 353.2 L876.4 351.7 L895.0 354.0" />
+    <circle class="spark-dot up" style="animation-delay:1230ms" cx="895.0" cy="354.0" r="3.5" />
+    <text class="row-value" x="1032" y="346" text-anchor="end">1.14B</text>
+    <text class="row-delta up" x="1142" y="346" text-anchor="end">+2.7 PP</text>
     <line class="row-rule" x1="58" y1="365" x2="1142" y2="365" />
   </g>
   <g class="model-row" style="animation-delay:440ms">
@@ -86,15 +86,15 @@
     <text class="row-model" x="96" y="394">deepseek-v4-flash:0731</text>
     <line class="row-baseline" x1="355" y1="402" x2="895" y2="402" />
     <line class="recent-boundary" x1="783.3" y1="372" x2="783.3" y2="403" />
-    <path class="spark-area up" d="M355.0 402.0 L355.0 402.0 L373.6 402.0 L392.2 374.0 L410.9 402.0 L429.5 402.0 L448.1 401.9 L466.7 402.0 L485.3 402.0 L504.0 401.9 L522.6 400.3 L541.2 402.0 L559.8 399.0 L578.4 402.0 L597.1 401.2 L615.7 391.0 L634.3 398.1 L652.9 398.2 L671.6 402.0 L690.2 402.0 L708.8 402.0 L727.4 402.0 L746.0 402.0 L764.7 402.0 L783.3 401.7 L801.9 390.6 L820.5 379.9 L839.1 399.9 L857.8 394.4 L876.4 400.3 L895.0 402.0 L895.0 402.0 Z" />
-    <path class="spark up" style="animation-delay:440ms" pathLength="1" d="M355.0 402.0 L373.6 402.0 L392.2 374.0 L410.9 402.0 L429.5 402.0 L448.1 401.9 L466.7 402.0 L485.3 402.0 L504.0 401.9 L522.6 400.3 L541.2 402.0 L559.8 399.0 L578.4 402.0 L597.1 401.2 L615.7 391.0 L634.3 398.1 L652.9 398.2 L671.6 402.0 L690.2 402.0 L708.8 402.0 L727.4 402.0 L746.0 402.0 L764.7 402.0 L783.3 401.7 L801.9 390.6 L820.5 379.9 L839.1 399.9 L857.8 394.4 L876.4 400.3 L895.0 402.0" />
+    <path class="spark-area up" d="M355.0 402.0 L355.0 402.0 L373.6 374.0 L392.2 402.0 L410.9 402.0 L429.5 401.9 L448.1 402.0 L466.7 402.0 L485.3 401.9 L504.0 400.3 L522.6 402.0 L541.2 399.0 L559.8 402.0 L578.4 401.2 L597.1 391.0 L615.7 398.1 L634.3 398.2 L652.9 402.0 L671.6 402.0 L690.2 402.0 L708.8 402.0 L727.4 402.0 L746.0 402.0 L764.7 401.7 L783.3 390.6 L801.9 379.9 L820.5 399.9 L839.1 394.4 L857.8 400.3 L876.4 402.0 L895.0 402.0 L895.0 402.0 Z" />
+    <path class="spark up" style="animation-delay:440ms" pathLength="1" d="M355.0 402.0 L373.6 374.0 L392.2 402.0 L410.9 402.0 L429.5 401.9 L448.1 402.0 L466.7 402.0 L485.3 401.9 L504.0 400.3 L522.6 402.0 L541.2 399.0 L559.8 402.0 L578.4 401.2 L597.1 391.0 L615.7 398.1 L634.3 398.2 L652.9 402.0 L671.6 402.0 L690.2 402.0 L708.8 402.0 L727.4 402.0 L746.0 402.0 L764.7 401.7 L783.3 390.6 L801.9 379.9 L820.5 399.9 L839.1 394.4 L857.8 400.3 L876.4 402.0 L895.0 402.0" />
     <circle class="spark-dot up" style="animation-delay:1340ms" cx="895.0" cy="402.0" r="3.5" />
-    <text class="row-value" x="1032" y="394" text-anchor="end">804M</text>
-    <text class="row-delta up" x="1142" y="394" text-anchor="end">+6.3 PP</text>
+    <text class="row-value" x="1032" y="394" text-anchor="end">800M</text>
+    <text class="row-delta up" x="1142" y="394" text-anchor="end">+9.3 PP</text>
     <line class="row-rule" x1="58" y1="413" x2="1142" y2="413" />
   </g>
   
 
-  <text class="stamp" x="58" y="430">BASELINE 21 AUG — 27 AUG</text>
+  <text class="stamp" x="58" y="430">BASELINE 22 AUG — 28 AUG</text>
   <text class="stamp" x="1142" y="430" text-anchor="end">SOURCE UPDATED 04 SEPT / TOKSCALE.AI/U/George-RD</text>
 </svg>

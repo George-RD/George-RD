@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T04:41:09.241Z",
+  "generatedAt": "2026-09-04T11:25:43.577Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,10 +11,10 @@
     "focusStart": "2026-08-22",
     "focusEnd": "2026-09-04"
   },
-  "totalContributions": 14262,
+  "totalContributions": 14264,
   "metrics": {
     "activeDays": 12,
-    "focusShare": 0.7489878542510121,
+    "focusShare": 0.752,
     "topRepos": [
       "DESIGN",
       "RIVE"
@@ -290,11 +290,11 @@
       "repositories": [
         {
           "name": "openspine",
-          "score": 110,
+          "score": 108,
           "commits": 36,
-          "merges": 37,
+          "merges": 36,
           "reviews": 0,
-          "share": 0.990990990990991
+          "share": 0.9908256880733946
         },
         {
           "name": "design-studio",
@@ -302,7 +302,7 @@
           "commits": 1,
           "merges": 0,
           "reviews": 0,
-          "share": 0.009009009009009009
+          "share": 0.009174311926605505
         }
       ]
     },
@@ -650,16 +650,21 @@
     },
     {
       "date": "2026-09-04",
-      "contributions": 3,
+      "contributions": 5,
       "repository": "rive-rs-cli",
       "event": "merge",
-      "modelFamilies": {},
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 103862,
+        "gemini": 0,
+        "other": 0
+      },
       "repositories": [
         {
           "name": "rive-rs-cli",
-          "score": 3,
-          "commits": 1,
-          "merges": 1,
+          "score": 6,
+          "commits": 2,
+          "merges": 2,
           "reviews": 0,
           "share": 1
         }
