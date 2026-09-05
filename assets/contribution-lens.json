@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T20:49:55.003Z",
+  "generatedAt": "2026-09-05T04:36:24.752Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -8,19 +8,19 @@
   "range": {
     "overviewStart": "2025-08-31",
     "overviewEnd": "2026-09-05",
-    "focusStart": "2026-08-22",
-    "focusEnd": "2026-09-04"
+    "focusStart": "2026-08-23",
+    "focusEnd": "2026-09-05"
   },
   "totalContributions": 14264,
   "metrics": {
-    "activeDays": 12,
+    "activeDays": 11,
     "focusShare": 0.752,
     "topRepos": [
       "DESIGN",
       "RIVE"
     ],
     "focusDays": 14,
-    "streak": 11
+    "streak": 0
   },
   "focus": [
     {
@@ -655,7 +655,7 @@
       "event": "merge",
       "modelFamilies": {
         "claude": 0,
-        "gpt": 301936,
+        "gpt": 356165,
         "gemini": 0,
         "other": 0
       },
@@ -675,12 +675,7 @@
       "contributions": 0,
       "repository": null,
       "event": null,
-      "modelFamilies": {
-        "claude": 0,
-        "gpt": 0,
-        "gemini": 0,
-        "other": 0
-      },
+      "modelFamilies": {},
       "repositories": []
     },
     {
