@@ -1,7 +1,7 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-09-05T20:27:23.474Z",
+  "generatedAt": "2026-09-06T04:46:38.753Z",
   "username": "George-RD",
   "allTime": {
     "rank": 114,
@@ -12,10 +12,10 @@
     "sessions": 48745
   },
   "month": {
-    "totalTokens": 42931534594,
-    "totalCost": 15310.806400000001,
-    "activeDays": 23,
-    "contributions": 24
+    "totalTokens": 39972414766,
+    "totalCost": 13386.506700000002,
+    "activeDays": 22,
+    "contributions": 23
   },
   "clients": [
     "omp",
@@ -118,33 +118,33 @@
   ],
   "topModels": [
     {
-      "model": "claude-opus-5",
-      "tokens": 5162692483,
-      "cost": 3606.6551974999943
+      "model": "gpt-5.6-sol",
+      "tokens": 5676918059,
+      "cost": 3368.128423999999
     },
     {
-      "model": "gpt-5.6-sol",
-      "tokens": 5765909242,
-      "cost": 3421.6042223999993
+      "model": "claude-opus-5",
+      "tokens": 3238917932,
+      "cost": 2301.556503749999
     },
     {
       "model": "gpt-5.6-terra",
-      "tokens": 7218229177,
-      "cost": 2263.375155599996
-    },
-    {
-      "model": "claude-fable-5",
-      "tokens": 1285131305,
-      "cost": 1972.3084104999994
+      "tokens": 7176912392,
+      "cost": 2251.283981599996
     },
     {
       "model": "claude-opus-4-8",
       "tokens": 2322272388,
       "cost": 1747.7647135000022
+    },
+    {
+      "model": "claude-fable-5",
+      "tokens": 1086629089,
+      "cost": 1692.1342019999993
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-09-05T20:27:25.722Z",
+    "generatedAt": "2026-09-06T04:46:41.521Z",
     "dataThrough": "2026-09-05",
     "sourceUpdatedAt": "2026-09-05T08:15:41.232Z",
     "dates": [
@@ -201,7 +201,7 @@
         "deltaPercentagePoints": -16.286172509314618,
         "direction": "down",
         "series": [
-          88991183,
+          0,
           92478338,
           125276688,
           254071168,
@@ -242,7 +242,7 @@
         "deltaPercentagePoints": 4.819741877894598,
         "direction": "up",
         "series": [
-          41316785,
+          0,
           866005451,
           535764692,
           364319935,
@@ -324,7 +324,7 @@
         "deltaPercentagePoints": 1.4578252580428066,
         "direction": "up",
         "series": [
-          68928055,
+          0,
           4423533862,
           2237851700,
           985989521,
@@ -365,7 +365,7 @@
         "deltaPercentagePoints": -10.452975201444668,
         "direction": "down",
         "series": [
-          499224309,
+          0,
           0,
           0,
           1695603,
@@ -403,6 +403,6 @@
   "sourceFreshness": {
     "dataThrough": "2026-09-05",
     "sourceUpdatedAt": "2026-09-05T08:15:41.232Z",
-    "generatedAt": "2026-09-05T20:27:25.722Z"
+    "generatedAt": "2026-09-06T04:46:41.521Z"
   }
 }
