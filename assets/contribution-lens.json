@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T12:43:03.026Z",
+  "generatedAt": "2026-09-07T21:35:10.892Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,10 +11,10 @@
     "focusStart": "2026-08-25",
     "focusEnd": "2026-09-07"
   },
-  "totalContributions": 14112,
+  "totalContributions": 14148,
   "metrics": {
     "activeDays": 14,
-    "focusShare": 0.7517985611510791,
+    "focusShare": 0.736318407960199,
     "topRepos": [
       "DESIGN",
       "RIVE"
@@ -102,11 +102,11 @@
       "repositories": [
         {
           "name": "openspine",
-          "score": 92,
+          "score": 78,
           "commits": 36,
-          "merges": 28,
+          "merges": 21,
           "reviews": 0,
-          "share": 0.989247311827957
+          "share": 0.9873417721518988
         },
         {
           "name": "design-studio",
@@ -114,7 +114,7 @@
           "commits": 1,
           "merges": 0,
           "reviews": 0,
-          "share": 0.010752688172043012
+          "share": 0.012658227848101266
         }
       ]
     },
@@ -547,26 +547,42 @@
     },
     {
       "date": "2026-09-07",
-      "contributions": 18,
-      "repository": "design-studio",
+      "contributions": 54,
+      "repository": "rive-rs-cli",
       "event": "merge",
       "modelFamilies": {},
       "repositories": [
         {
-          "name": "design-studio",
-          "score": 3.5,
-          "commits": 1,
-          "merges": 1,
-          "reviews": 1,
-          "share": 0.2692307692307692
+          "name": "rive-rs-cli",
+          "score": 13,
+          "commits": 3,
+          "merges": 4,
+          "reviews": 4,
+          "share": 0.3561643835616438
         },
         {
-          "name": "rive-rs-cli",
-          "score": 3.5,
+          "name": "openspine",
+          "score": 9.5,
+          "commits": 2,
+          "merges": 3,
+          "reviews": 3,
+          "share": 0.2602739726027397
+        },
+        {
+          "name": "design-studio",
+          "score": 7,
+          "commits": 2,
+          "merges": 2,
+          "reviews": 2,
+          "share": 0.1917808219178082
+        },
+        {
+          "name": "mag",
+          "score": 4,
           "commits": 1,
           "merges": 1,
-          "reviews": 1,
-          "share": 0.2692307692307692
+          "reviews": 2,
+          "share": 0.1095890410958904
         },
         {
           "name": "hologlyph",
@@ -574,15 +590,7 @@
           "commits": 1,
           "merges": 1,
           "reviews": 0,
-          "share": 0.23076923076923078
-        },
-        {
-          "name": "mag",
-          "score": 3,
-          "commits": 1,
-          "merges": 1,
-          "reviews": 0,
-          "share": 0.23076923076923078
+          "share": 0.0821917808219178
         }
       ]
     },
