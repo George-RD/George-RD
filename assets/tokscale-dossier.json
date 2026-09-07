@@ -1,10 +1,10 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-09-07T04:49:52.647Z",
+  "generatedAt": "2026-09-07T12:42:48.338Z",
   "username": "George-RD",
   "allTime": {
-    "rank": 118,
+    "rank": 120,
     "totalTokens": 117837120537,
     "totalCost": 54428.1708,
     "activeDays": 186,
@@ -144,7 +144,7 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-09-07T04:49:56.417Z",
+    "generatedAt": "2026-09-07T12:42:54.017Z",
     "dataThrough": "2026-09-05",
     "sourceUpdatedAt": "2026-09-05T08:15:41.232Z",
     "dates": [
@@ -403,6 +403,6 @@
   "sourceFreshness": {
     "dataThrough": "2026-09-05",
     "sourceUpdatedAt": "2026-09-05T08:15:41.232Z",
-    "generatedAt": "2026-09-07T04:49:56.417Z"
+    "generatedAt": "2026-09-07T12:42:54.017Z"
   }
 }

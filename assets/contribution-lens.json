@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T04:50:09.428Z",
+  "generatedAt": "2026-09-07T12:43:03.026Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,16 +11,16 @@
     "focusStart": "2026-08-25",
     "focusEnd": "2026-09-07"
   },
-  "totalContributions": 14095,
+  "totalContributions": 14112,
   "metrics": {
-    "activeDays": 13,
-    "focusShare": 0.7622641509433963,
+    "activeDays": 14,
+    "focusShare": 0.7517985611510791,
     "topRepos": [
       "DESIGN",
       "RIVE"
     ],
     "focusDays": 14,
-    "streak": 0
+    "streak": 14
   },
   "focus": [
     {
@@ -102,11 +102,11 @@
       "repositories": [
         {
           "name": "openspine",
-          "score": 100,
+          "score": 92,
           "commits": 36,
-          "merges": 32,
+          "merges": 28,
           "reviews": 0,
-          "share": 0.9900990099009901
+          "share": 0.989247311827957
         },
         {
           "name": "design-studio",
@@ -114,7 +114,7 @@
           "commits": 1,
           "merges": 0,
           "reviews": 0,
-          "share": 0.009900990099009901
+          "share": 0.010752688172043012
         }
       ]
     },
@@ -506,7 +506,7 @@
     },
     {
       "date": "2026-09-06",
-      "contributions": 15,
+      "contributions": 14,
       "repository": "rive-rs-cli",
       "event": "merge",
       "modelFamilies": {},
@@ -547,11 +547,44 @@
     },
     {
       "date": "2026-09-07",
-      "contributions": 0,
-      "repository": null,
-      "event": null,
+      "contributions": 18,
+      "repository": "design-studio",
+      "event": "merge",
       "modelFamilies": {},
-      "repositories": []
+      "repositories": [
+        {
+          "name": "design-studio",
+          "score": 3.5,
+          "commits": 1,
+          "merges": 1,
+          "reviews": 1,
+          "share": 0.2692307692307692
+        },
+        {
+          "name": "rive-rs-cli",
+          "score": 3.5,
+          "commits": 1,
+          "merges": 1,
+          "reviews": 1,
+          "share": 0.2692307692307692
+        },
+        {
+          "name": "hologlyph",
+          "score": 3,
+          "commits": 1,
+          "merges": 1,
+          "reviews": 0,
+          "share": 0.23076923076923078
+        },
+        {
+          "name": "mag",
+          "score": 3,
+          "commits": 1,
+          "merges": 1,
+          "reviews": 0,
+          "share": 0.23076923076923078
+        }
+      ]
     },
     {
       "date": "2026-09-08",
