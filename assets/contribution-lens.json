@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T16:43:09.002Z",
+  "generatedAt": "2026-09-08T21:14:30.090Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,10 +11,10 @@
     "focusStart": "2026-08-26",
     "focusEnd": "2026-09-08"
   },
-  "totalContributions": 14178,
+  "totalContributions": 14212,
   "metrics": {
     "activeDays": 14,
-    "focusShare": 0.7278797996661102,
+    "focusShare": 0.6986301369863014,
     "topRepos": [
       "DESIGN",
       "RIVE"
@@ -102,11 +102,11 @@
       "repositories": [
         {
           "name": "openspine",
-          "score": 72,
+          "score": 52,
           "commits": 36,
-          "merges": 18,
+          "merges": 8,
           "reviews": 0,
-          "share": 0.9863013698630136
+          "share": 0.9811320754716981
         },
         {
           "name": "design-studio",
@@ -114,7 +114,7 @@
           "commits": 1,
           "merges": 0,
           "reviews": 0,
-          "share": 0.0136986301369863
+          "share": 0.018867924528301886
         }
       ]
     },
@@ -596,50 +596,58 @@
     },
     {
       "date": "2026-09-08",
-      "contributions": 30,
+      "contributions": 64,
       "repository": "rive-rs-cli",
       "event": "merge",
       "modelFamilies": {},
       "repositories": [
         {
           "name": "rive-rs-cli",
-          "score": 4.5,
-          "commits": 2,
-          "merges": 1,
-          "reviews": 1,
-          "share": 0.34615384615384615
+          "score": 14,
+          "commits": 4,
+          "merges": 4,
+          "reviews": 4,
+          "share": 0.3333333333333333
         },
         {
           "name": "mag",
-          "score": 3.5,
-          "commits": 1,
-          "merges": 1,
-          "reviews": 1,
-          "share": 0.2692307692307692
-        },
-        {
-          "name": "hologlyph",
-          "score": 3,
-          "commits": 1,
-          "merges": 1,
-          "reviews": 0,
-          "share": 0.23076923076923078
+          "score": 10,
+          "commits": 3,
+          "merges": 3,
+          "reviews": 2,
+          "share": 0.23809523809523808
         },
         {
           "name": "openspine",
-          "score": 1.5,
-          "commits": 1,
-          "merges": 0,
-          "reviews": 1,
-          "share": 0.11538461538461539
+          "score": 7,
+          "commits": 2,
+          "merges": 2,
+          "reviews": 2,
+          "share": 0.16666666666666666
+        },
+        {
+          "name": "hologlyph",
+          "score": 6,
+          "commits": 2,
+          "merges": 2,
+          "reviews": 0,
+          "share": 0.14285714285714285
         },
         {
           "name": "design-studio",
-          "score": 0.5,
+          "score": 2.5,
           "commits": 0,
-          "merges": 0,
+          "merges": 1,
           "reviews": 1,
-          "share": 0.038461538461538464
+          "share": 0.05952380952380952
+        },
+        {
+          "name": "growth-arsenal",
+          "score": 2.5,
+          "commits": 0,
+          "merges": 1,
+          "reviews": 1,
+          "share": 0.05952380952380952
         }
       ]
     },
