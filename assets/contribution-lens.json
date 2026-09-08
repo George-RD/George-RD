@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T11:26:10.703Z",
+  "generatedAt": "2026-09-08T16:43:09.002Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,10 +11,10 @@
     "focusStart": "2026-08-26",
     "focusEnd": "2026-09-08"
   },
-  "totalContributions": 14160,
+  "totalContributions": 14178,
   "metrics": {
     "activeDays": 14,
-    "focusShare": 0.7417677642980935,
+    "focusShare": 0.7278797996661102,
     "topRepos": [
       "DESIGN",
       "RIVE"
@@ -102,11 +102,11 @@
       "repositories": [
         {
           "name": "openspine",
-          "score": 78,
+          "score": 72,
           "commits": 36,
-          "merges": 21,
+          "merges": 18,
           "reviews": 0,
-          "share": 0.9873417721518988
+          "share": 0.9863013698630136
         },
         {
           "name": "design-studio",
@@ -114,7 +114,7 @@
           "commits": 1,
           "merges": 0,
           "reviews": 0,
-          "share": 0.012658227848101266
+          "share": 0.0136986301369863
         }
       ]
     },
@@ -596,26 +596,50 @@
     },
     {
       "date": "2026-09-08",
-      "contributions": 12,
-      "repository": "openspine",
-      "event": null,
+      "contributions": 30,
+      "repository": "rive-rs-cli",
+      "event": "merge",
       "modelFamilies": {},
       "repositories": [
         {
-          "name": "openspine",
-          "score": 1,
-          "commits": 1,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.5
+          "name": "rive-rs-cli",
+          "score": 4.5,
+          "commits": 2,
+          "merges": 1,
+          "reviews": 1,
+          "share": 0.34615384615384615
         },
         {
-          "name": "rive-rs-cli",
-          "score": 1,
+          "name": "mag",
+          "score": 3.5,
+          "commits": 1,
+          "merges": 1,
+          "reviews": 1,
+          "share": 0.2692307692307692
+        },
+        {
+          "name": "hologlyph",
+          "score": 3,
+          "commits": 1,
+          "merges": 1,
+          "reviews": 0,
+          "share": 0.23076923076923078
+        },
+        {
+          "name": "openspine",
+          "score": 1.5,
           "commits": 1,
           "merges": 0,
-          "reviews": 0,
-          "share": 0.5
+          "reviews": 1,
+          "share": 0.11538461538461539
+        },
+        {
+          "name": "design-studio",
+          "score": 0.5,
+          "commits": 0,
+          "merges": 0,
+          "reviews": 1,
+          "share": 0.038461538461538464
         }
       ]
     },
