@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T04:51:04.443Z",
+  "generatedAt": "2026-09-10T11:28:09.877Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,10 +11,10 @@
     "focusStart": "2026-08-28",
     "focusEnd": "2026-09-10"
   },
-  "totalContributions": 14318,
+  "totalContributions": 14345,
   "metrics": {
     "activeDays": 14,
-    "focusShare": 0.6005547850208044,
+    "focusShare": 0.598893499308437,
     "topRepos": [
       "DESIGN",
       "RIVE"
@@ -253,15 +253,7 @@
           "commits": 2,
           "merges": 2,
           "reviews": 1,
-          "share": 0.26
-        },
-        {
-          "name": "growth-arsenal",
-          "score": 6,
-          "commits": 2,
-          "merges": 2,
-          "reviews": 0,
-          "share": 0.24
+          "share": 0.2826086956521739
         },
         {
           "name": "mag",
@@ -269,7 +261,15 @@
           "commits": 2,
           "merges": 2,
           "reviews": 0,
-          "share": 0.24
+          "share": 0.2608695652173913
+        },
+        {
+          "name": "growth-arsenal",
+          "score": 4,
+          "commits": 2,
+          "merges": 1,
+          "reviews": 0,
+          "share": 0.17391304347826086
         },
         {
           "name": "rive-rs-cli",
@@ -277,7 +277,7 @@
           "commits": 1,
           "merges": 1,
           "reviews": 1,
-          "share": 0.14
+          "share": 0.15217391304347827
         },
         {
           "name": "cli-anything-meerk40t",
@@ -285,7 +285,7 @@
           "commits": 1,
           "merges": 1,
           "reviews": 0,
-          "share": 0.12
+          "share": 0.13043478260869565
         }
       ]
     },
@@ -403,7 +403,7 @@
         "claude": 0,
         "gpt": 3107795502,
         "gemini": 91207249,
-        "other": 221977358
+        "other": 280683678
       },
       "repositories": [
         {
@@ -423,9 +423,9 @@
       "event": "merge",
       "modelFamilies": {
         "claude": 745909292,
-        "gpt": 529933846,
+        "gpt": 532159648,
         "gemini": 62075899,
-        "other": 45087272
+        "other": 89427796
       },
       "repositories": [
         {
@@ -444,10 +444,10 @@
       "repository": "growth-arsenal",
       "event": "merge",
       "modelFamilies": {
-        "claude": 536987771,
-        "gpt": 582043727,
-        "gemini": 119387111,
-        "other": 16965033
+        "claude": 658020917,
+        "gpt": 1802300879,
+        "gemini": 216004102,
+        "other": 37093675
       },
       "repositories": [
         {
@@ -466,7 +466,7 @@
       "repository": "rive-rs-cli",
       "event": "merge",
       "modelFamilies": {
-        "claude": 0,
+        "claude": 805973211,
         "gpt": 356165,
         "gemini": 0,
         "other": 0
@@ -488,8 +488,8 @@
       "repository": "rive-rs-cli",
       "event": "merge",
       "modelFamilies": {
-        "claude": 0,
-        "gpt": 69374,
+        "claude": 415927,
+        "gpt": 20672769,
         "gemini": 0,
         "other": 0
       },
@@ -656,7 +656,12 @@
       "contributions": 104,
       "repository": "openspine",
       "event": "merge",
-      "modelFamilies": {},
+      "modelFamilies": {
+        "claude": 34577999,
+        "gpt": 672123,
+        "gemini": 0,
+        "other": 0
+      },
       "repositories": [
         {
           "name": "openspine",
@@ -702,11 +707,25 @@
     },
     {
       "date": "2026-09-10",
-      "contributions": 3,
-      "repository": null,
-      "event": null,
-      "modelFamilies": {},
-      "repositories": []
+      "contributions": 30,
+      "repository": "mag",
+      "event": "merge",
+      "modelFamilies": {
+        "claude": 70821954,
+        "gpt": 151431509,
+        "gemini": 5902502,
+        "other": 0
+      },
+      "repositories": [
+        {
+          "name": "mag",
+          "score": 3,
+          "commits": 1,
+          "merges": 1,
+          "reviews": 0,
+          "share": 1
+        }
+      ]
     },
     {
       "date": "2026-09-11",
