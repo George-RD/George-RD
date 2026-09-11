@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T04:48:04.079Z",
+  "generatedAt": "2026-09-11T11:29:38.841Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,10 +11,10 @@
     "focusStart": "2026-08-29",
     "focusEnd": "2026-09-11"
   },
-  "totalContributions": 14366,
+  "totalContributions": 14371,
   "metrics": {
     "activeDays": 14,
-    "focusShare": 0.6134699853587116,
+    "focusShare": 0.6072463768115942,
     "topRepos": [
       "DESIGN",
       "RIVE"
@@ -253,7 +253,7 @@
           "commits": 2,
           "merges": 2,
           "reviews": 0,
-          "share": 0.2857142857142857
+          "share": 0.3157894736842105
         },
         {
           "name": "design-studio",
@@ -261,7 +261,7 @@
           "commits": 2,
           "merges": 1,
           "reviews": 1,
-          "share": 0.21428571428571427
+          "share": 0.23684210526315788
         },
         {
           "name": "growth-arsenal",
@@ -269,15 +269,7 @@
           "commits": 2,
           "merges": 1,
           "reviews": 0,
-          "share": 0.19047619047619047
-        },
-        {
-          "name": "rive-rs-cli",
-          "score": 3.5,
-          "commits": 1,
-          "merges": 1,
-          "reviews": 1,
-          "share": 0.16666666666666666
+          "share": 0.21052631578947367
         },
         {
           "name": "cli-anything-meerk40t",
@@ -285,7 +277,15 @@
           "commits": 1,
           "merges": 1,
           "reviews": 0,
-          "share": 0.14285714285714285
+          "share": 0.15789473684210525
+        },
+        {
+          "name": "rive-rs-cli",
+          "score": 1.5,
+          "commits": 1,
+          "merges": 0,
+          "reviews": 1,
+          "share": 0.07894736842105263
         }
       ]
     },
@@ -729,18 +729,31 @@
     },
     {
       "date": "2026-09-11",
-      "contributions": 16,
-      "repository": "rive-rs-cli",
+      "contributions": 21,
+      "repository": "openspine",
       "event": "merge",
-      "modelFamilies": {},
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 479232,
+        "gemini": 0,
+        "other": 0
+      },
       "repositories": [
+        {
+          "name": "openspine",
+          "score": 3.5,
+          "commits": 1,
+          "merges": 1,
+          "reviews": 1,
+          "share": 0.5384615384615384
+        },
         {
           "name": "rive-rs-cli",
           "score": 3,
           "commits": 1,
           "merges": 1,
           "reviews": 0,
-          "share": 1
+          "share": 0.46153846153846156
         }
       ]
     },
