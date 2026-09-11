@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T16:34:32.189Z",
+  "generatedAt": "2026-09-11T21:02:20.241Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -14,7 +14,7 @@
   "totalContributions": 14371,
   "metrics": {
     "activeDays": 14,
-    "focusShare": 0.6072463768115942,
+    "focusShare": 0.6002865329512894,
     "topRepos": [
       "DESIGN",
       "RIVE"
@@ -238,7 +238,7 @@
     {
       "date": "2026-08-28",
       "contributions": 117,
-      "repository": "mag",
+      "repository": "design-studio",
       "event": "merge",
       "modelFamilies": {
         "claude": 0,
@@ -248,20 +248,12 @@
       },
       "repositories": [
         {
-          "name": "mag",
-          "score": 6,
-          "commits": 2,
-          "merges": 2,
-          "reviews": 0,
-          "share": 0.3157894736842105
-        },
-        {
           "name": "design-studio",
           "score": 4.5,
           "commits": 2,
           "merges": 1,
           "reviews": 1,
-          "share": 0.23684210526315788
+          "share": 0.3
         },
         {
           "name": "growth-arsenal",
@@ -269,15 +261,15 @@
           "commits": 2,
           "merges": 1,
           "reviews": 0,
-          "share": 0.21052631578947367
+          "share": 0.26666666666666666
         },
         {
-          "name": "cli-anything-meerk40t",
-          "score": 3,
-          "commits": 1,
+          "name": "mag",
+          "score": 4,
+          "commits": 2,
           "merges": 1,
           "reviews": 0,
-          "share": 0.15789473684210525
+          "share": 0.26666666666666666
         },
         {
           "name": "rive-rs-cli",
@@ -285,7 +277,15 @@
           "commits": 1,
           "merges": 0,
           "reviews": 1,
-          "share": 0.07894736842105263
+          "share": 0.1
+        },
+        {
+          "name": "cli-anything-meerk40t",
+          "score": 1,
+          "commits": 1,
+          "merges": 0,
+          "reviews": 0,
+          "share": 0.06666666666666667
         }
       ]
     },
@@ -741,11 +741,11 @@
       "repositories": [
         {
           "name": "openspine",
-          "score": 3.5,
+          "score": 7.5,
           "commits": 1,
-          "merges": 1,
+          "merges": 3,
           "reviews": 1,
-          "share": 0.5384615384615384
+          "share": 0.7142857142857143
         },
         {
           "name": "rive-rs-cli",
@@ -753,7 +753,7 @@
           "commits": 1,
           "merges": 1,
           "reviews": 0,
-          "share": 0.46153846153846156
+          "share": 0.2857142857142857
         }
       ]
     },
