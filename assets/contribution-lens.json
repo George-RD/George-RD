@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T10:54:14.507Z",
+  "generatedAt": "2026-09-12T15:36:41.149Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,10 +11,10 @@
     "focusStart": "2026-08-30",
     "focusEnd": "2026-09-12"
   },
-  "totalContributions": 14399,
+  "totalContributions": 14404,
   "metrics": {
     "activeDays": 14,
-    "focusShare": 0.5508274231678487,
+    "focusShare": 0.5518867924528302,
     "topRepos": [
       "RIVE",
       "SPINE"
@@ -759,9 +759,9 @@
     },
     {
       "date": "2026-09-12",
-      "contributions": 28,
+      "contributions": 33,
       "repository": "openspine",
-      "event": null,
+      "event": "review",
       "modelFamilies": {
         "claude": 0,
         "gpt": 640302,
@@ -775,7 +775,15 @@
           "commits": 2,
           "merges": 0,
           "reviews": 0,
-          "share": 1
+          "share": 0.8
+        },
+        {
+          "name": "rive-rs-cli",
+          "score": 0.5,
+          "commits": 0,
+          "merges": 0,
+          "reviews": 1,
+          "share": 0.2
         }
       ]
     },
