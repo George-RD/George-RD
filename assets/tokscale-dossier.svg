@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" role="img" aria-labelledby="title desc">
   <title id="title">George-RD Tokscale activity trace</title>
-  <desc id="desc">121B all-time tokens, $55.5K estimated all-time cost, 20 active days in the current 30-day window.</desc>
-  <!-- Generated from https://tokscale.ai/api/users/George-RD at 2026-09-12T04:42:26.607Z -->
+  <desc id="desc">121B all-time tokens, $55.6K estimated all-time cost, 21 active days in the current 30-day window.</desc>
+  <!-- Generated from https://tokscale.ai/api/users/George-RD at 2026-09-12T10:54:05.575Z -->
   <style>
     :root {
       --paper: #f1ede4;
@@ -59,16 +59,16 @@
 
   <text class="metric-label" x="58" y="96">ALL TIME TOKENS</text>
   <text class="metric-value" x="58" y="130">121B</text>
-  <text class="metric-note" x="58" y="153">$55.5K ESTIMATED COST</text>
+  <text class="metric-note" x="58" y="153">$55.6K ESTIMATED COST</text>
   <text class="metric-label" x="314" y="96">30 DAY TOKENS</text>
   <text class="metric-value" x="314" y="130">23B</text>
-  <text class="metric-note" x="314" y="153">20 ACTIVE DAYS</text>
+  <text class="metric-note" x="314" y="153">21 ACTIVE DAYS</text>
   <text class="metric-label" x="58" y="180">GLOBAL RANK</text>
   <text class="metric-value" x="58" y="214">#122</text>
   <text class="metric-note" x="58" y="237">TOKENS SORT / George-RD</text>
   <text class="metric-label" x="314" y="180">SUBMISSIONS</text>
-  <text class="metric-value" x="314" y="214">21</text>
-  <text class="metric-note" x="314" y="237">50.3K SESSIONS</text>
+  <text class="metric-value" x="314" y="214">22</text>
+  <text class="metric-note" x="314" y="237">50.4K SESSIONS</text>
 
   <text class="model-label" x="58" y="249">TOKEN MIX</text>
   <rect x="58" y="260" width="478" height="12" fill="#e4ded1" />
@@ -78,7 +78,7 @@
     <rect class="mix-reasoning" x="537.1" y="260" width="3.0" height="12"><title>reasoning · 0%</title></rect>
 
   <text class="chart-title" x="642" y="96">30 DAY ACTIVITY FIELD</text>
-  <text class="chart-note" x="642" y="119">DATA THROUGH 2026-09-11 / HIGHEST DAY 6.01B</text>
+  <text class="chart-note" x="642" y="119">DATA THROUGH 2026-09-12 / HIGHEST DAY 6.01B</text>
   <line class="grid" x1="642" y1="132" x2="1098" y2="132" />
   <line class="grid" x1="642" y1="168" x2="1098" y2="168" />
   <line class="grid" x1="642" y1="204" x2="1098" y2="204" />
@@ -103,8 +103,9 @@
     <rect class="bar i1" x="863.0" y="199" width="7.5" height="4" rx="2" style="--delay:374ms"><title>2026-09-09 · 35.3M tokens</title></rect>
     <rect class="bar i1" x="876.0" y="199" width="7.5" height="4" rx="2" style="--delay:396ms"><title>2026-09-10 · 228M tokens</title></rect>
     <rect class="bar i1" x="889.0" y="199" width="7.5" height="4" rx="2" style="--delay:418ms"><title>2026-09-11 · 29.5M tokens</title></rect>
+    <rect class="bar i1" x="902.0" y="199" width="7.5" height="4" rx="2" style="--delay:440ms"><title>2026-09-12 · 640K tokens</title></rect>
   </g>
-  <path class="trace" pathLength="1" d="M646.0 125.0 L659.0 194.0 L672.0 194.0 L685.0 194.0 L698.0 180.6 L711.0 174.8 L724.0 186.1 L737.0 194.0 L750.0 187.0 L763.0 194.0 L776.0 190.5 L789.0 181.1 L802.0 156.1 L815.0 181.4 L828.0 165.6 L841.0 189.1 L854.0 194.0 L867.0 194.0 L880.0 194.0 L893.0 194.0" />
+  <path class="trace" pathLength="1" d="M646.0 125.0 L659.0 194.0 L672.0 194.0 L685.0 194.0 L698.0 180.6 L711.0 174.8 L724.0 186.1 L737.0 194.0 L750.0 187.0 L763.0 194.0 L776.0 190.5 L789.0 181.1 L802.0 156.1 L815.0 181.4 L828.0 165.6 L841.0 189.1 L854.0 194.0 L867.0 194.0 L880.0 194.0 L893.0 194.0 L906.0 194.0" />
 
   <text class="model-label" x="642" y="225">TOP MODELS IN WINDOW</text>
   <text class="model-name" x="642" y="245">gpt-5.6-sol</text><text class="model-value" x="1098" y="245" text-anchor="end">4.93B</text>
