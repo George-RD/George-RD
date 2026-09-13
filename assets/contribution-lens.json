@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T16:25:02.590Z",
+  "generatedAt": "2026-09-13T20:54:55.335Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,7 +11,7 @@
     "focusStart": "2026-08-31",
     "focusEnd": "2026-09-13"
   },
-  "totalContributions": 14448,
+  "totalContributions": 14454,
   "metrics": {
     "activeDays": 14,
     "focusShare": 0.5256410256410257,
@@ -788,9 +788,9 @@
       "event": "merge",
       "modelFamilies": {
         "claude": 0,
-        "gpt": 271205121,
+        "gpt": 303432559,
         "gemini": 0,
-        "other": 122830
+        "other": 194396
       },
       "repositories": [
         {
@@ -821,14 +821,14 @@
     },
     {
       "date": "2026-09-13",
-      "contributions": 21,
+      "contributions": 27,
       "repository": "rive-rs-cli",
       "event": "review",
       "modelFamilies": {
         "claude": 0,
-        "gpt": 19174634,
+        "gpt": 114572733,
         "gemini": 0,
-        "other": 0
+        "other": 39731
       },
       "repositories": [
         {

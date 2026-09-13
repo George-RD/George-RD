@@ -1,19 +1,19 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-09-13T16:24:49.226Z",
+  "generatedAt": "2026-09-13T20:54:46.454Z",
   "username": "George-RD",
   "allTime": {
-    "rank": 121,
-    "totalTokens": 120935568148,
-    "totalCost": 56596.6293,
+    "rank": 123,
+    "totalTokens": 121063304982,
+    "totalCost": 57062.8155,
     "activeDays": 192,
-    "submissions": 25,
-    "sessions": 50412
+    "submissions": 26,
+    "sessions": 50439
   },
   "month": {
-    "totalTokens": 17262757907,
-    "totalCost": 9709.179399999999,
+    "totalTokens": 17390494741,
+    "totalCost": 10175.3656,
     "activeDays": 21,
     "contributions": 21
   },
@@ -76,8 +76,9 @@
     "z-ai/glm-5.2:free",
     "openai/gpt-5.6-terra",
     "nvidia/nemotron-3-ultra-550b-a55b:free",
-    "gpt-6-astra",
     "gpt-6-astra-900k",
+    "deepseek-v4.1-flash",
+    "gpt-6-astra",
     "deepseek-v4-flash-0731",
     "qwen3.8-27b",
     "qwen/qwen3-14b",
@@ -122,14 +123,13 @@
     "glm-5.3",
     "kimi-k3",
     "glm-5.3-flash",
-    "deepseek-v4-pro:0813",
-    "deepseek-v4.1-flash"
+    "deepseek-v4-pro:0813"
   ],
   "topModels": [
     {
       "model": "gpt-5.6-sol",
-      "tokens": 4494884662,
-      "cost": 2725.0045159999995
+      "tokens": 4494940642,
+      "cost": 2725.1754279999996
     },
     {
       "model": "claude-opus-4-8",
@@ -138,8 +138,8 @@
     },
     {
       "model": "gpt-6-astra-900k",
-      "tokens": 322470457,
-      "cost": 1077.00196
+      "tokens": 450040014,
+      "cost": 1543.017323
     },
     {
       "model": "claude-opus-5",
@@ -153,9 +153,9 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-09-13T16:24:53.944Z",
+    "generatedAt": "2026-09-13T20:54:48.521Z",
     "dataThrough": "2026-09-13",
-    "sourceUpdatedAt": "2026-09-13T08:34:41.602Z",
+    "sourceUpdatedAt": "2026-09-13T16:35:51.438Z",
     "dates": [
       "2026-08-15",
       "2026-08-16",
@@ -191,7 +191,7 @@
     "latestWindow": {
       "start": "2026-09-07",
       "end": "2026-09-13",
-      "totalTokens": 586565620
+      "totalTokens": 714302454
     },
     "previousWindow": {
       "start": "2026-08-31",
@@ -203,11 +203,11 @@
     "models": [
       {
         "model": "gpt-6-astra-900k",
-        "recentTokens": 322470457,
+        "recentTokens": 450040014,
         "priorTokens": 0,
-        "recentShare": 0.5497602416588957,
+        "recentShare": 0.630041254205183,
         "priorShare": 0,
-        "deltaPercentagePoints": 54.97602416588957,
+        "deltaPercentagePoints": 63.0041254205183,
         "direction": "up",
         "series": [
           0,
@@ -238,18 +238,18 @@
           0,
           0,
           32372262,
-          270987178,
-          19111017
+          303214616,
+          114453136
         ]
       },
       {
         "model": "claude-fable-5-1",
         "recentTokens": 94405242,
         "priorTokens": 1308397222,
-        "recentShare": 0.16094574721239202,
+        "recentShare": 0.13216424145170302,
         "priorShare": 0.1320688794158317,
-        "deltaPercentagePoints": 2.8876867796560317,
-        "direction": "up",
+        "deltaPercentagePoints": 0.009536203587132142,
+        "direction": "flat",
         "series": [
           0,
           0,
@@ -287,9 +287,9 @@
         "model": "gpt-5.6-luna",
         "recentTokens": 61786038,
         "priorTokens": 1511993981,
-        "recentShare": 0.10533525302761522,
+        "recentShare": 0.08649842605748628,
         "priorShare": 0.1526198217150849,
-        "deltaPercentagePoints": -4.728456868746968,
+        "deltaPercentagePoints": -6.612139565759861,
         "direction": "down",
         "series": [
           0,
@@ -328,9 +328,9 @@
         "model": "gpt-6-astra",
         "recentTokens": 51665808,
         "priorTokens": 17868051,
-        "recentShare": 0.08808188928631719,
+        "recentShare": 0.0723304360928319,
         "priorShare": 0.0018035910144380688,
-        "deltaPercentagePoints": 8.627829827187911,
+        "deltaPercentagePoints": 7.052684507839384,
         "direction": "up",
         "series": [
           0,
@@ -367,11 +367,11 @@
       },
       {
         "model": "gpt-5.6-sol",
-        "recentTokens": 26057436,
+        "recentTokens": 26113416,
         "priorTokens": 3611384294,
-        "recentShare": 0.04442373557454663,
+        "recentShare": 0.0365579256430778,
         "priorShare": 0.3645310986822888,
-        "deltaPercentagePoints": -32.01073631077421,
+        "deltaPercentagePoints": -32.7973173039211,
         "direction": "down",
         "series": [
           0,
@@ -403,15 +403,15 @@
           25003838,
           99915,
           217943,
-          63617
+          119597
         ]
       }
     ]
   },
-  "updatedAt": "2026-09-13T08:34:41.602Z",
+  "updatedAt": "2026-09-13T16:35:51.438Z",
   "sourceFreshness": {
     "dataThrough": "2026-09-13",
-    "sourceUpdatedAt": "2026-09-13T08:34:41.602Z",
-    "generatedAt": "2026-09-13T16:24:53.944Z"
+    "sourceUpdatedAt": "2026-09-13T16:35:51.438Z",
+    "generatedAt": "2026-09-13T20:54:48.521Z"
   }
 }
