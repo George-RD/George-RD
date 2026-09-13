@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-09-12T20:38:48.904Z",
+  "generatedAt": "2026-09-13T04:55:38.783Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
     "tokscale": "https://tokscale.ai/u/George-RD"
   },
   "range": {
-    "overviewStart": "2025-09-07",
-    "overviewEnd": "2026-09-12",
-    "focusStart": "2026-08-30",
-    "focusEnd": "2026-09-12"
+    "overviewStart": "2025-09-14",
+    "overviewEnd": "2026-09-19",
+    "focusStart": "2026-08-31",
+    "focusEnd": "2026-09-13"
   },
-  "totalContributions": 14475,
+  "totalContributions": 14438,
   "metrics": {
     "activeDays": 14,
-    "focusShare": 0.5049900199600799,
+    "focusShare": 0.5256410256410257,
     "topRepos": [
       "RIVE",
       "SPINE"
     ],
     "focusDays": 14,
-    "streak": 19
+    "streak": 20
   },
   "focus": [
     {
@@ -788,18 +788,18 @@
       "event": "merge",
       "modelFamilies": {
         "claude": 0,
-        "gpt": 70854858,
+        "gpt": 255878169,
         "gemini": 0,
-        "other": 0
+        "other": 122830
       },
       "repositories": [
         {
           "name": "rive-rs-cli",
-          "score": 10,
+          "score": 9.5,
           "commits": 3,
           "merges": 3,
-          "reviews": 2,
-          "share": 0.6666666666666666
+          "reviews": 1,
+          "share": 0.6551724137931034
         },
         {
           "name": "firth",
@@ -807,7 +807,7 @@
           "commits": 1,
           "merges": 1,
           "reviews": 0,
-          "share": 0.2
+          "share": 0.20689655172413793
         },
         {
           "name": "openspine",
@@ -815,22 +815,31 @@
           "commits": 2,
           "merges": 0,
           "reviews": 0,
-          "share": 0.13333333333333333
+          "share": 0.13793103448275862
         }
       ]
     },
     {
       "date": "2026-09-13",
-      "contributions": 0,
-      "repository": null,
-      "event": null,
+      "contributions": 11,
+      "repository": "rive-rs-cli",
+      "event": "review",
       "modelFamilies": {
         "claude": 0,
-        "gpt": 0,
+        "gpt": 31875,
         "gemini": 0,
         "other": 0
       },
-      "repositories": []
+      "repositories": [
+        {
+          "name": "rive-rs-cli",
+          "score": 0.5,
+          "commits": 0,
+          "merges": 0,
+          "reviews": 1,
+          "share": 1
+        }
+      ]
     }
   ]
 }
