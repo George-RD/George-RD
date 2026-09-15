@@ -1,21 +1,21 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-09-15T05:00:39.964Z",
+  "generatedAt": "2026-09-15T11:51:55.389Z",
   "username": "George-RD",
   "allTime": {
-    "rank": 128,
-    "totalTokens": 121174065736,
-    "totalCost": 57487.8032,
-    "activeDays": 192,
-    "submissions": 30,
-    "sessions": 50479
+    "rank": 129,
+    "totalTokens": 121180649222,
+    "totalCost": 57520.3179,
+    "activeDays": 193,
+    "submissions": 31,
+    "sessions": 50486
   },
   "month": {
-    "totalTokens": 17440743363,
-    "totalCost": 10576.4605,
-    "activeDays": 21,
-    "contributions": 21
+    "totalTokens": 17447326849,
+    "totalCost": 10608.975199999999,
+    "activeDays": 22,
+    "contributions": 22
   },
   "clients": [
     "lmstudio",
@@ -76,8 +76,10 @@
     "z-ai/glm-5.2:free",
     "openai/gpt-5.6-terra",
     "nvidia/nemotron-3-ultra-550b-a55b:free",
-    "deepseek-v4-flash-0731",
     "gpt-6-astra-900k",
+    "gpt-6-astra",
+    "deepseek-v4.1-flash",
+    "deepseek-v4-flash-0731",
     "qwen3.8-27b",
     "qwen/qwen3-14b",
     "google/gemma-3n-e4b",
@@ -115,26 +117,24 @@
     "anthropic/claude-opus-5",
     "claude-fable-5-1",
     "gemini-3.8-flash",
-    "gpt-6-astra",
     "gpt-5.6-sol-900k",
     "glm-4.6",
     "glm-4.7",
     "glm-5.3",
     "kimi-k3",
     "glm-5.3-flash",
-    "deepseek-v4-pro:0813",
-    "deepseek-v4.1-flash"
+    "deepseek-v4-pro:0813"
   ],
   "topModels": [
     {
       "model": "gpt-5.6-sol",
-      "tokens": 4495583208,
-      "cost": 2727.096273599999
+      "tokens": 4495632685,
+      "cost": 2727.2634039999994
     },
     {
       "model": "gpt-6-astra-900k",
-      "tokens": 551970785,
-      "cost": 1966.084156
+      "tokens": 558504794,
+      "cost": 1998.1715729999999
     },
     {
       "model": "claude-opus-4-8",
@@ -153,11 +153,10 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-09-15T05:01:33.342Z",
-    "dataThrough": "2026-09-14",
-    "sourceUpdatedAt": "2026-09-15T00:39:22.827Z",
+    "generatedAt": "2026-09-15T11:52:00.939Z",
+    "dataThrough": "2026-09-15",
+    "sourceUpdatedAt": "2026-09-15T08:40:29.171Z",
     "dates": [
-      "2026-08-16",
       "2026-08-17",
       "2026-08-18",
       "2026-08-19",
@@ -186,31 +185,31 @@
       "2026-09-11",
       "2026-09-12",
       "2026-09-13",
-      "2026-09-14"
+      "2026-09-14",
+      "2026-09-15"
     ],
     "latestWindow": {
-      "start": "2026-09-08",
-      "end": "2026-09-14",
-      "totalTokens": 824729581
+      "start": "2026-09-09",
+      "end": "2026-09-15",
+      "totalTokens": 831313067
     },
     "previousWindow": {
-      "start": "2026-09-01",
-      "end": "2026-09-07",
-      "totalTokens": 8450818075
+      "start": "2026-09-02",
+      "end": "2026-09-08",
+      "totalTokens": 4971131646
     },
     "leadingModel": "gpt-6-astra-900k",
     "fastestRiser": "gpt-6-astra-900k",
     "models": [
       {
         "model": "gpt-6-astra-900k",
-        "recentTokens": 551970785,
+        "recentTokens": 558504794,
         "priorTokens": 0,
-        "recentShare": 0.6692748722929583,
+        "recentShare": 0.6718344943325665,
         "priorShare": 0,
-        "deltaPercentagePoints": 66.92748722929583,
+        "deltaPercentagePoints": 67.18344943325664,
         "direction": "up",
         "series": [
-          0,
           0,
           0,
           0,
@@ -239,19 +238,19 @@
           32372262,
           304860927,
           212414046,
-          2323550
+          2323550,
+          6534009
         ]
       },
       {
         "model": "claude-fable-5-1",
         "recentTokens": 94405242,
         "priorTokens": 1308397222,
-        "recentShare": 0.11446811679233317,
-        "priorShare": 0.15482491876977247,
-        "deltaPercentagePoints": -4.035680197743931,
+        "recentShare": 0.11356160001271819,
+        "priorShare": 0.26319906918031355,
+        "deltaPercentagePoints": -14.963746916759534,
         "direction": "down",
         "series": [
-          0,
           0,
           0,
           0,
@@ -280,19 +279,19 @@
           0,
           0,
           0,
+          0,
           0
         ]
       },
       {
         "model": "gpt-5.6-luna",
         "recentTokens": 61786038,
-        "priorTokens": 1334709478,
-        "recentShare": 0.07491672352176731,
-        "priorShare": 0.15793849378304123,
-        "deltaPercentagePoints": -8.302177026127392,
+        "priorTokens": 878343666,
+        "recentShare": 0.07432342934650395,
+        "priorShare": 0.17668887660755384,
+        "deltaPercentagePoints": -10.236544726104988,
         "direction": "down",
         "series": [
-          0,
           0,
           0,
           0,
@@ -321,6 +320,7 @@
           0,
           0,
           0,
+          0,
           0
         ]
       },
@@ -328,12 +328,11 @@
         "model": "gpt-6-astra",
         "recentTokens": 51665808,
         "priorTokens": 17868051,
-        "recentShare": 0.06264575588201195,
-        "priorShare": 0.002114357549934596,
-        "deltaPercentagePoints": 6.0531398332077355,
+        "recentShare": 0.06214964019084762,
+        "priorShare": 0.003594362867935202,
+        "deltaPercentagePoints": 5.855527732291242,
         "direction": "up",
         "series": [
-          0,
           0,
           0,
           0,
@@ -362,19 +361,19 @@
           0,
           0,
           0,
+          0,
           0
         ]
       },
       {
         "model": "gpt-5.6-sol",
-        "recentTokens": 26422355,
-        "priorTokens": 2776303044,
-        "recentShare": 0.032037598273075646,
-        "priorShare": 0.32852476758588844,
-        "deltaPercentagePoints": -29.64871693128128,
+        "recentTokens": 26471832,
+        "priorTokens": 816729631,
+        "recentShare": 0.031843396971408366,
+        "priorShare": 0.16429450860694425,
+        "deltaPercentagePoints": -13.245111163553588,
         "direction": "down",
         "series": [
-          0,
           0,
           0,
           0,
@@ -403,15 +402,16 @@
           99915,
           217943,
           135130,
-          293406
+          293406,
+          49477
         ]
       }
     ]
   },
-  "updatedAt": "2026-09-15T00:39:22.827Z",
+  "updatedAt": "2026-09-15T08:40:29.171Z",
   "sourceFreshness": {
-    "dataThrough": "2026-09-14",
-    "sourceUpdatedAt": "2026-09-15T00:39:22.827Z",
-    "generatedAt": "2026-09-15T05:01:33.342Z"
+    "dataThrough": "2026-09-15",
+    "sourceUpdatedAt": "2026-09-15T08:40:29.171Z",
+    "generatedAt": "2026-09-15T11:52:00.939Z"
   }
 }
