@@ -1,21 +1,21 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-09-14T21:53:18.640Z",
+  "generatedAt": "2026-09-15T05:00:39.964Z",
   "username": "George-RD",
   "allTime": {
-    "rank": 127,
-    "totalTokens": 121173999402,
-    "totalCost": 57487.6727,
+    "rank": 128,
+    "totalTokens": 121174065736,
+    "totalCost": 57487.8032,
     "activeDays": 192,
-    "submissions": 29,
-    "sessions": 50477
+    "submissions": 30,
+    "sessions": 50479
   },
   "month": {
-    "totalTokens": 17501189161,
-    "totalCost": 10600.2228,
-    "activeDays": 22,
-    "contributions": 22
+    "totalTokens": 17440743363,
+    "totalCost": 10576.4605,
+    "activeDays": 21,
+    "contributions": 21
   },
   "clients": [
     "lmstudio",
@@ -116,20 +116,20 @@
     "claude-fable-5-1",
     "gemini-3.8-flash",
     "gpt-6-astra",
-    "deepseek-v4.1-flash",
     "gpt-5.6-sol-900k",
     "glm-4.6",
     "glm-4.7",
     "glm-5.3",
     "kimi-k3",
     "glm-5.3-flash",
-    "deepseek-v4-pro:0813"
+    "deepseek-v4-pro:0813",
+    "deepseek-v4.1-flash"
   ],
   "topModels": [
     {
       "model": "gpt-5.6-sol",
-      "tokens": 4495516874,
-      "cost": 2726.965737599999
+      "tokens": 4495583208,
+      "cost": 2727.096273599999
     },
     {
       "model": "gpt-6-astra-900k",
@@ -153,9 +153,9 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-09-14T21:53:22.317Z",
+    "generatedAt": "2026-09-15T05:01:33.342Z",
     "dataThrough": "2026-09-14",
-    "sourceUpdatedAt": "2026-09-14T16:38:18.002Z",
+    "sourceUpdatedAt": "2026-09-15T00:39:22.827Z",
     "dates": [
       "2026-08-16",
       "2026-08-17",
@@ -191,7 +191,7 @@
     "latestWindow": {
       "start": "2026-09-08",
       "end": "2026-09-14",
-      "totalTokens": 824663247
+      "totalTokens": 824729581
     },
     "previousWindow": {
       "start": "2026-09-01",
@@ -205,9 +205,9 @@
         "model": "gpt-6-astra-900k",
         "recentTokens": 551970785,
         "priorTokens": 0,
-        "recentShare": 0.6693287072122908,
+        "recentShare": 0.6692748722929583,
         "priorShare": 0,
-        "deltaPercentagePoints": 66.93287072122908,
+        "deltaPercentagePoints": 66.92748722929583,
         "direction": "up",
         "series": [
           0,
@@ -246,9 +246,9 @@
         "model": "claude-fable-5-1",
         "recentTokens": 94405242,
         "priorTokens": 1308397222,
-        "recentShare": 0.11447732434230817,
+        "recentShare": 0.11446811679233317,
         "priorShare": 0.15482491876977247,
-        "deltaPercentagePoints": -4.03475944274643,
+        "deltaPercentagePoints": -4.035680197743931,
         "direction": "down",
         "series": [
           0,
@@ -287,9 +287,9 @@
         "model": "gpt-5.6-luna",
         "recentTokens": 61786038,
         "priorTokens": 1334709478,
-        "recentShare": 0.07492274964934868,
+        "recentShare": 0.07491672352176731,
         "priorShare": 0.15793849378304123,
-        "deltaPercentagePoints": -8.301574413369254,
+        "deltaPercentagePoints": -8.302177026127392,
         "direction": "down",
         "series": [
           0,
@@ -328,9 +328,9 @@
         "model": "gpt-6-astra",
         "recentTokens": 51665808,
         "priorTokens": 17868051,
-        "recentShare": 0.06265079496140077,
+        "recentShare": 0.06264575588201195,
         "priorShare": 0.002114357549934596,
-        "deltaPercentagePoints": 6.053643741146618,
+        "deltaPercentagePoints": 6.0531398332077355,
         "direction": "up",
         "series": [
           0,
@@ -367,11 +367,11 @@
       },
       {
         "model": "gpt-5.6-sol",
-        "recentTokens": 26356021,
+        "recentTokens": 26422355,
         "priorTokens": 2776303044,
-        "recentShare": 0.0319597376212402,
+        "recentShare": 0.032037598273075646,
         "priorShare": 0.32852476758588844,
-        "deltaPercentagePoints": -29.656502996464823,
+        "deltaPercentagePoints": -29.64871693128128,
         "direction": "down",
         "series": [
           0,
@@ -403,15 +403,15 @@
           99915,
           217943,
           135130,
-          227072
+          293406
         ]
       }
     ]
   },
-  "updatedAt": "2026-09-14T16:38:18.002Z",
+  "updatedAt": "2026-09-15T00:39:22.827Z",
   "sourceFreshness": {
     "dataThrough": "2026-09-14",
-    "sourceUpdatedAt": "2026-09-14T16:38:18.002Z",
-    "generatedAt": "2026-09-14T21:53:22.317Z"
+    "sourceUpdatedAt": "2026-09-15T00:39:22.827Z",
+    "generatedAt": "2026-09-15T05:01:33.342Z"
   }
 }
