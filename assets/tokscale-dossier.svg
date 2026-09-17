@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" role="img" aria-labelledby="title desc">
   <title id="title">George-RD Tokscale activity trace</title>
   <desc id="desc">126B all-time tokens, $59.9K estimated all-time cost, 23 active days in the current 30-day window.</desc>
-  <!-- Generated from https://tokscale.ai/api/users/George-RD at 2026-09-17T11:49:24.704Z -->
+  <!-- Generated from https://tokscale.ai/api/users/George-RD at 2026-09-17T17:05:53.793Z -->
   <style>
     :root {
       --paper: #f1ede4;
@@ -67,7 +67,7 @@
   <text class="metric-value" x="58" y="214">#124</text>
   <text class="metric-note" x="58" y="237">TOKENS SORT / George-RD</text>
   <text class="metric-label" x="314" y="180">SUBMISSIONS</text>
-  <text class="metric-value" x="314" y="214">38</text>
+  <text class="metric-value" x="314" y="214">39</text>
   <text class="metric-note" x="314" y="237">51.5K SESSIONS</text>
 
   <text class="model-label" x="58" y="249">TOKEN MIX</text>
@@ -105,7 +105,7 @@
     <rect class="bar i1" x="889.0" y="194" width="7.5" height="9" rx="2" style="--delay:418ms"><title>2026-09-14 · 420M tokens</title></rect>
     <rect class="bar i3" x="902.0" y="161" width="7.5" height="42" rx="2" style="--delay:440ms"><title>2026-09-15 · 2.03B tokens</title></rect>
     <rect class="bar i2" x="915.0" y="178" width="7.5" height="25" rx="2" style="--delay:462ms"><title>2026-09-16 · 1.21B tokens</title></rect>
-    <rect class="bar i1" x="928.0" y="199" width="7.5" height="4" rx="2" style="--delay:484ms"><title>2026-09-17 · 2.31M tokens</title></rect>
+    <rect class="bar i1" x="928.0" y="199" width="7.5" height="4" rx="2" style="--delay:484ms"><title>2026-09-17 · 3.49M tokens</title></rect>
   </g>
   <path class="trace" pathLength="1" d="M646.0 192.8 L659.0 167.2 L672.0 157.2 L685.0 176.8 L698.0 194.0 L711.0 178.3 L724.0 194.0 L737.0 184.4 L750.0 168.0 L763.0 125.0 L776.0 168.6 L789.0 141.3 L802.0 181.9 L815.0 194.0 L828.0 194.0 L841.0 193.8 L854.0 194.0 L867.0 192.5 L880.0 177.2 L893.0 190.1 L906.0 155.8 L919.0 173.3 L932.0 194.0" />
 
