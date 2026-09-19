@@ -1,7 +1,7 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-09-19T11:07:49.106Z",
+  "generatedAt": "2026-09-19T15:56:42.361Z",
   "username": "George-RD",
   "allTime": {
     "rank": 124,
@@ -153,7 +153,7 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-09-19T11:07:51.175Z",
+    "generatedAt": "2026-09-19T15:56:44.448Z",
     "dataThrough": "2026-09-19",
     "sourceUpdatedAt": "2026-09-19T08:51:23.516Z",
     "dates": [
@@ -412,6 +412,6 @@
   "sourceFreshness": {
     "dataThrough": "2026-09-19",
     "sourceUpdatedAt": "2026-09-19T08:51:23.516Z",
-    "generatedAt": "2026-09-19T11:07:51.175Z"
+    "generatedAt": "2026-09-19T15:56:44.448Z"
   }
 }
