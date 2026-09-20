@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" role="img" aria-labelledby="title desc">
   <title id="title">George-RD Tokscale activity trace</title>
   <desc id="desc">126B all-time tokens, $60K estimated all-time cost, 23 active days in the current 30-day window.</desc>
-  <!-- Generated from https://tokscale.ai/api/users/George-RD at 2026-09-20T16:13:07.218Z -->
+  <!-- Generated from https://tokscale.ai/api/users/George-RD at 2026-09-20T20:54:05.822Z -->
   <style>
     :root {
       --paper: #f1ede4;
@@ -67,7 +67,7 @@
   <text class="metric-value" x="58" y="214">#126</text>
   <text class="metric-note" x="58" y="237">TOKENS SORT / George-RD</text>
   <text class="metric-label" x="314" y="180">SUBMISSIONS</text>
-  <text class="metric-value" x="314" y="214">47</text>
+  <text class="metric-value" x="314" y="214">48</text>
   <text class="metric-note" x="314" y="237">51.5K SESSIONS</text>
 
   <text class="model-label" x="58" y="249">TOKEN MIX</text>
@@ -105,7 +105,7 @@
     <rect class="bar i1" x="889.0" y="199" width="7.5" height="4" rx="2" style="--delay:418ms"><title>2026-09-17 · 3.53M tokens</title></rect>
     <rect class="bar i1" x="902.0" y="199" width="7.5" height="4" rx="2" style="--delay:440ms"><title>2026-09-18 · 4.82M tokens</title></rect>
     <rect class="bar i1" x="915.0" y="199" width="7.5" height="4" rx="2" style="--delay:462ms"><title>2026-09-19 · 3.02M tokens</title></rect>
-    <rect class="bar i1" x="928.0" y="199" width="7.5" height="4" rx="2" style="--delay:484ms"><title>2026-09-20 · 1.96M tokens</title></rect>
+    <rect class="bar i1" x="928.0" y="199" width="7.5" height="4" rx="2" style="--delay:484ms"><title>2026-09-20 · 2.25M tokens</title></rect>
   </g>
   <path class="trace" pathLength="1" d="M646.0 176.8 L659.0 194.0 L672.0 178.3 L685.0 194.0 L698.0 184.4 L711.0 168.0 L724.0 125.0 L737.0 168.6 L750.0 141.3 L763.0 181.9 L776.0 194.0 L789.0 194.0 L802.0 193.8 L815.0 194.0 L828.0 192.5 L841.0 177.2 L854.0 190.1 L867.0 155.8 L880.0 173.3 L893.0 194.0 L906.0 194.0 L919.0 194.0 L932.0 194.0" />
 
