@@ -1,21 +1,21 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-09-20T04:59:51.427Z",
+  "generatedAt": "2026-09-20T11:32:08.888Z",
   "username": "George-RD",
   "allTime": {
-    "rank": 125,
-    "totalTokens": 125675162253,
-    "totalCost": 59969.1589,
-    "activeDays": 195,
-    "submissions": 46,
-    "sessions": 51495
+    "rank": 126,
+    "totalTokens": 125677118475,
+    "totalCost": 59977.6045,
+    "activeDays": 196,
+    "submissions": 47,
+    "sessions": 51503
   },
   "month": {
-    "totalTokens": 18142646887,
-    "totalCost": 10399.4704,
-    "activeDays": 22,
-    "contributions": 22
+    "totalTokens": 18144603109,
+    "totalCost": 10407.916,
+    "activeDays": 23,
+    "contributions": 23
   },
   "clients": [
     "lmstudio",
@@ -128,13 +128,13 @@
   "topModels": [
     {
       "model": "gpt-5.6-sol",
-      "tokens": 4957409533,
-      "cost": 3119.6945035999993
+      "tokens": 4957552938,
+      "cost": 3120.130350799999
     },
     {
       "model": "gpt-6-astra-900k",
-      "tokens": 594845218,
-      "cost": 2124.6467869999997
+      "tokens": 596658035,
+      "cost": 2132.6565539999997
     },
     {
       "model": "gpt-6-astra",
@@ -153,11 +153,10 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-09-20T04:59:54.052Z",
-    "dataThrough": "2026-09-19",
-    "sourceUpdatedAt": "2026-09-20T00:52:49.009Z",
+    "generatedAt": "2026-09-20T11:32:13.409Z",
+    "dataThrough": "2026-09-20",
+    "sourceUpdatedAt": "2026-09-20T08:53:54.744Z",
     "dates": [
-      "2026-08-21",
       "2026-08-22",
       "2026-08-23",
       "2026-08-24",
@@ -186,31 +185,31 @@
       "2026-09-16",
       "2026-09-17",
       "2026-09-18",
-      "2026-09-19"
+      "2026-09-19",
+      "2026-09-20"
     ],
     "latestWindow": {
-      "start": "2026-09-13",
-      "end": "2026-09-19",
-      "totalTokens": 4699918655
+      "start": "2026-09-14",
+      "end": "2026-09-20",
+      "totalTokens": 3674467385
     },
     "previousWindow": {
-      "start": "2026-09-06",
-      "end": "2026-09-12",
-      "totalTokens": 625850871
+      "start": "2026-09-07",
+      "end": "2026-09-13",
+      "totalTokens": 1653258363
     },
     "leadingModel": "gpt-5.6-luna",
     "fastestRiser": "gpt-5.6-luna",
     "models": [
       {
         "model": "gpt-5.6-luna",
-        "recentTokens": 2268116315,
-        "priorTokens": 72768450,
-        "recentShare": 0.4825862916982762,
-        "priorShare": 0.11627122909284886,
-        "deltaPercentagePoints": 36.631506260542736,
+        "recentTokens": 1761968241,
+        "priorTokens": 578916524,
+        "recentShare": 0.4795166363954541,
+        "priorShare": 0.350167001695669,
+        "deltaPercentagePoints": 12.934963469978511,
         "direction": "up",
         "series": [
-          0,
           72622846,
           0,
           0,
@@ -239,19 +238,19 @@
           468820420,
           0,
           0,
+          0,
           0
         ]
       },
       {
         "model": "gpt-6-astra",
-        "recentTokens": 625039544,
-        "priorTokens": 63718514,
-        "recentShare": 0.1329894387289135,
-        "priorShare": 0.10181101753232201,
-        "deltaPercentagePoints": 3.1178421196591493,
+        "recentTokens": 542871259,
+        "priorTokens": 145886799,
+        "recentShare": 0.14774148253869995,
+        "priorShare": 0.08824198459536237,
+        "deltaPercentagePoints": 5.949949794333759,
         "direction": "up",
         "series": [
-          0,
           0,
           0,
           0,
@@ -280,19 +279,19 @@
           90363491,
           0,
           0,
+          0,
           0
         ]
       },
       {
         "model": "gpt-5.6-sol",
-        "recentTokens": 527676861,
-        "priorTokens": 25993819,
-        "recentShare": 0.11227361572282361,
-        "priorShare": 0.04153356686788089,
-        "deltaPercentagePoints": 7.074004885494273,
+        "recentTokens": 421924555,
+        "priorTokens": 131889530,
+        "recentShare": 0.11482604437377528,
+        "priorShare": 0.079775510562471,
+        "deltaPercentagePoints": 3.5050533811304283,
         "direction": "up",
         "series": [
-          0,
           0,
           0,
           0,
@@ -321,19 +320,19 @@
           333141919,
           300366,
           143637,
-          203069
+          203069,
+          143405
         ]
       },
       {
         "model": "claude-opus-5",
         "recentTokens": 358980227,
         "priorTokens": 11173114,
-        "recentShare": 0.07638009364653568,
-        "priorShare": 0.017852677878593223,
-        "deltaPercentagePoints": 5.852741576794246,
+        "recentShare": 0.09769585340869749,
+        "priorShare": 0.006758238306882226,
+        "deltaPercentagePoints": 9.093761510181526,
         "direction": "up",
         "series": [
-          0,
           0,
           0,
           0,
@@ -362,6 +361,7 @@
           170215593,
           0,
           0,
+          0,
           0
         ]
       },
@@ -369,12 +369,11 @@
         "model": "gemini-3.8-flash",
         "recentTokens": 328060578,
         "priorTokens": 5902502,
-        "recentShare": 0.06980133106154791,
-        "priorShare": 0.009431163674133483,
-        "deltaPercentagePoints": 6.037016738741443,
+        "recentShare": 0.089281123936279,
+        "priorShare": 0.003570223585192897,
+        "deltaPercentagePoints": 8.571090035108611,
         "direction": "up",
         "series": [
-          0,
           0,
           0,
           0,
@@ -403,15 +402,16 @@
           121138359,
           0,
           0,
+          0,
           0
         ]
       }
     ]
   },
-  "updatedAt": "2026-09-20T00:52:49.009Z",
+  "updatedAt": "2026-09-20T08:53:54.744Z",
   "sourceFreshness": {
-    "dataThrough": "2026-09-19",
-    "sourceUpdatedAt": "2026-09-20T00:52:49.009Z",
-    "generatedAt": "2026-09-20T04:59:54.052Z"
+    "dataThrough": "2026-09-20",
+    "sourceUpdatedAt": "2026-09-20T08:53:54.744Z",
+    "generatedAt": "2026-09-20T11:32:13.409Z"
   }
 }
