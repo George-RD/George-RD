@@ -1,21 +1,21 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-09-20T20:54:05.831Z",
+  "generatedAt": "2026-09-21T05:04:27.042Z",
   "username": "George-RD",
   "allTime": {
     "rank": 126,
     "totalTokens": 125677414054,
     "totalCost": 59978.6776,
     "activeDays": 196,
-    "submissions": 48,
+    "submissions": 49,
     "sessions": 51512
   },
   "month": {
-    "totalTokens": 18144898688,
-    "totalCost": 10408.9891,
-    "activeDays": 23,
-    "contributions": 23
+    "totalTokens": 17099406746,
+    "totalCost": 9736.4591,
+    "activeDays": 22,
+    "contributions": 22
   },
   "clients": [
     "lmstudio",
@@ -147,15 +147,15 @@
       "cost": 831.3620094999989
     },
     {
-      "model": "gpt-5.6-terra",
-      "tokens": 2235679310,
-      "cost": 727.7926751999993
+      "model": "claude-opus-5",
+      "tokens": 1260031655,
+      "cost": 717.3832439999999
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-09-20T20:54:10.565Z",
+    "generatedAt": "2026-09-21T05:04:45.483Z",
     "dataThrough": "2026-09-20",
-    "sourceUpdatedAt": "2026-09-20T16:54:17.385Z",
+    "sourceUpdatedAt": "2026-09-21T00:55:23.377Z",
     "dates": [
       "2026-08-22",
       "2026-08-23",
@@ -210,7 +210,7 @@
         "deltaPercentagePoints": 12.931106485208128,
         "direction": "up",
         "series": [
-          72622846,
+          0,
           0,
           0,
           0,
@@ -408,10 +408,10 @@
       }
     ]
   },
-  "updatedAt": "2026-09-20T16:54:17.385Z",
+  "updatedAt": "2026-09-21T00:55:23.377Z",
   "sourceFreshness": {
     "dataThrough": "2026-09-20",
-    "sourceUpdatedAt": "2026-09-20T16:54:17.385Z",
-    "generatedAt": "2026-09-20T20:54:10.565Z"
+    "sourceUpdatedAt": "2026-09-21T00:55:23.377Z",
+    "generatedAt": "2026-09-21T05:04:45.483Z"
   }
 }
