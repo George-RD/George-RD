@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T11:46:54.231Z",
+  "generatedAt": "2026-09-22T17:02:02.484Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,10 +11,10 @@
     "focusStart": "2026-09-09",
     "focusEnd": "2026-09-22"
   },
-  "totalContributions": 15239,
+  "totalContributions": 15245,
   "metrics": {
     "activeDays": 13,
-    "focusShare": 0.7331730769230769,
+    "focusShare": 0.7193396226415094,
     "topRepos": [
       "SPINE",
       "RIVE"
@@ -632,23 +632,23 @@
     },
     {
       "date": "2026-09-22",
-      "contributions": 36,
+      "contributions": 42,
       "repository": "tools",
       "event": "merge",
       "modelFamilies": {
         "claude": 0,
-        "gpt": 2391840,
+        "gpt": 20047660,
         "gemini": 0,
-        "other": 101831585
+        "other": 184544762
       },
       "repositories": [
         {
           "name": "tools",
-          "score": 9,
-          "commits": 9,
+          "score": 13,
+          "commits": 13,
           "merges": 0,
           "reviews": 0,
-          "share": 0.72
+          "share": 0.7878787878787878
         },
         {
           "name": "openspine",
@@ -656,7 +656,7 @@
           "commits": 1,
           "merges": 1,
           "reviews": 1,
-          "share": 0.28
+          "share": 0.21212121212121213
         }
       ]
     },
