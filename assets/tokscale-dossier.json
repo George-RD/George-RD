@@ -1,14 +1,14 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-09-21T22:01:44.019Z",
+  "generatedAt": "2026-09-22T05:05:47.028Z",
   "username": "George-RD",
   "allTime": {
     "rank": 126,
     "totalTokens": 125680076039,
     "totalCost": 59990.7594,
-    "activeDays": 197,
-    "submissions": 51,
+    "activeDays": 196,
+    "submissions": 52,
     "sessions": 51516
   },
   "month": {
@@ -73,8 +73,8 @@
     "dots-studio/dots-3-note-preview:free",
     "grok-4.6",
     "nvidia/nemotron-3-ultra-550b-a55b:free",
-    "gpt-6-astra",
     "gpt-6-astra-900k",
+    "gpt-6-astra",
     "deepseek-v4-flash-0731",
     "deepseek-v4.1-flash",
     "qwen3.8-27b",
@@ -153,9 +153,9 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-09-21T22:01:46.235Z",
+    "generatedAt": "2026-09-22T05:05:49.404Z",
     "dataThrough": "2026-09-21",
-    "sourceUpdatedAt": "2026-09-21T16:57:32.181Z",
+    "sourceUpdatedAt": "2026-09-22T00:58:11.729Z",
     "dates": [
       "2026-08-23",
       "2026-08-24",
@@ -408,10 +408,10 @@
       }
     ]
   },
-  "updatedAt": "2026-09-21T16:57:32.181Z",
+  "updatedAt": "2026-09-22T00:58:11.729Z",
   "sourceFreshness": {
     "dataThrough": "2026-09-21",
-    "sourceUpdatedAt": "2026-09-21T16:57:32.181Z",
-    "generatedAt": "2026-09-21T22:01:46.235Z"
+    "sourceUpdatedAt": "2026-09-22T00:58:11.729Z",
+    "generatedAt": "2026-09-22T05:05:49.404Z"
   }
 }

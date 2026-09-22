@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" role="img" aria-labelledby="title desc">
   <title id="title">George-RD Tokscale activity trace</title>
   <desc id="desc">126B all-time tokens, $60K estimated all-time cost, 23 active days in the current 30-day window.</desc>
-  <!-- Generated from https://tokscale.ai/api/users/George-RD at 2026-09-21T22:01:44.015Z -->
+  <!-- Generated from https://tokscale.ai/api/users/George-RD at 2026-09-22T05:05:47.021Z -->
   <style>
     :root {
       --paper: #f1ede4;
@@ -67,7 +67,7 @@
   <text class="metric-value" x="58" y="214">#126</text>
   <text class="metric-note" x="58" y="237">TOKENS SORT / George-RD</text>
   <text class="metric-label" x="314" y="180">SUBMISSIONS</text>
-  <text class="metric-value" x="314" y="214">51</text>
+  <text class="metric-value" x="314" y="214">52</text>
   <text class="metric-note" x="314" y="237">51.5K SESSIONS</text>
 
   <text class="model-label" x="58" y="249">TOKEN MIX</text>
@@ -115,5 +115,5 @@
   <text class="model-name" x="642" y="293">gpt-6-astra</text><text class="model-value" x="1098" y="293" text-anchor="end">707M</text>
   <line class="rule" x1="58" y1="311" x2="1142" y2="311" />
   <text class="stamp" x="58" y="333">INPUT 5.2% / OUTPUT 0.4% / CACHE 94.5% / REASONING 0%</text>
-  <text class="stamp" x="642" y="333">SOURCE TOKSCALE.AI/U/George-RD / GENERATED 21 SEPT 2026</text>
+  <text class="stamp" x="642" y="333">SOURCE TOKSCALE.AI/U/George-RD / GENERATED 22 SEPT 2026</text>
 </svg>
