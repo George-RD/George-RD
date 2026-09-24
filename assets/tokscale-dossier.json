@@ -1,19 +1,19 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-09-24T11:54:35.276Z",
+  "generatedAt": "2026-09-24T17:17:22.607Z",
   "username": "George-RD",
   "allTime": {
-    "rank": 132,
-    "totalTokens": 125978442864,
-    "totalCost": 60013.9804,
+    "rank": 133,
+    "totalTokens": 125981887901,
+    "totalCost": 60014.2094,
     "activeDays": 199,
-    "submissions": 59,
-    "sessions": 51624
+    "submissions": 60,
+    "sessions": 51629
   },
   "month": {
-    "totalTokens": 17400435556,
-    "totalCost": 9771.7619,
+    "totalTokens": 17403880593,
+    "totalCost": 9771.990900000003,
     "activeDays": 26,
     "contributions": 26
   },
@@ -78,7 +78,6 @@
     "gpt-6-luna",
     "gpt-6-astra",
     "deepseek-v4.1-flash",
-    "deepseek-v4-flash-0731",
     "qwen3.8-27b",
     "qwen/qwen3-14b",
     "google/gemma-3n-e4b",
@@ -103,6 +102,7 @@
     "anthropic/claude-opus-5",
     "claude-fable-5-1",
     "gemini-3.8-flash",
+    "deepseek-v4-flash-0731",
     "glm-4.6",
     "glm-4.7",
     "glm-5.3",
@@ -155,9 +155,9 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-09-24T11:54:40.023Z",
+    "generatedAt": "2026-09-24T17:17:25.432Z",
     "dataThrough": "2026-09-24",
-    "sourceUpdatedAt": "2026-09-24T09:06:22.036Z",
+    "sourceUpdatedAt": "2026-09-24T17:07:20.280Z",
     "dates": [
       "2026-08-26",
       "2026-08-27",
@@ -193,7 +193,7 @@
     "latestWindow": {
       "start": "2026-09-18",
       "end": "2026-09-24",
-      "totalTokens": 308531589
+      "totalTokens": 311976626
     },
     "previousWindow": {
       "start": "2026-09-11",
@@ -205,11 +205,11 @@
     "models": [
       {
         "model": "deepseek-v4.1-flash",
-        "recentTokens": 276070612,
+        "recentTokens": 279515649,
         "priorTokens": 231497565,
-        "recentShare": 0.8947888055637635,
+        "recentShare": 0.8959506120179658,
         "priorShare": 0.045954855106840595,
-        "deltaPercentagePoints": 84.88339504569228,
+        "deltaPercentagePoints": 84.99957569111251,
         "direction": "up",
         "series": [
           0,
@@ -241,16 +241,16 @@
           0,
           204928750,
           54731902,
-          15971203
+          19416240
         ]
       },
       {
         "model": "gpt-6-astra-900k",
         "recentTokens": 13379845,
         "priorTokens": 587789659,
-        "recentShare": 0.043366207795338584,
+        "recentShare": 0.042887331565666716,
         "priorShare": 0.1166828195909717,
-        "deltaPercentagePoints": -7.331661179563312,
+        "deltaPercentagePoints": -7.379548802530497,
         "direction": "down",
         "series": [
           0,
@@ -289,9 +289,9 @@
         "model": "gpt-5.6-sol",
         "recentTokens": 10281244,
         "priorTokens": 527648013,
-        "recentShare": 0.03332314863876062,
+        "recentShare": 0.03295517401999212,
         "priorShare": 0.10474403039542703,
-        "deltaPercentagePoints": -7.1420881756666414,
+        "deltaPercentagePoints": -7.17888563754349,
         "direction": "down",
         "series": [
           295729,
@@ -330,9 +330,9 @@
         "model": "gpt-5.6-luna",
         "recentTokens": 8702622,
         "priorTokens": 2271177367,
-        "recentShare": 0.028206583410815673,
+        "recentShare": 0.027895109039354764,
         "priorShare": 0.45085410216915556,
-        "deltaPercentagePoints": -42.26475187583399,
+        "deltaPercentagePoints": -42.295899312980076,
         "direction": "down",
         "series": [
           0,
@@ -371,9 +371,9 @@
         "model": "gpt-6-sol",
         "recentTokens": 46747,
         "priorTokens": 0,
-        "recentShare": 0.00015151446939846408,
+        "recentShare": 0.0001498413538198852,
         "priorShare": 0,
-        "deltaPercentagePoints": 0.015151446939846408,
+        "deltaPercentagePoints": 0.01498413538198852,
         "direction": "flat",
         "series": [
           0,
@@ -410,10 +410,10 @@
       }
     ]
   },
-  "updatedAt": "2026-09-24T09:06:22.036Z",
+  "updatedAt": "2026-09-24T17:07:20.280Z",
   "sourceFreshness": {
     "dataThrough": "2026-09-24",
-    "sourceUpdatedAt": "2026-09-24T09:06:22.036Z",
-    "generatedAt": "2026-09-24T11:54:40.023Z"
+    "sourceUpdatedAt": "2026-09-24T17:07:20.280Z",
+    "generatedAt": "2026-09-24T17:17:25.432Z"
   }
 }
