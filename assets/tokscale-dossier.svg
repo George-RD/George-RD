@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" role="img" aria-labelledby="title desc">
   <title id="title">George-RD Tokscale activity trace</title>
   <desc id="desc">126B all-time tokens, $60K estimated all-time cost, 25 active days in the current 30-day window.</desc>
-  <!-- Generated from https://tokscale.ai/api/users/George-RD at 2026-09-23T21:34:38.440Z -->
+  <!-- Generated from https://tokscale.ai/api/users/George-RD at 2026-09-24T04:59:14.606Z -->
   <style>
     :root {
       --paper: #f1ede4;
@@ -67,7 +67,7 @@
   <text class="metric-value" x="58" y="214">#132</text>
   <text class="metric-note" x="58" y="237">TOKENS SORT / George-RD</text>
   <text class="metric-label" x="314" y="180">SUBMISSIONS</text>
-  <text class="metric-value" x="314" y="214">57</text>
+  <text class="metric-value" x="314" y="214">58</text>
   <text class="metric-note" x="314" y="237">51.6K SESSIONS</text>
 
   <text class="model-label" x="58" y="249">TOKEN MIX</text>
@@ -107,7 +107,7 @@
     <rect class="bar i1" x="915.0" y="199" width="7.5" height="4" rx="2" style="--delay:462ms"><title>2026-09-20 · 2.25M tokens</title></rect>
     <rect class="bar i1" x="928.0" y="199" width="7.5" height="4" rx="2" style="--delay:484ms"><title>2026-09-21 · 2.66M tokens</title></rect>
     <rect class="bar i1" x="941.0" y="198" width="7.5" height="5" rx="2" style="--delay:506ms"><title>2026-09-22 · 224M tokens</title></rect>
-    <rect class="bar i1" x="954.0" y="199" width="7.5" height="4" rx="2" style="--delay:528ms"><title>2026-09-23 · 52.5M tokens</title></rect>
+    <rect class="bar i1" x="954.0" y="199" width="7.5" height="4" rx="2" style="--delay:528ms"><title>2026-09-23 · 54.8M tokens</title></rect>
   </g>
   <path class="trace" pathLength="1" d="M646.0 194.0 L659.0 178.3 L672.0 194.0 L685.0 184.4 L698.0 168.0 L711.0 125.0 L724.0 168.6 L737.0 141.3 L750.0 181.9 L763.0 194.0 L776.0 194.0 L789.0 193.8 L802.0 194.0 L815.0 192.5 L828.0 177.2 L841.0 190.1 L854.0 155.8 L867.0 173.3 L880.0 194.0 L893.0 194.0 L906.0 194.0 L919.0 194.0 L932.0 194.0 L945.0 194.0 L958.0 194.0" />
 
@@ -117,5 +117,5 @@
   <text class="model-name" x="642" y="293">gpt-6-astra</text><text class="model-value" x="1098" y="293" text-anchor="end">707M</text>
   <line class="rule" x1="58" y1="311" x2="1142" y2="311" />
   <text class="stamp" x="58" y="333">INPUT 5.2% / OUTPUT 0.4% / CACHE 94.4% / REASONING 0%</text>
-  <text class="stamp" x="642" y="333">SOURCE TOKSCALE.AI/U/George-RD / GENERATED 23 SEPT 2026</text>
+  <text class="stamp" x="642" y="333">SOURCE TOKSCALE.AI/U/George-RD / GENERATED 24 SEPT 2026</text>
 </svg>

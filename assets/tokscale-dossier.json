@@ -1,19 +1,19 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-09-23T21:34:38.449Z",
+  "generatedAt": "2026-09-24T04:59:14.612Z",
   "username": "George-RD",
   "allTime": {
     "rank": 132,
-    "totalTokens": 125957077921,
-    "totalCost": 60012.9579,
+    "totalTokens": 125959303574,
+    "totalCost": 60013.0686,
     "activeDays": 198,
-    "submissions": 57,
-    "sessions": 51612
+    "submissions": 58,
+    "sessions": 51613
   },
   "month": {
-    "totalTokens": 17379070613,
-    "totalCost": 9770.7394,
+    "totalTokens": 17381296266,
+    "totalCost": 9770.8501,
     "activeDays": 25,
     "contributions": 25
   },
@@ -75,8 +75,8 @@
     "nvidia/nemotron-3-ultra-550b-a55b:free",
     "gpt-6-astra-900k",
     "deepseek-v4-flash-0731",
-    "qwen3.8-27b",
     "deepseek-v4.1-flash",
+    "qwen3.8-27b",
     "qwen/qwen3-14b",
     "google/gemma-3n-e4b",
     "qwen/qwen3-1.7b",
@@ -155,9 +155,9 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-09-23T21:34:40.564Z",
+    "generatedAt": "2026-09-24T04:59:16.974Z",
     "dataThrough": "2026-09-23",
-    "sourceUpdatedAt": "2026-09-23T17:04:56.605Z",
+    "sourceUpdatedAt": "2026-09-24T01:05:53.239Z",
     "dates": [
       "2026-08-25",
       "2026-08-26",
@@ -193,7 +193,7 @@
     "latestWindow": {
       "start": "2026-09-17",
       "end": "2026-09-23",
-      "totalTokens": 293285250
+      "totalTokens": 295510903
     },
     "previousWindow": {
       "start": "2026-09-10",
@@ -205,11 +205,11 @@
     "models": [
       {
         "model": "deepseek-v4.1-flash",
-        "recentTokens": 258235663,
+        "recentTokens": 260461316,
         "priorTokens": 230611130,
-        "recentShare": 0.8804931819789779,
+        "recentShare": 0.8813932526882096,
         "priorShare": 0.04368338421443649,
-        "deltaPercentagePoints": 83.68097977645414,
+        "deltaPercentagePoints": 83.7709868473773,
         "direction": "up",
         "series": [
           0,
@@ -241,16 +241,16 @@
           0,
           0,
           204404222,
-          52506249
+          54731902
         ]
       },
       {
         "model": "gpt-6-astra-900k",
         "recentTokens": 15721604,
         "priorTokens": 585447900,
-        "recentShare": 0.05360516425561804,
+        "recentShare": 0.05320143466923114,
         "priorShare": 0.11089814074990653,
-        "deltaPercentagePoints": -5.729297649428849,
+        "deltaPercentagePoints": -5.769670608067539,
         "direction": "down",
         "series": [
           0,
@@ -289,9 +289,9 @@
         "model": "gpt-5.6-sol",
         "recentTokens": 10581610,
         "priorTokens": 552351485,
-        "recentShare": 0.03607958463645888,
+        "recentShare": 0.03580784970224939,
         "priorShare": 0.10462887086442685,
-        "deltaPercentagePoints": -6.8549286227967965,
+        "deltaPercentagePoints": -6.8821021162177445,
         "direction": "down",
         "series": [
           0,
@@ -330,9 +330,9 @@
         "model": "gpt-5.6-luna",
         "recentTokens": 8702622,
         "priorTokens": 2340884765,
-        "recentShare": 0.029672893539651243,
+        "recentShare": 0.029449410873344326,
         "priorShare": 0.44342078628735687,
-        "deltaPercentagePoints": -41.37478927477056,
+        "deltaPercentagePoints": -41.39713754140125,
         "direction": "down",
         "series": [
           0,
@@ -371,9 +371,9 @@
         "model": "gpt-6-sol",
         "recentTokens": 29081,
         "priorTokens": 0,
-        "recentShare": 0.00009915602642819576,
+        "recentShare": 0.00009840922857590808,
         "priorShare": 0,
-        "deltaPercentagePoints": 0.009915602642819576,
+        "deltaPercentagePoints": 0.009840922857590808,
         "direction": "flat",
         "series": [
           0,
@@ -410,10 +410,10 @@
       }
     ]
   },
-  "updatedAt": "2026-09-23T17:04:56.605Z",
+  "updatedAt": "2026-09-24T01:05:53.239Z",
   "sourceFreshness": {
     "dataThrough": "2026-09-23",
-    "sourceUpdatedAt": "2026-09-23T17:04:56.605Z",
-    "generatedAt": "2026-09-23T21:34:40.564Z"
+    "sourceUpdatedAt": "2026-09-24T01:05:53.239Z",
+    "generatedAt": "2026-09-24T04:59:16.974Z"
   }
 }
