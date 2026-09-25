@@ -1,21 +1,21 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-09-25T05:04:15.110Z",
+  "generatedAt": "2026-09-25T11:56:58.323Z",
   "username": "George-RD",
   "allTime": {
     "rank": 134,
-    "totalTokens": 125981970396,
-    "totalCost": 60014.2185,
-    "activeDays": 199,
-    "submissions": 61,
-    "sessions": 51631
+    "totalTokens": 126013984224,
+    "totalCost": 60015.1333,
+    "activeDays": 200,
+    "submissions": 62,
+    "sessions": 51635
   },
   "month": {
-    "totalTokens": 17403597790,
-    "totalCost": 9771.612000000001,
-    "activeDays": 25,
-    "contributions": 25
+    "totalTokens": 17435611618,
+    "totalCost": 9772.526800000001,
+    "activeDays": 26,
+    "contributions": 26
   },
   "clients": [
     "lmstudio",
@@ -155,11 +155,10 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-09-25T05:04:26.439Z",
-    "dataThrough": "2026-09-24",
-    "sourceUpdatedAt": "2026-09-25T01:08:19.528Z",
+    "generatedAt": "2026-09-25T11:57:00.744Z",
+    "dataThrough": "2026-09-25",
+    "sourceUpdatedAt": "2026-09-25T09:09:22.624Z",
     "dates": [
-      "2026-08-26",
       "2026-08-27",
       "2026-08-28",
       "2026-08-29",
@@ -188,31 +187,31 @@
       "2026-09-21",
       "2026-09-22",
       "2026-09-23",
-      "2026-09-24"
+      "2026-09-24",
+      "2026-09-25"
     ],
     "latestWindow": {
-      "start": "2026-09-18",
-      "end": "2026-09-24",
-      "totalTokens": 312059121
+      "start": "2026-09-19",
+      "end": "2026-09-25",
+      "totalTokens": 339250110
     },
     "previousWindow": {
-      "start": "2026-09-11",
-      "end": "2026-09-17",
-      "totalTokens": 5037499617
+      "start": "2026-09-12",
+      "end": "2026-09-18",
+      "totalTokens": 5002173738
     },
     "leadingModel": "deepseek-v4.1-flash",
     "fastestRiser": "deepseek-v4.1-flash",
     "models": [
       {
         "model": "deepseek-v4.1-flash",
-        "recentTokens": 279598144,
-        "priorTokens": 231497565,
-        "recentShare": 0.8959781181976731,
-        "priorShare": 0.045954855106840595,
-        "deltaPercentagePoints": 85.00232630908326,
+        "recentTokens": 311173215,
+        "priorTokens": 231936322,
+        "recentShare": 0.9172383613965519,
+        "priorShare": 0.04636710641176854,
+        "deltaPercentagePoints": 87.08712549847833,
         "direction": "up",
         "series": [
-          0,
           0,
           0,
           0,
@@ -241,60 +240,19 @@
           0,
           204928750,
           54731902,
-          19498735
-        ]
-      },
-      {
-        "model": "gpt-6-astra-900k",
-        "recentTokens": 13379845,
-        "priorTokens": 587789659,
-        "recentShare": 0.042875994001149546,
-        "priorShare": 0.1166828195909717,
-        "deltaPercentagePoints": -7.380682558982215,
-        "direction": "down",
-        "series": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          32372262,
-          304860927,
-          212414046,
-          2323550,
-          24541952,
-          8935163,
-          2341759,
-          4240445,
-          2815114,
-          1928059,
-          2004387,
-          2391840,
-          0,
-          0
+          19498735,
+          32013828
         ]
       },
       {
         "model": "gpt-5.6-sol",
-        "recentTokens": 10281244,
-        "priorTokens": 527648013,
-        "recentShare": 0.032946462090431894,
-        "priorShare": 0.10474403039542703,
-        "deltaPercentagePoints": -7.179756830499513,
+        "recentTokens": 10137607,
+        "priorTokens": 527691735,
+        "recentShare": 0.029882398564292284,
+        "priorShare": 0.10549248439559097,
+        "deltaPercentagePoints": -7.561008583129869,
         "direction": "down",
         "series": [
-          0,
           0,
           649414906,
           0,
@@ -323,19 +281,60 @@
           657598,
           8953198,
           0,
+          0,
+          0
+        ]
+      },
+      {
+        "model": "gpt-6-astra-900k",
+        "recentTokens": 9139400,
+        "priorTokens": 559657842,
+        "recentShare": 0.0269400060032405,
+        "priorShare": 0.11188292756575981,
+        "deltaPercentagePoints": -8.494292156251932,
+        "direction": "down",
+        "series": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          32372262,
+          304860927,
+          212414046,
+          2323550,
+          24541952,
+          8935163,
+          2341759,
+          4240445,
+          2815114,
+          1928059,
+          2004387,
+          2391840,
+          0,
+          0,
           0
         ]
       },
       {
         "model": "gpt-5.6-luna",
         "recentTokens": 8702622,
-        "priorTokens": 2271177367,
-        "recentShare": 0.02788773477318101,
-        "priorShare": 0.45085410216915556,
-        "deltaPercentagePoints": -42.29663673959745,
+        "priorTokens": 2268116315,
+        "recentShare": 0.025652525212151,
+        "priorShare": 0.4534261370751293,
+        "deltaPercentagePoints": -42.77736118629783,
         "direction": "down",
         "series": [
-          0,
           0,
           146287611,
           0,
@@ -364,6 +363,7 @@
           0,
           8702622,
           0,
+          0,
           0
         ]
       },
@@ -371,9 +371,9 @@
         "model": "gpt-6-sol",
         "recentTokens": 46747,
         "priorTokens": 0,
-        "recentShare": 0.00014980174221537976,
+        "recentShare": 0.00013779509165081773,
         "priorShare": 0,
-        "deltaPercentagePoints": 0.014980174221537976,
+        "deltaPercentagePoints": 0.013779509165081773,
         "direction": "flat",
         "series": [
           0,
@@ -403,17 +403,17 @@
           0,
           0,
           0,
-          0,
           29081,
-          17666
+          17666,
+          0
         ]
       }
     ]
   },
-  "updatedAt": "2026-09-25T01:08:19.528Z",
+  "updatedAt": "2026-09-25T09:09:22.624Z",
   "sourceFreshness": {
-    "dataThrough": "2026-09-24",
-    "sourceUpdatedAt": "2026-09-25T01:08:19.528Z",
-    "generatedAt": "2026-09-25T05:04:26.439Z"
+    "dataThrough": "2026-09-25",
+    "sourceUpdatedAt": "2026-09-25T09:09:22.624Z",
+    "generatedAt": "2026-09-25T11:57:00.744Z"
   }
 }
