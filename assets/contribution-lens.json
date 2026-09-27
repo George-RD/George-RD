@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T17:02:59.213Z",
+  "generatedAt": "2026-09-27T21:25:37.180Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,13 +11,13 @@
     "focusStart": "2026-09-14",
     "focusEnd": "2026-09-27"
   },
-  "totalContributions": 15512,
+  "totalContributions": 15586,
   "metrics": {
     "activeDays": 13,
-    "focusShare": 0.8652849740932642,
+    "focusShare": 0.7796052631578947,
     "topRepos": [
       "SPINE",
-      "TOOLS"
+      "FIRTH"
     ],
     "focusDays": 14,
     "streak": 6
@@ -683,7 +683,7 @@
     },
     {
       "date": "2026-09-24",
-      "contributions": 57,
+      "contributions": 59,
       "repository": "openspine",
       "event": "merge",
       "modelFamilies": {
@@ -740,31 +740,31 @@
     },
     {
       "date": "2026-09-27",
-      "contributions": 79,
+      "contributions": 151,
       "repository": "firth",
       "event": "merge",
       "modelFamilies": {
         "claude": 0,
         "gpt": 0,
         "gemini": 0,
-        "other": 24265748
+        "other": 25856195
       },
       "repositories": [
         {
           "name": "firth",
-          "score": 4.5,
-          "commits": 1,
-          "merges": 1,
-          "reviews": 3,
-          "share": 0.9
+          "score": 46,
+          "commits": 11,
+          "merges": 14,
+          "reviews": 14,
+          "share": 0.7603305785123967
         },
         {
           "name": "Jev-knows",
-          "score": 0.5,
+          "score": 14.5,
           "commits": 0,
-          "merges": 0,
+          "merges": 7,
           "reviews": 1,
-          "share": 0.1
+          "share": 0.2396694214876033
         }
       ]
     }
