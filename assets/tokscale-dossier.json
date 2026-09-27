@@ -1,21 +1,21 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-09-27T05:24:44.947Z",
+  "generatedAt": "2026-09-27T12:10:08.062Z",
   "username": "George-RD",
   "allTime": {
     "rank": 138,
-    "totalTokens": 126116915809,
-    "totalCost": 60029.8841,
-    "activeDays": 200,
-    "submissions": 67,
-    "sessions": 51662
+    "totalTokens": 126141181557,
+    "totalCost": 60030.3632,
+    "activeDays": 201,
+    "submissions": 68,
+    "sessions": 51664
   },
   "month": {
-    "totalTokens": 16566775223,
-    "totalCost": 9357.2426,
-    "activeDays": 26,
-    "contributions": 26
+    "totalTokens": 16591040971,
+    "totalCost": 9357.7217,
+    "activeDays": 27,
+    "contributions": 27
   },
   "clients": [
     "lmstudio",
@@ -156,11 +156,10 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-09-27T05:24:47.019Z",
-    "dataThrough": "2026-09-26",
-    "sourceUpdatedAt": "2026-09-27T01:14:22.267Z",
+    "generatedAt": "2026-09-27T12:10:21.677Z",
+    "dataThrough": "2026-09-27",
+    "sourceUpdatedAt": "2026-09-27T09:15:22.283Z",
     "dates": [
-      "2026-08-28",
       "2026-08-29",
       "2026-08-30",
       "2026-08-31",
@@ -189,31 +188,31 @@
       "2026-09-23",
       "2026-09-24",
       "2026-09-25",
-      "2026-09-26"
+      "2026-09-26",
+      "2026-09-27"
     ],
     "latestWindow": {
-      "start": "2026-09-20",
-      "end": "2026-09-26",
-      "totalTokens": 439163512
+      "start": "2026-09-21",
+      "end": "2026-09-27",
+      "totalTokens": 461177459
     },
     "previousWindow": {
-      "start": "2026-09-13",
-      "end": "2026-09-19",
-      "totalTokens": 4699918655
+      "start": "2026-09-14",
+      "end": "2026-09-20",
+      "totalTokens": 3674762964
     },
     "leadingModel": "deepseek-v4.1-flash",
     "fastestRiser": "deepseek-v4.1-flash",
     "models": [
       {
         "model": "deepseek-v4.1-flash",
-        "recentTokens": 370882470,
-        "priorTokens": 231752814,
-        "recentShare": 0.8445202296314636,
-        "priorShare": 0.049309962791260264,
-        "deltaPercentagePoints": 79.52102668402033,
+        "recentTokens": 395148218,
+        "priorTokens": 133200514,
+        "recentShare": 0.8568246567315425,
+        "priorShare": 0.03624737576407119,
+        "deltaPercentagePoints": 82.05772809674713,
         "direction": "up",
         "series": [
-          0,
           0,
           0,
           0,
@@ -242,16 +241,17 @@
           54731902,
           19515294,
           69837324,
-          21869200
+          21869200,
+          24265748
         ]
       },
       {
         "model": "gpt-6-sol-900k",
         "recentTokens": 43222330,
         "priorTokens": 0,
-        "recentShare": 0.09841967472015298,
+        "recentShare": 0.09372168816256043,
         "priorShare": 0,
-        "deltaPercentagePoints": 9.841967472015298,
+        "deltaPercentagePoints": 9.372168816256043,
         "direction": "up",
         "series": [
           0,
@@ -280,22 +280,21 @@
           0,
           0,
           0,
-          0,
           6831443,
           32483969,
-          3906918
+          3906918,
+          0
         ]
       },
       {
         "model": "gpt-5.6-sol",
-        "recentTokens": 9934538,
-        "priorTokens": 527676861,
-        "recentShare": 0.022621501396500356,
-        "priorShare": 0.11227361572282361,
-        "deltaPercentagePoints": -8.965211432632325,
+        "recentTokens": 9610796,
+        "priorTokens": 422104892,
+        "recentShare": 0.02083969156003351,
+        "priorShare": 0.11486588281616306,
+        "deltaPercentagePoints": -9.402619125612954,
         "direction": "down",
         "series": [
-          0,
           0,
           142253725,
           835414877,
@@ -324,19 +323,19 @@
           0,
           0,
           0,
+          0,
           0
         ]
       },
       {
         "model": "gpt-5.6-luna",
         "recentTokens": 8702622,
-        "priorTokens": 2268116315,
-        "recentShare": 0.01981635942468736,
-        "priorShare": 0.4825862916982762,
-        "deltaPercentagePoints": -46.276993227358886,
+        "priorTokens": 1761968241,
+        "recentShare": 0.018870440933671045,
+        "priorShare": 0.47947806654775027,
+        "deltaPercentagePoints": -46.06076256140792,
         "direction": "down",
         "series": [
-          0,
           0,
           25334161,
           177284503,
@@ -365,19 +364,19 @@
           0,
           0,
           0,
+          0,
           0
         ]
       },
       {
         "model": "gpt-6-astra-900k",
-        "recentTokens": 6324286,
-        "priorTokens": 257612029,
-        "recentShare": 0.014400754678362259,
-        "priorShare": 0.054812018656097354,
-        "deltaPercentagePoints": -4.0411263977735095,
-        "direction": "down",
+        "recentTokens": 4396227,
+        "priorTokens": 47126042,
+        "recentShare": 0.009532614645851544,
+        "priorShare": 0.012824239947357867,
+        "deltaPercentagePoints": -0.3291625301506323,
+        "direction": "flat",
         "series": [
-          0,
           0,
           0,
           0,
@@ -406,15 +405,16 @@
           0,
           0,
           0,
+          0,
           0
         ]
       }
     ]
   },
-  "updatedAt": "2026-09-27T01:14:22.267Z",
+  "updatedAt": "2026-09-27T09:15:22.283Z",
   "sourceFreshness": {
-    "dataThrough": "2026-09-26",
-    "sourceUpdatedAt": "2026-09-27T01:14:22.267Z",
-    "generatedAt": "2026-09-27T05:24:47.019Z"
+    "dataThrough": "2026-09-27",
+    "sourceUpdatedAt": "2026-09-27T09:15:22.283Z",
+    "generatedAt": "2026-09-27T12:10:21.677Z"
   }
 }
