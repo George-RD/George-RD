@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-09-26T21:15:35.513Z",
+  "generatedAt": "2026-09-27T05:24:55.615Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
     "tokscale": "https://tokscale.ai/u/George-RD"
   },
   "range": {
-    "overviewStart": "2025-09-21",
-    "overviewEnd": "2026-09-26",
-    "focusStart": "2026-09-13",
-    "focusEnd": "2026-09-26"
+    "overviewStart": "2025-09-28",
+    "overviewEnd": "2026-10-03",
+    "focusStart": "2026-09-14",
+    "focusEnd": "2026-09-27"
   },
   "totalContributions": 15434,
   "metrics": {
     "activeDays": 13,
-    "focusShare": 0.895,
+    "focusShare": 0.9329608938547486,
     "topRepos": [
       "SPINE",
       "TOOLS"
     ],
     "focusDays": 14,
-    "streak": 5
+    "streak": 6
   },
   "focus": [
     {
@@ -732,15 +732,10 @@
     },
     {
       "date": "2026-09-27",
-      "contributions": 0,
+      "contributions": 2,
       "repository": null,
       "event": null,
-      "modelFamilies": {
-        "claude": 0,
-        "gpt": 0,
-        "gemini": 0,
-        "other": 0
-      },
+      "modelFamilies": {},
       "repositories": []
     }
   ]

@@ -1,21 +1,21 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-09-26T21:15:25.690Z",
+  "generatedAt": "2026-09-27T05:24:44.947Z",
   "username": "George-RD",
   "allTime": {
     "rank": 138,
     "totalTokens": 126116915809,
     "totalCost": 60029.8841,
-    "activeDays": 201,
-    "submissions": 66,
+    "activeDays": 200,
+    "submissions": 67,
     "sessions": 51662
   },
   "month": {
-    "totalTokens": 17538543203,
-    "totalCost": 9787.2776,
-    "activeDays": 27,
-    "contributions": 27
+    "totalTokens": 16566775223,
+    "totalCost": 9357.2426,
+    "activeDays": 26,
+    "contributions": 26
   },
   "clients": [
     "lmstudio",
@@ -74,12 +74,10 @@
     "grok-4.6",
     "nvidia/nemotron-3-ultra-550b-a55b:free",
     "gpt-6-astra-900k",
-    "gpt-6-sol-900k",
-    "deepseek-v4.1-flash",
     "qwen3.8-27b",
+    "deepseek-v4.1-flash",
     "gpt-6-sol",
     "gpt-6-luna",
-    "gpt-6-astra",
     "qwen/qwen3-14b",
     "google/gemma-3n-e4b",
     "qwen/qwen3-1.7b",
@@ -103,6 +101,8 @@
     "anthropic/claude-opus-5",
     "claude-fable-5-1",
     "gemini-3.8-flash",
+    "gpt-6-astra",
+    "gpt-6-sol-900k",
     "auto",
     "qwen/qwen3-vl-8b",
     "gemma-3n-e2b-it-mlx",
@@ -131,8 +131,8 @@
   "topModels": [
     {
       "model": "gpt-5.6-sol",
-      "tokens": 4967048342,
-      "cost": 3127.4674103999996
+      "tokens": 4317633436,
+      "cost": 2771.8796648
     },
     {
       "model": "gpt-6-astra-900k",
@@ -156,9 +156,9 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-09-26T21:15:27.906Z",
+    "generatedAt": "2026-09-27T05:24:47.019Z",
     "dataThrough": "2026-09-26",
-    "sourceUpdatedAt": "2026-09-26T17:13:22.229Z",
+    "sourceUpdatedAt": "2026-09-27T01:14:22.267Z",
     "dates": [
       "2026-08-28",
       "2026-08-29",
@@ -295,7 +295,7 @@
         "deltaPercentagePoints": -8.965211432632325,
         "direction": "down",
         "series": [
-          649414906,
+          0,
           0,
           142253725,
           835414877,
@@ -336,7 +336,7 @@
         "deltaPercentagePoints": -46.276993227358886,
         "direction": "down",
         "series": [
-          146287611,
+          0,
           0,
           25334161,
           177284503,
@@ -411,10 +411,10 @@
       }
     ]
   },
-  "updatedAt": "2026-09-26T17:13:22.229Z",
+  "updatedAt": "2026-09-27T01:14:22.267Z",
   "sourceFreshness": {
     "dataThrough": "2026-09-26",
-    "sourceUpdatedAt": "2026-09-26T17:13:22.229Z",
-    "generatedAt": "2026-09-26T21:15:27.906Z"
+    "sourceUpdatedAt": "2026-09-27T01:14:22.267Z",
+    "generatedAt": "2026-09-27T05:24:47.019Z"
   }
 }
