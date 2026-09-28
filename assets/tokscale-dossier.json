@@ -1,21 +1,21 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-09-27T21:25:25.116Z",
+  "generatedAt": "2026-09-28T05:31:32.987Z",
   "username": "George-RD",
   "allTime": {
     "rank": 138,
-    "totalTokens": 126142772004,
-    "totalCost": 60030.4184,
-    "activeDays": 201,
-    "submissions": 69,
-    "sessions": 51667
+    "totalTokens": 126142792837,
+    "totalCost": 60030.421,
+    "activeDays": 200,
+    "submissions": 70,
+    "sessions": 51668
   },
   "month": {
-    "totalTokens": 16592631418,
-    "totalCost": 9357.776899999999,
-    "activeDays": 27,
-    "contributions": 27
+    "totalTokens": 16388691687,
+    "totalCost": 9264.1958,
+    "activeDays": 26,
+    "contributions": 26
   },
   "clients": [
     "lmstudio",
@@ -73,9 +73,10 @@
     "dots-studio/dots-3-note-preview:free",
     "grok-4.6",
     "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "gpt-6-astra",
     "gpt-6-astra-900k",
-    "qwen3.8-27b",
     "deepseek-v4.1-flash",
+    "qwen3.8-27b",
     "gpt-6-sol",
     "gpt-6-luna",
     "qwen/qwen3-14b",
@@ -101,7 +102,6 @@
     "anthropic/claude-opus-5",
     "claude-fable-5-1",
     "gemini-3.8-flash",
-    "gpt-6-astra",
     "gpt-6-sol-900k",
     "auto",
     "qwen/qwen3-vl-8b",
@@ -156,9 +156,9 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-09-27T21:25:27.267Z",
+    "generatedAt": "2026-09-28T05:31:44.644Z",
     "dataThrough": "2026-09-27",
-    "sourceUpdatedAt": "2026-09-27T17:16:24.147Z",
+    "sourceUpdatedAt": "2026-09-28T01:17:21.393Z",
     "dates": [
       "2026-08-29",
       "2026-08-30",
@@ -194,7 +194,7 @@
     "latestWindow": {
       "start": "2026-09-21",
       "end": "2026-09-27",
-      "totalTokens": 462767906
+      "totalTokens": 462788739
     },
     "previousWindow": {
       "start": "2026-09-14",
@@ -206,11 +206,11 @@
     "models": [
       {
         "model": "deepseek-v4.1-flash",
-        "recentTokens": 396738665,
+        "recentTokens": 396759498,
         "priorTokens": 133200514,
-        "recentShare": 0.8573167236882672,
+        "recentShare": 0.85732314675012,
         "priorShare": 0.03624737576407119,
-        "deltaPercentagePoints": 82.1069347924196,
+        "deltaPercentagePoints": 82.10757709860488,
         "direction": "up",
         "series": [
           0,
@@ -242,16 +242,16 @@
           19515294,
           69837324,
           21869200,
-          25856195
+          25877028
         ]
       },
       {
         "model": "gpt-6-sol-900k",
         "recentTokens": 43222330,
         "priorTokens": 0,
-        "recentShare": 0.09339958419674851,
+        "recentShare": 0.0933953797004555,
         "priorShare": 0,
-        "deltaPercentagePoints": 9.33995841967485,
+        "deltaPercentagePoints": 9.33953797004555,
         "direction": "up",
         "series": [
           0,
@@ -290,9 +290,9 @@
         "model": "gpt-5.6-sol",
         "recentTokens": 9610796,
         "priorTokens": 422104892,
-        "recentShare": 0.020768069426145553,
+        "recentShare": 0.020767134526149308,
         "priorShare": 0.11486588281616306,
-        "deltaPercentagePoints": -9.40978133900175,
+        "deltaPercentagePoints": -9.409874829001375,
         "direction": "down",
         "series": [
           0,
@@ -331,9 +331,9 @@
         "model": "gpt-5.6-luna",
         "recentTokens": 8702622,
         "priorTokens": 1761968241,
-        "recentShare": 0.01880558674697722,
+        "recentShare": 0.018804740190534325,
         "priorShare": 0.47947806654775027,
-        "deltaPercentagePoints": -46.067247980077305,
+        "deltaPercentagePoints": -46.06733263572159,
         "direction": "down",
         "series": [
           0,
@@ -372,9 +372,9 @@
         "model": "gpt-6-astra-900k",
         "recentTokens": 4396227,
         "priorTokens": 47126042,
-        "recentShare": 0.00949985282687257,
+        "recentShare": 0.00949942517940135,
         "priorShare": 0.012824239947357867,
-        "deltaPercentagePoints": -0.3324387120485297,
+        "deltaPercentagePoints": -0.33248147679565165,
         "direction": "flat",
         "series": [
           0,
@@ -411,10 +411,10 @@
       }
     ]
   },
-  "updatedAt": "2026-09-27T17:16:24.147Z",
+  "updatedAt": "2026-09-28T01:17:21.393Z",
   "sourceFreshness": {
     "dataThrough": "2026-09-27",
-    "sourceUpdatedAt": "2026-09-27T17:16:24.147Z",
-    "generatedAt": "2026-09-27T21:25:27.267Z"
+    "sourceUpdatedAt": "2026-09-28T01:17:21.393Z",
+    "generatedAt": "2026-09-28T05:31:44.644Z"
   }
 }
