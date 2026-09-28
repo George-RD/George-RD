@@ -1,19 +1,19 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-09-28T14:05:44.726Z",
+  "generatedAt": "2026-09-28T23:20:59.797Z",
   "username": "George-RD",
   "allTime": {
     "rank": 138,
-    "totalTokens": 126143299615,
-    "totalCost": 60030.4839,
+    "totalTokens": 126171717035,
+    "totalCost": 60110.0426,
     "activeDays": 201,
-    "submissions": 71,
-    "sessions": 51669
+    "submissions": 72,
+    "sessions": 51691
   },
   "month": {
-    "totalTokens": 16389198465,
-    "totalCost": 9264.2587,
+    "totalTokens": 16417615885,
+    "totalCost": 9343.817399999998,
     "activeDays": 27,
     "contributions": 27
   },
@@ -47,12 +47,9 @@
     "kimi-for-coding",
     "kimi-k2.5",
     "k2p6",
-    "deepseek-v4.1-flash",
-    "gpt-5.6-sol",
-    "gpt-5.6-terra",
     "gpt-6-astra",
-    "gpt-6-astra-900k",
-    "deepseek-v4-flash:0731",
+    "gpt-6-luna-900k",
+    "deepseek-v4.1-flash",
     "gpt-5.5",
     "claude-opus-4-8",
     "claude-sonnet-4-6",
@@ -63,7 +60,9 @@
     "claude-opus-4-6",
     "claude-sonnet-5",
     "gemini-3.5-flash",
+    "gpt-5.6-sol",
     "gpt-5.6-luna",
+    "gpt-5.6-terra",
     "kimi-k2.7-code",
     "claude-haiku-4-5",
     "tencent/hy3:free",
@@ -73,11 +72,13 @@
     "claude-opus-5",
     "gemini-3.6-flash",
     "gemini-3.7-flash",
+    "deepseek-v4-flash:0731",
     "dots-studio/dots-3-note-preview:free",
     "grok-4.6",
     "nvidia/nemotron-3-ultra-550b-a55b:free",
-    "qwen3.8-27b",
+    "gpt-6-astra-900k",
     "gpt-6-sol",
+    "qwen3.8-27b",
     "gpt-6-luna",
     "qwen/qwen3-14b",
     "google/gemma-3n-e4b",
@@ -141,8 +142,8 @@
     },
     {
       "model": "gpt-6-astra",
-      "tokens": 706644046,
-      "cost": 1459.6200579999995
+      "tokens": 729818718,
+      "cost": 1538.7891999999995
     },
     {
       "model": "claude-fable-5-1",
@@ -156,9 +157,9 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-09-28T14:05:49.438Z",
+    "generatedAt": "2026-09-28T23:21:02.227Z",
     "dataThrough": "2026-09-28",
-    "sourceUpdatedAt": "2026-09-28T09:18:22.902Z",
+    "sourceUpdatedAt": "2026-09-28T17:19:22.000Z",
     "dates": [
       "2026-08-30",
       "2026-08-31",
@@ -194,7 +195,7 @@
     "latestWindow": {
       "start": "2026-09-22",
       "end": "2026-09-28",
-      "totalTokens": 460633532
+      "totalTokens": 488478204
     },
     "previousWindow": {
       "start": "2026-09-15",
@@ -206,17 +207,17 @@
     "models": [
       {
         "model": "deepseek-v4.1-flash",
-        "recentTokens": 397266276,
+        "recentTokens": 401933736,
         "priorTokens": 133200514,
-        "recentShare": 0.8624345567617079,
+        "recentShare": 0.8228283937925713,
         "priorShare": 0.040893117027119195,
-        "deltaPercentagePoints": 82.15414397345887,
+        "deltaPercentagePoints": 78.19352767654522,
         "direction": "up",
         "series": [
           0,
           0,
           0,
-          2590044,
+          2946578,
           0,
           0,
           0,
@@ -242,16 +243,16 @@
           69837324,
           21869200,
           25877028,
-          506778
+          5174238
         ]
       },
       {
         "model": "gpt-6-sol-900k",
         "recentTokens": 43222330,
         "priorTokens": 0,
-        "recentShare": 0.09383235695485581,
+        "recentShare": 0.08848364092003581,
         "priorShare": 0,
-        "deltaPercentagePoints": 9.383235695485581,
+        "deltaPercentagePoints": 8.848364092003582,
         "direction": "up",
         "series": [
           0,
@@ -287,12 +288,53 @@
         ]
       },
       {
+        "model": "gpt-6-astra",
+        "recentTokens": 23192609,
+        "priorTokens": 471745031,
+        "recentShare": 0.04747931189167245,
+        "priorShare": 0.1448277050916258,
+        "deltaPercentagePoints": -9.734839319995334,
+        "direction": "down",
+        "series": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          17868051,
+          0,
+          0,
+          0,
+          0,
+          59281428,
+          4437086,
+          0,
+          82168285,
+          71126228,
+          381381540,
+          90363491,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          17937,
+          0,
+          0,
+          0,
+          23174672
+        ]
+      },
+      {
         "model": "gpt-5.6-sol",
         "recentTokens": 8953198,
         "priorTokens": 395908915,
-        "recentShare": 0.01943670483806637,
+        "recentShare": 0.018328756383979825,
         "priorShare": 0.12154569908923014,
-        "deltaPercentagePoints": -10.210899425116377,
+        "deltaPercentagePoints": -10.321694270525033,
         "direction": "down",
         "series": [
           142253725,
@@ -331,9 +373,9 @@
         "model": "gpt-5.6-luna",
         "recentTokens": 8702622,
         "priorTokens": 1599084695,
-        "recentShare": 0.018892723597899078,
+        "recentShare": 0.01781578364958122,
         "priorShare": 0.4909257149631585,
-        "deltaPercentagePoints": -47.20329913652594,
+        "deltaPercentagePoints": -47.31099313135773,
         "direction": "down",
         "series": [
           25334161,
@@ -367,54 +409,13 @@
           0,
           0
         ]
-      },
-      {
-        "model": "gpt-6-astra-900k",
-        "recentTokens": 2391840,
-        "priorTokens": 46806879,
-        "recentShare": 0.005192500836000797,
-        "priorShare": 0.014369908367029335,
-        "deltaPercentagePoints": -0.9177407531028537,
-        "direction": "down",
-        "series": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          32372262,
-          304860927,
-          212414046,
-          2323550,
-          24541952,
-          8935163,
-          2341759,
-          4240445,
-          2815114,
-          1928059,
-          2004387,
-          2391840,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ]
       }
     ]
   },
-  "updatedAt": "2026-09-28T09:18:22.902Z",
+  "updatedAt": "2026-09-28T17:19:22.000Z",
   "sourceFreshness": {
     "dataThrough": "2026-09-28",
-    "sourceUpdatedAt": "2026-09-28T09:18:22.902Z",
-    "generatedAt": "2026-09-28T14:05:49.438Z"
+    "sourceUpdatedAt": "2026-09-28T17:19:22.000Z",
+    "generatedAt": "2026-09-28T23:21:02.227Z"
   }
 }

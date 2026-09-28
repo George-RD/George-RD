@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T14:06:16.730Z",
+  "generatedAt": "2026-09-28T23:21:09.753Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,10 +11,10 @@
     "focusStart": "2026-09-15",
     "focusEnd": "2026-09-28"
   },
-  "totalContributions": 15758,
+  "totalContributions": 15806,
   "metrics": {
     "activeDays": 13,
-    "focusShare": 0.8246753246753247,
+    "focusShare": 0.8558718861209964,
     "topRepos": [
       "FIRTH",
       "JK"
@@ -76,7 +76,7 @@
       "date": "2026-09-08",
       "contributions": 74,
       "repository": "firth",
-      "event": "merge",
+      "event": "review",
       "modelFamilies": {},
       "repositories": [
         {
@@ -85,15 +85,7 @@
           "commits": 11,
           "merges": 0,
           "reviews": 0,
-          "share": 0.3793103448275862
-        },
-        {
-          "name": "mag",
-          "score": 6,
-          "commits": 3,
-          "merges": 1,
-          "reviews": 2,
-          "share": 0.20689655172413793
+          "share": 0.4074074074074074
         },
         {
           "name": "rive-rs-cli",
@@ -101,7 +93,15 @@
           "commits": 4,
           "merges": 0,
           "reviews": 4,
-          "share": 0.20689655172413793
+          "share": 0.2222222222222222
+        },
+        {
+          "name": "mag",
+          "score": 4,
+          "commits": 3,
+          "merges": 0,
+          "reviews": 2,
+          "share": 0.14814814814814814
         },
         {
           "name": "openspine",
@@ -109,7 +109,7 @@
           "commits": 2,
           "merges": 0,
           "reviews": 2,
-          "share": 0.10344827586206896
+          "share": 0.1111111111111111
         },
         {
           "name": "hologlyph",
@@ -117,7 +117,7 @@
           "commits": 2,
           "merges": 0,
           "reviews": 0,
-          "share": 0.06896551724137931
+          "share": 0.07407407407407407
         },
         {
           "name": "design-studio",
@@ -125,7 +125,7 @@
           "commits": 0,
           "merges": 0,
           "reviews": 1,
-          "share": 0.017241379310344827
+          "share": 0.018518518518518517
         },
         {
           "name": "growth-arsenal",
@@ -133,7 +133,7 @@
           "commits": 0,
           "merges": 0,
           "reviews": 1,
-          "share": 0.017241379310344827
+          "share": 0.018518518518518517
         }
       ]
     },
@@ -141,7 +141,7 @@
       "date": "2026-09-09",
       "contributions": 110,
       "repository": "openspine",
-      "event": "merge",
+      "event": "review",
       "modelFamilies": {
         "claude": 34577999,
         "gpt": 672123,
@@ -151,35 +151,19 @@
       "repositories": [
         {
           "name": "openspine",
-          "score": 26,
+          "score": 14,
           "commits": 12,
-          "merges": 6,
+          "merges": 0,
           "reviews": 4,
-          "share": 0.35135135135135137
-        },
-        {
-          "name": "mag",
-          "score": 16,
-          "commits": 6,
-          "merges": 5,
-          "reviews": 0,
-          "share": 0.21621621621621623
+          "share": 0.3684210526315789
         },
         {
           "name": "rive-rs-cli",
-          "score": 14.5,
+          "score": 6.5,
           "commits": 5,
-          "merges": 4,
+          "merges": 0,
           "reviews": 3,
-          "share": 0.19594594594594594
-        },
-        {
-          "name": "growth-arsenal",
-          "score": 7,
-          "commits": 3,
-          "merges": 2,
-          "reviews": 0,
-          "share": 0.0945945945945946
+          "share": 0.17105263157894737
         },
         {
           "name": "firth",
@@ -187,15 +171,31 @@
           "commits": 6,
           "merges": 0,
           "reviews": 0,
-          "share": 0.08108108108108109
+          "share": 0.15789473684210525
+        },
+        {
+          "name": "mag",
+          "score": 6,
+          "commits": 6,
+          "merges": 0,
+          "reviews": 0,
+          "share": 0.15789473684210525
+        },
+        {
+          "name": "growth-arsenal",
+          "score": 3,
+          "commits": 3,
+          "merges": 0,
+          "reviews": 0,
+          "share": 0.07894736842105263
         },
         {
           "name": "design-studio",
-          "score": 4.5,
+          "score": 2.5,
           "commits": 2,
-          "merges": 1,
+          "merges": 0,
           "reviews": 1,
-          "share": 0.060810810810810814
+          "share": 0.06578947368421052
         }
       ]
     },
@@ -598,31 +598,31 @@
     },
     {
       "date": "2026-09-28",
-      "contributions": 172,
+      "contributions": 220,
       "repository": "firth",
       "event": "merge",
       "modelFamilies": {
         "claude": 0,
-        "gpt": 0,
+        "gpt": 23177212,
         "gemini": 0,
-        "other": 506778
+        "other": 5174238
       },
       "repositories": [
         {
           "name": "firth",
-          "score": 83.5,
-          "commits": 27,
-          "merges": 22,
-          "reviews": 25,
-          "share": 0.6761133603238867
+          "score": 129.5,
+          "commits": 31,
+          "merges": 39,
+          "reviews": 41,
+          "share": 0.7463976945244957
         },
         {
           "name": "Jev-knows",
-          "score": 40,
+          "score": 44,
           "commits": 0,
-          "merges": 20,
+          "merges": 22,
           "reviews": 0,
-          "share": 0.32388663967611336
+          "share": 0.25360230547550433
         }
       ]
     },
