@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" role="img" aria-labelledby="title desc">
   <title id="title">George-RD Tokscale activity trace</title>
   <desc id="desc">140B all-time tokens, $62.2K estimated all-time cost, 27 active days in the current 30-day window.</desc>
-  <!-- Generated from https://tokscale.ai/api/users/George-RD at 2026-09-29T13:03:45.338Z -->
+  <!-- Generated from https://tokscale.ai/api/users/George-RD at 2026-09-29T22:21:15.429Z -->
   <style>
     :root {
       --paper: #f1ede4;
@@ -67,7 +67,7 @@
   <text class="metric-value" x="58" y="214">#124</text>
   <text class="metric-note" x="58" y="237">TOKENS SORT / George-RD</text>
   <text class="metric-label" x="314" y="180">SUBMISSIONS</text>
-  <text class="metric-value" x="314" y="214">75</text>
+  <text class="metric-value" x="314" y="214">76</text>
   <text class="metric-note" x="314" y="237">56K SESSIONS</text>
 
   <text class="model-label" x="58" y="249">TOKEN MIX</text>
@@ -102,14 +102,14 @@
     <rect class="bar i1" x="850.0" y="199" width="7.5" height="4" rx="2" style="--delay:352ms"><title>2026-09-19 · 3.02M tokens</title></rect>
     <rect class="bar i1" x="863.0" y="199" width="7.5" height="4" rx="2" style="--delay:374ms"><title>2026-09-20 · 2.25M tokens</title></rect>
     <rect class="bar i1" x="876.0" y="199" width="7.5" height="4" rx="2" style="--delay:396ms"><title>2026-09-21 · 2.66M tokens</title></rect>
-    <rect class="bar i1" x="889.0" y="199" width="7.5" height="4" rx="2" style="--delay:418ms"><title>2026-09-22 · 225M tokens</title></rect>
+    <rect class="bar i1" x="889.0" y="199" width="7.5" height="4" rx="2" style="--delay:418ms"><title>2026-09-22 · 227M tokens</title></rect>
     <rect class="bar i1" x="902.0" y="199" width="7.5" height="4" rx="2" style="--delay:440ms"><title>2026-09-23 · 54.8M tokens</title></rect>
     <rect class="bar i1" x="915.0" y="199" width="7.5" height="4" rx="2" style="--delay:462ms"><title>2026-09-24 · 194M tokens</title></rect>
     <rect class="bar i1" x="928.0" y="198" width="7.5" height="5" rx="2" style="--delay:484ms"><title>2026-09-25 · 327M tokens</title></rect>
     <rect class="bar i1" x="941.0" y="199" width="7.5" height="4" rx="2" style="--delay:506ms"><title>2026-09-26 · 249M tokens</title></rect>
     <rect class="bar i4" x="954.0" y="131" width="7.5" height="72" rx="2" style="--delay:528ms"><title>2026-09-27 · 4.95B tokens</title></rect>
     <rect class="bar i2" x="967.0" y="177" width="7.5" height="26" rx="2" style="--delay:550ms"><title>2026-09-28 · 1.81B tokens</title></rect>
-    <rect class="bar i1" x="980.0" y="199" width="7.5" height="4" rx="2" style="--delay:572ms"><title>2026-09-29 · 229M tokens</title></rect>
+    <rect class="bar i1" x="980.0" y="199" width="7.5" height="4" rx="2" style="--delay:572ms"><title>2026-09-29 · 231M tokens</title></rect>
   </g>
   <path class="trace" pathLength="1" d="M646.0 177.2 L659.0 147.0 L672.0 177.6 L685.0 158.5 L698.0 187.0 L711.0 194.0 L724.0 194.0 L737.0 194.0 L750.0 194.0 L763.0 194.0 L776.0 183.7 L789.0 192.7 L802.0 168.6 L815.0 148.6 L828.0 163.8 L841.0 176.8 L854.0 194.0 L867.0 194.0 L880.0 194.0 L893.0 194.0 L906.0 194.0 L919.0 194.0 L932.0 194.0 L945.0 194.0 L958.0 125.0 L971.0 172.0 L984.0 194.0" />
 
