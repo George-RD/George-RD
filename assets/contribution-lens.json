@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T23:21:09.753Z",
+  "generatedAt": "2026-09-29T05:50:15.429Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -8,19 +8,19 @@
   "range": {
     "overviewStart": "2025-09-28",
     "overviewEnd": "2026-10-03",
-    "focusStart": "2026-09-15",
-    "focusEnd": "2026-09-28"
+    "focusStart": "2026-09-16",
+    "focusEnd": "2026-09-29"
   },
-  "totalContributions": 15806,
+  "totalContributions": 15849,
   "metrics": {
     "activeDays": 13,
-    "focusShare": 0.8558718861209964,
+    "focusShare": 0.8782467532467533,
     "topRepos": [
       "FIRTH",
       "JK"
     ],
     "focusDays": 14,
-    "streak": 7
+    "streak": 8
   },
   "focus": [
     {
@@ -203,7 +203,7 @@
       "date": "2026-09-10",
       "contributions": 35,
       "repository": "mag",
-      "event": "merge",
+      "event": null,
       "modelFamilies": {
         "claude": 70821954,
         "gpt": 168336749,
@@ -213,9 +213,9 @@
       "repositories": [
         {
           "name": "mag",
-          "score": 3,
+          "score": 1,
           "commits": 1,
-          "merges": 1,
+          "merges": 0,
           "reviews": 0,
           "share": 1
         }
@@ -225,7 +225,7 @@
       "date": "2026-09-11",
       "contributions": 21,
       "repository": "openspine",
-      "event": "merge",
+      "event": "review",
       "modelFamilies": {
         "claude": 178403,
         "gpt": 39970315,
@@ -235,19 +235,19 @@
       "repositories": [
         {
           "name": "openspine",
-          "score": 7.5,
+          "score": 1.5,
           "commits": 1,
-          "merges": 3,
+          "merges": 0,
           "reviews": 1,
-          "share": 0.7142857142857143
+          "share": 0.6
         },
         {
           "name": "rive-rs-cli",
-          "score": 3,
+          "score": 1,
           "commits": 1,
-          "merges": 1,
+          "merges": 0,
           "reviews": 0,
-          "share": 0.2857142857142857
+          "share": 0.4
         }
       ]
     },
@@ -269,15 +269,15 @@
           "commits": 29,
           "merges": 0,
           "reviews": 0,
-          "share": 0.7341772151898734
+          "share": 0.8169014084507042
         },
         {
           "name": "rive-rs-cli",
-          "score": 9.5,
+          "score": 5.5,
           "commits": 3,
-          "merges": 3,
+          "merges": 1,
           "reviews": 1,
-          "share": 0.24050632911392406
+          "share": 0.15492957746478872
         },
         {
           "name": "firth",
@@ -285,7 +285,7 @@
           "commits": 1,
           "merges": 0,
           "reviews": 0,
-          "share": 0.02531645569620253
+          "share": 0.028169014084507043
         }
       ]
     },
@@ -383,19 +383,19 @@
       "date": "2026-09-16",
       "contributions": 147,
       "repository": "openspine",
-      "event": "merge",
+      "event": null,
       "modelFamilies": {
-        "claude": 170215593,
-        "gpt": 901497893,
-        "gemini": 121138359,
-        "other": 15729858
+        "claude": 550878596,
+        "gpt": 2054131302,
+        "gemini": 254045872,
+        "other": 513056294
       },
       "repositories": [
         {
           "name": "openspine",
-          "score": 6,
+          "score": 4,
           "commits": 4,
-          "merges": 1,
+          "merges": 0,
           "reviews": 0,
           "share": 1
         }
@@ -407,10 +407,10 @@
       "repository": null,
       "event": null,
       "modelFamilies": {
-        "claude": 0,
-        "gpt": 2642125,
-        "gemini": 0,
-        "other": 886435
+        "claude": 616499432,
+        "gpt": 1031860582,
+        "gemini": 346131697,
+        "other": 359862735
       },
       "repositories": []
     },
@@ -420,10 +420,10 @@
       "repository": null,
       "event": null,
       "modelFamilies": {
-        "claude": 0,
-        "gpt": 4384082,
-        "gemini": 0,
-        "other": 438757
+        "claude": 146613307,
+        "gpt": 962278425,
+        "gemini": 79849966,
+        "other": 298060858
       },
       "repositories": []
     },
@@ -515,10 +515,10 @@
       "repository": "openspine",
       "event": "merge",
       "modelFamilies": {
-        "claude": 0,
-        "gpt": 6884958,
-        "gemini": 0,
-        "other": 19515294
+        "claude": 24220259,
+        "gpt": 72665573,
+        "gemini": 65359029,
+        "other": 31779507
       },
       "repositories": [
         {
@@ -537,10 +537,10 @@
       "repository": "design-studio",
       "event": "merge",
       "modelFamilies": {
-        "claude": 0,
-        "gpt": 32483969,
-        "gemini": 0,
-        "other": 69837324
+        "claude": 109480074,
+        "gpt": 88882034,
+        "gemini": 55555915,
+        "other": 73259979
       },
       "repositories": [
         {
@@ -559,10 +559,10 @@
       "repository": null,
       "event": null,
       "modelFamilies": {
-        "claude": 0,
-        "gpt": 3906918,
-        "gemini": 0,
-        "other": 21869200
+        "claude": 93095711,
+        "gpt": 49841713,
+        "gemini": 78145731,
+        "other": 28178434
       },
       "repositories": []
     },
@@ -572,10 +572,10 @@
       "repository": "firth",
       "event": "merge",
       "modelFamilies": {
-        "claude": 0,
-        "gpt": 0,
-        "gemini": 0,
-        "other": 25877028
+        "claude": 546486981,
+        "gpt": 2717555204,
+        "gemini": 303872301,
+        "other": 1386899140
       },
       "repositories": [
         {
@@ -598,23 +598,23 @@
     },
     {
       "date": "2026-09-28",
-      "contributions": 220,
+      "contributions": 219,
       "repository": "firth",
       "event": "merge",
       "modelFamilies": {
-        "claude": 0,
-        "gpt": 23177212,
-        "gemini": 0,
-        "other": 5174238
+        "claude": 455201410,
+        "gpt": 1071902166,
+        "gemini": 9086525,
+        "other": 270727083
       },
       "repositories": [
         {
           "name": "firth",
-          "score": 129.5,
+          "score": 129,
           "commits": 31,
           "merges": 39,
-          "reviews": 41,
-          "share": 0.7463976945244957
+          "reviews": 40,
+          "share": 0.7456647398843931
         },
         {
           "name": "Jev-knows",
@@ -622,22 +622,31 @@
           "commits": 0,
           "merges": 22,
           "reviews": 0,
-          "share": 0.25360230547550433
+          "share": 0.2543352601156069
         }
       ]
     },
     {
       "date": "2026-09-29",
-      "contributions": 0,
-      "repository": null,
-      "event": null,
+      "contributions": 44,
+      "repository": "firth",
+      "event": "merge",
       "modelFamilies": {
-        "claude": 0,
-        "gpt": 0,
+        "claude": 132867642,
+        "gpt": 74618648,
         "gemini": 0,
         "other": 0
       },
-      "repositories": []
+      "repositories": [
+        {
+          "name": "firth",
+          "score": 30.5,
+          "commits": 10,
+          "merges": 8,
+          "reviews": 9,
+          "share": 1
+        }
+      ]
     },
     {
       "date": "2026-09-30",
