@@ -1,14 +1,14 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-09-30T05:39:40.953Z",
+  "generatedAt": "2026-09-30T12:43:20.627Z",
   "username": "George-RD",
   "allTime": {
-    "rank": 124,
+    "rank": 125,
     "totalTokens": 139724157696,
     "totalCost": 62244.6162,
     "activeDays": 202,
-    "submissions": 77,
+    "submissions": 78,
     "sessions": 56021
   },
   "month": {
@@ -63,10 +63,11 @@
     "deepseek-v4.1-flash",
     "deepseek-v4-flash:0731",
     "gpt-6-astra-900k",
-    "qwen3.8-27b",
     "grok-4.6",
+    "gpt-5.6-sol-900k",
     "gpt-6-sol",
     "gpt-6-luna",
+    "qwen3.8-27b",
     "qwen/qwen3-14b",
     "google/gemma-3n-e4b",
     "gemini-3-pro-preview",
@@ -130,8 +131,7 @@
     "glm-5.3",
     "kimi-k3",
     "glm-5.3-flash",
-    "deepseek-v4-pro:0813",
-    "gpt-5.6-sol-900k"
+    "deepseek-v4-pro:0813"
   ],
   "topModels": [
     {
@@ -161,9 +161,9 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-09-30T05:39:43.896Z",
+    "generatedAt": "2026-09-30T12:43:22.847Z",
     "dataThrough": "2026-09-29",
-    "sourceUpdatedAt": "2026-09-30T01:22:53.383Z",
+    "sourceUpdatedAt": "2026-09-30T09:23:54.649Z",
     "dates": [
       "2026-08-31",
       "2026-09-01",
@@ -416,10 +416,10 @@
       }
     ]
   },
-  "updatedAt": "2026-09-30T01:22:53.383Z",
+  "updatedAt": "2026-09-30T09:23:54.649Z",
   "sourceFreshness": {
     "dataThrough": "2026-09-29",
-    "sourceUpdatedAt": "2026-09-30T01:22:53.383Z",
-    "generatedAt": "2026-09-30T05:39:43.896Z"
+    "sourceUpdatedAt": "2026-09-30T09:23:54.649Z",
+    "generatedAt": "2026-09-30T12:43:22.847Z"
   }
 }
