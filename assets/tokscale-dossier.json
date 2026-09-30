@@ -1,19 +1,19 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-09-30T12:43:20.627Z",
+  "generatedAt": "2026-09-30T22:21:37.712Z",
   "username": "George-RD",
   "allTime": {
     "rank": 125,
     "totalTokens": 139724157696,
-    "totalCost": 62244.6162,
+    "totalCost": 62244.6159,
     "activeDays": 202,
-    "submissions": 78,
+    "submissions": 79,
     "sessions": 56021
   },
   "month": {
     "totalTokens": 27825639616,
-    "totalCost": 10484.581700000002,
+    "totalCost": 10484.581400000003,
     "activeDays": 26,
     "contributions": 26
   },
@@ -161,9 +161,9 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-09-30T12:43:22.847Z",
+    "generatedAt": "2026-09-30T22:21:39.875Z",
     "dataThrough": "2026-09-29",
-    "sourceUpdatedAt": "2026-09-30T09:23:54.649Z",
+    "sourceUpdatedAt": "2026-09-30T17:24:52.998Z",
     "dates": [
       "2026-08-31",
       "2026-09-01",
@@ -416,10 +416,10 @@
       }
     ]
   },
-  "updatedAt": "2026-09-30T09:23:54.649Z",
+  "updatedAt": "2026-09-30T17:24:52.998Z",
   "sourceFreshness": {
     "dataThrough": "2026-09-29",
-    "sourceUpdatedAt": "2026-09-30T09:23:54.649Z",
-    "generatedAt": "2026-09-30T12:43:22.847Z"
+    "sourceUpdatedAt": "2026-09-30T17:24:52.998Z",
+    "generatedAt": "2026-09-30T22:21:39.875Z"
   }
 }
