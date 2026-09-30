@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T22:21:25.431Z",
+  "generatedAt": "2026-09-30T05:39:51.974Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -8,26 +8,26 @@
   "range": {
     "overviewStart": "2025-09-28",
     "overviewEnd": "2026-10-03",
-    "focusStart": "2026-09-16",
-    "focusEnd": "2026-09-29"
+    "focusStart": "2026-09-17",
+    "focusEnd": "2026-09-30"
   },
-  "totalContributions": 15985,
+  "totalContributions": 16029,
   "metrics": {
     "activeDays": 13,
-    "focusShare": 0.9001536098310292,
+    "focusShare": 0.9153046062407132,
     "topRepos": [
       "FIRTH",
       "JK"
     ],
     "focusDays": 14,
-    "streak": 8
+    "streak": 9
   },
   "focus": [
     {
       "date": "2026-09-07",
       "contributions": 54,
       "repository": "rive-rs-cli",
-      "event": "review",
+      "event": null,
       "modelFamilies": {},
       "repositories": [
         {
@@ -36,15 +36,7 @@
           "commits": 3,
           "merges": 0,
           "reviews": 0,
-          "share": 0.3
-        },
-        {
-          "name": "openspine",
-          "score": 2.5,
-          "commits": 2,
-          "merges": 0,
-          "reviews": 1,
-          "share": 0.25
+          "share": 0.3333333333333333
         },
         {
           "name": "design-studio",
@@ -52,15 +44,15 @@
           "commits": 2,
           "merges": 0,
           "reviews": 0,
-          "share": 0.2
+          "share": 0.2222222222222222
         },
         {
-          "name": "mag",
-          "score": 1.5,
-          "commits": 1,
+          "name": "openspine",
+          "score": 2,
+          "commits": 2,
           "merges": 0,
-          "reviews": 1,
-          "share": 0.15
+          "reviews": 0,
+          "share": 0.2222222222222222
         },
         {
           "name": "hologlyph",
@@ -68,7 +60,15 @@
           "commits": 1,
           "merges": 0,
           "reviews": 0,
-          "share": 0.1
+          "share": 0.1111111111111111
+        },
+        {
+          "name": "mag",
+          "score": 1,
+          "commits": 1,
+          "merges": 0,
+          "reviews": 0,
+          "share": 0.1111111111111111
         }
       ]
     },
@@ -76,7 +76,7 @@
       "date": "2026-09-08",
       "contributions": 74,
       "repository": "firth",
-      "event": "review",
+      "event": null,
       "modelFamilies": {},
       "repositories": [
         {
@@ -85,31 +85,23 @@
           "commits": 11,
           "merges": 0,
           "reviews": 0,
-          "share": 0.4074074074074074
+          "share": 0.5
         },
         {
           "name": "rive-rs-cli",
-          "score": 6,
+          "score": 4,
           "commits": 4,
           "merges": 0,
-          "reviews": 4,
-          "share": 0.2222222222222222
+          "reviews": 0,
+          "share": 0.18181818181818182
         },
         {
           "name": "mag",
-          "score": 4,
+          "score": 3,
           "commits": 3,
           "merges": 0,
-          "reviews": 2,
-          "share": 0.14814814814814814
-        },
-        {
-          "name": "openspine",
-          "score": 3,
-          "commits": 2,
-          "merges": 0,
-          "reviews": 2,
-          "share": 0.1111111111111111
+          "reviews": 0,
+          "share": 0.13636363636363635
         },
         {
           "name": "hologlyph",
@@ -117,23 +109,15 @@
           "commits": 2,
           "merges": 0,
           "reviews": 0,
-          "share": 0.07407407407407407
+          "share": 0.09090909090909091
         },
         {
-          "name": "design-studio",
-          "score": 0.5,
-          "commits": 0,
+          "name": "openspine",
+          "score": 2,
+          "commits": 2,
           "merges": 0,
-          "reviews": 1,
-          "share": 0.018518518518518517
-        },
-        {
-          "name": "growth-arsenal",
-          "score": 0.5,
-          "commits": 0,
-          "merges": 0,
-          "reviews": 1,
-          "share": 0.018518518518518517
+          "reviews": 0,
+          "share": 0.09090909090909091
         }
       ]
     },
@@ -572,19 +556,19 @@
       "repositories": [
         {
           "name": "firth",
-          "score": 42.5,
+          "score": 26.5,
           "commits": 11,
-          "merges": 12,
+          "merges": 4,
           "reviews": 15,
-          "share": 0.7456140350877193
+          "share": 0.8548387096774194
         },
         {
           "name": "Jev-knows",
-          "score": 14.5,
+          "score": 4.5,
           "commits": 0,
-          "merges": 7,
+          "merges": 2,
           "reviews": 1,
-          "share": 0.2543859649122807
+          "share": 0.14516129032258066
         }
       ]
     },
@@ -620,23 +604,23 @@
     },
     {
       "date": "2026-09-29",
-      "contributions": 180,
+      "contributions": 182,
       "repository": "firth",
       "event": "merge",
       "modelFamilies": {
         "claude": 132867642,
         "gpt": 74618648,
         "gemini": 0,
-        "other": 23259850
+        "other": 23294138
       },
       "repositories": [
         {
           "name": "firth",
-          "score": 63,
+          "score": 70,
           "commits": 15,
-          "merges": 19,
-          "reviews": 20,
-          "share": 0.9545454545454546
+          "merges": 22,
+          "reviews": 22,
+          "share": 0.958904109589041
         },
         {
           "name": "design-studio",
@@ -644,22 +628,26 @@
           "commits": 1,
           "merges": 1,
           "reviews": 0,
-          "share": 0.045454545454545456
+          "share": 0.0410958904109589
         }
       ]
     },
     {
       "date": "2026-09-30",
-      "contributions": 0,
-      "repository": null,
-      "event": null,
-      "modelFamilies": {
-        "claude": 0,
-        "gpt": 0,
-        "gemini": 0,
-        "other": 0
-      },
-      "repositories": []
+      "contributions": 42,
+      "repository": "firth",
+      "event": "merge",
+      "modelFamilies": {},
+      "repositories": [
+        {
+          "name": "firth",
+          "score": 34,
+          "commits": 9,
+          "merges": 10,
+          "reviews": 10,
+          "share": 1
+        }
+      ]
     },
     {
       "date": "2026-10-01",
