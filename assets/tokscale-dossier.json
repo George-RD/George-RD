@@ -1,19 +1,19 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-10-01T06:04:23.587Z",
+  "generatedAt": "2026-10-01T13:26:48.898Z",
   "username": "George-RD",
   "allTime": {
     "rank": 125,
-    "totalTokens": 139724157696,
-    "totalCost": 62244.6162,
+    "totalTokens": 139724327304,
+    "totalCost": 62244.6233,
     "activeDays": 202,
-    "submissions": 80,
+    "submissions": 81,
     "sessions": 56021
   },
   "month": {
-    "totalTokens": 24345953187,
-    "totalCost": 8988.304399999999,
+    "totalTokens": 24346122795,
+    "totalCost": 8988.3115,
     "activeDays": 25,
     "contributions": 25
   },
@@ -63,11 +63,9 @@
     "deepseek-v4.1-flash",
     "deepseek-v4-flash:0731",
     "gpt-6-astra-900k",
-    "gpt-6-sol",
     "qwen3.8-27b",
     "grok-4.6",
     "gpt-5.6-sol-900k",
-    "gpt-6-luna",
     "qwen/qwen3-14b",
     "google/gemma-3n-e4b",
     "gemini-3-pro-preview",
@@ -83,7 +81,9 @@
     "claude-fable-5-1",
     "gemini-3.8-flash",
     "grok-4.7",
+    "gpt-6-luna",
     "claude-opus-5-5",
+    "gpt-6-sol",
     "google/gemma-3-12b",
     "deepseek/deepseek-r1-0528-qwen3-8b",
     "qwen/qwen3-4b",
@@ -121,10 +121,10 @@
     "ultravox-v0_5-llama-3_1-8b",
     "claude-sonnet-4-6-thinking",
     "anthropic/claude-opus-5",
-    "gpt-6-sol-900k",
     "gpt-6-luna-900k",
     "minimax-m3",
     "claude-opus-4-5",
+    "gpt-6-sol-900k",
     "deepseek-v4-flash-0731",
     "glm-4.6",
     "glm-4.7",
@@ -161,9 +161,9 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-10-01T06:04:27.886Z",
+    "generatedAt": "2026-10-01T13:26:54.121Z",
     "dataThrough": "2026-09-29",
-    "sourceUpdatedAt": "2026-10-01T01:25:50.899Z",
+    "sourceUpdatedAt": "2026-10-01T09:27:04.377Z",
     "dates": [
       "2026-08-31",
       "2026-09-01",
@@ -416,10 +416,10 @@
       }
     ]
   },
-  "updatedAt": "2026-10-01T01:25:50.899Z",
+  "updatedAt": "2026-10-01T09:27:04.377Z",
   "sourceFreshness": {
     "dataThrough": "2026-09-29",
-    "sourceUpdatedAt": "2026-10-01T01:25:50.899Z",
-    "generatedAt": "2026-10-01T06:04:27.886Z"
+    "sourceUpdatedAt": "2026-10-01T09:27:04.377Z",
+    "generatedAt": "2026-10-01T13:26:54.121Z"
   }
 }
