@@ -1,21 +1,21 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-09-30T22:21:37.712Z",
+  "generatedAt": "2026-10-01T06:04:23.587Z",
   "username": "George-RD",
   "allTime": {
     "rank": 125,
     "totalTokens": 139724157696,
-    "totalCost": 62244.6159,
+    "totalCost": 62244.6162,
     "activeDays": 202,
-    "submissions": 79,
+    "submissions": 80,
     "sessions": 56021
   },
   "month": {
-    "totalTokens": 27825639616,
-    "totalCost": 10484.581400000003,
-    "activeDays": 26,
-    "contributions": 26
+    "totalTokens": 24345953187,
+    "totalCost": 8988.304399999999,
+    "activeDays": 25,
+    "contributions": 25
   },
   "clients": [
     "codex",
@@ -63,11 +63,11 @@
     "deepseek-v4.1-flash",
     "deepseek-v4-flash:0731",
     "gpt-6-astra-900k",
+    "gpt-6-sol",
+    "qwen3.8-27b",
     "grok-4.6",
     "gpt-5.6-sol-900k",
-    "gpt-6-sol",
     "gpt-6-luna",
-    "qwen3.8-27b",
     "qwen/qwen3-14b",
     "google/gemma-3n-e4b",
     "gemini-3-pro-preview",
@@ -135,11 +135,6 @@
   ],
   "topModels": [
     {
-      "model": "gpt-5.6-sol",
-      "tokens": 3507119705,
-      "cost": 2323.3751588
-    },
-    {
       "model": "gpt-6-astra-900k",
       "tokens": 601169504,
       "cost": 2153.9779939999994
@@ -155,15 +150,20 @@
       "cost": 1576.0861745000013
     },
     {
+      "model": "gpt-5.6-sol",
+      "tokens": 1547546292,
+      "cost": 1178.741261999999
+    },
+    {
       "model": "claude-fable-5-1",
       "tokens": 1450061442,
       "cost": 843.7194902499989
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-09-30T22:21:39.875Z",
+    "generatedAt": "2026-10-01T06:04:27.886Z",
     "dataThrough": "2026-09-29",
-    "sourceUpdatedAt": "2026-09-30T17:24:52.998Z",
+    "sourceUpdatedAt": "2026-10-01T01:25:50.899Z",
     "dates": [
       "2026-08-31",
       "2026-09-01",
@@ -219,7 +219,7 @@
         "direction": "down",
         "series": [
           0,
-          456365812,
+          0,
           119284912,
           759058754,
           0,
@@ -416,10 +416,10 @@
       }
     ]
   },
-  "updatedAt": "2026-09-30T17:24:52.998Z",
+  "updatedAt": "2026-10-01T01:25:50.899Z",
   "sourceFreshness": {
     "dataThrough": "2026-09-29",
-    "sourceUpdatedAt": "2026-09-30T17:24:52.998Z",
-    "generatedAt": "2026-09-30T22:21:39.875Z"
+    "sourceUpdatedAt": "2026-10-01T01:25:50.899Z",
+    "generatedAt": "2026-10-01T06:04:27.886Z"
   }
 }
