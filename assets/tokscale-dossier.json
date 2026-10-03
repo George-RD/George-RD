@@ -1,14 +1,14 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-10-03T05:25:00.853Z",
+  "generatedAt": "2026-10-03T11:45:31.774Z",
   "username": "George-RD",
   "allTime": {
     "rank": 126,
     "totalTokens": 139724327304,
     "totalCost": 62244.623,
     "activeDays": 202,
-    "submissions": 86,
+    "submissions": 87,
     "sessions": 56021
   },
   "month": {
@@ -121,10 +121,10 @@
     "ultravox-v0_5-llama-3_1-8b",
     "claude-sonnet-4-6-thinking",
     "anthropic/claude-opus-5",
-    "gpt-6-sol-900k",
     "gpt-6-luna-900k",
     "minimax-m3",
     "claude-opus-4-5",
+    "gpt-6-sol-900k",
     "deepseek-v4-flash-0731",
     "glm-4.6",
     "glm-4.7",
@@ -161,9 +161,9 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-10-03T05:25:03.299Z",
+    "generatedAt": "2026-10-03T11:45:33.921Z",
     "dataThrough": "2026-09-29",
-    "sourceUpdatedAt": "2026-10-03T01:31:35.859Z",
+    "sourceUpdatedAt": "2026-10-03T09:32:35.820Z",
     "dates": [
       "2026-08-31",
       "2026-09-01",
@@ -416,10 +416,10 @@
       }
     ]
   },
-  "updatedAt": "2026-10-03T01:31:35.859Z",
+  "updatedAt": "2026-10-03T09:32:35.820Z",
   "sourceFreshness": {
     "dataThrough": "2026-09-29",
-    "sourceUpdatedAt": "2026-10-03T01:31:35.859Z",
-    "generatedAt": "2026-10-03T05:25:03.299Z"
+    "sourceUpdatedAt": "2026-10-03T09:32:35.820Z",
+    "generatedAt": "2026-10-03T11:45:33.921Z"
   }
 }
