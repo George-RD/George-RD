@@ -1,21 +1,21 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-10-02T22:19:11.322Z",
+  "generatedAt": "2026-10-03T05:25:00.853Z",
   "username": "George-RD",
   "allTime": {
     "rank": 126,
     "totalTokens": 139724327304,
     "totalCost": 62244.623,
     "activeDays": 202,
-    "submissions": 85,
+    "submissions": 86,
     "sessions": 56021
   },
   "month": {
-    "totalTokens": 22912439822,
-    "totalCost": 8234.086599999997,
-    "activeDays": 24,
-    "contributions": 24
+    "totalTokens": 20199020249,
+    "totalCost": 7263.519099999999,
+    "activeDays": 23,
+    "contributions": 23
   },
   "clients": [
     "codex",
@@ -121,10 +121,10 @@
     "ultravox-v0_5-llama-3_1-8b",
     "claude-sonnet-4-6-thinking",
     "anthropic/claude-opus-5",
+    "gpt-6-sol-900k",
     "gpt-6-luna-900k",
     "minimax-m3",
     "claude-opus-4-5",
-    "gpt-6-sol-900k",
     "deepseek-v4-flash-0731",
     "glm-4.6",
     "glm-4.7",
@@ -146,24 +146,24 @@
     },
     {
       "model": "claude-opus-5",
-      "tokens": 2520197409,
-      "cost": 1550.5426370000012
+      "tokens": 2474940030,
+      "cost": 1516.602666250001
     },
     {
       "model": "gpt-5.6-sol",
-      "tokens": 1330974859,
-      "cost": 953.1696207999992
+      "tokens": 732713482,
+      "cost": 595.8474987999998
     },
     {
-      "model": "claude-fable-5-1",
-      "tokens": 754427758,
-      "cost": 469.46448599999934
+      "model": "claude-opus-5-5",
+      "tokens": 1202005251,
+      "cost": 450.9925978000002
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-10-02T22:19:18.904Z",
+    "generatedAt": "2026-10-03T05:25:03.299Z",
     "dataThrough": "2026-09-29",
-    "sourceUpdatedAt": "2026-10-02T17:30:39.517Z",
+    "sourceUpdatedAt": "2026-10-03T01:31:35.859Z",
     "dates": [
       "2026-08-31",
       "2026-09-01",
@@ -221,7 +221,7 @@
           0,
           0,
           0,
-          759058754,
+          0,
           0,
           0,
           0,
@@ -385,7 +385,7 @@
           0,
           0,
           0,
-          96616991,
+          0,
           0,
           0,
           0,
@@ -416,10 +416,10 @@
       }
     ]
   },
-  "updatedAt": "2026-10-02T17:30:39.517Z",
+  "updatedAt": "2026-10-03T01:31:35.859Z",
   "sourceFreshness": {
     "dataThrough": "2026-09-29",
-    "sourceUpdatedAt": "2026-10-02T17:30:39.517Z",
-    "generatedAt": "2026-10-02T22:19:18.904Z"
+    "sourceUpdatedAt": "2026-10-03T01:31:35.859Z",
+    "generatedAt": "2026-10-03T05:25:03.299Z"
   }
 }
