@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T21:34:52.204Z",
+  "generatedAt": "2026-10-05T05:50:04.642Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -8,8 +8,8 @@
   "range": {
     "overviewStart": "2025-10-05",
     "overviewEnd": "2026-10-10",
-    "focusStart": "2026-09-21",
-    "focusEnd": "2026-10-04"
+    "focusStart": "2026-09-22",
+    "focusEnd": "2026-10-05"
   },
   "totalContributions": 16327,
   "metrics": {
@@ -23,278 +23,6 @@
     "streak": 0
   },
   "focus": [
-    {
-      "date": "2026-09-07",
-      "contributions": 54,
-      "repository": "rive-rs-cli",
-      "event": null,
-      "modelFamilies": {},
-      "repositories": [
-        {
-          "name": "rive-rs-cli",
-          "score": 3,
-          "commits": 3,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.3333333333333333
-        },
-        {
-          "name": "design-studio",
-          "score": 2,
-          "commits": 2,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.2222222222222222
-        },
-        {
-          "name": "openspine",
-          "score": 2,
-          "commits": 2,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.2222222222222222
-        },
-        {
-          "name": "hologlyph",
-          "score": 1,
-          "commits": 1,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.1111111111111111
-        },
-        {
-          "name": "mag",
-          "score": 1,
-          "commits": 1,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.1111111111111111
-        }
-      ]
-    },
-    {
-      "date": "2026-09-08",
-      "contributions": 74,
-      "repository": "firth",
-      "event": null,
-      "modelFamilies": {},
-      "repositories": [
-        {
-          "name": "firth",
-          "score": 11,
-          "commits": 11,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.5
-        },
-        {
-          "name": "rive-rs-cli",
-          "score": 4,
-          "commits": 4,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.18181818181818182
-        },
-        {
-          "name": "mag",
-          "score": 3,
-          "commits": 3,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.13636363636363635
-        },
-        {
-          "name": "hologlyph",
-          "score": 2,
-          "commits": 2,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.09090909090909091
-        },
-        {
-          "name": "openspine",
-          "score": 2,
-          "commits": 2,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.09090909090909091
-        }
-      ]
-    },
-    {
-      "date": "2026-09-09",
-      "contributions": 110,
-      "repository": "openspine",
-      "event": null,
-      "modelFamilies": {
-        "claude": 34577999,
-        "gpt": 672123,
-        "gemini": 0,
-        "other": 0
-      },
-      "repositories": [
-        {
-          "name": "openspine",
-          "score": 12,
-          "commits": 12,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.35294117647058826
-        },
-        {
-          "name": "firth",
-          "score": 6,
-          "commits": 6,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.17647058823529413
-        },
-        {
-          "name": "mag",
-          "score": 6,
-          "commits": 6,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.17647058823529413
-        },
-        {
-          "name": "rive-rs-cli",
-          "score": 5,
-          "commits": 5,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.14705882352941177
-        },
-        {
-          "name": "growth-arsenal",
-          "score": 3,
-          "commits": 3,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.08823529411764706
-        },
-        {
-          "name": "design-studio",
-          "score": 2,
-          "commits": 2,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.058823529411764705
-        }
-      ]
-    },
-    {
-      "date": "2026-09-10",
-      "contributions": 35,
-      "repository": "mag",
-      "event": null,
-      "modelFamilies": {
-        "claude": 70821954,
-        "gpt": 168336749,
-        "gemini": 5902502,
-        "other": 117560
-      },
-      "repositories": [
-        {
-          "name": "mag",
-          "score": 1,
-          "commits": 1,
-          "merges": 0,
-          "reviews": 0,
-          "share": 1
-        }
-      ]
-    },
-    {
-      "date": "2026-09-11",
-      "contributions": 21,
-      "repository": "openspine",
-      "event": null,
-      "modelFamilies": {
-        "claude": 178403,
-        "gpt": 39970315,
-        "gemini": 0,
-        "other": 0
-      },
-      "repositories": [
-        {
-          "name": "openspine",
-          "score": 1,
-          "commits": 1,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.5
-        },
-        {
-          "name": "rive-rs-cli",
-          "score": 1,
-          "commits": 1,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.5
-        }
-      ]
-    },
-    {
-      "date": "2026-09-12",
-      "contributions": 106,
-      "repository": "openspine",
-      "event": null,
-      "modelFamilies": {
-        "claude": 0,
-        "gpt": 305078870,
-        "gemini": 0,
-        "other": 194396
-      },
-      "repositories": [
-        {
-          "name": "openspine",
-          "score": 29,
-          "commits": 29,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.8787878787878788
-        },
-        {
-          "name": "rive-rs-cli",
-          "score": 3,
-          "commits": 3,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.09090909090909091
-        },
-        {
-          "name": "firth",
-          "score": 1,
-          "commits": 1,
-          "merges": 0,
-          "reviews": 0,
-          "share": 0.030303030303030304
-        }
-      ]
-    },
-    {
-      "date": "2026-09-13",
-      "contributions": 34,
-      "repository": "openspine",
-      "event": null,
-      "modelFamilies": {
-        "claude": 0,
-        "gpt": 907226445,
-        "gemini": 0,
-        "other": 120181047
-      },
-      "repositories": [
-        {
-          "name": "openspine",
-          "score": 6,
-          "commits": 6,
-          "merges": 0,
-          "reviews": 0,
-          "share": 1
-        }
-      ]
-    },
     {
       "date": "2026-09-14",
       "contributions": 202,
@@ -672,6 +400,97 @@
       "repository": null,
       "event": null,
       "modelFamilies": {},
+      "repositories": []
+    },
+    {
+      "date": "2026-10-05",
+      "contributions": 0,
+      "repository": null,
+      "event": "explore",
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 1440852
+      },
+      "repositories": []
+    },
+    {
+      "date": "2026-10-06",
+      "contributions": 0,
+      "repository": null,
+      "event": null,
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 0
+      },
+      "repositories": []
+    },
+    {
+      "date": "2026-10-07",
+      "contributions": 0,
+      "repository": null,
+      "event": null,
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 0
+      },
+      "repositories": []
+    },
+    {
+      "date": "2026-10-08",
+      "contributions": 0,
+      "repository": null,
+      "event": null,
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 0
+      },
+      "repositories": []
+    },
+    {
+      "date": "2026-10-09",
+      "contributions": 0,
+      "repository": null,
+      "event": null,
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 0
+      },
+      "repositories": []
+    },
+    {
+      "date": "2026-10-10",
+      "contributions": 0,
+      "repository": null,
+      "event": null,
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 0
+      },
+      "repositories": []
+    },
+    {
+      "date": "2026-10-11",
+      "contributions": 0,
+      "repository": null,
+      "event": null,
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 0
+      },
       "repositories": []
     }
   ]
