@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" role="img" aria-labelledby="title desc">
   <title id="title">George-RD Tokscale activity trace</title>
   <desc id="desc">140B all-time tokens, $62.3K estimated all-time cost, 23 active days in the current 30-day window.</desc>
-  <!-- Generated from https://tokscale.ai/api/users/George-RD at 2026-10-05T14:50:35.475Z -->
+  <!-- Generated from https://tokscale.ai/api/users/George-RD at 2026-10-06T00:08:42.546Z -->
   <style>
     :root {
       --paper: #f1ede4;
@@ -67,7 +67,7 @@
   <text class="metric-value" x="58" y="214">#129</text>
   <text class="metric-note" x="58" y="237">TOKENS SORT / George-RD</text>
   <text class="metric-label" x="314" y="180">SUBMISSIONS</text>
-  <text class="metric-value" x="314" y="214">93</text>
+  <text class="metric-value" x="314" y="214">94</text>
   <text class="metric-note" x="314" y="237">56K SESSIONS</text>
 
   <text class="model-label" x="58" y="249">TOKEN MIX</text>
@@ -104,8 +104,8 @@
     <rect class="bar i4" x="876.0" y="131" width="7.5" height="72" rx="2" style="--delay:396ms"><title>2026-09-27 · 4.95B tokens</title></rect>
     <rect class="bar i2" x="889.0" y="177" width="7.5" height="26" rx="2" style="--delay:418ms"><title>2026-09-28 · 1.81B tokens</title></rect>
     <rect class="bar i1" x="902.0" y="199" width="7.5" height="4" rx="2" style="--delay:440ms"><title>2026-09-29 · 231M tokens</title></rect>
-    <rect class="bar i1" x="915.0" y="199" width="7.5" height="4" rx="2" style="--delay:462ms"><title>2026-10-02 · 24.6M tokens</title></rect>
-    <rect class="bar i1" x="928.0" y="199" width="7.5" height="4" rx="2" style="--delay:484ms"><title>2026-10-05 · 24.5M tokens</title></rect>
+    <rect class="bar i1" x="915.0" y="199" width="7.5" height="4" rx="2" style="--delay:462ms"><title>2026-10-02 · 29.2M tokens</title></rect>
+    <rect class="bar i1" x="928.0" y="199" width="7.5" height="4" rx="2" style="--delay:484ms"><title>2026-10-05 · 39.3M tokens</title></rect>
   </g>
   <path class="trace" pathLength="1" d="M646.0 194.0 L659.0 194.0 L672.0 194.0 L685.0 194.0 L698.0 183.7 L711.0 192.7 L724.0 168.6 L737.0 148.6 L750.0 163.8 L763.0 176.8 L776.0 194.0 L789.0 194.0 L802.0 194.0 L815.0 194.0 L828.0 194.0 L841.0 194.0 L854.0 194.0 L867.0 194.0 L880.0 125.0 L893.0 172.0 L906.0 194.0 L919.0 194.0 L932.0 194.0" />
 
@@ -115,5 +115,5 @@
   <text class="model-name" x="642" y="293">claude-opus-5</text><text class="model-value" x="1098" y="293" text-anchor="end">1.67B</text>
   <line class="rule" x1="58" y1="311" x2="1142" y2="311" />
   <text class="stamp" x="58" y="333">INPUT 5% / OUTPUT 0.4% / CACHE 94.6% / REASONING 0%</text>
-  <text class="stamp" x="642" y="333">SOURCE TOKSCALE.AI/U/George-RD / GENERATED 05 OCT 2026</text>
+  <text class="stamp" x="642" y="333">SOURCE TOKSCALE.AI/U/George-RD / GENERATED 06 OCT 2026</text>
 </svg>

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T14:50:48.573Z",
+  "generatedAt": "2026-10-06T00:09:35.019Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -8,19 +8,19 @@
   "range": {
     "overviewStart": "2025-10-05",
     "overviewEnd": "2026-10-10",
-    "focusStart": "2026-09-22",
-    "focusEnd": "2026-10-05"
+    "focusStart": "2026-09-23",
+    "focusEnd": "2026-10-06"
   },
   "totalContributions": 16071,
   "metrics": {
-    "activeDays": 12,
-    "focusShare": 0.9194805194805195,
+    "activeDays": 11,
+    "focusShare": 0.9619565217391305,
     "topRepos": [
       "FIRTH",
       "JK"
     ],
     "focusDays": 14,
-    "streak": 1
+    "streak": 0
   },
   "focus": [
     {
@@ -378,7 +378,7 @@
         "claude": 0,
         "gpt": 0,
         "gemini": 0,
-        "other": 24555989
+        "other": 29232469
       },
       "repositories": [
         {
@@ -416,7 +416,7 @@
         "claude": 0,
         "gpt": 16043,
         "gemini": 0,
-        "other": 24443961
+        "other": 39262873
       },
       "repositories": []
     },
@@ -425,12 +425,7 @@
       "contributions": 0,
       "repository": null,
       "event": null,
-      "modelFamilies": {
-        "claude": 0,
-        "gpt": 0,
-        "gemini": 0,
-        "other": 0
-      },
+      "modelFamilies": {},
       "repositories": []
     },
     {
