@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" role="img" aria-labelledby="title desc">
   <title id="title">George-RD Tokscale activity trace</title>
   <desc id="desc">140B all-time tokens, $62.3K estimated all-time cost, 24 active days in the current 30-day window.</desc>
-  <!-- Generated from https://tokscale.ai/api/users/George-RD at 2026-10-06T18:27:16.322Z -->
+  <!-- Generated from https://tokscale.ai/api/users/George-RD at 2026-10-07T06:08:31.318Z -->
   <style>
     :root {
       --paper: #f1ede4;
@@ -64,10 +64,10 @@
   <text class="metric-value" x="314" y="130">19.5B</text>
   <text class="metric-note" x="314" y="153">24 ACTIVE DAYS</text>
   <text class="metric-label" x="58" y="180">GLOBAL RANK</text>
-  <text class="metric-value" x="58" y="214">#130</text>
+  <text class="metric-value" x="58" y="214">#131</text>
   <text class="metric-note" x="58" y="237">TOKENS SORT / George-RD</text>
   <text class="metric-label" x="314" y="180">SUBMISSIONS</text>
-  <text class="metric-value" x="314" y="214">97</text>
+  <text class="metric-value" x="314" y="214">98</text>
   <text class="metric-note" x="314" y="237">56K SESSIONS</text>
 
   <text class="model-label" x="58" y="249">TOKEN MIX</text>
@@ -116,5 +116,5 @@
   <text class="model-name" x="642" y="293">claude-opus-5</text><text class="model-value" x="1098" y="293" text-anchor="end">1.67B</text>
   <line class="rule" x1="58" y1="311" x2="1142" y2="311" />
   <text class="stamp" x="58" y="333">INPUT 5% / OUTPUT 0.4% / CACHE 94.6% / REASONING 0%</text>
-  <text class="stamp" x="642" y="333">SOURCE TOKSCALE.AI/U/George-RD / GENERATED 06 OCT 2026</text>
+  <text class="stamp" x="642" y="333">SOURCE TOKSCALE.AI/U/George-RD / GENERATED 07 OCT 2026</text>
 </svg>
