@@ -1,21 +1,21 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-10-08T23:25:47.197Z",
+  "generatedAt": "2026-10-09T06:16:46.272Z",
   "username": "George-RD",
   "allTime": {
     "rank": 135,
     "totalTokens": 139862897808,
-    "totalCost": 62260.5039,
+    "totalCost": 62260.5042,
     "activeDays": 203,
-    "submissions": 103,
+    "submissions": 104,
     "sessions": 56074
   },
   "month": {
-    "totalTokens": 19510172681,
-    "totalCost": 6798.2912,
-    "activeDays": 26,
-    "contributions": 26
+    "totalTokens": 19474922559,
+    "totalCost": 6767.993199999999,
+    "activeDays": 25,
+    "contributions": 25
   },
   "clients": [
     "codex",
@@ -151,8 +151,8 @@
     },
     {
       "model": "gpt-5.6-sol",
-      "tokens": 730760089,
-      "cost": 593.7206563999998
+      "tokens": 730087966,
+      "cost": 592.3145887999998
     },
     {
       "model": "claude-opus-5-5",
@@ -161,9 +161,9 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-10-08T23:25:50.971Z",
+    "generatedAt": "2026-10-09T06:16:49.617Z",
     "dataThrough": "2026-10-08",
-    "sourceUpdatedAt": "2026-10-08T17:48:36.395Z",
+    "sourceUpdatedAt": "2026-10-09T01:49:44.721Z",
     "dates": [
       "2026-09-09",
       "2026-09-10",
@@ -293,10 +293,10 @@
       }
     ]
   },
-  "updatedAt": "2026-10-08T17:48:36.395Z",
+  "updatedAt": "2026-10-09T01:49:44.721Z",
   "sourceFreshness": {
     "dataThrough": "2026-10-08",
-    "sourceUpdatedAt": "2026-10-08T17:48:36.395Z",
-    "generatedAt": "2026-10-08T23:25:50.971Z"
+    "sourceUpdatedAt": "2026-10-09T01:49:44.721Z",
+    "generatedAt": "2026-10-09T06:16:49.617Z"
   }
 }
