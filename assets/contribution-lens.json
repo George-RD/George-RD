@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T06:02:47.757Z",
+  "generatedAt": "2026-10-10T12:40:30.524Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,10 +11,10 @@
     "focusStart": "2026-09-27",
     "focusEnd": "2026-10-10"
   },
-  "totalContributions": 16732,
+  "totalContributions": 16814,
   "metrics": {
     "activeDays": 12,
-    "focusShare": 0.9915966386554622,
+    "focusShare": 0.9863760217983651,
     "topRepos": [
       "FIRTH",
       "JK"
@@ -266,7 +266,7 @@
       "date": "2026-09-27",
       "contributions": 152,
       "repository": "firth",
-      "event": "review",
+      "event": null,
       "modelFamilies": {
         "claude": 546486981,
         "gpt": 2717555204,
@@ -276,10 +276,10 @@
       "repositories": [
         {
           "name": "firth",
-          "score": 15.5,
+          "score": 11,
           "commits": 11,
           "merges": 0,
-          "reviews": 9,
+          "reviews": 0,
           "share": 1
         }
       ]
@@ -298,19 +298,19 @@
       "repositories": [
         {
           "name": "firth",
-          "score": 122,
+          "score": 115.5,
           "commits": 42,
-          "merges": 30,
-          "reviews": 40,
-          "share": 0.7721518987341772
+          "merges": 27,
+          "reviews": 39,
+          "share": 0.8162544169611308
         },
         {
           "name": "Jev-knows",
-          "score": 36,
+          "score": 26,
           "commits": 0,
-          "merges": 18,
+          "merges": 13,
           "reviews": 0,
-          "share": 0.22784810126582278
+          "share": 0.18374558303886926
         }
       ]
     },
@@ -474,11 +474,33 @@
     },
     {
       "date": "2026-10-10",
-      "contributions": 91,
-      "repository": null,
-      "event": null,
-      "modelFamilies": {},
-      "repositories": []
+      "contributions": 173,
+      "repository": "firth",
+      "event": "merge",
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 6525156
+      },
+      "repositories": [
+        {
+          "name": "firth",
+          "score": 29,
+          "commits": 8,
+          "merges": 8,
+          "reviews": 10,
+          "share": 0.9354838709677419
+        },
+        {
+          "name": "skills",
+          "score": 2,
+          "commits": 2,
+          "merges": 0,
+          "reviews": 0,
+          "share": 0.06451612903225806
+        }
+      ]
     },
     {
       "date": "2026-10-11",
