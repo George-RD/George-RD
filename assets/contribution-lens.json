@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T12:40:30.524Z",
+  "generatedAt": "2026-10-10T21:50:45.950Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,10 +11,10 @@
     "focusStart": "2026-09-27",
     "focusEnd": "2026-10-10"
   },
-  "totalContributions": 16814,
+  "totalContributions": 16845,
   "metrics": {
     "activeDays": 12,
-    "focusShare": 0.9863760217983651,
+    "focusShare": 0.9867021276595744,
     "topRepos": [
       "FIRTH",
       "JK"
@@ -298,19 +298,19 @@
       "repositories": [
         {
           "name": "firth",
-          "score": 115.5,
+          "score": 99,
           "commits": 42,
-          "merges": 27,
-          "reviews": 39,
-          "share": 0.8162544169611308
+          "merges": 22,
+          "reviews": 26,
+          "share": 0.908256880733945
         },
         {
           "name": "Jev-knows",
-          "score": 26,
+          "score": 10,
           "commits": 0,
-          "merges": 13,
+          "merges": 5,
           "reviews": 0,
-          "share": 0.18374558303886926
+          "share": 0.09174311926605505
         }
       ]
     },
@@ -474,23 +474,23 @@
     },
     {
       "date": "2026-10-10",
-      "contributions": 173,
+      "contributions": 204,
       "repository": "firth",
       "event": "merge",
       "modelFamilies": {
         "claude": 0,
         "gpt": 0,
         "gemini": 0,
-        "other": 6525156
+        "other": 12307293
       },
       "repositories": [
         {
           "name": "firth",
-          "score": 29,
-          "commits": 8,
-          "merges": 8,
-          "reviews": 10,
-          "share": 0.9354838709677419
+          "score": 70.5,
+          "commits": 17,
+          "merges": 21,
+          "reviews": 23,
+          "share": 0.9724137931034482
         },
         {
           "name": "skills",
@@ -498,7 +498,7 @@
           "commits": 2,
           "merges": 0,
           "reviews": 0,
-          "share": 0.06451612903225806
+          "share": 0.027586206896551724
         }
       ]
     },
