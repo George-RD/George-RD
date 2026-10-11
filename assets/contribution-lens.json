@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T12:59:27.449Z",
+  "generatedAt": "2026-10-11T22:06:54.916Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,10 +11,10 @@
     "focusStart": "2026-09-28",
     "focusEnd": "2026-10-11"
   },
-  "totalContributions": 16976,
+  "totalContributions": 17087,
   "metrics": {
     "activeDays": 12,
-    "focusShare": 0.9866666666666667,
+    "focusShare": 0.9868073878627969,
     "topRepos": [
       "FIRTH",
       "JK"
@@ -298,11 +298,11 @@
       "repositories": [
         {
           "name": "firth",
-          "score": 89.5,
+          "score": 72.5,
           "commits": 42,
-          "merges": 19,
-          "reviews": 19,
-          "share": 0.9572192513368984
+          "merges": 12,
+          "reviews": 13,
+          "share": 0.9477124183006536
         },
         {
           "name": "Jev-knows",
@@ -310,7 +310,7 @@
           "commits": 0,
           "merges": 2,
           "reviews": 0,
-          "share": 0.0427807486631016
+          "share": 0.05228758169934641
         }
       ]
     },
@@ -504,22 +504,22 @@
     },
     {
       "date": "2026-10-11",
-      "contributions": 132,
+      "contributions": 243,
       "repository": "firth",
       "event": "merge",
       "modelFamilies": {
         "claude": 0,
         "gpt": 0,
         "gemini": 0,
-        "other": 11577080
+        "other": 12904782
       },
       "repositories": [
         {
           "name": "firth",
-          "score": 21.5,
-          "commits": 10,
-          "merges": 4,
-          "reviews": 7,
+          "score": 42.5,
+          "commits": 14,
+          "merges": 11,
+          "reviews": 13,
           "share": 1
         }
       ]
