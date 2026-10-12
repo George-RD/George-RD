@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T06:07:11.207Z",
+  "generatedAt": "2026-10-12T15:38:10.261Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,10 +11,10 @@
     "focusStart": "2026-09-29",
     "focusEnd": "2026-10-12"
   },
-  "totalContributions": 17233,
+  "totalContributions": 17317,
   "metrics": {
     "activeDays": 12,
-    "focusShare": 0.9936,
+    "focusShare": 0.9936102236421726,
     "topRepos": [
       "FIRTH",
       "DESIGN"
@@ -172,11 +172,11 @@
       "repositories": [
         {
           "name": "firth",
-          "score": 69.5,
+          "score": 69,
           "commits": 42,
           "merges": 11,
-          "reviews": 11,
-          "share": 0.972027972027972
+          "reviews": 10,
+          "share": 0.971830985915493
         },
         {
           "name": "Jev-knows",
@@ -184,7 +184,7 @@
           "commits": 0,
           "merges": 1,
           "reviews": 0,
-          "share": 0.027972027972027972
+          "share": 0.028169014084507043
         }
       ]
     },
@@ -378,7 +378,7 @@
     },
     {
       "date": "2026-10-11",
-      "contributions": 245,
+      "contributions": 244,
       "repository": "firth",
       "event": "merge",
       "modelFamilies": {
@@ -390,27 +390,32 @@
       "repositories": [
         {
           "name": "firth",
-          "score": 45.5,
+          "score": 45,
           "commits": 14,
           "merges": 12,
-          "reviews": 15,
+          "reviews": 14,
           "share": 1
         }
       ]
     },
     {
       "date": "2026-10-12",
-      "contributions": 144,
+      "contributions": 229,
       "repository": "firth",
       "event": "merge",
-      "modelFamilies": {},
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 7798557
+      },
       "repositories": [
         {
           "name": "firth",
-          "score": 7,
+          "score": 8,
           "commits": 5,
           "merges": 1,
-          "reviews": 0,
+          "reviews": 2,
           "share": 1
         }
       ]
