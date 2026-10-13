@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T00:48:06.731Z",
+  "generatedAt": "2026-10-13T14:20:18.914Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,7 +11,7 @@
     "focusStart": "2026-09-30",
     "focusEnd": "2026-10-13"
   },
-  "totalContributions": 17485,
+  "totalContributions": 17570,
   "metrics": {
     "activeDays": 12,
     "focusShare": 1,
@@ -172,11 +172,11 @@
       "repositories": [
         {
           "name": "firth",
-          "score": 66.5,
+          "score": 62,
           "commits": 42,
-          "merges": 10,
-          "reviews": 9,
-          "share": 0.9708029197080292
+          "merges": 8,
+          "reviews": 8,
+          "share": 0.96875
         },
         {
           "name": "Jev-knows",
@@ -184,7 +184,7 @@
           "commits": 0,
           "merges": 1,
           "reviews": 0,
-          "share": 0.029197080291970802
+          "share": 0.03125
         }
       ]
     },
@@ -407,7 +407,7 @@
         "claude": 0,
         "gpt": 0,
         "gemini": 0,
-        "other": 8780572
+        "other": 8797662
       },
       "repositories": [
         {
@@ -422,11 +422,25 @@
     },
     {
       "date": "2026-10-13",
-      "contributions": 105,
-      "repository": null,
-      "event": null,
-      "modelFamilies": {},
-      "repositories": []
+      "contributions": 190,
+      "repository": "firth",
+      "event": "merge",
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 9491271
+      },
+      "repositories": [
+        {
+          "name": "firth",
+          "score": 6.5,
+          "commits": 2,
+          "merges": 2,
+          "reviews": 1,
+          "share": 1
+        }
+      ]
     },
     {
       "date": "2026-10-14",
