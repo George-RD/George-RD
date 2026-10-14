@@ -1,19 +1,19 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-10-14T05:00:57.077Z",
+  "generatedAt": "2026-10-14T12:00:57.561Z",
   "username": "George-RD",
   "allTime": {
-    "rank": 140,
-    "totalTokens": 139929686329,
-    "totalCost": 62261.8632,
+    "rank": 141,
+    "totalTokens": 139938951221,
+    "totalCost": 62262.0126,
     "activeDays": 206,
-    "submissions": 119,
-    "sessions": 56118
+    "submissions": 120,
+    "sessions": 56123
   },
   "month": {
-    "totalTokens": 17503562335,
-    "totalCost": 4088.6153999999997,
+    "totalTokens": 17512827227,
+    "totalCost": 4088.764799999999,
     "activeDays": 26,
     "contributions": 26
   },
@@ -161,9 +161,9 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-10-14T05:01:29.856Z",
+    "generatedAt": "2026-10-14T12:01:01.571Z",
     "dataThrough": "2026-10-14",
-    "sourceUpdatedAt": "2026-10-14T02:05:47.477Z",
+    "sourceUpdatedAt": "2026-10-14T10:06:49.670Z",
     "dates": [
       "2026-09-15",
       "2026-09-16",
@@ -199,7 +199,7 @@
     "latestWindow": {
       "start": "2026-10-08",
       "end": "2026-10-14",
-      "totalTokens": 86614795
+      "totalTokens": 95879687
     },
     "previousWindow": {
       "start": "2026-10-01",
@@ -211,7 +211,7 @@
     "models": [
       {
         "model": "deepseek-v4.1-flash",
-        "recentTokens": 86614795,
+        "recentTokens": 95879687,
         "priorTokens": 118728187,
         "recentShare": 1,
         "priorShare": 0.9998648944879258,
@@ -247,15 +247,15 @@
           12904782,
           8797662,
           10814926,
-          27472
+          9292364
         ]
       }
     ]
   },
-  "updatedAt": "2026-10-14T02:05:47.477Z",
+  "updatedAt": "2026-10-14T10:06:49.670Z",
   "sourceFreshness": {
     "dataThrough": "2026-10-14",
-    "sourceUpdatedAt": "2026-10-14T02:05:47.477Z",
-    "generatedAt": "2026-10-14T05:01:29.856Z"
+    "sourceUpdatedAt": "2026-10-14T10:06:49.670Z",
+    "generatedAt": "2026-10-14T12:01:01.571Z"
   }
 }
