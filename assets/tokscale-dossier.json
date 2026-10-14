@@ -1,19 +1,19 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-10-14T17:17:56.051Z",
+  "generatedAt": "2026-10-14T21:46:47.755Z",
   "username": "George-RD",
   "allTime": {
     "rank": 143,
-    "totalTokens": 139938951221,
-    "totalCost": 62262.0126,
+    "totalTokens": 139940612053,
+    "totalCost": 62262.0765,
     "activeDays": 206,
-    "submissions": 120,
-    "sessions": 56123
+    "submissions": 121,
+    "sessions": 56126
   },
   "month": {
-    "totalTokens": 17512827227,
-    "totalCost": 4088.764799999999,
+    "totalTokens": 17514488059,
+    "totalCost": 4088.828699999999,
     "activeDays": 26,
     "contributions": 26
   },
@@ -65,6 +65,7 @@
     "gpt-6-astra",
     "gpt-6-luna-900k",
     "gpt-6-astra-900k",
+    "gpt-6-sol",
     "qwen3.8-27b",
     "grok-4.6",
     "gpt-5.6-sol-900k",
@@ -78,7 +79,6 @@
     "minimax-m2.7-highspeed",
     "claude-opus-5",
     "gemini-3.6-flash",
-    "gpt-6-sol",
     "gemma4:31b",
     "claude-fable-5-1",
     "gemini-3.8-flash",
@@ -161,9 +161,9 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-10-14T17:17:58.879Z",
+    "generatedAt": "2026-10-14T21:46:50.731Z",
     "dataThrough": "2026-10-14",
-    "sourceUpdatedAt": "2026-10-14T10:06:49.670Z",
+    "sourceUpdatedAt": "2026-10-14T18:07:45.411Z",
     "dates": [
       "2026-09-15",
       "2026-09-16",
@@ -199,7 +199,7 @@
     "latestWindow": {
       "start": "2026-10-08",
       "end": "2026-10-14",
-      "totalTokens": 95879687
+      "totalTokens": 97540519
     },
     "previousWindow": {
       "start": "2026-10-01",
@@ -211,7 +211,7 @@
     "models": [
       {
         "model": "deepseek-v4.1-flash",
-        "recentTokens": 95879687,
+        "recentTokens": 97540519,
         "priorTokens": 118728187,
         "recentShare": 1,
         "priorShare": 0.9998648944879258,
@@ -247,15 +247,15 @@
           12904782,
           8797662,
           10814926,
-          9292364
+          10953196
         ]
       }
     ]
   },
-  "updatedAt": "2026-10-14T10:06:49.670Z",
+  "updatedAt": "2026-10-14T18:07:45.411Z",
   "sourceFreshness": {
     "dataThrough": "2026-10-14",
-    "sourceUpdatedAt": "2026-10-14T10:06:49.670Z",
-    "generatedAt": "2026-10-14T17:17:58.879Z"
+    "sourceUpdatedAt": "2026-10-14T18:07:45.411Z",
+    "generatedAt": "2026-10-14T21:46:50.731Z"
   }
 }
