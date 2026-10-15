@@ -1,19 +1,19 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-10-15T17:08:06.439Z",
+  "generatedAt": "2026-10-15T21:29:26.241Z",
   "username": "George-RD",
   "allTime": {
     "rank": 145,
-    "totalTokens": 139952145899,
-    "totalCost": 62262.2473,
+    "totalTokens": 139955609366,
+    "totalCost": 62262.3505,
     "activeDays": 207,
-    "submissions": 123,
-    "sessions": 56135
+    "submissions": 124,
+    "sessions": 56137
   },
   "month": {
-    "totalTokens": 15493602531,
-    "totalCost": 2934.8072999999995,
+    "totalTokens": 15497065998,
+    "totalCost": 2934.9104999999995,
     "activeDays": 26,
     "contributions": 26
   },
@@ -161,9 +161,9 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-10-15T17:08:30.975Z",
+    "generatedAt": "2026-10-15T21:29:28.500Z",
     "dataThrough": "2026-10-15",
-    "sourceUpdatedAt": "2026-10-15T10:09:40.243Z",
+    "sourceUpdatedAt": "2026-10-15T18:10:40.187Z",
     "dates": [
       "2026-09-16",
       "2026-09-17",
@@ -199,7 +199,7 @@
     "latestWindow": {
       "start": "2026-10-09",
       "end": "2026-10-15",
-      "totalTokens": 89248091
+      "totalTokens": 92711558
     },
     "previousWindow": {
       "start": "2026-10-02",
@@ -211,7 +211,7 @@
     "models": [
       {
         "model": "deepseek-v4.1-flash",
-        "recentTokens": 89248091,
+        "recentTokens": 92711558,
         "priorTokens": 138554461,
         "recentShare": 1,
         "priorShare": 0.9998842250007259,
@@ -247,15 +247,15 @@
           8797662,
           10814926,
           10953196,
-          11533846
+          14997313
         ]
       }
     ]
   },
-  "updatedAt": "2026-10-15T10:09:40.243Z",
+  "updatedAt": "2026-10-15T18:10:40.187Z",
   "sourceFreshness": {
     "dataThrough": "2026-10-15",
-    "sourceUpdatedAt": "2026-10-15T10:09:40.243Z",
-    "generatedAt": "2026-10-15T17:08:30.975Z"
+    "sourceUpdatedAt": "2026-10-15T18:10:40.187Z",
+    "generatedAt": "2026-10-15T21:29:28.500Z"
   }
 }
