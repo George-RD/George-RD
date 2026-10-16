@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T21:29:38.078Z",
+  "generatedAt": "2026-10-16T04:39:48.968Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -8,10 +8,10 @@
   "range": {
     "overviewStart": "2025-10-12",
     "overviewEnd": "2026-10-17",
-    "focusStart": "2026-10-02",
-    "focusEnd": "2026-10-15"
+    "focusStart": "2026-10-03",
+    "focusEnd": "2026-10-16"
   },
-  "totalContributions": 17671,
+  "totalContributions": 17675,
   "metrics": {
     "activeDays": 12,
     "focusShare": 1,
@@ -20,7 +20,7 @@
       "SKILLS"
     ],
     "focusDays": 14,
-    "streak": 11
+    "streak": 12
   },
   "focus": [
     {
@@ -172,11 +172,11 @@
       "repositories": [
         {
           "name": "firth",
-          "score": 61.5,
+          "score": 57.5,
           "commits": 42,
-          "merges": 8,
+          "merges": 6,
           "reviews": 7,
-          "share": 0.968503937007874
+          "share": 0.9663865546218487
         },
         {
           "name": "Jev-knows",
@@ -184,7 +184,7 @@
           "commits": 0,
           "merges": 1,
           "reviews": 0,
-          "share": 0.031496062992125984
+          "share": 0.03361344537815126
         }
       ]
     },
@@ -400,7 +400,7 @@
     },
     {
       "date": "2026-10-12",
-      "contributions": 284,
+      "contributions": 283,
       "repository": "firth",
       "event": "merge",
       "modelFamilies": {
@@ -412,10 +412,10 @@
       "repositories": [
         {
           "name": "firth",
-          "score": 12,
+          "score": 11.5,
           "commits": 6,
           "merges": 2,
-          "reviews": 4,
+          "reviews": 3,
           "share": 1
         }
       ]
@@ -457,38 +457,42 @@
     },
     {
       "date": "2026-10-15",
-      "contributions": 53,
+      "contributions": 52,
       "repository": "firth",
       "event": "review",
       "modelFamilies": {
         "claude": 0,
         "gpt": 0,
         "gemini": 0,
-        "other": 14997313
+        "other": 15111041
       },
       "repositories": [
         {
           "name": "firth",
-          "score": 1,
+          "score": 0.5,
           "commits": 0,
           "merges": 0,
-          "reviews": 2,
+          "reviews": 1,
           "share": 1
         }
       ]
     },
     {
       "date": "2026-10-16",
-      "contributions": 0,
-      "repository": null,
-      "event": null,
-      "modelFamilies": {
-        "claude": 0,
-        "gpt": 0,
-        "gemini": 0,
-        "other": 0
-      },
-      "repositories": []
+      "contributions": 6,
+      "repository": "firth",
+      "event": "merge",
+      "modelFamilies": {},
+      "repositories": [
+        {
+          "name": "firth",
+          "score": 7,
+          "commits": 2,
+          "merges": 2,
+          "reviews": 2,
+          "share": 1
+        }
+      ]
     },
     {
       "date": "2026-10-17",
