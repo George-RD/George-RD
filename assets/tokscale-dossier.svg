@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" role="img" aria-labelledby="title desc">
   <title id="title">George-RD Tokscale activity trace</title>
   <desc id="desc">140B all-time tokens, $62.3K estimated all-time cost, 27 active days in the current 30-day window.</desc>
-  <!-- Generated from https://tokscale.ai/api/users/George-RD at 2026-10-18T11:16:19.912Z -->
+  <!-- Generated from https://tokscale.ai/api/users/George-RD at 2026-10-18T15:56:18.858Z -->
   <style>
     :root {
       --paper: #f1ede4;
