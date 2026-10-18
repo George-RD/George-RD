@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-10-17T20:41:20.859Z",
+  "generatedAt": "2026-10-18T04:42:19.876Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
     "tokscale": "https://tokscale.ai/u/George-RD"
   },
   "range": {
-    "overviewStart": "2025-10-12",
-    "overviewEnd": "2026-10-17",
-    "focusStart": "2026-10-04",
-    "focusEnd": "2026-10-17"
+    "overviewStart": "2025-10-19",
+    "overviewEnd": "2026-10-24",
+    "focusStart": "2026-10-05",
+    "focusEnd": "2026-10-18"
   },
-  "totalContributions": 17837,
+  "totalContributions": 17851,
   "metrics": {
-    "activeDays": 13,
+    "activeDays": 14,
     "focusShare": 1,
     "topRepos": [
       "FIRTH",
       "SKILLS"
     ],
     "focusDays": 14,
-    "streak": 13
+    "streak": 14
   },
   "focus": [
     {
@@ -165,9 +165,9 @@
       "event": "merge",
       "modelFamilies": {
         "claude": 455201410,
-        "gpt": 1071902166,
+        "gpt": 1072062976,
         "gemini": 9086525,
-        "other": 270727083
+        "other": 271083617
       },
       "repositories": [
         {
@@ -240,7 +240,12 @@
       "contributions": 117,
       "repository": null,
       "event": null,
-      "modelFamilies": {},
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 169416,
+        "gemini": 0,
+        "other": 0
+      },
       "repositories": []
     },
     {
@@ -508,21 +513,16 @@
         "claude": 0,
         "gpt": 0,
         "gemini": 0,
-        "other": 10426224
+        "other": 12210373
       },
       "repositories": []
     },
     {
       "date": "2026-10-18",
-      "contributions": 0,
+      "contributions": 14,
       "repository": null,
       "event": null,
-      "modelFamilies": {
-        "claude": 0,
-        "gpt": 0,
-        "gemini": 0,
-        "other": 0
-      },
+      "modelFamilies": {},
       "repositories": []
     }
   ]
