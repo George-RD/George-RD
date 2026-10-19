@@ -1,19 +1,19 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-10-19T13:28:51.834Z",
+  "generatedAt": "2026-10-19T22:26:08.042Z",
   "username": "George-RD",
   "allTime": {
-    "rank": 150,
-    "totalTokens": 139994717869,
-    "totalCost": 62262.467,
+    "rank": 152,
+    "totalTokens": 139994969933,
+    "totalCost": 62262.4825,
     "activeDays": 212,
-    "submissions": 135,
-    "sessions": 56167
+    "submissions": 136,
+    "sessions": 56173
   },
   "month": {
-    "totalTokens": 8314823046,
-    "totalCost": 1100.4499,
+    "totalTokens": 8315075110,
+    "totalCost": 1100.4654,
     "activeDays": 27,
     "contributions": 27
   },
@@ -161,9 +161,9 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-10-19T13:28:55.611Z",
+    "generatedAt": "2026-10-19T22:26:10.936Z",
     "dataThrough": "2026-10-19",
-    "sourceUpdatedAt": "2026-10-19T10:21:02.296Z",
+    "sourceUpdatedAt": "2026-10-19T18:22:05.348Z",
     "dates": [
       "2026-09-20",
       "2026-09-21",
@@ -199,7 +199,7 @@
     "latestWindow": {
       "start": "2026-10-13",
       "end": "2026-10-19",
-      "totalTokens": 70122972
+      "totalTokens": 70375036
     },
     "previousWindow": {
       "start": "2026-10-06",
@@ -211,7 +211,7 @@
     "models": [
       {
         "model": "deepseek-v4.1-flash",
-        "recentTokens": 70122972,
+        "recentTokens": 70375036,
         "priorTokens": 125944722,
         "recentShare": 1,
         "priorShare": 1,
@@ -247,15 +247,15 @@
           8573538,
           12210373,
           7990571,
-          4469327
+          4721391
         ]
       }
     ]
   },
-  "updatedAt": "2026-10-19T10:21:02.296Z",
+  "updatedAt": "2026-10-19T18:22:05.348Z",
   "sourceFreshness": {
     "dataThrough": "2026-10-19",
-    "sourceUpdatedAt": "2026-10-19T10:21:02.296Z",
-    "generatedAt": "2026-10-19T13:28:55.611Z"
+    "sourceUpdatedAt": "2026-10-19T18:22:05.348Z",
+    "generatedAt": "2026-10-19T22:26:10.936Z"
   }
 }
