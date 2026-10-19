@@ -1,21 +1,21 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-10-18T20:51:57.133Z",
+  "generatedAt": "2026-10-19T04:50:09.753Z",
   "username": "George-RD",
   "allTime": {
     "rank": 148,
     "totalTokens": 139990248542,
     "totalCost": 62262.3865,
     "activeDays": 211,
-    "submissions": 133,
+    "submissions": 134,
     "sessions": 56163
   },
   "month": {
-    "totalTokens": 8313371902,
-    "totalCost": 1114.8737,
-    "activeDays": 27,
-    "contributions": 27
+    "totalTokens": 8310353719,
+    "totalCost": 1100.3694,
+    "activeDays": 26,
+    "contributions": 26
   },
   "clients": [
     "codex",
@@ -60,11 +60,11 @@
     "grok-4.5",
     "deepseek/deepseek-v4-flash:free",
     "codex-auto-review",
-    "gpt-6-astra",
     "gpt-6-sol-900k",
     "deepseek-v4.1-flash",
     "deepseek-v4-flash:0731",
     "gpt-6-astra-900k",
+    "gpt-6-astra",
     "qwen3.8-27b",
     "grok-4.6",
     "gpt-5.6-sol-900k",
@@ -161,9 +161,9 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-10-18T20:52:00.424Z",
+    "generatedAt": "2026-10-19T04:50:12.877Z",
     "dataThrough": "2026-10-18",
-    "sourceUpdatedAt": "2026-10-18T18:19:04.905Z",
+    "sourceUpdatedAt": "2026-10-19T02:20:03.193Z",
     "dates": [
       "2026-09-19",
       "2026-09-20",
@@ -252,10 +252,10 @@
       }
     ]
   },
-  "updatedAt": "2026-10-18T18:19:04.905Z",
+  "updatedAt": "2026-10-19T02:20:03.193Z",
   "sourceFreshness": {
     "dataThrough": "2026-10-18",
-    "sourceUpdatedAt": "2026-10-18T18:19:04.905Z",
-    "generatedAt": "2026-10-18T20:52:00.424Z"
+    "sourceUpdatedAt": "2026-10-19T02:20:03.193Z",
+    "generatedAt": "2026-10-19T04:50:12.877Z"
   }
 }
