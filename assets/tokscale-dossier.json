@@ -1,19 +1,19 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-10-20T17:16:26.292Z",
+  "generatedAt": "2026-10-20T21:42:23.351Z",
   "username": "George-RD",
   "allTime": {
     "rank": 153,
-    "totalTokens": 139999957037,
-    "totalCost": 62262.5778,
+    "totalTokens": 140001384889,
+    "totalCost": 62188.0838,
     "activeDays": 212,
-    "submissions": 138,
-    "sessions": 56181
+    "submissions": 139,
+    "sessions": 56185
   },
   "month": {
-    "totalTokens": 8317810413,
-    "totalCost": 1091.0420000000006,
+    "totalTokens": 8318101045,
+    "totalCost": 1091.0551000000005,
     "activeDays": 27,
     "contributions": 27
   },
@@ -60,14 +60,15 @@
     "grok-4.5",
     "deepseek/deepseek-v4-flash:free",
     "codex-auto-review",
-    "gpt-6-sol-900k",
-    "deepseek-v4.1-flash",
-    "deepseek-v4-flash:0731",
     "gpt-6-astra-900k",
-    "deepseek-v4.1-flash:1017",
+    "deepseek-v4.1-flash",
     "gpt-6-sol",
     "gpt-6-luna",
     "gpt-6-astra",
+    "gpt-6-sol-900k",
+    "gpt-6-luna-900k",
+    "deepseek-v4-flash:0731",
+    "deepseek-v4.1-flash:1017",
     "qwen3.8-27b",
     "grok-4.6",
     "gpt-5.6-sol-900k",
@@ -131,8 +132,7 @@
     "glm-5.3",
     "kimi-k3",
     "glm-5.3-flash",
-    "deepseek-v4-pro:0813",
-    "gpt-6-luna-900k"
+    "deepseek-v4-pro:0813"
   ],
   "topModels": [
     {
@@ -162,9 +162,9 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-10-20T17:16:50.266Z",
+    "generatedAt": "2026-10-20T21:42:25.474Z",
     "dataThrough": "2026-10-20",
-    "sourceUpdatedAt": "2026-10-20T10:24:02.545Z",
+    "sourceUpdatedAt": "2026-10-20T18:25:04.617Z",
     "dates": [
       "2026-09-21",
       "2026-09-22",
@@ -200,7 +200,7 @@
     "latestWindow": {
       "start": "2026-10-14",
       "end": "2026-10-20",
-      "totalTokens": 64547214
+      "totalTokens": 64837846
     },
     "previousWindow": {
       "start": "2026-10-07",
@@ -214,10 +214,10 @@
         "model": "deepseek-v4.1-flash",
         "recentTokens": 64496894,
         "priorTokens": 109267960,
-        "recentShare": 0.9992204156170087,
+        "recentShare": 0.9947414662726458,
         "priorShare": 1,
-        "deltaPercentagePoints": -0.07795843829913052,
-        "direction": "flat",
+        "deltaPercentagePoints": -0.5258533727354187,
+        "direction": "down",
         "series": [
           0,
           206784391,
@@ -253,12 +253,12 @@
       },
       {
         "model": "deepseek-v4.1-flash:1017",
-        "recentTokens": 50320,
+        "recentTokens": 340952,
         "priorTokens": 0,
-        "recentShare": 0.0007795843829913403,
+        "recentShare": 0.005258533727354237,
         "priorShare": 0,
-        "deltaPercentagePoints": 0.07795843829913403,
-        "direction": "flat",
+        "deltaPercentagePoints": 0.5258533727354237,
+        "direction": "up",
         "series": [
           0,
           0,
@@ -289,15 +289,15 @@
           0,
           0,
           0,
-          50320
+          340952
         ]
       }
     ]
   },
-  "updatedAt": "2026-10-20T10:24:02.545Z",
+  "updatedAt": "2026-10-20T18:25:04.617Z",
   "sourceFreshness": {
     "dataThrough": "2026-10-20",
-    "sourceUpdatedAt": "2026-10-20T10:24:02.545Z",
-    "generatedAt": "2026-10-20T17:16:50.266Z"
+    "sourceUpdatedAt": "2026-10-20T18:25:04.617Z",
+    "generatedAt": "2026-10-20T21:42:25.474Z"
   }
 }
