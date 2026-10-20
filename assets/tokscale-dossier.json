@@ -1,21 +1,21 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-10-20T04:58:39.149Z",
+  "generatedAt": "2026-10-20T11:47:24.259Z",
   "username": "George-RD",
   "allTime": {
-    "rank": 152,
-    "totalTokens": 139995353569,
-    "totalCost": 62262.4966,
-    "activeDays": 211,
-    "submissions": 137,
-    "sessions": 56176
+    "rank": 153,
+    "totalTokens": 139999957037,
+    "totalCost": 62262.5778,
+    "activeDays": 212,
+    "submissions": 138,
+    "sessions": 56181
   },
   "month": {
-    "totalTokens": 8313206945,
-    "totalCost": 1090.9608000000005,
-    "activeDays": 26,
-    "contributions": 26
+    "totalTokens": 8317810413,
+    "totalCost": 1091.0420000000006,
+    "activeDays": 27,
+    "contributions": 27
   },
   "clients": [
     "codex",
@@ -64,6 +64,10 @@
     "deepseek-v4.1-flash",
     "deepseek-v4-flash:0731",
     "gpt-6-astra-900k",
+    "deepseek-v4.1-flash:1017",
+    "gpt-6-sol",
+    "gpt-6-luna",
+    "gpt-6-astra",
     "qwen3.8-27b",
     "grok-4.6",
     "gpt-5.6-sol-900k",
@@ -77,14 +81,11 @@
     "minimax-m2.7-highspeed",
     "claude-opus-5",
     "gemini-3.6-flash",
-    "gpt-6-astra",
     "gemma4:31b",
     "claude-fable-5-1",
     "gemini-3.8-flash",
     "grok-4.7",
-    "gpt-6-luna",
     "claude-opus-5-5",
-    "gpt-6-sol",
     "google/gemma-3-12b",
     "deepseek/deepseek-r1-0528-qwen3-8b",
     "qwen/qwen3-4b",
@@ -161,11 +162,10 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-10-20T04:58:47.675Z",
-    "dataThrough": "2026-10-19",
-    "sourceUpdatedAt": "2026-10-20T02:23:00.046Z",
+    "generatedAt": "2026-10-20T11:47:29.511Z",
+    "dataThrough": "2026-10-20",
+    "sourceUpdatedAt": "2026-10-20T10:24:02.545Z",
     "dates": [
-      "2026-09-20",
       "2026-09-21",
       "2026-09-22",
       "2026-09-23",
@@ -194,31 +194,31 @@
       "2026-10-16",
       "2026-10-17",
       "2026-10-18",
-      "2026-10-19"
+      "2026-10-19",
+      "2026-10-20"
     ],
     "latestWindow": {
-      "start": "2026-10-13",
-      "end": "2026-10-19",
-      "totalTokens": 70758672
+      "start": "2026-10-14",
+      "end": "2026-10-20",
+      "totalTokens": 64547214
     },
     "previousWindow": {
-      "start": "2026-10-06",
-      "end": "2026-10-12",
-      "totalTokens": 125944722
+      "start": "2026-10-07",
+      "end": "2026-10-13",
+      "totalTokens": 109267960
     },
     "leadingModel": "deepseek-v4.1-flash",
     "fastestRiser": null,
     "models": [
       {
         "model": "deepseek-v4.1-flash",
-        "recentTokens": 70758672,
-        "priorTokens": 125944722,
-        "recentShare": 1,
+        "recentTokens": 64496894,
+        "priorTokens": 109267960,
+        "recentShare": 0.9992204156170087,
         "priorShare": 1,
-        "deltaPercentagePoints": 0,
+        "deltaPercentagePoints": -0.07795843829913052,
         "direction": "flat",
         "series": [
-          0,
           0,
           206784391,
           54731902,
@@ -247,15 +247,57 @@
           8573538,
           12210373,
           7990571,
-          5105027
+          5105027,
+          4553148
+        ]
+      },
+      {
+        "model": "deepseek-v4.1-flash:1017",
+        "recentTokens": 50320,
+        "priorTokens": 0,
+        "recentShare": 0.0007795843829913403,
+        "priorShare": 0,
+        "deltaPercentagePoints": 0.07795843829913403,
+        "direction": "flat",
+        "series": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          50320
         ]
       }
     ]
   },
-  "updatedAt": "2026-10-20T02:23:00.046Z",
+  "updatedAt": "2026-10-20T10:24:02.545Z",
   "sourceFreshness": {
-    "dataThrough": "2026-10-19",
-    "sourceUpdatedAt": "2026-10-20T02:23:00.046Z",
-    "generatedAt": "2026-10-20T04:58:47.675Z"
+    "dataThrough": "2026-10-20",
+    "sourceUpdatedAt": "2026-10-20T10:24:02.545Z",
+    "generatedAt": "2026-10-20T11:47:29.511Z"
   }
 }
