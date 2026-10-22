@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T12:02:36.592Z",
+  "generatedAt": "2026-10-22T17:17:05.243Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,13 +11,13 @@
     "focusStart": "2026-10-09",
     "focusEnd": "2026-10-22"
   },
-  "totalContributions": 18866,
+  "totalContributions": 18912,
   "metrics": {
     "activeDays": 14,
-    "focusShare": 0.9932203389830508,
+    "focusShare": 0.9828080229226361,
     "topRepos": [
       "FIRTH",
-      "SKILLS"
+      "SPINE"
     ],
     "focusDays": 14,
     "streak": 18
@@ -27,7 +27,7 @@
       "date": "2026-09-28",
       "contributions": 239,
       "repository": "firth",
-      "event": "merge",
+      "event": "review",
       "modelFamilies": {
         "claude": 455201410,
         "gpt": 1072062976,
@@ -37,19 +37,11 @@
       "repositories": [
         {
           "name": "firth",
-          "score": 57.5,
+          "score": 45.5,
           "commits": 42,
-          "merges": 6,
+          "merges": 0,
           "reviews": 7,
-          "share": 0.9663865546218487
-        },
-        {
-          "name": "Jev-knows",
-          "score": 2,
-          "commits": 0,
-          "merges": 1,
-          "reviews": 0,
-          "share": 0.03361344537815126
+          "share": 1
         }
       ]
     },
@@ -67,11 +59,11 @@
       "repositories": [
         {
           "name": "firth",
-          "score": 72,
+          "score": 68,
           "commits": 17,
-          "merges": 22,
+          "merges": 20,
           "reviews": 22,
-          "share": 0.96
+          "share": 0.9577464788732394
         },
         {
           "name": "design-studio",
@@ -79,7 +71,7 @@
           "commits": 1,
           "merges": 1,
           "reviews": 0,
-          "share": 0.04
+          "share": 0.04225352112676056
         }
       ]
     },
@@ -92,9 +84,9 @@
       "repositories": [
         {
           "name": "firth",
-          "score": 73,
+          "score": 71,
           "commits": 26,
-          "merges": 19,
+          "merges": 18,
           "reviews": 18,
           "share": 1
         }
@@ -445,16 +437,25 @@
     },
     {
       "date": "2026-10-22",
-      "contributions": 39,
-      "repository": null,
-      "event": null,
+      "contributions": 85,
+      "repository": "openspine",
+      "event": "merge",
       "modelFamilies": {
         "claude": 0,
         "gpt": 0,
         "gemini": 0,
         "other": 8273146
       },
-      "repositories": []
+      "repositories": [
+        {
+          "name": "openspine",
+          "score": 27,
+          "commits": 7,
+          "merges": 10,
+          "reviews": 0,
+          "share": 1
+        }
+      ]
     },
     {
       "date": "2026-10-23",
