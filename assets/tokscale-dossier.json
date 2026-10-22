@@ -1,19 +1,19 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-10-22T17:16:52.643Z",
+  "generatedAt": "2026-10-22T21:42:37.161Z",
   "username": "George-RD",
   "allTime": {
     "rank": 154,
-    "totalTokens": 140018346543,
-    "totalCost": 62188.2935,
+    "totalTokens": 140018633514,
+    "totalCost": 62188.3061,
     "activeDays": 214,
-    "submissions": 144,
-    "sessions": 56204
+    "submissions": 145,
+    "sessions": 56207
   },
   "month": {
-    "totalTokens": 8105568663,
-    "totalCost": 1059.1561000000004,
+    "totalTokens": 8105855634,
+    "totalCost": 1059.1687000000004,
     "activeDays": 27,
     "contributions": 27
   },
@@ -162,9 +162,9 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-10-22T17:16:55.459Z",
+    "generatedAt": "2026-10-22T21:42:39.323Z",
     "dataThrough": "2026-10-22",
-    "sourceUpdatedAt": "2026-10-22T10:30:03.815Z",
+    "sourceUpdatedAt": "2026-10-22T18:31:14.436Z",
     "dates": [
       "2026-09-23",
       "2026-09-24",
@@ -200,7 +200,7 @@
     "latestWindow": {
       "start": "2026-10-16",
       "end": "2026-10-22",
-      "totalTokens": 55735263
+      "totalTokens": 56022234
     },
     "previousWindow": {
       "start": "2026-10-09",
@@ -214,9 +214,9 @@
         "model": "deepseek-v4.1-flash",
         "recentTokens": 38432657,
         "priorTokens": 92825286,
-        "recentShare": 0.6895572915839654,
+        "recentShare": 0.686025069974896,
         "priorShare": 1,
-        "deltaPercentagePoints": -31.04427084160346,
+        "deltaPercentagePoints": -31.3974930025104,
         "direction": "down",
         "series": [
           54731902,
@@ -253,11 +253,11 @@
       },
       {
         "model": "deepseek-v4.1-flash:1017",
-        "recentTokens": 17302606,
+        "recentTokens": 17589577,
         "priorTokens": 0,
-        "recentShare": 0.31044270841603455,
+        "recentShare": 0.31397493002510396,
         "priorShare": 0,
-        "deltaPercentagePoints": 31.044270841603456,
+        "deltaPercentagePoints": 31.397493002510394,
         "direction": "up",
         "series": [
           0,
@@ -289,15 +289,15 @@
           0,
           340952,
           8688508,
-          8273146
+          8560117
         ]
       }
     ]
   },
-  "updatedAt": "2026-10-22T10:30:03.815Z",
+  "updatedAt": "2026-10-22T18:31:14.436Z",
   "sourceFreshness": {
     "dataThrough": "2026-10-22",
-    "sourceUpdatedAt": "2026-10-22T10:30:03.815Z",
-    "generatedAt": "2026-10-22T17:16:55.459Z"
+    "sourceUpdatedAt": "2026-10-22T18:31:14.436Z",
+    "generatedAt": "2026-10-22T21:42:39.323Z"
   }
 }
