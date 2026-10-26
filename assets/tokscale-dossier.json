@@ -1,21 +1,21 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-10-25T20:58:10.517Z",
+  "generatedAt": "2026-10-26T04:56:12.709Z",
   "username": "George-RD",
   "allTime": {
-    "rank": 163,
+    "rank": 164,
     "totalTokens": 140045269898,
     "totalCost": 62188.6892,
     "activeDays": 216,
-    "submissions": 154,
+    "submissions": 155,
     "sessions": 56231
   },
   "month": {
-    "totalTokens": 7556513995,
-    "totalCost": 930.3087999999997,
-    "activeDays": 27,
-    "contributions": 27
+    "totalTokens": 7307252406,
+    "totalCost": 864.2303999999997,
+    "activeDays": 26,
+    "contributions": 26
   },
   "clients": [
     "codex",
@@ -137,8 +137,8 @@
   "topModels": [
     {
       "model": "claude-opus-5-5",
-      "tokens": 1068304918,
-      "cost": 395.27257160000016
+      "tokens": 975209207,
+      "cost": 356.79223280000025
     },
     {
       "model": "claude-opus-5",
@@ -146,25 +146,25 @@
       "cost": 168.99694200000022
     },
     {
-      "model": "gemini-3.8-flash",
-      "tokens": 391104557,
-      "cost": 86.54641425000004
-    },
-    {
       "model": "gpt-5.6-luna",
-      "tokens": 2031998732,
-      "cost": 85.97115495999996
+      "tokens": 2029248210,
+      "cost": 85.76864935999996
     },
     {
       "model": "gpt-6-astra",
       "tokens": 23119503,
       "cost": 75.207492
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "tokens": 312958826,
+      "cost": 66.37711477500004
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-10-25T20:59:12.102Z",
+    "generatedAt": "2026-10-26T04:56:25.516Z",
     "dataThrough": "2026-10-25",
-    "sourceUpdatedAt": "2026-10-25T18:42:07.754Z",
+    "sourceUpdatedAt": "2026-10-26T02:43:04.366Z",
     "dates": [
       "2026-09-26",
       "2026-09-27",
@@ -260,7 +260,7 @@
         "deltaPercentagePoints": -82.07603254508898,
         "direction": "down",
         "series": [
-          25599613,
+          0,
           1375411516,
           271083617,
           23294138,
@@ -294,10 +294,10 @@
       }
     ]
   },
-  "updatedAt": "2026-10-25T18:42:07.754Z",
+  "updatedAt": "2026-10-26T02:43:04.366Z",
   "sourceFreshness": {
     "dataThrough": "2026-10-25",
-    "sourceUpdatedAt": "2026-10-25T18:42:07.754Z",
-    "generatedAt": "2026-10-25T20:59:12.102Z"
+    "sourceUpdatedAt": "2026-10-26T02:43:04.366Z",
+    "generatedAt": "2026-10-26T04:56:25.516Z"
   }
 }

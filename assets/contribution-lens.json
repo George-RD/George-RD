@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T21:00:06.755Z",
+  "generatedAt": "2026-10-26T04:56:36.294Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -8,141 +8,21 @@
   "range": {
     "overviewStart": "2025-10-26",
     "overviewEnd": "2026-10-31",
-    "focusStart": "2026-10-12",
-    "focusEnd": "2026-10-25"
+    "focusStart": "2026-10-13",
+    "focusEnd": "2026-10-26"
   },
-  "totalContributions": 19338,
+  "totalContributions": 19379,
   "metrics": {
     "activeDays": 14,
-    "focusShare": 0.9813084112149533,
+    "focusShare": 0.9772727272727273,
     "topRepos": [
       "SPINE",
       "FIRTH"
     ],
     "focusDays": 14,
-    "streak": 21
+    "streak": 22
   },
   "focus": [
-    {
-      "date": "2026-09-28",
-      "contributions": 239,
-      "repository": "firth",
-      "event": "review",
-      "modelFamilies": {
-        "claude": 455201410,
-        "gpt": 1072062976,
-        "gemini": 9086525,
-        "other": 271083617
-      },
-      "repositories": [
-        {
-          "name": "firth",
-          "score": 45.5,
-          "commits": 42,
-          "merges": 0,
-          "reviews": 7,
-          "share": 1
-        }
-      ]
-    },
-    {
-      "date": "2026-09-29",
-      "contributions": 258,
-      "repository": "firth",
-      "event": "merge",
-      "modelFamilies": {
-        "claude": 132867642,
-        "gpt": 74618648,
-        "gemini": 0,
-        "other": 23294138
-      },
-      "repositories": [
-        {
-          "name": "firth",
-          "score": 68,
-          "commits": 17,
-          "merges": 20,
-          "reviews": 22,
-          "share": 0.9577464788732394
-        },
-        {
-          "name": "design-studio",
-          "score": 3,
-          "commits": 1,
-          "merges": 1,
-          "reviews": 0,
-          "share": 0.04225352112676056
-        }
-      ]
-    },
-    {
-      "date": "2026-09-30",
-      "contributions": 174,
-      "repository": "firth",
-      "event": "merge",
-      "modelFamilies": {},
-      "repositories": [
-        {
-          "name": "firth",
-          "score": 71,
-          "commits": 26,
-          "merges": 18,
-          "reviews": 18,
-          "share": 1
-        }
-      ]
-    },
-    {
-      "date": "2026-10-01",
-      "contributions": 143,
-      "repository": null,
-      "event": null,
-      "modelFamilies": {
-        "claude": 0,
-        "gpt": 169416,
-        "gemini": 0,
-        "other": 0
-      },
-      "repositories": []
-    },
-    {
-      "date": "2026-10-02",
-      "contributions": 78,
-      "repository": "firth",
-      "event": "merge",
-      "modelFamilies": {
-        "claude": 0,
-        "gpt": 0,
-        "gemini": 0,
-        "other": 29232469
-      },
-      "repositories": [
-        {
-          "name": "firth",
-          "score": 35,
-          "commits": 10,
-          "merges": 10,
-          "reviews": 10,
-          "share": 1
-        }
-      ]
-    },
-    {
-      "date": "2026-10-03",
-      "contributions": 0,
-      "repository": null,
-      "event": null,
-      "modelFamilies": {},
-      "repositories": []
-    },
-    {
-      "date": "2026-10-04",
-      "contributions": 0,
-      "repository": null,
-      "event": null,
-      "modelFamilies": {},
-      "repositories": []
-    },
     {
       "date": "2026-10-05",
       "contributions": 1,
@@ -262,7 +142,7 @@
     },
     {
       "date": "2026-10-12",
-      "contributions": 290,
+      "contributions": 292,
       "repository": "firth",
       "event": "merge",
       "modelFamilies": {
@@ -449,9 +329,9 @@
       "repositories": [
         {
           "name": "openspine",
-          "score": 27,
+          "score": 29,
           "commits": 7,
-          "merges": 10,
+          "merges": 11,
           "reviews": 0,
           "share": 1
         }
@@ -493,6 +373,92 @@
         "gpt": 0,
         "gemini": 0,
         "other": 11121209
+      },
+      "repositories": []
+    },
+    {
+      "date": "2026-10-26",
+      "contributions": 36,
+      "repository": null,
+      "event": null,
+      "modelFamilies": {},
+      "repositories": []
+    },
+    {
+      "date": "2026-10-27",
+      "contributions": 0,
+      "repository": null,
+      "event": null,
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 0
+      },
+      "repositories": []
+    },
+    {
+      "date": "2026-10-28",
+      "contributions": 0,
+      "repository": null,
+      "event": null,
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 0
+      },
+      "repositories": []
+    },
+    {
+      "date": "2026-10-29",
+      "contributions": 0,
+      "repository": null,
+      "event": null,
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 0
+      },
+      "repositories": []
+    },
+    {
+      "date": "2026-10-30",
+      "contributions": 0,
+      "repository": null,
+      "event": null,
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 0
+      },
+      "repositories": []
+    },
+    {
+      "date": "2026-10-31",
+      "contributions": 0,
+      "repository": null,
+      "event": null,
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 0
+      },
+      "repositories": []
+    },
+    {
+      "date": "2026-11-01",
+      "contributions": 0,
+      "repository": null,
+      "event": null,
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 0
       },
       "repositories": []
     }
