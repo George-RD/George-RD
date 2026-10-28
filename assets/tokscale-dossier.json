@@ -1,19 +1,19 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-10-28T13:05:46.758Z",
+  "generatedAt": "2026-10-28T22:40:54.308Z",
   "username": "George-RD",
   "allTime": {
-    "rank": 167,
-    "totalTokens": 140067211806,
-    "totalCost": 62189.0192,
+    "rank": 168,
+    "totalTokens": 140067264389,
+    "totalCost": 62189.0219,
     "activeDays": 218,
-    "submissions": 162,
-    "sessions": 56252
+    "submissions": 163,
+    "sessions": 56253
   },
   "month": {
-    "totalTokens": 566946160,
-    "totalCost": 96.5134,
+    "totalTokens": 566998743,
+    "totalCost": 96.51610000000001,
     "activeDays": 27,
     "contributions": 27
   },
@@ -162,9 +162,9 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-10-28T13:06:06.049Z",
+    "generatedAt": "2026-10-28T22:40:58.579Z",
     "dataThrough": "2026-10-28",
-    "sourceUpdatedAt": "2026-10-28T10:52:07.142Z",
+    "sourceUpdatedAt": "2026-10-28T18:53:36.026Z",
     "dates": [
       "2026-09-29",
       "2026-09-30",
@@ -200,7 +200,7 @@
     "latestWindow": {
       "start": "2026-10-22",
       "end": "2026-10-28",
-      "totalTokens": 57138409
+      "totalTokens": 57190992
     },
     "previousWindow": {
       "start": "2026-10-15",
@@ -212,7 +212,7 @@
     "models": [
       {
         "model": "deepseek-v4.1-flash:1017",
-        "recentTokens": 57138409,
+        "recentTokens": 57190992,
         "priorTokens": 9029460,
         "recentShare": 1,
         "priorShare": 0.14430244994187444,
@@ -248,15 +248,15 @@
           11121209,
           7352847,
           7946759,
-          6642302
+          6694885
         ]
       }
     ]
   },
-  "updatedAt": "2026-10-28T10:52:07.142Z",
+  "updatedAt": "2026-10-28T18:53:36.026Z",
   "sourceFreshness": {
     "dataThrough": "2026-10-28",
-    "sourceUpdatedAt": "2026-10-28T10:52:07.142Z",
-    "generatedAt": "2026-10-28T13:06:06.049Z"
+    "sourceUpdatedAt": "2026-10-28T18:53:36.026Z",
+    "generatedAt": "2026-10-28T22:40:58.579Z"
   }
 }
