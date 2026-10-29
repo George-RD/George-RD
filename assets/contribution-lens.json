@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T13:12:49.811Z",
+  "generatedAt": "2026-10-29T22:50:27.155Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -11,16 +11,16 @@
     "focusStart": "2026-10-16",
     "focusEnd": "2026-10-29"
   },
-  "totalContributions": 19407,
+  "totalContributions": 19431,
   "metrics": {
-    "activeDays": 11,
-    "focusShare": 0.972972972972973,
+    "activeDays": 12,
+    "focusShare": 0.9789473684210527,
     "topRepos": [
       "SPINE",
       "FIRTH"
     ],
     "focusDays": 14,
-    "streak": 0
+    "streak": 1
   },
   "focus": [
     {
@@ -199,25 +199,16 @@
     },
     {
       "date": "2026-10-15",
-      "contributions": 52,
-      "repository": "firth",
-      "event": "review",
+      "contributions": 51,
+      "repository": null,
+      "event": null,
       "modelFamilies": {
         "claude": 0,
         "gpt": 0,
         "gemini": 0,
         "other": 15111041
       },
-      "repositories": [
-        {
-          "name": "firth",
-          "score": 0.5,
-          "commits": 0,
-          "merges": 0,
-          "reviews": 1,
-          "share": 1
-        }
-      ]
+      "repositories": []
     },
     {
       "date": "2026-10-16",
@@ -417,16 +408,25 @@
     },
     {
       "date": "2026-10-29",
-      "contributions": 0,
-      "repository": null,
-      "event": "explore",
+      "contributions": 25,
+      "repository": "firth",
+      "event": "merge",
       "modelFamilies": {
         "claude": 0,
         "gpt": 0,
         "gemini": 0,
-        "other": 7322386
+        "other": 7937429
       },
-      "repositories": []
+      "repositories": [
+        {
+          "name": "firth",
+          "score": 10.5,
+          "commits": 2,
+          "merges": 3,
+          "reviews": 5,
+          "share": 1
+        }
+      ]
     },
     {
       "date": "2026-10-30",
