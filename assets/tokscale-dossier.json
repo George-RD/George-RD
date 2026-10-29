@@ -1,21 +1,21 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-10-28T22:40:54.308Z",
+  "generatedAt": "2026-10-29T05:55:39.896Z",
   "username": "George-RD",
   "allTime": {
     "rank": 168,
     "totalTokens": 140067264389,
     "totalCost": 62189.0219,
     "activeDays": 218,
-    "submissions": 163,
+    "submissions": 164,
     "sessions": 56253
   },
   "month": {
-    "totalTokens": 566998743,
-    "totalCost": 96.51610000000001,
-    "activeDays": 27,
-    "contributions": 27
+    "totalTokens": 336218315,
+    "totalCost": 8.013800000000003,
+    "activeDays": 26,
+    "contributions": 26
   },
   "clients": [
     "codex",
@@ -136,35 +136,30 @@
   ],
   "topModels": [
     {
-      "model": "claude-opus-5-5",
-      "tokens": 101203838,
-      "cost": 38.03186720000003
-    },
-    {
-      "model": "claude-opus-5",
-      "tokens": 31663804,
-      "cost": 37.499421500000004
-    },
-    {
       "model": "deepseek-v4.1-flash",
-      "tokens": 293106542,
-      "cost": 7.797364140000001
+      "tokens": 269812404,
+      "cost": 7.050449232
     },
     {
-      "model": "gpt-5.6-sol",
-      "tokens": 7062402,
-      "cost": 7.2128752
+      "model": "deepseek-v4.1-flash:1017",
+      "tokens": 66220452,
+      "cost": 0.9549969239999999
     },
     {
-      "model": "gpt-5.6-terra",
-      "tokens": 910554,
-      "cost": 2.594348
+      "model": "gpt-6-luna-900k",
+      "tokens": 169416,
+      "cost": 0.007049359999999999
+    },
+    {
+      "model": "gpt-6-luna",
+      "tokens": 16043,
+      "cost": 0.0016071
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-10-28T22:40:58.579Z",
+    "generatedAt": "2026-10-29T05:55:42.059Z",
     "dataThrough": "2026-10-28",
-    "sourceUpdatedAt": "2026-10-28T18:53:36.026Z",
+    "sourceUpdatedAt": "2026-10-29T02:54:58.559Z",
     "dates": [
       "2026-09-29",
       "2026-09-30",
@@ -253,10 +248,10 @@
       }
     ]
   },
-  "updatedAt": "2026-10-28T18:53:36.026Z",
+  "updatedAt": "2026-10-29T02:54:58.559Z",
   "sourceFreshness": {
     "dataThrough": "2026-10-28",
-    "sourceUpdatedAt": "2026-10-28T18:53:36.026Z",
-    "generatedAt": "2026-10-28T22:40:58.579Z"
+    "sourceUpdatedAt": "2026-10-29T02:54:58.559Z",
+    "generatedAt": "2026-10-29T05:55:42.059Z"
   }
 }
