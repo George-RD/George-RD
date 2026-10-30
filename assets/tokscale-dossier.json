@@ -1,19 +1,19 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-10-30T13:04:50.367Z",
+  "generatedAt": "2026-10-30T22:26:44.948Z",
   "username": "George-RD",
   "allTime": {
-    "rank": 171,
-    "totalTokens": 140082618897,
-    "totalCost": 62189.2773,
+    "rank": 173,
+    "totalTokens": 140082668846,
+    "totalCost": 62189.2827,
     "activeDays": 220,
-    "submissions": 168,
-    "sessions": 56270
+    "submissions": 169,
+    "sessions": 56272
   },
   "month": {
-    "totalTokens": 351572823,
-    "totalCost": 8.269200000000003,
+    "totalTokens": 351622772,
+    "totalCost": 8.274600000000003,
     "activeDays": 28,
     "contributions": 28
   },
@@ -120,7 +120,6 @@
     "openai/gpt-5.6-terra",
     "nvidia/nemotron-3-ultra-550b-a55b:free",
     "ultravox-v0_5-llama-3_1-8b",
-    "gpt-6-luna-900k",
     "claude-sonnet-4-6-thinking",
     "anthropic/claude-opus-5",
     "minimax-m3",
@@ -132,7 +131,8 @@
     "glm-5.3",
     "kimi-k3",
     "glm-5.3-flash",
-    "deepseek-v4-pro:0813"
+    "deepseek-v4-pro:0813",
+    "gpt-6-luna-900k"
   ],
   "topModels": [
     {
@@ -142,8 +142,8 @@
     },
     {
       "model": "deepseek-v4.1-flash:1017",
-      "tokens": 81574960,
-      "cost": 1.210389174
+      "tokens": 81624909,
+      "cost": 1.215717114
     },
     {
       "model": "gpt-6-luna-900k",
@@ -157,9 +157,9 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-10-30T13:04:53.687Z",
+    "generatedAt": "2026-10-30T22:26:47.329Z",
     "dataThrough": "2026-10-30",
-    "sourceUpdatedAt": "2026-10-30T10:59:00.714Z",
+    "sourceUpdatedAt": "2026-10-30T19:00:36.715Z",
     "dates": [
       "2026-10-01",
       "2026-10-02",
@@ -195,7 +195,7 @@
     "latestWindow": {
       "start": "2026-10-24",
       "end": "2026-10-30",
-      "totalTokens": 55939921
+      "totalTokens": 55989870
     },
     "previousWindow": {
       "start": "2026-10-17",
@@ -207,7 +207,7 @@
     "models": [
       {
         "model": "deepseek-v4.1-flash:1017",
-        "recentTokens": 55939921,
+        "recentTokens": 55989870,
         "priorTokens": 25635039,
         "recentShare": 1,
         "priorShare": 0.4619412191099467,
@@ -243,15 +243,15 @@
           7946759,
           6694885,
           7937429,
-          7417079
+          7467028
         ]
       }
     ]
   },
-  "updatedAt": "2026-10-30T10:59:00.714Z",
+  "updatedAt": "2026-10-30T19:00:36.715Z",
   "sourceFreshness": {
     "dataThrough": "2026-10-30",
-    "sourceUpdatedAt": "2026-10-30T10:59:00.714Z",
-    "generatedAt": "2026-10-30T13:04:53.687Z"
+    "sourceUpdatedAt": "2026-10-30T19:00:36.715Z",
+    "generatedAt": "2026-10-30T22:26:47.329Z"
   }
 }
