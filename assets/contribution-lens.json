@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T05:57:28.707Z",
+  "generatedAt": "2026-10-30T13:05:02.017Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -433,7 +433,12 @@
       "contributions": 20,
       "repository": "firth",
       "event": "review",
-      "modelFamilies": {},
+      "modelFamilies": {
+        "claude": 0,
+        "gpt": 0,
+        "gemini": 0,
+        "other": 7417079
+      },
       "repositories": [
         {
           "name": "firth",
