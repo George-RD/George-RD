@@ -1,21 +1,21 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-10-31T05:53:01.907Z",
+  "generatedAt": "2026-10-31T12:42:18.172Z",
   "username": "George-RD",
   "allTime": {
-    "rank": 174,
-    "totalTokens": 140082693419,
-    "totalCost": 62189.2845,
-    "activeDays": 220,
-    "submissions": 170,
-    "sessions": 56273
+    "rank": 175,
+    "totalTokens": 140088529854,
+    "totalCost": 62189.3728,
+    "activeDays": 221,
+    "submissions": 171,
+    "sessions": 56278
   },
   "month": {
-    "totalTokens": 351477929,
-    "totalCost": 8.269400000000001,
-    "activeDays": 27,
-    "contributions": 27
+    "totalTokens": 357314364,
+    "totalCost": 8.357700000000001,
+    "activeDays": 28,
+    "contributions": 28
   },
   "clients": [
     "codex",
@@ -142,8 +142,8 @@
     },
     {
       "model": "deepseek-v4.1-flash:1017",
-      "tokens": 81649482,
-      "cost": 1.217569344
+      "tokens": 87485917,
+      "cost": 1.3058973839999999
     },
     {
       "model": "gpt-6-luna",
@@ -152,11 +152,10 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-10-31T05:53:04.133Z",
-    "dataThrough": "2026-10-30",
-    "sourceUpdatedAt": "2026-10-31T03:01:04.349Z",
+    "generatedAt": "2026-10-31T12:42:24.326Z",
+    "dataThrough": "2026-10-31",
+    "sourceUpdatedAt": "2026-10-31T11:02:50.611Z",
     "dates": [
-      "2026-10-01",
       "2026-10-02",
       "2026-10-03",
       "2026-10-04",
@@ -185,31 +184,31 @@
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-10-31"
     ],
     "latestWindow": {
-      "start": "2026-10-24",
-      "end": "2026-10-30",
-      "totalTokens": 56014443
+      "start": "2026-10-25",
+      "end": "2026-10-31",
+      "totalTokens": 54381165
     },
     "previousWindow": {
-      "start": "2026-10-17",
-      "end": "2026-10-23",
-      "totalTokens": 55494158
+      "start": "2026-10-18",
+      "end": "2026-10-24",
+      "totalTokens": 50753498
     },
     "leadingModel": "deepseek-v4.1-flash:1017",
     "fastestRiser": "deepseek-v4.1-flash:1017",
     "models": [
       {
         "model": "deepseek-v4.1-flash:1017",
-        "recentTokens": 56014443,
-        "priorTokens": 25635039,
+        "recentTokens": 54381165,
+        "priorTokens": 33104752,
         "recentShare": 1,
-        "priorShare": 0.4619412191099467,
-        "deltaPercentagePoints": 53.80587808900533,
+        "priorShare": 0.6522654261190036,
+        "deltaPercentagePoints": 34.77345738809964,
         "direction": "up",
         "series": [
-          0,
           0,
           0,
           0,
@@ -238,15 +237,16 @@
           7946759,
           6694885,
           7937429,
-          7491601
+          7491601,
+          5836435
         ]
       }
     ]
   },
-  "updatedAt": "2026-10-31T03:01:04.349Z",
+  "updatedAt": "2026-10-31T11:02:50.611Z",
   "sourceFreshness": {
-    "dataThrough": "2026-10-30",
-    "sourceUpdatedAt": "2026-10-31T03:01:04.349Z",
-    "generatedAt": "2026-10-31T05:53:04.133Z"
+    "dataThrough": "2026-10-31",
+    "sourceUpdatedAt": "2026-10-31T11:02:50.611Z",
+    "generatedAt": "2026-10-31T12:42:24.326Z"
   }
 }
