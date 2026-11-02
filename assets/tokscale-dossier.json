@@ -1,19 +1,19 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-11-01T22:08:09.826Z",
+  "generatedAt": "2026-11-02T06:18:21.289Z",
   "username": "George-RD",
   "allTime": {
     "rank": 182,
-    "totalTokens": 140094181256,
-    "totalCost": 62189.488,
+    "totalTokens": 140094205902,
+    "totalCost": 62189.4898,
     "activeDays": 222,
-    "submissions": 175,
-    "sessions": 56289
+    "submissions": 176,
+    "sessions": 56290
   },
   "month": {
-    "totalTokens": 333733297,
-    "totalCost": 7.840100000000001,
+    "totalTokens": 333757943,
+    "totalCost": 7.841900000000002,
     "activeDays": 28,
     "contributions": 28
   },
@@ -142,8 +142,8 @@
     },
     {
       "model": "deepseek-v4.1-flash:1017",
-      "tokens": 93137319,
-      "cost": 1.421125602
+      "tokens": 93161965,
+      "cost": 1.422935274
     },
     {
       "model": "gpt-6-luna",
@@ -152,9 +152,9 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-11-01T22:08:13.120Z",
+    "generatedAt": "2026-11-02T06:18:24.166Z",
     "dataThrough": "2026-11-01",
-    "sourceUpdatedAt": "2026-11-01T19:09:16.256Z",
+    "sourceUpdatedAt": "2026-11-02T03:10:00.045Z",
     "dates": [
       "2026-10-03",
       "2026-10-04",
@@ -190,7 +190,7 @@
     "latestWindow": {
       "start": "2026-10-26",
       "end": "2026-11-01",
-      "totalTokens": 48911358
+      "totalTokens": 48936004
     },
     "previousWindow": {
       "start": "2026-10-19",
@@ -202,7 +202,7 @@
     "models": [
       {
         "model": "deepseek-v4.1-flash:1017",
-        "recentTokens": 48911358,
+        "recentTokens": 48936004,
         "priorTokens": 44225961,
         "recentShare": 1,
         "priorShare": 0.8207603254508896,
@@ -238,15 +238,15 @@
           7937429,
           7491601,
           6427742,
-          5060095
+          5084741
         ]
       }
     ]
   },
-  "updatedAt": "2026-11-01T19:09:16.256Z",
+  "updatedAt": "2026-11-02T03:10:00.045Z",
   "sourceFreshness": {
     "dataThrough": "2026-11-01",
-    "sourceUpdatedAt": "2026-11-01T19:09:16.256Z",
-    "generatedAt": "2026-11-01T22:08:13.120Z"
+    "sourceUpdatedAt": "2026-11-02T03:10:00.045Z",
+    "generatedAt": "2026-11-02T06:18:24.166Z"
   }
 }
