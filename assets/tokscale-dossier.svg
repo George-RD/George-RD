@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" role="img" aria-labelledby="title desc">
   <title id="title">George-RD Tokscale activity trace</title>
   <desc id="desc">140B all-time tokens, $62.2K estimated all-time cost, 30 active days in the current 30-day window.</desc>
-  <!-- Generated from https://tokscale.ai/api/users/George-RD at 2026-11-05T06:57:03.905Z -->
+  <!-- Generated from https://tokscale.ai/api/users/George-RD at 2026-11-05T20:05:38.253Z -->
   <style>
     :root {
       --paper: #f1ede4;
@@ -61,13 +61,13 @@
   <text class="metric-value" x="58" y="130">140B</text>
   <text class="metric-note" x="58" y="153">$62.2K ESTIMATED COST</text>
   <text class="metric-label" x="314" y="96">30 DAY TOKENS</text>
-  <text class="metric-value" x="314" y="130">286M</text>
+  <text class="metric-value" x="314" y="130">292M</text>
   <text class="metric-note" x="314" y="153">30 ACTIVE DAYS</text>
   <text class="metric-label" x="58" y="180">GLOBAL RANK</text>
-  <text class="metric-value" x="58" y="214">#192</text>
+  <text class="metric-value" x="58" y="214">#193</text>
   <text class="metric-note" x="58" y="237">TOKENS SORT / George-RD</text>
   <text class="metric-label" x="314" y="180">SUBMISSIONS</text>
-  <text class="metric-value" x="314" y="214">185</text>
+  <text class="metric-value" x="314" y="214">187</text>
   <text class="metric-note" x="314" y="237">56.3K SESSIONS</text>
 
   <text class="model-label" x="58" y="249">TOKEN MIX</text>
@@ -112,13 +112,13 @@
     <rect class="bar i2" x="980.0" y="175" width="7.5" height="28" rx="2" style="--delay:572ms"><title>2026-11-02 · 8.67M tokens</title></rect>
     <rect class="bar i1" x="993.0" y="186" width="7.5" height="17" rx="2" style="--delay:594ms"><title>2026-11-03 · 5.51M tokens</title></rect>
     <rect class="bar i1" x="1006.0" y="188" width="7.5" height="15" rx="2" style="--delay:616ms"><title>2026-11-04 · 4.84M tokens</title></rect>
-    <rect class="bar i1" x="1019.0" y="199" width="7.5" height="4" rx="2" style="--delay:638ms"><title>2026-11-05 · 25.2K tokens</title></rect>
+    <rect class="bar i2" x="1019.0" y="182" width="7.5" height="21" rx="2" style="--delay:638ms"><title>2026-11-05 · 6.52M tokens</title></rect>
   </g>
-  <path class="trace" pathLength="1" d="M646.0 125.0 L659.0 134.3 L672.0 127.4 L685.0 158.8 L698.0 156.9 L711.0 170.3 L724.0 163.7 L737.0 163.3 L750.0 149.7 L763.0 171.0 L776.0 159.2 L789.0 172.9 L802.0 182.3 L815.0 183.0 L828.0 170.7 L841.0 170.9 L854.0 172.9 L867.0 174.6 L880.0 162.7 L893.0 175.0 L906.0 173.1 L919.0 177.2 L932.0 173.1 L945.0 174.6 L958.0 178.0 L971.0 182.4 L984.0 170.7 L997.0 181.0 L1010.0 183.2 L1023.0 194.0" />
+  <path class="trace" pathLength="1" d="M646.0 125.0 L659.0 134.3 L672.0 127.4 L685.0 158.8 L698.0 156.9 L711.0 170.3 L724.0 163.7 L737.0 163.3 L750.0 149.7 L763.0 171.0 L776.0 159.2 L789.0 172.9 L802.0 182.3 L815.0 183.0 L828.0 170.7 L841.0 170.9 L854.0 172.9 L867.0 174.6 L880.0 162.7 L893.0 175.0 L906.0 173.1 L919.0 177.2 L932.0 173.1 L945.0 174.6 L958.0 178.0 L971.0 182.4 L984.0 170.7 L997.0 181.0 L1010.0 183.2 L1023.0 177.7" />
 
   <text class="model-label" x="642" y="225">TOP MODELS IN WINDOW</text>
   <text class="model-name" x="642" y="245">deepseek-v4.1-flash</text><text class="model-value" x="1098" y="245" text-anchor="end">174M</text>
-  <text class="model-name" x="642" y="269">deepseek-v4.1-flash:1017</text><text class="model-value" x="1098" y="269" text-anchor="end">112M</text>
+  <text class="model-name" x="642" y="269">deepseek-v4.1-flash:1017</text><text class="model-value" x="1098" y="269" text-anchor="end">119M</text>
   <line class="rule" x1="58" y1="311" x2="1142" y2="311" />
   <text class="stamp" x="58" y="333">INPUT 5% / OUTPUT 0.4% / CACHE 94.6% / REASONING 0%</text>
   <text class="stamp" x="642" y="333">SOURCE TOKSCALE.AI/U/George-RD / GENERATED 05 NOV 2026</text>
