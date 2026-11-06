@@ -1,21 +1,21 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-11-05T20:05:38.258Z",
+  "generatedAt": "2026-11-06T06:56:46.805Z",
   "username": "George-RD",
   "allTime": {
-    "rank": 193,
+    "rank": 195,
     "totalTokens": 140119745326,
     "totalCost": 62189.8874,
     "activeDays": 226,
-    "submissions": 187,
+    "submissions": 188,
     "sessions": 56320
   },
   "month": {
-    "totalTokens": 292466243,
-    "totalCost": 6.034800000000001,
-    "activeDays": 30,
-    "contributions": 30
+    "totalTokens": 269785606,
+    "totalCost": 5.2433,
+    "activeDays": 29,
+    "contributions": 29
   },
   "clients": [
     "codex",
@@ -66,6 +66,7 @@
     "deepseek-v4.1-flash",
     "gpt-6-sol-900k",
     "grok-4.6",
+    "gpt-5.6-sol-900k",
     "qwen3.8-27b",
     "qwen/qwen3-14b",
     "google/gemma-3n-e4b",
@@ -131,14 +132,13 @@
     "kimi-k3",
     "glm-5.3-flash",
     "deepseek-v4-pro:0813",
-    "gpt-6-luna-900k",
-    "gpt-5.6-sol-900k"
+    "gpt-6-luna-900k"
   ],
   "topModels": [
     {
       "model": "deepseek-v4.1-flash",
-      "tokens": 173764854,
-      "cost": 4.214609442
+      "tokens": 151084217,
+      "cost": 3.42309165
     },
     {
       "model": "deepseek-v4.1-flash:1017",
@@ -147,9 +147,9 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-11-05T20:06:03.222Z",
+    "generatedAt": "2026-11-06T06:56:49.641Z",
     "dataThrough": "2026-11-05",
-    "sourceUpdatedAt": "2026-11-05T19:23:24.436Z",
+    "sourceUpdatedAt": "2026-11-06T03:24:02.065Z",
     "dates": [
       "2026-10-07",
       "2026-10-08",
@@ -238,10 +238,10 @@
       }
     ]
   },
-  "updatedAt": "2026-11-05T19:23:24.436Z",
+  "updatedAt": "2026-11-06T03:24:02.065Z",
   "sourceFreshness": {
     "dataThrough": "2026-11-05",
-    "sourceUpdatedAt": "2026-11-05T19:23:24.436Z",
-    "generatedAt": "2026-11-05T20:06:03.222Z"
+    "sourceUpdatedAt": "2026-11-06T03:24:02.065Z",
+    "generatedAt": "2026-11-06T06:56:49.641Z"
   }
 }

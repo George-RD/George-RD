@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" role="img" aria-labelledby="title desc">
   <title id="title">George-RD Tokscale activity trace</title>
-  <desc id="desc">140B all-time tokens, $62.2K estimated all-time cost, 30 active days in the current 30-day window.</desc>
-  <!-- Generated from https://tokscale.ai/api/users/George-RD at 2026-11-05T20:05:38.253Z -->
+  <desc id="desc">140B all-time tokens, $62.2K estimated all-time cost, 29 active days in the current 30-day window.</desc>
+  <!-- Generated from https://tokscale.ai/api/users/George-RD at 2026-11-06T06:56:46.799Z -->
   <style>
     :root {
       --paper: #f1ede4;
@@ -61,13 +61,13 @@
   <text class="metric-value" x="58" y="130">140B</text>
   <text class="metric-note" x="58" y="153">$62.2K ESTIMATED COST</text>
   <text class="metric-label" x="314" y="96">30 DAY TOKENS</text>
-  <text class="metric-value" x="314" y="130">292M</text>
-  <text class="metric-note" x="314" y="153">30 ACTIVE DAYS</text>
+  <text class="metric-value" x="314" y="130">270M</text>
+  <text class="metric-note" x="314" y="153">29 ACTIVE DAYS</text>
   <text class="metric-label" x="58" y="180">GLOBAL RANK</text>
-  <text class="metric-value" x="58" y="214">#193</text>
+  <text class="metric-value" x="58" y="214">#195</text>
   <text class="metric-note" x="58" y="237">TOKENS SORT / George-RD</text>
   <text class="metric-label" x="314" y="180">SUBMISSIONS</text>
-  <text class="metric-value" x="314" y="214">187</text>
+  <text class="metric-value" x="314" y="214">188</text>
   <text class="metric-note" x="314" y="237">56.3K SESSIONS</text>
 
   <text class="model-label" x="58" y="249">TOKEN MIX</text>
@@ -78,48 +78,47 @@
     <rect class="mix-reasoning" x="537.1" y="260" width="3.0" height="12"><title>reasoning · 0%</title></rect>
 
   <text class="chart-title" x="642" y="96">30 DAY ACTIVITY FIELD</text>
-  <text class="chart-note" x="642" y="119">DATA THROUGH 2026-11-05 / HIGHEST DAY 22.7M</text>
+  <text class="chart-note" x="642" y="119">DATA THROUGH 2026-11-05 / HIGHEST DAY 21.9M</text>
   <line class="grid" x1="642" y1="132" x2="1098" y2="132" />
   <line class="grid" x1="642" y1="168" x2="1098" y2="168" />
   <line class="grid" x1="642" y1="204" x2="1098" y2="204" />
   <g aria-label="Daily activity bars">
-    <rect class="bar i4" x="642.0" y="131" width="7.5" height="72" rx="2" style="--delay:0ms"><title>2026-10-07 · 22.7M tokens</title></rect>
-    <rect class="bar i4" x="655.0" y="140" width="7.5" height="63" rx="2" style="--delay:22ms"><title>2026-10-08 · 19.8M tokens</title></rect>
-    <rect class="bar i4" x="668.0" y="133" width="7.5" height="70" rx="2" style="--delay:44ms"><title>2026-10-09 · 21.9M tokens</title></rect>
-    <rect class="bar i3" x="681.0" y="164" width="7.5" height="39" rx="2" style="--delay:66ms"><title>2026-10-10 · 12.3M tokens</title></rect>
-    <rect class="bar i3" x="694.0" y="162" width="7.5" height="41" rx="2" style="--delay:88ms"><title>2026-10-11 · 12.9M tokens</title></rect>
-    <rect class="bar i2" x="707.0" y="175" width="7.5" height="28" rx="2" style="--delay:110ms"><title>2026-10-12 · 8.8M tokens</title></rect>
-    <rect class="bar i2" x="720.0" y="169" width="7.5" height="34" rx="2" style="--delay:132ms"><title>2026-10-13 · 10.8M tokens</title></rect>
-    <rect class="bar i2" x="733.0" y="168" width="7.5" height="35" rx="2" style="--delay:154ms"><title>2026-10-14 · 11M tokens</title></rect>
-    <rect class="bar i3" x="746.0" y="155" width="7.5" height="48" rx="2" style="--delay:176ms"><title>2026-10-15 · 15.1M tokens</title></rect>
-    <rect class="bar i2" x="759.0" y="176" width="7.5" height="27" rx="2" style="--delay:198ms"><title>2026-10-16 · 8.57M tokens</title></rect>
-    <rect class="bar i3" x="772.0" y="164" width="7.5" height="39" rx="2" style="--delay:220ms"><title>2026-10-17 · 12.2M tokens</title></rect>
-    <rect class="bar i2" x="785.0" y="178" width="7.5" height="25" rx="2" style="--delay:242ms"><title>2026-10-18 · 7.99M tokens</title></rect>
-    <rect class="bar i1" x="798.0" y="187" width="7.5" height="16" rx="2" style="--delay:264ms"><title>2026-10-19 · 5.11M tokens</title></rect>
-    <rect class="bar i1" x="811.0" y="187" width="7.5" height="16" rx="2" style="--delay:286ms"><title>2026-10-20 · 4.89M tokens</title></rect>
-    <rect class="bar i2" x="824.0" y="175" width="7.5" height="28" rx="2" style="--delay:308ms"><title>2026-10-21 · 8.69M tokens</title></rect>
-    <rect class="bar i2" x="837.0" y="176" width="7.5" height="27" rx="2" style="--delay:330ms"><title>2026-10-22 · 8.62M tokens</title></rect>
-    <rect class="bar i2" x="850.0" y="178" width="7.5" height="25" rx="2" style="--delay:352ms"><title>2026-10-23 · 7.99M tokens</title></rect>
-    <rect class="bar i2" x="863.0" y="179" width="7.5" height="24" rx="2" style="--delay:374ms"><title>2026-10-24 · 7.47M tokens</title></rect>
-    <rect class="bar i2" x="876.0" y="168" width="7.5" height="35" rx="2" style="--delay:396ms"><title>2026-10-25 · 11.1M tokens</title></rect>
-    <rect class="bar i2" x="889.0" y="180" width="7.5" height="23" rx="2" style="--delay:418ms"><title>2026-10-26 · 7.35M tokens</title></rect>
-    <rect class="bar i2" x="902.0" y="178" width="7.5" height="25" rx="2" style="--delay:440ms"><title>2026-10-27 · 7.95M tokens</title></rect>
-    <rect class="bar i2" x="915.0" y="182" width="7.5" height="21" rx="2" style="--delay:462ms"><title>2026-10-28 · 6.69M tokens</title></rect>
-    <rect class="bar i2" x="928.0" y="178" width="7.5" height="25" rx="2" style="--delay:484ms"><title>2026-10-29 · 7.94M tokens</title></rect>
-    <rect class="bar i2" x="941.0" y="179" width="7.5" height="24" rx="2" style="--delay:506ms"><title>2026-10-30 · 7.49M tokens</title></rect>
-    <rect class="bar i2" x="954.0" y="183" width="7.5" height="20" rx="2" style="--delay:528ms"><title>2026-10-31 · 6.43M tokens</title></rect>
-    <rect class="bar i1" x="967.0" y="187" width="7.5" height="16" rx="2" style="--delay:550ms"><title>2026-11-01 · 5.08M tokens</title></rect>
-    <rect class="bar i2" x="980.0" y="175" width="7.5" height="28" rx="2" style="--delay:572ms"><title>2026-11-02 · 8.67M tokens</title></rect>
-    <rect class="bar i1" x="993.0" y="186" width="7.5" height="17" rx="2" style="--delay:594ms"><title>2026-11-03 · 5.51M tokens</title></rect>
-    <rect class="bar i1" x="1006.0" y="188" width="7.5" height="15" rx="2" style="--delay:616ms"><title>2026-11-04 · 4.84M tokens</title></rect>
-    <rect class="bar i2" x="1019.0" y="182" width="7.5" height="21" rx="2" style="--delay:638ms"><title>2026-11-05 · 6.52M tokens</title></rect>
+    <rect class="bar i4" x="642.0" y="138" width="7.5" height="65" rx="2" style="--delay:0ms"><title>2026-10-08 · 19.8M tokens</title></rect>
+    <rect class="bar i4" x="655.0" y="131" width="7.5" height="72" rx="2" style="--delay:22ms"><title>2026-10-09 · 21.9M tokens</title></rect>
+    <rect class="bar i3" x="668.0" y="163" width="7.5" height="40" rx="2" style="--delay:44ms"><title>2026-10-10 · 12.3M tokens</title></rect>
+    <rect class="bar i3" x="681.0" y="161" width="7.5" height="42" rx="2" style="--delay:66ms"><title>2026-10-11 · 12.9M tokens</title></rect>
+    <rect class="bar i2" x="694.0" y="174" width="7.5" height="29" rx="2" style="--delay:88ms"><title>2026-10-12 · 8.8M tokens</title></rect>
+    <rect class="bar i2" x="707.0" y="168" width="7.5" height="35" rx="2" style="--delay:110ms"><title>2026-10-13 · 10.8M tokens</title></rect>
+    <rect class="bar i2" x="720.0" y="167" width="7.5" height="36" rx="2" style="--delay:132ms"><title>2026-10-14 · 11M tokens</title></rect>
+    <rect class="bar i3" x="733.0" y="153" width="7.5" height="50" rx="2" style="--delay:154ms"><title>2026-10-15 · 15.1M tokens</title></rect>
+    <rect class="bar i2" x="746.0" y="175" width="7.5" height="28" rx="2" style="--delay:176ms"><title>2026-10-16 · 8.57M tokens</title></rect>
+    <rect class="bar i3" x="759.0" y="163" width="7.5" height="40" rx="2" style="--delay:198ms"><title>2026-10-17 · 12.2M tokens</title></rect>
+    <rect class="bar i2" x="772.0" y="177" width="7.5" height="26" rx="2" style="--delay:220ms"><title>2026-10-18 · 7.99M tokens</title></rect>
+    <rect class="bar i1" x="785.0" y="186" width="7.5" height="17" rx="2" style="--delay:242ms"><title>2026-10-19 · 5.11M tokens</title></rect>
+    <rect class="bar i1" x="798.0" y="187" width="7.5" height="16" rx="2" style="--delay:264ms"><title>2026-10-20 · 4.89M tokens</title></rect>
+    <rect class="bar i2" x="811.0" y="174" width="7.5" height="29" rx="2" style="--delay:286ms"><title>2026-10-21 · 8.69M tokens</title></rect>
+    <rect class="bar i2" x="824.0" y="175" width="7.5" height="28" rx="2" style="--delay:308ms"><title>2026-10-22 · 8.62M tokens</title></rect>
+    <rect class="bar i2" x="837.0" y="177" width="7.5" height="26" rx="2" style="--delay:330ms"><title>2026-10-23 · 7.99M tokens</title></rect>
+    <rect class="bar i2" x="850.0" y="178" width="7.5" height="25" rx="2" style="--delay:352ms"><title>2026-10-24 · 7.47M tokens</title></rect>
+    <rect class="bar i3" x="863.0" y="166" width="7.5" height="37" rx="2" style="--delay:374ms"><title>2026-10-25 · 11.1M tokens</title></rect>
+    <rect class="bar i2" x="876.0" y="179" width="7.5" height="24" rx="2" style="--delay:396ms"><title>2026-10-26 · 7.35M tokens</title></rect>
+    <rect class="bar i2" x="889.0" y="177" width="7.5" height="26" rx="2" style="--delay:418ms"><title>2026-10-27 · 7.95M tokens</title></rect>
+    <rect class="bar i2" x="902.0" y="181" width="7.5" height="22" rx="2" style="--delay:440ms"><title>2026-10-28 · 6.69M tokens</title></rect>
+    <rect class="bar i2" x="915.0" y="177" width="7.5" height="26" rx="2" style="--delay:462ms"><title>2026-10-29 · 7.94M tokens</title></rect>
+    <rect class="bar i2" x="928.0" y="178" width="7.5" height="25" rx="2" style="--delay:484ms"><title>2026-10-30 · 7.49M tokens</title></rect>
+    <rect class="bar i2" x="941.0" y="182" width="7.5" height="21" rx="2" style="--delay:506ms"><title>2026-10-31 · 6.43M tokens</title></rect>
+    <rect class="bar i1" x="954.0" y="186" width="7.5" height="17" rx="2" style="--delay:528ms"><title>2026-11-01 · 5.08M tokens</title></rect>
+    <rect class="bar i2" x="967.0" y="175" width="7.5" height="28" rx="2" style="--delay:550ms"><title>2026-11-02 · 8.67M tokens</title></rect>
+    <rect class="bar i2" x="980.0" y="185" width="7.5" height="18" rx="2" style="--delay:572ms"><title>2026-11-03 · 5.51M tokens</title></rect>
+    <rect class="bar i1" x="993.0" y="187" width="7.5" height="16" rx="2" style="--delay:594ms"><title>2026-11-04 · 4.84M tokens</title></rect>
+    <rect class="bar i2" x="1006.0" y="182" width="7.5" height="21" rx="2" style="--delay:616ms"><title>2026-11-05 · 6.52M tokens</title></rect>
   </g>
-  <path class="trace" pathLength="1" d="M646.0 125.0 L659.0 134.3 L672.0 127.4 L685.0 158.8 L698.0 156.9 L711.0 170.3 L724.0 163.7 L737.0 163.3 L750.0 149.7 L763.0 171.0 L776.0 159.2 L789.0 172.9 L802.0 182.3 L815.0 183.0 L828.0 170.7 L841.0 170.9 L854.0 172.9 L867.0 174.6 L880.0 162.7 L893.0 175.0 L906.0 173.1 L919.0 177.2 L932.0 173.1 L945.0 174.6 L958.0 178.0 L971.0 182.4 L984.0 170.7 L997.0 181.0 L1010.0 183.2 L1023.0 177.7" />
+  <path class="trace" pathLength="1" d="M646.0 132.1 L659.0 125.0 L672.0 157.5 L685.0 155.5 L698.0 169.3 L711.0 162.5 L724.0 162.1 L737.0 148.0 L750.0 170.1 L763.0 157.8 L776.0 172.0 L789.0 181.8 L802.0 182.5 L815.0 169.7 L828.0 169.9 L841.0 172.0 L854.0 173.8 L867.0 161.5 L880.0 174.2 L893.0 172.2 L906.0 176.4 L919.0 172.2 L932.0 173.7 L945.0 177.3 L958.0 181.8 L971.0 169.8 L984.0 180.4 L997.0 182.7 L1010.0 177.0" />
 
   <text class="model-label" x="642" y="225">TOP MODELS IN WINDOW</text>
-  <text class="model-name" x="642" y="245">deepseek-v4.1-flash</text><text class="model-value" x="1098" y="245" text-anchor="end">174M</text>
+  <text class="model-name" x="642" y="245">deepseek-v4.1-flash</text><text class="model-value" x="1098" y="245" text-anchor="end">151M</text>
   <text class="model-name" x="642" y="269">deepseek-v4.1-flash:1017</text><text class="model-value" x="1098" y="269" text-anchor="end">119M</text>
   <line class="rule" x1="58" y1="311" x2="1142" y2="311" />
   <text class="stamp" x="58" y="333">INPUT 5% / OUTPUT 0.4% / CACHE 94.6% / REASONING 0%</text>
-  <text class="stamp" x="642" y="333">SOURCE TOKSCALE.AI/U/George-RD / GENERATED 05 NOV 2026</text>
+  <text class="stamp" x="642" y="333">SOURCE TOKSCALE.AI/U/George-RD / GENERATED 06 NOV 2026</text>
 </svg>
