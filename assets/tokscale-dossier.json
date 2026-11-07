@@ -1,19 +1,19 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-11-07T13:12:41.036Z",
+  "generatedAt": "2026-11-07T21:57:13.122Z",
   "username": "George-RD",
   "allTime": {
     "rank": 201,
-    "totalTokens": 140139679262,
-    "totalCost": 62190.131,
+    "totalTokens": 140139756238,
+    "totalCost": 62190.1375,
     "activeDays": 228,
-    "submissions": 192,
-    "sessions": 56337
+    "submissions": 193,
+    "sessions": 56339
   },
   "month": {
-    "totalTokens": 269893268,
-    "totalCost": 4.7209,
+    "totalTokens": 269970244,
+    "totalCost": 4.7274,
     "activeDays": 30,
     "contributions": 30
   },
@@ -65,8 +65,8 @@
     "deepseek-v4-flash:0731",
     "deepseek-v4.1-flash",
     "gpt-6-sol-900k",
-    "grok-4.6",
     "qwen3.8-27b",
+    "grok-4.6",
     "qwen/qwen3-14b",
     "google/gemma-3n-e4b",
     "gemini-3-pro-preview",
@@ -142,14 +142,14 @@
     },
     {
       "model": "deepseek-v4.1-flash:1017",
-      "tokens": 138635325,
-      "cost": 2.064164484
+      "tokens": 138712301,
+      "cost": 2.0706699
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-11-07T13:12:53.306Z",
+    "generatedAt": "2026-11-07T21:57:36.058Z",
     "dataThrough": "2026-11-07",
-    "sourceUpdatedAt": "2026-11-07T11:29:12.638Z",
+    "sourceUpdatedAt": "2026-11-07T19:30:29.726Z",
     "dates": [
       "2026-10-09",
       "2026-10-10",
@@ -185,7 +185,7 @@
     "latestWindow": {
       "start": "2026-11-01",
       "end": "2026-11-07",
-      "totalTokens": 50558101
+      "totalTokens": 50635077
     },
     "previousWindow": {
       "start": "2026-10-25",
@@ -197,7 +197,7 @@
     "models": [
       {
         "model": "deepseek-v4.1-flash:1017",
-        "recentTokens": 50558101,
+        "recentTokens": 50635077,
         "priorTokens": 54972472,
         "recentShare": 1,
         "priorShare": 1,
@@ -233,15 +233,15 @@
           4843157,
           6520386,
           5961211,
-          13972725
+          14049701
         ]
       }
     ]
   },
-  "updatedAt": "2026-11-07T11:29:12.638Z",
+  "updatedAt": "2026-11-07T19:30:29.726Z",
   "sourceFreshness": {
     "dataThrough": "2026-11-07",
-    "sourceUpdatedAt": "2026-11-07T11:29:12.638Z",
-    "generatedAt": "2026-11-07T13:12:53.306Z"
+    "sourceUpdatedAt": "2026-11-07T19:30:29.726Z",
+    "generatedAt": "2026-11-07T21:57:36.058Z"
   }
 }
