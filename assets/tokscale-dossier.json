@@ -1,19 +1,19 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-11-08T13:34:08.365Z",
+  "generatedAt": "2026-11-08T22:13:17.273Z",
   "username": "George-RD",
   "allTime": {
     "rank": 202,
-    "totalTokens": 140149373044,
-    "totalCost": 62190.2344,
+    "totalTokens": 140149438432,
+    "totalCost": 62190.2391,
     "activeDays": 229,
-    "submissions": 195,
-    "sessions": 56343
+    "submissions": 196,
+    "sessions": 56345
   },
   "month": {
-    "totalTokens": 257650664,
-    "totalCost": 4.317,
+    "totalTokens": 257716052,
+    "totalCost": 4.321700000000001,
     "activeDays": 30,
     "contributions": 30
   },
@@ -64,8 +64,8 @@
     "deepseek-v4-flash:0731",
     "deepseek-v4.1-flash",
     "gpt-6-astra-900k",
-    "gpt-6-sol-900k",
     "qwen3.8-27b",
+    "gpt-6-sol-900k",
     "grok-4.6",
     "qwen/qwen3-14b",
     "google/gemma-3n-e4b",
@@ -137,8 +137,8 @@
   "topModels": [
     {
       "model": "deepseek-v4.1-flash:1017",
-      "tokens": 148329107,
-      "cost": 2.167578438
+      "tokens": 148394495,
+      "cost": 2.17220373
     },
     {
       "model": "deepseek-v4.1-flash",
@@ -147,9 +147,9 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-11-08T13:34:11.725Z",
+    "generatedAt": "2026-11-08T22:13:27.946Z",
     "dataThrough": "2026-11-08",
-    "sourceUpdatedAt": "2026-11-08T11:32:59.285Z",
+    "sourceUpdatedAt": "2026-11-08T19:34:12.873Z",
     "dates": [
       "2026-10-10",
       "2026-10-11",
@@ -185,7 +185,7 @@
     "latestWindow": {
       "start": "2026-11-02",
       "end": "2026-11-08",
-      "totalTokens": 55167142
+      "totalTokens": 55232530
     },
     "previousWindow": {
       "start": "2026-10-26",
@@ -197,7 +197,7 @@
     "models": [
       {
         "model": "deepseek-v4.1-flash:1017",
-        "recentTokens": 55167142,
+        "recentTokens": 55232530,
         "priorTokens": 48936004,
         "recentShare": 1,
         "priorShare": 1,
@@ -233,15 +233,15 @@
           6520386,
           5961211,
           14074531,
-          9591976
+          9657364
         ]
       }
     ]
   },
-  "updatedAt": "2026-11-08T11:32:59.285Z",
+  "updatedAt": "2026-11-08T19:34:12.873Z",
   "sourceFreshness": {
     "dataThrough": "2026-11-08",
-    "sourceUpdatedAt": "2026-11-08T11:32:59.285Z",
-    "generatedAt": "2026-11-08T13:34:11.725Z"
+    "sourceUpdatedAt": "2026-11-08T19:34:12.873Z",
+    "generatedAt": "2026-11-08T22:13:27.946Z"
   }
 }
