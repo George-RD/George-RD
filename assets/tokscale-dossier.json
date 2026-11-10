@@ -1,21 +1,21 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-11-09T22:28:44.116Z",
+  "generatedAt": "2026-11-10T07:27:16.685Z",
   "username": "George-RD",
   "allTime": {
-    "rank": 203,
-    "totalTokens": 140158889128,
-    "totalCost": 62190.3604,
+    "rank": 204,
+    "totalTokens": 140158913577,
+    "totalCost": 62190.3621,
     "activeDays": 230,
-    "submissions": 199,
-    "sessions": 56354
+    "submissions": 200,
+    "sessions": 56355
   },
   "month": {
-    "totalTokens": 254859455,
-    "totalCost": 4.177,
-    "activeDays": 30,
-    "contributions": 30
+    "totalTokens": 241979122,
+    "totalCost": 3.9863,
+    "activeDays": 29,
+    "contributions": 29
   },
   "clients": [
     "codex",
@@ -137,19 +137,19 @@
   "topModels": [
     {
       "model": "deepseek-v4.1-flash:1017",
-      "tokens": 157845191,
-      "cost": 2.2935103619999997
+      "tokens": 157869640,
+      "cost": 2.295237468
     },
     {
       "model": "deepseek-v4.1-flash",
-      "tokens": 97014264,
-      "cost": 1.8837520319999996
+      "tokens": 84109482,
+      "cost": 1.691347746
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-11-09T22:28:46.495Z",
+    "generatedAt": "2026-11-10T07:27:28.180Z",
     "dataThrough": "2026-11-09",
-    "sourceUpdatedAt": "2026-11-09T19:37:02.555Z",
+    "sourceUpdatedAt": "2026-11-10T03:38:02.515Z",
     "dates": [
       "2026-10-11",
       "2026-10-12",
@@ -185,7 +185,7 @@
     "latestWindow": {
       "start": "2026-11-03",
       "end": "2026-11-09",
-      "totalTokens": 56016308
+      "totalTokens": 56040757
     },
     "previousWindow": {
       "start": "2026-10-27",
@@ -197,7 +197,7 @@
     "models": [
       {
         "model": "deepseek-v4.1-flash:1017",
-        "recentTokens": 56016308,
+        "recentTokens": 56040757,
         "priorTokens": 50250075,
         "recentShare": 1,
         "priorShare": 1,
@@ -233,15 +233,15 @@
           5961211,
           14074531,
           9694949,
-          9413111
+          9437560
         ]
       }
     ]
   },
-  "updatedAt": "2026-11-09T19:37:02.555Z",
+  "updatedAt": "2026-11-10T03:38:02.515Z",
   "sourceFreshness": {
     "dataThrough": "2026-11-09",
-    "sourceUpdatedAt": "2026-11-09T19:37:02.555Z",
-    "generatedAt": "2026-11-09T22:28:46.495Z"
+    "sourceUpdatedAt": "2026-11-10T03:38:02.515Z",
+    "generatedAt": "2026-11-10T07:27:28.180Z"
   }
 }
