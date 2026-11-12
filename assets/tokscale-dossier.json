@@ -1,19 +1,19 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-11-12T07:20:32.065Z",
+  "generatedAt": "2026-11-12T20:01:10.579Z",
   "username": "George-RD",
   "allTime": {
-    "rank": 208,
-    "totalTokens": 140176501245,
-    "totalCost": 62190.6347,
+    "rank": 209,
+    "totalTokens": 140182466262,
+    "totalCost": 62190.7551,
     "activeDays": 233,
-    "submissions": 206,
-    "sessions": 56376
+    "submissions": 208,
+    "sessions": 56387
   },
   "month": {
-    "totalTokens": 239954202,
-    "totalCost": 3.8679999999999994,
+    "totalTokens": 245919219,
+    "totalCost": 3.9883999999999995,
     "activeDays": 30,
     "contributions": 30
   },
@@ -131,14 +131,14 @@
     "kimi-k3",
     "glm-5.3-flash",
     "deepseek-v4-pro:0813",
-    "gpt-5.6-sol-900k",
-    "gpt-6-luna-900k"
+    "gpt-6-luna-900k",
+    "gpt-5.6-sol-900k"
   ],
   "topModels": [
     {
       "model": "deepseek-v4.1-flash:1017",
-      "tokens": 175457308,
-      "cost": 2.567924292
+      "tokens": 181422325,
+      "cost": 2.688274032
     },
     {
       "model": "deepseek-v4.1-flash",
@@ -147,9 +147,9 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-11-12T07:20:32.444Z",
+    "generatedAt": "2026-11-12T20:01:11.204Z",
     "dataThrough": "2026-11-12",
-    "sourceUpdatedAt": "2026-11-12T03:44:19.168Z",
+    "sourceUpdatedAt": "2026-11-12T19:46:15.851Z",
     "dates": [
       "2026-10-14",
       "2026-10-15",
@@ -185,7 +185,7 @@
     "latestWindow": {
       "start": "2026-11-06",
       "end": "2026-11-12",
-      "totalTokens": 56755919
+      "totalTokens": 62720936
     },
     "previousWindow": {
       "start": "2026-10-30",
@@ -197,7 +197,7 @@
     "models": [
       {
         "model": "deepseek-v4.1-flash:1017",
-        "recentTokens": 56755919,
+        "recentTokens": 62720936,
         "priorTokens": 44543508,
         "recentShare": 1,
         "priorShare": 1,
@@ -233,15 +233,15 @@
           9437560,
           7767938,
           9770471,
-          49259
+          6014276
         ]
       }
     ]
   },
-  "updatedAt": "2026-11-12T03:44:19.168Z",
+  "updatedAt": "2026-11-12T19:46:15.851Z",
   "sourceFreshness": {
     "dataThrough": "2026-11-12",
-    "sourceUpdatedAt": "2026-11-12T03:44:19.168Z",
-    "generatedAt": "2026-11-12T07:20:32.444Z"
+    "sourceUpdatedAt": "2026-11-12T19:46:15.851Z",
+    "generatedAt": "2026-11-12T20:01:11.204Z"
   }
 }
