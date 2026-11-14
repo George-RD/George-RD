@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" role="img" aria-labelledby="title desc">
   <title id="title">George-RD Tokscale activity trace</title>
   <desc id="desc">140B all-time tokens, $62.2K estimated all-time cost, 30 active days in the current 30-day window.</desc>
-  <!-- Generated from https://tokscale.ai/api/users/George-RD at 2026-11-14T18:12:48.188Z -->
+  <!-- Generated from https://tokscale.ai/api/users/George-RD at 2026-11-14T22:31:07.715Z -->
   <style>
     :root {
       --paper: #f1ede4;
@@ -67,7 +67,7 @@
   <text class="metric-value" x="58" y="214">#215</text>
   <text class="metric-note" x="58" y="237">TOKENS SORT / George-RD</text>
   <text class="metric-label" x="314" y="180">SUBMISSIONS</text>
-  <text class="metric-value" x="314" y="214">213</text>
+  <text class="metric-value" x="314" y="214">214</text>
   <text class="metric-note" x="314" y="237">56.4K SESSIONS</text>
 
   <text class="model-label" x="58" y="249">TOKEN MIX</text>
@@ -112,9 +112,9 @@
     <rect class="bar i3" x="980.0" y="153" width="7.5" height="50" rx="2" style="--delay:572ms"><title>2026-11-11 · 9.77M tokens</title></rect>
     <rect class="bar i2" x="993.0" y="171" width="7.5" height="32" rx="2" style="--delay:594ms"><title>2026-11-12 · 6.17M tokens</title></rect>
     <rect class="bar i3" x="1006.0" y="165" width="7.5" height="38" rx="2" style="--delay:616ms"><title>2026-11-13 · 7.49M tokens</title></rect>
-    <rect class="bar i2" x="1019.0" y="169" width="7.5" height="34" rx="2" style="--delay:638ms"><title>2026-11-14 · 6.58M tokens</title></rect>
+    <rect class="bar i2" x="1019.0" y="169" width="7.5" height="34" rx="2" style="--delay:638ms"><title>2026-11-14 · 6.63M tokens</title></rect>
   </g>
-  <path class="trace" pathLength="1" d="M646.0 153.9 L659.0 134.8 L672.0 157.0 L685.0 172.2 L698.0 173.3 L711.0 153.3 L724.0 153.7 L737.0 157.0 L750.0 159.7 L763.0 140.5 L776.0 160.3 L789.0 157.2 L802.0 163.8 L815.0 157.3 L828.0 159.6 L841.0 165.2 L854.0 172.3 L867.0 153.4 L880.0 170.0 L893.0 173.5 L906.0 164.7 L919.0 167.7 L932.0 125.0 L945.0 148.0 L958.0 149.4 L971.0 158.2 L984.0 147.6 L997.0 166.6 L1010.0 159.6 L1023.0 164.4" />
+  <path class="trace" pathLength="1" d="M646.0 153.9 L659.0 134.8 L672.0 157.0 L685.0 172.2 L698.0 173.3 L711.0 153.3 L724.0 153.7 L737.0 157.0 L750.0 159.7 L763.0 140.5 L776.0 160.3 L789.0 157.2 L802.0 163.8 L815.0 157.3 L828.0 159.6 L841.0 165.2 L854.0 172.3 L867.0 153.4 L880.0 170.0 L893.0 173.5 L906.0 164.7 L919.0 167.7 L932.0 125.0 L945.0 148.0 L958.0 149.4 L971.0 158.2 L984.0 147.6 L997.0 166.6 L1010.0 159.6 L1023.0 164.2" />
 
   <text class="model-label" x="642" y="225">TOP MODELS IN WINDOW</text>
   <text class="model-name" x="642" y="245">deepseek-v4.1-flash:1017</text><text class="model-value" x="1098" y="245" text-anchor="end">196M</text>
