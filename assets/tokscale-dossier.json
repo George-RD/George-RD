@@ -1,21 +1,21 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-11-13T19:48:46.118Z",
+  "generatedAt": "2026-11-14T06:35:52.229Z",
   "username": "George-RD",
   "allTime": {
-    "rank": 213,
-    "totalTokens": 140189930826,
-    "totalCost": 62190.8685,
+    "rank": 214,
+    "totalTokens": 140190111896,
+    "totalCost": 62190.8858,
     "activeDays": 233,
-    "submissions": 210,
-    "sessions": 56394
+    "submissions": 212,
+    "sessions": 56400
   },
   "month": {
-    "totalTokens": 242430587,
-    "totalCost": 3.8858,
-    "activeDays": 30,
-    "contributions": 30
+    "totalTokens": 227500616,
+    "totalCost": 3.6189999999999998,
+    "activeDays": 29,
+    "contributions": 29
   },
   "clients": [
     "codex",
@@ -137,19 +137,19 @@
   "topModels": [
     {
       "model": "deepseek-v4.1-flash:1017",
-      "tokens": 188886889,
-      "cost": 2.801711694
+      "tokens": 189067959,
+      "cost": 2.819030244
     },
     {
       "model": "deepseek-v4.1-flash",
-      "tokens": 53543698,
-      "cost": 1.084347306
+      "tokens": 38432657,
+      "cost": 0.8002340639999999
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-11-13T19:48:46.624Z",
+    "generatedAt": "2026-11-14T06:35:52.789Z",
     "dataThrough": "2026-11-13",
-    "sourceUpdatedAt": "2026-11-13T11:48:16.261Z",
+    "sourceUpdatedAt": "2026-11-14T03:50:13.099Z",
     "dates": [
       "2026-10-15",
       "2026-10-16",
@@ -185,7 +185,7 @@
     "latestWindow": {
       "start": "2026-11-07",
       "end": "2026-11-13",
-      "totalTokens": 64224289
+      "totalTokens": 64405359
     },
     "previousWindow": {
       "start": "2026-10-31",
@@ -197,7 +197,7 @@
     "models": [
       {
         "model": "deepseek-v4.1-flash:1017",
-        "recentTokens": 64224289,
+        "recentTokens": 64405359,
         "priorTokens": 43013118,
         "recentShare": 1,
         "priorShare": 1,
@@ -233,15 +233,15 @@
           7767938,
           9770471,
           6171745,
-          7307095
+          7488165
         ]
       }
     ]
   },
-  "updatedAt": "2026-11-13T11:48:16.261Z",
+  "updatedAt": "2026-11-14T03:50:13.099Z",
   "sourceFreshness": {
     "dataThrough": "2026-11-13",
-    "sourceUpdatedAt": "2026-11-13T11:48:16.261Z",
-    "generatedAt": "2026-11-13T19:48:46.624Z"
+    "sourceUpdatedAt": "2026-11-14T03:50:13.099Z",
+    "generatedAt": "2026-11-14T06:35:52.789Z"
   }
 }
