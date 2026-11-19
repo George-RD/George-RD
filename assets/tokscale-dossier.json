@@ -1,19 +1,19 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-11-19T07:33:58.873Z",
+  "generatedAt": "2026-11-19T20:44:41.900Z",
   "username": "George-RD",
   "allTime": {
     "rank": 225,
-    "totalTokens": 140230410550,
-    "totalCost": 62191.4336,
+    "totalTokens": 140235995795,
+    "totalCost": 62191.5167,
     "activeDays": 238,
-    "submissions": 227,
-    "sessions": 56435
+    "submissions": 229,
+    "sessions": 56442
   },
   "month": {
-    "totalTokens": 229025661,
-    "totalCost": 3.3497999999999997,
+    "totalTokens": 234610906,
+    "totalCost": 3.4329,
     "activeDays": 30,
     "contributions": 30
   },
@@ -137,14 +137,14 @@
   "topModels": [
     {
       "model": "deepseek-v4.1-flash:1017",
-      "tokens": 229025661,
-      "cost": 3.349941234
+      "tokens": 234610906,
+      "cost": 3.433070604
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-11-19T07:33:59.237Z",
+    "generatedAt": "2026-11-19T20:44:42.599Z",
     "dataThrough": "2026-11-19",
-    "sourceUpdatedAt": "2026-11-19T04:05:11.066Z",
+    "sourceUpdatedAt": "2026-11-19T20:07:11.545Z",
     "dates": [
       "2026-10-21",
       "2026-10-22",
@@ -180,7 +180,7 @@
     "latestWindow": {
       "start": "2026-11-13",
       "end": "2026-11-19",
-      "totalTokens": 47786819
+      "totalTokens": 53372064
     },
     "previousWindow": {
       "start": "2026-11-06",
@@ -192,7 +192,7 @@
     "models": [
       {
         "model": "deepseek-v4.1-flash:1017",
-        "recentTokens": 47786819,
+        "recentTokens": 53372064,
         "priorTokens": 62878405,
         "recentShare": 1,
         "priorShare": 1,
@@ -228,15 +228,15 @@
           5289533,
           6443262,
           13104869,
-          1915578
+          7500823
         ]
       }
     ]
   },
-  "updatedAt": "2026-11-19T04:05:11.066Z",
+  "updatedAt": "2026-11-19T20:07:11.545Z",
   "sourceFreshness": {
     "dataThrough": "2026-11-19",
-    "sourceUpdatedAt": "2026-11-19T04:05:11.066Z",
-    "generatedAt": "2026-11-19T07:33:59.237Z"
+    "sourceUpdatedAt": "2026-11-19T20:07:11.545Z",
+    "generatedAt": "2026-11-19T20:44:42.599Z"
   }
 }
