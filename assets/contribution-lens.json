@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T07:26:01.717Z",
+  "generatedAt": "2026-11-20T20:28:32.282Z",
   "username": "George-RD",
   "sources": {
     "github": "https://github.com/George-RD",
@@ -28,10 +28,10 @@
       "repository": null,
       "event": null,
       "modelFamilies": {
-        "claude": 0,
-        "gpt": 0,
+        "claude": 775514521,
+        "gpt": 183052779,
         "gemini": 0,
-        "other": 7352847
+        "other": 32507647
       },
       "repositories": []
     },
@@ -68,7 +68,7 @@
       "event": "merge",
       "modelFamilies": {
         "claude": 0,
-        "gpt": 0,
+        "gpt": 189859,
         "gemini": 0,
         "other": 7937429
       },
@@ -150,10 +150,10 @@
       "repository": "openspine",
       "event": "merge",
       "modelFamilies": {
-        "claude": 0,
-        "gpt": 0,
+        "claude": 527569979,
+        "gpt": 200087584,
         "gemini": 0,
-        "other": 5508963
+        "other": 34965394
       },
       "repositories": [
         {
@@ -172,10 +172,10 @@
       "repository": null,
       "event": null,
       "modelFamilies": {
-        "claude": 0,
-        "gpt": 0,
+        "claude": 185212299,
+        "gpt": 21914166,
         "gemini": 0,
-        "other": 4843157
+        "other": 15289706
       },
       "repositories": []
     },
@@ -185,10 +185,10 @@
       "repository": "skills",
       "event": "merge",
       "modelFamilies": {
-        "claude": 0,
-        "gpt": 0,
+        "claude": 51640050,
+        "gpt": 2179894,
         "gemini": 0,
-        "other": 6520386
+        "other": 10372046
       },
       "repositories": [
         {
@@ -207,8 +207,8 @@
       "repository": null,
       "event": null,
       "modelFamilies": {
-        "claude": 0,
-        "gpt": 0,
+        "claude": 1737077,
+        "gpt": 957412,
         "gemini": 0,
         "other": 5961211
       },
@@ -233,10 +233,10 @@
       "repository": "openspine",
       "event": "merge",
       "modelFamilies": {
-        "claude": 0,
-        "gpt": 0,
+        "claude": 989503032,
+        "gpt": 444649493,
         "gemini": 0,
-        "other": 9694949
+        "other": 52575808
       },
       "repositories": [
         {
@@ -255,10 +255,10 @@
       "repository": null,
       "event": null,
       "modelFamilies": {
-        "claude": 0,
-        "gpt": 0,
+        "claude": 624309318,
+        "gpt": 330446514,
         "gemini": 0,
-        "other": 9437560
+        "other": 32274098
       },
       "repositories": []
     },
@@ -268,10 +268,10 @@
       "repository": null,
       "event": null,
       "modelFamilies": {
-        "claude": 0,
-        "gpt": 0,
+        "claude": 228577904,
+        "gpt": 72551803,
         "gemini": 0,
-        "other": 7767938
+        "other": 44092344
       },
       "repositories": []
     },
@@ -281,10 +281,10 @@
       "repository": null,
       "event": null,
       "modelFamilies": {
-        "claude": 0,
-        "gpt": 0,
+        "claude": 472791426,
+        "gpt": 341495219,
         "gemini": 0,
-        "other": 9770471
+        "other": 28421888
       },
       "repositories": []
     },
@@ -294,10 +294,10 @@
       "repository": null,
       "event": null,
       "modelFamilies": {
-        "claude": 0,
-        "gpt": 0,
+        "claude": 462275051,
+        "gpt": 466090808,
         "gemini": 0,
-        "other": 6171745
+        "other": 138479400
       },
       "repositories": []
     },
@@ -307,10 +307,10 @@
       "repository": null,
       "event": null,
       "modelFamilies": {
-        "claude": 0,
-        "gpt": 0,
+        "claude": 766668222,
+        "gpt": 39539041,
         "gemini": 0,
-        "other": 7488165
+        "other": 109623839
       },
       "repositories": []
     },
@@ -320,10 +320,10 @@
       "repository": null,
       "event": null,
       "modelFamilies": {
-        "claude": 0,
-        "gpt": 0,
+        "claude": 869694511,
+        "gpt": 5381389,
         "gemini": 0,
-        "other": 6628195
+        "other": 111991897
       },
       "repositories": []
     },
@@ -333,8 +333,8 @@
       "repository": null,
       "event": null,
       "modelFamilies": {
-        "claude": 0,
-        "gpt": 0,
+        "claude": 320282734,
+        "gpt": 4675916,
         "gemini": 0,
         "other": 6917217
       },
@@ -359,10 +359,10 @@
       "repository": null,
       "event": null,
       "modelFamilies": {
-        "claude": 0,
-        "gpt": 0,
+        "claude": 521713030,
+        "gpt": 16264631,
         "gemini": 0,
-        "other": 6443262
+        "other": 10569250
       },
       "repositories": []
     },
@@ -372,10 +372,10 @@
       "repository": null,
       "event": null,
       "modelFamilies": {
-        "claude": 0,
-        "gpt": 0,
+        "claude": 159409765,
+        "gpt": 103344186,
         "gemini": 0,
-        "other": 13104869
+        "other": 15481656
       },
       "repositories": []
     },
@@ -401,7 +401,7 @@
         "claude": 0,
         "gpt": 0,
         "gemini": 0,
-        "other": 10584431
+        "other": 10698853
       },
       "repositories": []
     },
