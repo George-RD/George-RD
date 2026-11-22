@@ -1,19 +1,19 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-11-22T07:00:01.833Z",
+  "generatedAt": "2026-11-22T19:47:12.950Z",
   "username": "George-RD",
   "allTime": {
-    "rank": 166,
-    "totalTokens": 188068916652,
-    "totalCost": 73454.8311,
+    "rank": 167,
+    "totalTokens": 188068941202,
+    "totalCost": 73454.8328,
     "activeDays": 257,
-    "submissions": 237,
-    "sessions": 82461
+    "submissions": 238,
+    "sessions": 82462
   },
   "month": {
-    "totalTokens": 13467708454,
-    "totalCost": 3691.645,
+    "totalTokens": 13467733004,
+    "totalCost": 3691.6467000000002,
     "activeDays": 30,
     "contributions": 30
   },
@@ -43,8 +43,10 @@
     "kimi-for-coding",
     "k2p6",
     "deepseek-v4.1-flash:1017",
-    "deepseek-v4-flash:0731",
+    "gpt-5.6-sol",
+    "gpt-6-astra-900k",
     "deepseek-v4.1-flash",
+    "deepseek-v4-flash:0731",
     "claude-opus-4-5",
     "claude-haiku-4-5",
     "claude-sonnet-4-5",
@@ -54,7 +56,6 @@
     "grok-4.7",
     "gpt-6-sol",
     "gpt-6-luna",
-    "gpt-5.6-sol",
     "gpt-6.1-sol",
     "gpt-5.6-luna",
     "claude-opus-5",
@@ -123,7 +124,6 @@
     "claude-fable-5-1",
     "tools/summaries",
     "qwen3.8-27b",
-    "gpt-6-astra-900k",
     "minimax-m2.7-highspeed",
     "gemma4:31b",
     "google/gemma-3-12b",
@@ -178,9 +178,9 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-11-22T07:00:02.351Z",
+    "generatedAt": "2026-11-22T19:47:13.699Z",
     "dataThrough": "2026-11-22",
-    "sourceUpdatedAt": "2026-11-22T04:14:11.334Z",
+    "sourceUpdatedAt": "2026-11-22T12:15:13.261Z",
     "dates": [
       "2026-10-24",
       "2026-10-25",
@@ -216,7 +216,7 @@
     "latestWindow": {
       "start": "2026-11-16",
       "end": "2026-11-22",
-      "totalTokens": 869975472
+      "totalTokens": 870000022
     },
     "previousWindow": {
       "start": "2026-11-09",
@@ -230,9 +230,9 @@
         "model": "claude-opus-5-5",
         "recentTokens": 499322410,
         "priorTokens": 2486520347,
-        "recentShare": 0.5739499860290314,
+        "recentShare": 0.5739337900844329,
         "priorShare": 0.4540278973883269,
-        "deltaPercentagePoints": 11.992208864070447,
+        "deltaPercentagePoints": 11.990589269610602,
         "direction": "up",
         "series": [
           894165553,
@@ -271,9 +271,9 @@
         "model": "gpt-6.1-sol",
         "recentTokens": 116986291,
         "priorTokens": 753514385,
-        "recentShare": 0.13447079229838332,
+        "recentShare": 0.1344669977491104,
         "priorShare": 0.13758847872939134,
-        "deltaPercentagePoints": -0.31176864310080155,
+        "deltaPercentagePoints": -0.31214809802809496,
         "direction": "flat",
         "series": [
           360893273,
@@ -312,9 +312,9 @@
         "model": "claude-fable-5-2",
         "recentTokens": 97807282,
         "priorTokens": 716997022,
-        "recentShare": 0.1124253328374297,
+        "recentShare": 0.11242216037553157,
         "priorShare": 0.1309205656511573,
-        "deltaPercentagePoints": -1.8495232813727613,
+        "deltaPercentagePoints": -1.849840527562574,
         "direction": "down",
         "series": [
           0,
@@ -353,9 +353,9 @@
         "model": "claude-haiku-5-5",
         "recentTokens": 83993103,
         "priorTokens": 523940234,
-        "recentShare": 0.09654651849770772,
+        "recentShare": 0.09654379411038681,
         "priorShare": 0.09566922832028125,
-        "deltaPercentagePoints": 0.08772901774264652,
+        "deltaPercentagePoints": 0.08745657901055581,
         "direction": "flat",
         "series": [
           413876737,
@@ -392,11 +392,11 @@
       },
       {
         "model": "deepseek-v4.1-flash:1017",
-        "recentTokens": 62741085,
+        "recentTokens": 62765635,
         "priorTokens": 54181291,
-        "recentShare": 0.07211822289169091,
+        "recentShare": 0.0721444062216357,
         "priorShare": 0.009893270191894826,
-        "deltaPercentagePoints": 6.222495269979608,
+        "deltaPercentagePoints": 6.225113602974088,
         "direction": "up",
         "series": [
           7469713,
@@ -428,15 +428,15 @@
           7538617,
           10749969,
           7027581,
-          12587254
+          12611804
         ]
       }
     ]
   },
-  "updatedAt": "2026-11-22T04:14:11.334Z",
+  "updatedAt": "2026-11-22T12:15:13.261Z",
   "sourceFreshness": {
     "dataThrough": "2026-11-22",
-    "sourceUpdatedAt": "2026-11-22T04:14:11.334Z",
-    "generatedAt": "2026-11-22T07:00:02.351Z"
+    "sourceUpdatedAt": "2026-11-22T12:15:13.261Z",
+    "generatedAt": "2026-11-22T19:47:13.699Z"
   }
 }
