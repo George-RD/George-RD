@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" role="img" aria-labelledby="title desc">
   <title id="title">George-RD Tokscale activity trace</title>
   <desc id="desc">188B all-time tokens, $73.5K estimated all-time cost, 30 active days in the current 30-day window.</desc>
-  <!-- Generated from https://tokscale.ai/api/users/George-RD at 2026-11-23T07:49:01.572Z -->
+  <!-- Generated from https://tokscale.ai/api/users/George-RD at 2026-11-23T23:59:22.792Z -->
   <style>
     :root {
       --paper: #f1ede4;
@@ -64,10 +64,10 @@
   <text class="metric-value" x="314" y="130">11.7B</text>
   <text class="metric-note" x="314" y="153">30 ACTIVE DAYS</text>
   <text class="metric-label" x="58" y="180">GLOBAL RANK</text>
-  <text class="metric-value" x="58" y="214">#167</text>
+  <text class="metric-value" x="58" y="214">#168</text>
   <text class="metric-note" x="58" y="237">TOKENS SORT / George-RD</text>
   <text class="metric-label" x="314" y="180">SUBMISSIONS</text>
-  <text class="metric-value" x="314" y="214">240</text>
+  <text class="metric-value" x="314" y="214">242</text>
   <text class="metric-note" x="314" y="237">82.5K SESSIONS</text>
 
   <text class="model-label" x="58" y="249">TOKEN MIX</text>
@@ -112,7 +112,7 @@
     <rect class="bar i1" x="980.0" y="199" width="7.5" height="4" rx="2" style="--delay:572ms"><title>2026-11-20 · 10.7M tokens</title></rect>
     <rect class="bar i1" x="993.0" y="199" width="7.5" height="4" rx="2" style="--delay:594ms"><title>2026-11-21 · 7.03M tokens</title></rect>
     <rect class="bar i1" x="1006.0" y="199" width="7.5" height="4" rx="2" style="--delay:616ms"><title>2026-11-22 · 12.6M tokens</title></rect>
-    <rect class="bar i1" x="1019.0" y="199" width="7.5" height="4" rx="2" style="--delay:638ms"><title>2026-11-23 · 7.95M tokens</title></rect>
+    <rect class="bar i1" x="1019.0" y="199" width="7.5" height="4" rx="2" style="--delay:638ms"><title>2026-11-23 · 8.07M tokens</title></rect>
   </g>
   <path class="trace" pathLength="1" d="M646.0 125.0 L659.0 157.8 L672.0 194.0 L685.0 194.0 L698.0 194.0 L711.0 194.0 L724.0 194.0 L737.0 194.0 L750.0 194.0 L763.0 167.3 L776.0 189.8 L789.0 194.0 L802.0 194.0 L815.0 194.0 L828.0 137.2 L841.0 158.0 L854.0 184.7 L867.0 164.0 L880.0 154.7 L893.0 160.9 L906.0 158.0 L919.0 185.2 L932.0 194.0 L945.0 176.2 L958.0 187.4 L971.0 194.0 L984.0 194.0 L997.0 194.0 L1010.0 194.0 L1023.0 194.0" />
 
