@@ -1,19 +1,19 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-11-25T08:45:04.526Z",
+  "generatedAt": "2026-11-25T21:46:45.633Z",
   "username": "George-RD",
   "allTime": {
     "rank": 171,
-    "totalTokens": 188091870834,
-    "totalCost": 73455.207,
+    "totalTokens": 188092210020,
+    "totalCost": 73455.2226,
     "activeDays": 260,
-    "submissions": 246,
-    "sessions": 82486
+    "submissions": 248,
+    "sessions": 82491
   },
   "month": {
-    "totalTokens": 8978639809,
-    "totalCost": 2540.1353000000004,
+    "totalTokens": 8978978995,
+    "totalCost": 2540.1509000000005,
     "activeDays": 30,
     "contributions": 30
   },
@@ -178,9 +178,9 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-11-25T08:45:05.104Z",
+    "generatedAt": "2026-11-25T21:46:45.970Z",
     "dataThrough": "2026-11-25",
-    "sourceUpdatedAt": "2026-11-25T04:23:11.063Z",
+    "sourceUpdatedAt": "2026-11-25T20:25:11.016Z",
     "dates": [
       "2026-10-27",
       "2026-10-28",
@@ -216,7 +216,7 @@
     "latestWindow": {
       "start": "2026-11-19",
       "end": "2026-11-25",
-      "totalTokens": 60857603
+      "totalTokens": 61196789
     },
     "previousWindow": {
       "start": "2026-11-12",
@@ -228,7 +228,7 @@
     "models": [
       {
         "model": "deepseek-v4.1-flash:1017",
-        "recentTokens": 60857603,
+        "recentTokens": 61196789,
         "priorTokens": 52042986,
         "recentShare": 1,
         "priorShare": 0.012589952285550937,
@@ -264,15 +264,15 @@
           12638302,
           8070792,
           6923461,
-          7908881
+          8248067
         ]
       }
     ]
   },
-  "updatedAt": "2026-11-25T04:23:11.063Z",
+  "updatedAt": "2026-11-25T20:25:11.016Z",
   "sourceFreshness": {
     "dataThrough": "2026-11-25",
-    "sourceUpdatedAt": "2026-11-25T04:23:11.063Z",
-    "generatedAt": "2026-11-25T08:45:05.104Z"
+    "sourceUpdatedAt": "2026-11-25T20:25:11.016Z",
+    "generatedAt": "2026-11-25T21:46:45.970Z"
   }
 }
