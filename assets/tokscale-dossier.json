@@ -1,19 +1,19 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-11-27T08:44:07.819Z",
+  "generatedAt": "2026-11-27T21:25:12.548Z",
   "username": "George-RD",
   "allTime": {
-    "rank": 176,
-    "totalTokens": 188113470421,
-    "totalCost": 73455.4638,
+    "rank": 178,
+    "totalTokens": 188113837176,
+    "totalCost": 73455.4817,
     "activeDays": 262,
-    "submissions": 252,
-    "sessions": 82507
+    "submissions": 254,
+    "sessions": 82512
   },
   "month": {
-    "totalTokens": 8985597752,
-    "totalCost": 2540.1622000000007,
+    "totalTokens": 8985964507,
+    "totalCost": 2540.1801000000005,
     "activeDays": 30,
     "contributions": 30
   },
@@ -123,7 +123,6 @@
     "nvidia/nemotron-3-ultra-550b-a55b:free",
     "claude-fable-5-1",
     "tools/summaries",
-    "qwen3.8-27b",
     "gpt-6-astra-900k",
     "minimax-m2.7-highspeed",
     "gemma4:31b",
@@ -148,6 +147,7 @@
     "kimi-k3",
     "deepseek-v4-pro:0813",
     "gpt-6-luna-900k",
+    "qwen3.8-27b",
     "gpt-5.6-sol-900k"
   ],
   "topModels": [
@@ -178,9 +178,9 @@
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-11-27T08:44:08.504Z",
+    "generatedAt": "2026-11-27T21:25:12.898Z",
     "dataThrough": "2026-11-27",
-    "sourceUpdatedAt": "2026-11-27T04:29:11.787Z",
+    "sourceUpdatedAt": "2026-11-27T20:31:11.280Z",
     "dates": [
       "2026-10-29",
       "2026-10-30",
@@ -216,7 +216,7 @@
     "latestWindow": {
       "start": "2026-11-21",
       "end": "2026-11-27",
-      "totalTokens": 64168604
+      "totalTokens": 64535359
     },
     "previousWindow": {
       "start": "2026-11-14",
@@ -228,7 +228,7 @@
     "models": [
       {
         "model": "deepseek-v4.1-flash:1017",
-        "recentTokens": 64168604,
+        "recentTokens": 64535359,
         "priorTokens": 56671662,
         "recentShare": 1,
         "priorShare": 0.02612434870196664,
@@ -264,15 +264,15 @@
           6923461,
           8248067,
           11647780,
-          9612621
+          9979376
         ]
       }
     ]
   },
-  "updatedAt": "2026-11-27T04:29:11.787Z",
+  "updatedAt": "2026-11-27T20:31:11.280Z",
   "sourceFreshness": {
     "dataThrough": "2026-11-27",
-    "sourceUpdatedAt": "2026-11-27T04:29:11.787Z",
-    "generatedAt": "2026-11-27T08:44:08.504Z"
+    "sourceUpdatedAt": "2026-11-27T20:31:11.280Z",
+    "generatedAt": "2026-11-27T21:25:12.898Z"
   }
 }
