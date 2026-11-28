@@ -1,19 +1,19 @@
 {
   "source": "https://tokscale.ai/api/users/George-RD",
   "profile": "https://tokscale.ai/u/George-RD",
-  "generatedAt": "2026-11-27T21:25:12.548Z",
+  "generatedAt": "2026-11-28T07:57:28.556Z",
   "username": "George-RD",
   "allTime": {
     "rank": 178,
-    "totalTokens": 188113837176,
-    "totalCost": 73455.4817,
-    "activeDays": 262,
-    "submissions": 254,
-    "sessions": 82512
+    "totalTokens": 188121155900,
+    "totalCost": 73455.59,
+    "activeDays": 263,
+    "submissions": 255,
+    "sessions": 82517
   },
   "month": {
-    "totalTokens": 8985964507,
-    "totalCost": 2540.1801000000005,
+    "totalTokens": 8985155943,
+    "totalCost": 2539.691500000001,
     "activeDays": 30,
     "contributions": 30
   },
@@ -45,6 +45,10 @@
     "deepseek-v4-flash:0731",
     "deepseek-v4.1-flash",
     "deepseek-v4.1-flash:1017",
+    "gpt-5.6-sol",
+    "qwen3.8-27b",
+    "gpt-5.6-luna",
+    "gpt-6-astra-900k",
     "claude-opus-4-5",
     "claude-haiku-4-5",
     "claude-sonnet-4-5",
@@ -54,9 +58,7 @@
     "grok-4.7",
     "gpt-6-sol",
     "gpt-6-luna",
-    "gpt-5.6-sol",
     "gpt-6.1-sol",
-    "gpt-5.6-luna",
     "claude-opus-5",
     "claude-fable-5",
     "claude-opus-5-5",
@@ -123,7 +125,6 @@
     "nvidia/nemotron-3-ultra-550b-a55b:free",
     "claude-fable-5-1",
     "tools/summaries",
-    "gpt-6-astra-900k",
     "minimax-m2.7-highspeed",
     "gemma4:31b",
     "google/gemma-3-12b",
@@ -147,7 +148,6 @@
     "kimi-k3",
     "deepseek-v4-pro:0813",
     "gpt-6-luna-900k",
-    "qwen3.8-27b",
     "gpt-5.6-sol-900k"
   ],
   "topModels": [
@@ -173,16 +173,15 @@
     },
     {
       "model": "gpt-5.6-terra",
-      "tokens": 16763419,
-      "cost": 43.48713800000001
+      "tokens": 16597516,
+      "cost": 43.05206200000001
     }
   ],
   "modelMomentum": {
-    "generatedAt": "2026-11-27T21:25:12.898Z",
-    "dataThrough": "2026-11-27",
-    "sourceUpdatedAt": "2026-11-27T20:31:11.280Z",
+    "generatedAt": "2026-11-28T07:57:29.080Z",
+    "dataThrough": "2026-11-28",
+    "sourceUpdatedAt": "2026-11-28T04:32:10.987Z",
     "dates": [
-      "2026-10-29",
       "2026-10-30",
       "2026-10-31",
       "2026-11-01",
@@ -211,31 +210,31 @@
       "2026-11-24",
       "2026-11-25",
       "2026-11-26",
-      "2026-11-27"
+      "2026-11-27",
+      "2026-11-28"
     ],
     "latestWindow": {
-      "start": "2026-11-21",
-      "end": "2026-11-27",
-      "totalTokens": 64535359
+      "start": "2026-11-22",
+      "end": "2026-11-28",
+      "totalTokens": 64826502
     },
     "previousWindow": {
-      "start": "2026-11-14",
-      "end": "2026-11-20",
-      "totalTokens": 2169304301
+      "start": "2026-11-15",
+      "end": "2026-11-21",
+      "totalTokens": 1189264085
     },
     "leadingModel": "deepseek-v4.1-flash:1017",
     "fastestRiser": "deepseek-v4.1-flash:1017",
     "models": [
       {
         "model": "deepseek-v4.1-flash:1017",
-        "recentTokens": 64535359,
-        "priorTokens": 56671662,
+        "recentTokens": 64826502,
+        "priorTokens": 57071048,
         "recentShare": 1,
-        "priorShare": 0.02612434870196664,
-        "deltaPercentagePoints": 97.38756512980333,
+        "priorShare": 0.04798854074534673,
+        "deltaPercentagePoints": 95.20114592546533,
         "direction": "up",
         "series": [
-          7937429,
           7491601,
           6427742,
           5084741,
@@ -264,15 +263,16 @@
           6923461,
           8248067,
           11647780,
-          9979376
+          10029745,
+          7268355
         ]
       }
     ]
   },
-  "updatedAt": "2026-11-27T20:31:11.280Z",
+  "updatedAt": "2026-11-28T04:32:10.987Z",
   "sourceFreshness": {
-    "dataThrough": "2026-11-27",
-    "sourceUpdatedAt": "2026-11-27T20:31:11.280Z",
-    "generatedAt": "2026-11-27T21:25:12.898Z"
+    "dataThrough": "2026-11-28",
+    "sourceUpdatedAt": "2026-11-28T04:32:10.987Z",
+    "generatedAt": "2026-11-28T07:57:29.080Z"
   }
 }
